@@ -1,0 +1,81 @@
+
+
+
+<div class="container">
+  <div class="profile-header">
+    <img [src]="profileImageSrc" alt="Profile Image">
+    <div class="profile-basic">
+      <h3 id="displayName">{{ profileForm.get('username')?.value }}</h3>
+      <p id="displayEmail">{{ profileForm.get('mailId')?.value }}</p>
+    </div>
+  </div>
+
+  <form [formGroup]="profileForm" class="profile-details" (ngSubmit)="submitProfile()">
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input id="username" type="text" formControlName="username">
+    </div>
+
+    <div class="input-group">
+      <label for="mailId">Mail ID</label>
+      <input id="mailId" type="email" formControlName="mailId">
+    </div>
+
+    <div class="input-group">
+      <label for="contactNumber">Contact Number</label>
+      <input id="contactNumber" type="text" formControlName="contactNumber">
+    </div>
+
+    <div class="input-group">
+      <label for="designation">Designation</label>
+      <input id="designation" type="text" formControlName="designation">
+    </div>
+
+    <div class="full-width">
+      <label for="imageUpload">Upload New Image</label>
+      <div class="file-upload-container">
+        <button type="button" class="file-upload-label" (click)="triggerFileSelect()">
+          Choose File
+        </button>
+        <input #fileInput id="imageUpload" type="file" accept="image/*"
+               style="display:none" (change)="onFileChange($event)">
+        <span class="file-name">{{ fileNames }}</span>
+      </div>
+    </div>
+
+    <div class="company-info-box full-width">
+      <h3 class="section-heading">Company Information</h3>
+
+      <div class="profile-details-inner">
+        <div class="input-group">
+          <label for="companyName">Company Name</label>
+          <input id="companyName" type="text" formControlName="companyName">
+        </div>
+
+        <div class="input-group">
+          <label for="branchName">Branch Name</label>
+          <input id="branchName" type="text" formControlName="branchName">
+        </div>
+
+        <div class="input-group full-width">
+          <label for="companyAddress">Company Address</label>
+          <textarea id="companyAddress" formControlName="companyAddress"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-box full-width">
+      <button type="button" class="btn-back" (click)="goBack()">
+        Back
+      </button>
+      <button type="submit" class="btn-submit" >
+        Update Profile
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+  
+</div>

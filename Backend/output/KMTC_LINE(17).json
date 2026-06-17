@@ -1,0 +1,51 @@
+{
+  "shipper": {
+    "name": null,
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "consignee": {
+    "name": null,
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "booking_details": {
+    "booking_number": "IN00506889",
+    "placement_date": null,
+    "pickup_date": null
+  },
+  "location_details": {
+    "place_of_clearance": null,
+    "place_of_pickup": null
+  },
+  "customs": {
+    "customs_clearance_date": null
+  },
+  "commodity": "SPOOLS",
+  "port_details": {
+    "port_cut_off": null,
+    "etd": "13/11/2025",
+    "eta": "21/11/2025"
+  },
+  "shipping_details": {
+    "shipping_line": "KOREA MARINE TRANSPORT CO., LTD.",
+    "vessel_name": "WAN HAI 521",
+    "voyage": "E036"
+  },
+  "delivery_order": {
+    "do_issue_date": null,
+    "do_valid_upto": null
+  },
+  "container_details": {
+    "container_number": null,
+    "container_type": null,
+    "seal_number": null
+  },
+  "cargo_details": {
+    "number_of_packages": null,
+    "cargo_weight": {
+      "value": "12000.000",
+      "weight_type": null
+    }
+  }
+}

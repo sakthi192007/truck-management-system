@@ -1,0 +1,109 @@
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}
+#colors{
+    background-color: #232879;
+    color: white;
+}
+#statusdesign {
+    width: 75px;
+    color: white;
+    height: 25px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+#statusdesignpend {
+    width: 75px;
+    color: rgb(12, 12, 12);
+    height: 25px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.card-bodys {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+
+
+.equal-width-table th,
+.equal-width-table td {
+    white-space: nowrap;
+}
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 100vh; 
+    justify-content: center;
+}
+
+
+#vehicleopp .modal-content {
+    max-height: 70vh; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+#vehicleopp .modal-body {
+    max-height: 50vh; /* Adjust as needed */
+    overflow-y: auto;
+}
+.centered-cell {
+    text-align: center; 
+  }
+  
+  .label.info {
+    background-color: #2196F3;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    min-width: 30px; 
+  }
+  .label.success{
+    background-color: #04AA6D;; 
+    color: white;
+    padding: 6px 12px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    min-width: 30px; 
+  }
+  .label.danger{
+    background-color: #f44336; 
+    color: white;
+    padding: 6px 12px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    min-width: 30px; 
+  }
+  .label.warning{
+    background-color:#ff9800;; 
+    color: white;
+    padding: 6px 12px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    min-width: 30px; 
+  }
+  div.dataTables_wrapper .dataTables_filter {
+    float: none !important;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+div.dataTables_wrapper .dataTables_filter label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+div.dataTables_wrapper .dataTables_filter input {
+    width: 180px;   
+}
+div.dataTables_wrapper .dt-buttons {
+    margin: 0 !important;
+}

@@ -1,0 +1,39 @@
+#colors{
+    background-color: #232879;
+    color: white;
+}
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.dropdown-wrapper::after {
+  content: "▼";
+  font-size: 14px;
+  color: #555;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

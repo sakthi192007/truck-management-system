@@ -1,0 +1,51 @@
+{
+  "shipper": {
+    "name": "INDUSTRIES DEL RECAMBIO INDIA PVT LTD",
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "consignee": {
+    "name": null,
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "booking_details": {
+    "booking_number": "EXPSKYB0372",
+    "placement_date": null,
+    "pickup_date": null
+  },
+  "location_details": {
+    "place_of_clearance": null,
+    "place_of_pickup": null
+  },
+  "customs": {
+    "customs_clearance_date": null
+  },
+  "commodity": null,
+  "port_details": {
+    "port_cut_off": null,
+    "etd": null,
+    "eta": null
+  },
+  "shipping_details": {
+    "shipping_line": null,
+    "vessel_name": null,
+    "voyage": null
+  },
+  "delivery_order": {
+    "do_issue_date": "08/09/2025",
+    "do_valid_upto": "22/09/2025"
+  },
+  "container_details": {
+    "container_number": "BMOU5419753",
+    "container_type": "40 HC",
+    "seal_number": null
+  },
+  "cargo_details": {
+    "number_of_packages": null,
+    "cargo_weight": {
+      "value": "41240",
+      "weight_type": "kg"
+    }
+  }
+}

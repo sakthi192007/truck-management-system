@@ -1,0 +1,122 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server"> AR Payment Entry Details</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a>Payment Details</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="card m-3 p-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 ms-auto text-end">
+                                <a id="btncolors" [class.disabled]="createstatus === false" class="btn btn-primary waves-effect waves-light"
+                                    routerLink="/Invoicetds">
+                                    <i class="fa fa-plus"></i>&nbsp;Create
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="card-bodys">
+                            <div class="col-md-12">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+ 
+                                    <div id="datatable-buttons" class="d-flex align-items-center gap-2"></div>
+ 
+                                    <div class="d-flex align-items-center gap-3">
+                                        <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#dateRangeModal">
+                                            Select Date Range
+                                        </button>
+ 
+                                        <div class="left-search"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="dateRangeModal" tabindex="-1" aria-labelledby="dateRangeLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content p-3">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="dateRangeLabel">Filter data on date range</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Choose a start and an end date which will filter</p>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Start Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="fromDate" />
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">End Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="toDate" />
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer" style="border-top: none;">
+                                            <button type="button" class="btn btn-primary w-100"
+                                                (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table table-striped table-bordered nowrap datatablegrid"
+                                style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                <thead>
+
+                                    <tr>
+                                        <th id="colors">Client Name</th>
+                                        <th id="colors">Invoice Number</th>
+                                        <th id="colors">Invoice Date</th>
+                                        <th id="colors">Net Due</th>
+                                        <th id="colors">Payment</th>
+                                        <th id="colors">Balance Amount</th>
+                                        <th id="colors">Status</th>
+                                        <th class="noExport" id="colors">Update</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let bird of filteredData">
+                                        <td>{{bird.ClientName}}</td>
+                                        <td>{{bird.InvoiceNumber}}</td>
+                                        <td>{{bird.InvoiceDate}}</td>
+                                        <td>{{bird.TDS}}</td>
+                                        <td>{{bird.payment}}</td>
+                                        <td>{{bird.Balanceamount}}</td>
+                                        <td><span [ngClass]="bird.spancolur1">{{bird.status}}</span></td>
+                                        <td><a type="button" id="statusdesign" class="badge badge-primary" [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                (click)="Assignvalue(bird.APE_id)"><i
+                                                    class="mdi mdi-pencil d-block font-size-16px"></i></a></td>
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

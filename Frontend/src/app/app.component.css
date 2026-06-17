@@ -1,0 +1,9 @@
+/* Add CSS to hide/show the vertical menu */
+
+.vertical-menu {
+    display: none;
+}
+
+.vertical-menu.show {
+    display: block;
+}

@@ -1,0 +1,141 @@
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}
+#colors{
+    background-color: #232879;
+    color: white;
+    
+}
+.custom-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  font-size: 13px;
+  text-align: center;
+}
+
+.custom-badge.warning {
+  background-color: #ffc107; 
+  color: black;
+}
+
+.custom-badge.success {
+  background-color: #28a745; 
+  color: white;
+}
+.card-bodys {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+
+
+.equal-width-table th,
+.equal-width-table td {
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper .dataTables_filter {
+  float: none !important;
+  display: flex;
+  align-items: center;
+  margin-left: 0 !important;
+}
+
+div.dataTables_wrapper .dataTables_filter input {
+  width: 180px;
+}
+
+div.dataTables_wrapper .dt-buttons {
+  margin: 0 !important;
+}
+
+
+#dateRangeBtn {
+  height: 32px;       
+  line-height: 0.5;  
+  padding: 4px 12px;  
+  font-size: 1rem;   
+   min-width: 200px; 
+}
+
+#datatable-buttons .dt-button {
+  background-color: #007bff !important;  
+  color: #fff !important;             
+  border: none !important;
+  border-radius: 8px !important;        
+  height: 32px !important;              
+  line-height: 32px !important;         
+  padding: 0 15px !important;          
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+#datatable-buttons .dt-button:hover {
+  background-color: #0056b3 !important; 
+  color: #fff !important;
+}
+.datatablegrid {
+    margin-left: 13px !important;   
+    margin-right: 0 !important;  
+    width: 100% !important;      
+    margin-top: 20px !important;
+}
+
+ div.dataTables_wrapper .dataTables_filter {
+  float: none !important;
+  display: flex;
+  align-items: center;
+  margin-left: 0 !important;
+}
+
+div.dataTables_wrapper .dataTables_filter input {
+  width: 180px;
+}
+
+div.dataTables_wrapper .dt-buttons {
+  margin: 0 !important;
+}
+
+
+#dateRangeBtn {
+  height: 32px;       
+  line-height: 0.5;  
+  padding: 4px 12px;  
+  font-size: 1rem;   
+   min-width: 200px; 
+}
+
+#datatable-buttons .dt-button {
+  background-color: #007bff !important;  
+  color: #fff !important;             
+  border: none !important;
+  border-radius: 8px !important;        
+  height: 32px !important;              
+  line-height: 32px !important;         
+  padding: 0 15px !important;          
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+#datatable-buttons .dt-button:hover {
+  background-color: #0056b3 !important; 
+  color: #fff !important;
+}
+.datatablegrid {
+    margin-left: 13px !important;   
+    margin-right: 0 !important;  
+    width: 100% !important;      
+    margin-top: 20px !important;
+} 
+/*  */
+.filter {
+  display: inline-block;
+  padding: 2px;  
+  font-size: 1rem; 
+   width: 127px;      
+}

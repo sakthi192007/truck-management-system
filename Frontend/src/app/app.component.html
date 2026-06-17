@@ -1,0 +1,7 @@
+<div [attr.data-sidebar-size]="isSidebarClosed ? 'sm' : null">
+    
+    <app-header [hidden]="!displayLayout()" (toggle)="toggleSidebar()" ></app-header>
+    <app-sidebar [hidden]="!displayLayout()" [isClosed]="isSidebarClosed" [isMobile]="isSidebarMobile" (toggle)="togglemobile()"></app-sidebar>
+    <router-outlet></router-outlet>
+    <app-footer [hidden]="!displayLayout()"></app-footer>
+</div>

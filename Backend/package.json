@@ -1,0 +1,43 @@
+{
+    "name": "sky_b_backend",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start:dev": "nodemon ./app",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@mistralai/mistralai": "^1.13.0",
+        "axios": "^1.7.9",
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.20.3",
+        "canvas": "^3.2.1",
+        "cors": "^2.8.5",
+        "date-fns": "^3.6.0",
+        "dotenv": "^16.5.0",
+        "ejs": "^3.1.10",
+        "express": "^4.21.2",
+        "express-fileupload": "^1.5.0",
+        "express-handlebars": "^8.0.1",
+        "html-pdf": "^3.0.1",
+        "mssql": "^10.0.2",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer-express-handlebars": "^6.1.2",
+        "pdf-creator-node": "^2.3.5",
+        "pdfkit": "^0.15.0",
+        "puppeteer": "^23.11.0",
+        "qrcode": "^1.5.4",
+        "response-time": "^2.3.2",
+        "sequelize": "^6.37.3",
+        "sharp": "^0.33.3",
+        "tedious": "^18.2.0",
+        "twilio": "^5.5.2",
+        "uuid": "^9.0.1",
+        "winston": "^3.13.0",
+        "winston-daily-rotate-file": "^5.0.0"
+    }
+}

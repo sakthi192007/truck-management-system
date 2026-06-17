@@ -1,0 +1,1325 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+
+
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a>{{headertext}}</a></li>
+                        </ol>
+
+                    </div>
+                    <div class="page-title-end">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a>Booking Number : {{Booking_Number}}</a></li>
+                        </ol>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-fill" id="pills-tab">
+                        <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link active"
+                                id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                data-bs-target="#ExportB">Export Booking Details</a>
+                        </li>
+                        <li *ngIf="mileviews ==1" class="nav-item" style="background-color: #232879;color: white;"><a
+                                class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                                data-bs-target="#Miles">Milestones Details</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-contact-tab">
+                        <div class="tab-pane fade show active" id="ExportB">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body p-4">
+                                                <form [formGroup]="bookingform">
+
+                                                 <h5 style="color: #232879; border-bottom: 1px solid #232879;"
+    class="d-flex justify-content-between align-items-center">
+
+  <span>Basic Information</span>
+
+  <a href="javascript:void(0)" *ngIf="showViewLink"
+     (click)="openocrPopup()" >
+     View
+  </a>
+
+</h5>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-12 ms-lg-auto">
+                                                            <div class="mt-4 mt-lg-0">
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-3">
+                                                                        <label>Customer Name<span style="color: red;">
+                                                                                *</span></label>
+                                                                        <div *ngIf="RoleId == 1 ">
+                                                                            <div class="form-control"
+                                                                                *ngFor="let customer of custdata">
+                                                                                {{customer.UserName}}
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="dropdown-wrapper"
+                                                                            *ngIf="RoleId !=1">
+                                                                            <ngx-select-dropdown
+                                                                                class="form-control custom-dropdown"
+                                                                                [config]="customerdropdownConfig"
+                                                                                [options]="custdatavalues"
+                                                                                formControlName="clients"
+                                                                                (change)="onCompanyName($event)">
+                                                                            </ngx-select-dropdown>
+                                                                        </div>
+
+                                                                        <div *ngIf="submitted && f['clients'].errors"
+                                                                            class="validation-invalid-label">
+                                                                            <div
+                                                                                *ngIf="f['clients'].errors['required']">
+                                                                                <span style="color: red;">Customer Name
+                                                                                    is required</span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <label>Shipper Name <span
+                                                                                style="color: red;">*</span></label>
+
+                                                                        <div class="dropdown-wrapper">
+                                                                            <ngx-select-dropdown
+                                                                                class="form-control custom-dropdown"
+                                                                                [config]="ShipperdropdownConfig"
+                                                                                [options]="shipperdata"
+                                                                                formControlName="customer_add">
+                                                                            </ngx-select-dropdown>
+                                                                        </div>
+
+                                                                        <div *ngIf="submitted && f['customer_add'].errors"
+                                                                            class="validation-invalid-label mt-1">
+                                                                            <div
+                                                                                *ngIf="f['customer_add'].errors['required']">
+                                                                                <span style="color: red;">Shipper Name
+                                                                                    is required</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <label>Contact Person Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="contactperson">
+
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Phone number</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="phone_number">
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-3">
+                                                                        <label>Placement Date<span style="color: red;">
+                                                                                *</span></label>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="container_date" required>
+                                                                        <div *ngIf="submitted && f['container_date'].errors"
+                                                                            class="validation-invalid-label">
+                                                                            <div
+                                                                                *ngIf="f['container_date'].errors['required']">
+                                                                                <span style="color: red;">Container Date
+                                                                                    is required</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <label>Place of Clearance <span
+                                                                                style="color: red;">*</span></label>
+
+                                                                        <div class="dropdown-wrapper">
+                                                                            <ngx-select-dropdown
+                                                                                class="form-control custom-dropdown"
+                                                                                [config]="dropdownConfig"
+                                                                                [options]="pointofclear"
+                                                                                formControlName="pointclearance">
+                                                                            </ngx-select-dropdown>
+                                                                        </div>
+
+                                                                        <div *ngIf="submitted && f['pointclearance'].errors"
+                                                                            class="validation-invalid-label mt-1">
+                                                                            <div
+                                                                                *ngIf="f['pointclearance'].errors['required']">
+                                                                                <span style="color: red;">Place of
+                                                                                    Clearance is required</span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <label>Customs Clearance Date<span
+                                                                                style="color: red;"> *</span></label>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="exportcustoms_date"
+                                                                            required>
+                                                                        <div *ngIf="submitted && f['exportcustoms_date'].errors"
+                                                                            class="validation-invalid-label">
+                                                                            <div
+                                                                                *ngIf="f['exportcustoms_date'].errors['required']">
+                                                                                <span style="color: red;">Customs
+                                                                                    Clearance Date is required</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Booking No<span style="color: red;">
+                                                                                *</span></label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="LinearBkgno">
+                                                                        <div *ngIf="submitted && f['LinearBkgno'].errors"
+                                                                            class="validation-invalid-label">
+                                                                            <div
+                                                                                *ngIf="f['LinearBkgno'].errors['required']">
+                                                                                <span style="color: red;">Linear
+                                                                                    BookingNo
+                                                                                    is required</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-3">
+                                                                        <label>Special Instruction</label>
+                                                                        <textarea class="form-control"
+                                                                            formControlName="special_integration"
+                                                                            rows="1"></textarea>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Commodity</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="commodity"
+                                                                            placeholder="Enter Commodity">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Port Cut Off</label>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="portcut_off">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>ETD</label>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="etd_time">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-3">
+                                                                        <label>Shipping Line</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="eportShippingline"
+                                                                            placeholder="Enter Shipping Line">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Vessel Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="exportvessel"
+                                                                            placeholder="Enter Vessel Name">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Voyage</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="eportvoyage"
+                                                                            placeholder="Enter Voyage">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Confirmation Mail</label>
+                                                                        <input type="text" class="form-control"
+                                                                            formControlName="confirmationmail"
+                                                                            placeholder="Enter Confirmation Mail">
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="row mb-4">
+
+                                                                    <div class="col-md-3">
+                                                                        <label>CRO</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="eportcrocroFile($event)" multiple>
+
+                                                                        <div class="py-2" *ngIf="croFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="opencroPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <br>
+                                                                <br>
+
+                                                                <h5
+                                                                    style="color: #232879; border-bottom: 1px solid #232879;">
+                                                                    Document Details</h5>
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-2">
+                                                                        <label>Form 13</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="eportcrocroFrom13($event)"
+                                                                            multiple>
+
+                                                                        <div class="py-2"
+                                                                            *ngIf="form13Files.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="openfromPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <label>Container Photo</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="exportcontainerphoto($event)"
+                                                                            multiple>
+
+                                                                        <div class="py-2"
+                                                                            *ngIf="containerFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="openContainerPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+
+
+
+
+                                                                    <div class="col-md-2">
+                                                                        <label>Shipping Bill Copy</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="exportshipping($event)" multiple>
+
+                                                                        <div class="py-2"
+                                                                            *ngIf="shippingBillFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="openshippingPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-2">
+                                                                        <label>EIR Copy </label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="exporteir($event)" multiple>
+
+                                                                        <div class="py-2"
+                                                                            *ngIf="eirFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="openeirPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <label>Seal Copy</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="exportseal($event)" multiple>
+                                                                        <div class="py-2"
+                                                                            *ngIf="sealFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="opensealPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <label>Weighment Photo</label><br>
+
+                                                                        <input type="file" class="form-control"
+                                                                            (change)="exportWeighment($event)" multiple>
+
+                                                                        <div class="py-2"
+                                                                            *ngIf="weighmentFiles.length > 0">
+                                                                            <a href="javascript:void(0)"
+                                                                                (click)="openweighmentPopup()"
+                                                                                class="font-weight-medium d-block">
+                                                                                View
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </div>
+
+                                                                <br>
+                                                                <br>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title"><b>Container Details</b>
+                                                                        </h5>
+                                                                        <div class="card-header header-elements-inline">
+                                                                            <h5 class="card-title"></h5>
+                                                                            <div class="header-elements"
+                                                                                *ngIf="views != 0">
+                                                                                <button (click)="ExportaddItem()"
+                                                                                    id="btncolors" class="btn"><i
+                                                                                        class="fa fa-plus"></i>&nbsp;Add
+                                                                                    rows</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group"
+                                                                            style="overflow-x: auto; width: 100%;">
+                                                                            <table
+                                                                                class="table table-bordered w-100 equal-width-table">
+                                                                                <thead>
+                                                                                    <tr style="text-align: center;">
+                                                                                        <th id="colors"
+                                                                                            style="width: 260px;">
+                                                                                            Vendor Name</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 260px;">
+                                                                                            Container Type</th>
+                                                                                        <th style="width: 360px;"
+                                                                                            id="colors">Vehicle Number
+                                                                                        </th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 260px;">
+                                                                                            Container Number</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 260px;">
+                                                                                            Seal Number</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 260px;">
+                                                                                            No of Package</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 240px;">
+                                                                                            Cargo Weight</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 240px;">
+                                                                                            Weight Types </th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 300px;">
+                                                                                            Pickup Point
+
+                                                                                        </th>
+
+                                                                                        <th id="colors"
+                                                                                            style="width: 340px;">
+                                                                                            Stuffing Location 1</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 340px;">
+                                                                                            Stuffing Location 2</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 340px;">
+                                                                                            Stuffing Location 3</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 340px;">
+                                                                                            Stuffing Location 4</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 340px;">
+                                                                                            Stuffing Location 5</th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 300px;">
+
+                                                                                            Port of Loading
+                                                                                        </th>
+                                                                                        <th id="colors"
+                                                                                            style="width: 300px;">
+                                                                                            Destination
+                                                                                        </th>
+                                                                                           <th id="colors"
+                                                                                            style="width: 300px;">
+                                                                                            Status
+                                                                                        </th>
+                                                                                        <th id="colors"
+                                                                                            *ngIf="views != 0">
+                                                                                            Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody formArrayName="rows2">
+                                                                                    <tr *ngFor="let row of row2.controls; let i = index"
+                                                                                        [formGroupName]="i">
+
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="vendordropdownConfig"
+                                                                                                [options]="getvendordata"
+                                                                                                formControlName="Vendor"
+                                                                                                appendTo="body">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="containerdropdownConfig"
+                                                                                                [options]="containerdata"
+                                                                                                formControlName="Container_type"
+                                                                                                appendTo="body">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+
+                                                                                        <td>
+                                                                                            <input type="text"
+                                                                                                class="form-control"
+                                                                                                formControlName="Vehiclenos"
+                                                                                                placeholder="Enter Vehicleno"
+                                                                                                id="{{ i }}Vehiclenos">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <input type="text"
+                                                                                                class="form-control"
+                                                                                                formControlName="exportcontainernumber"
+                                                                                                placeholder="Enter Container Number"
+                                                                                                id="{{ i }}exportcontainernumber">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <input type="text"
+                                                                                                class="form-control"
+                                                                                                formControlName="Seal"
+                                                                                                placeholder="Enter Seal Number"
+                                                                                                id="{{ i }}Seal">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <input type="text"
+                                                                                                class="form-control"
+                                                                                                formControlName="Package"
+                                                                                                placeholder="Enter No of Package"
+                                                                                                id="{{ i }}Package">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <input type="text"
+                                                                                                class="form-control"
+                                                                                                formControlName="cargoweight"
+                                                                                                placeholder="Enter Cargo weight"
+                                                                                                id="{{ i }}cargoweight">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <select class="form-control"
+                                                                                                formControlName="cargokgslbs"
+                                                                                                data-live-search="true"
+                                                                                                id="{{ i }}cargokgslbs">
+                                                                                                <option value=""
+                                                                                                    selected disabled>
+                                                                                                    --Select--
+                                                                                                </option>
+                                                                                                <option value="KGS">
+                                                                                                    KGS</option>
+                                                                                                <option value="LBS">
+                                                                                                    LBS</option>
+                                                                                            </select>
+                                                                                        </td>
+
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="emptycontainepick">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="staffing">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="stuffing2">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="stuffing3">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="stuffing4">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="pickupdropdownConfig"
+                                                                                                [options]="pointofclear"
+                                                                                                formControlName="stuffing5">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="portdropdownConfig"
+                                                                                                [options]="locations"
+                                                                                                formControlName="loading1">
+                                                                                            </ngx-select-dropdown>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <ngx-select-dropdown
+                                                                                                class="form-control custom-dropdown"
+                                                                                                [config]="portdropdownConfig"
+                                                                                                [options]="locations"
+                                                                                                formControlName="loading2">
+                                                                                            </ngx-select-dropdown>
+
+                                                                                        </td>
+<td>
+                                                                                            <select class="form-control"
+                                                                                                formControlName="bookingstatus"
+                                                                                                data-live-search="true"
+                                                                                                id="{{ i }}bookingstatus">
+                                                                                                <option value=""
+                                                                                                    selected disabled>
+                                                                                                    --Select--
+                                                                                                </option>
+                                                                                               <option [value]="0">Ongoing</option>
+<option [value]="1">Completed</option>
+                                                                                            </select>
+                                                                                        </td>
+
+
+                                                                                        <td class="wrapper"
+                                                                                            *ngIf="views != 0">
+                                                                                            <button
+                                                                                                (click)="ExportremoveItem(i)"
+                                                                                                class="btn-danger">Remove</button>
+                                                                                        </td>
+
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-end text-end">
+                                                                    <div class="col-sm-9">
+                                                                        <div>
+                                                                            <a routerLink="/BookingDetails"
+                                                                                id="btncolors" class="btn w-md"><i
+                                                                                    class=" bx bx-arrow-back"
+                                                                                    aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                                                            <button id="btncolors" *ngIf="views != 0"
+                                                                                class="btn w-md" type="button"
+                                                                                (click)="submit(row2.value)">
+                                                                                <i
+                                                                                    class="bx bxs-navigation"></i>&nbsp;{{
+                                                                                buttontext }}
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="Miles">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <form [formGroup]="ExportEventbookingform">
+                                                <div class="row">
+
+                                                    <div class="col-md-12">
+                                                        <label>Container No<span style="color: red;"> *</span></label>
+                                                        <select class="form-control" formControlName="exportcontainer"
+                                                            data-live-search="true"
+                                                            (change)="onExportBookingChange($event)">
+                                                            <option value="" selected disabled>--Select--</option>
+                                                            <option *ngFor="let list of contanerdata"
+                                                                value={{list.containernumber}}
+                                                                selected="summary.containernumber == summary.containernumber">
+                                                                {{list.containernumber}}
+                                                            </option>
+                                                        </select>
+                                                        <div *ngIf="submitted && e['exportcontainer'].errors"
+                                                            class="validation-invalid-label">
+                                                            <div *ngIf="e['exportcontainer'].errors['required']"><span
+                                                                    style="color: red;">Container No is required</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><b>Milestones Details</b></h5>
+                                                        <div class="card-header header-elements-inline">
+                                                            <h5 class="card-title"></h5>
+                                                            <div class="header-elements">
+                                                                <button id="btncolors" *ngIf="views != 0"
+                                                                    (click)="ExaddItem()" class="btn btn-primary"><i
+                                                                        class="fa fa-plus"></i>&nbsp;Add rows</button>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <table class="table table-bordered w-100 equal-width-table">
+                                                            <thead>
+                                                                <tr style="text-align: center;">
+
+                                                                    <th id="colors" style="width: 350px;">Milestones
+                                                                    </th>
+                                                                    <th id="colors" style="width: 275px;">Estimate Date
+                                                                        & Time</th>
+                                                                    <th id="colors" style="width: 333px;">Actual Date &
+                                                                        Time</th>
+                                                                    <th id="colors" *ngIf="views != 0">Remove</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody formArrayName="rows1">
+                                                                <tr *ngFor="let row of row1.controls; let i = index"
+                                                                    [formGroupName]="i">
+
+                                                                    <td>
+                                                                        <select class="form-control"
+                                                                            formControlName="Milestones"
+                                                                            data-live-search="true"
+                                                                            id="{{ i }}Milestones">
+                                                                            <option value="" selected disabled>
+                                                                                --Select--</option>
+                                                                            <option *ngFor="let list of getmilestone"
+                                                                                value={{list.EM_id}}
+                                                                                selected="summary.EM_id == summary.EM_id">
+                                                                                {{list.milestones}}
+                                                                            </option>
+                                                                        </select>
+
+
+
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="Estimate"
+                                                                            id="{{ i }}Estimate">
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="datetime-local"
+                                                                            class="form-control"
+                                                                            formControlName="Actual" id="{{ i }}Actual">
+
+                                                                    </td>
+
+                                                                    <td *ngIf="views != 0">
+                                                                        <button (click)="EventremoveItem(i)"
+                                                                            class="btn-danger">Remove</button>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+
+
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="row justify-content-end text-end">
+                                        <div class="col-sm-9">
+                                            <div>
+                                                <a id="btncolors" routerLink="/BookingDetails"
+                                                    class="btn btn-primary w-md"><i class=" bx bx-arrow-back"
+                                                        aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                                <button id="btncolors" *ngIf="views != 0" class="btn btn-primary w-md"
+                                                    type="button" (click)="Exportevent(row1.value)">
+                                                    <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="croModal" tabindex="-1" role="dialog" aria-labelledby="croModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="croModalLabel">
+                            CRO Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="croFiles.length > 0; else noFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of croFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="croviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deletecroFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #noFiles>
+                            <p class="text-center text-muted mb-0">
+                                No CRO files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="formModalLabel">
+                            Form13 Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="form13Files.length > 0; else noformFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of form13Files; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="formviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteformFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #noformFiles>
+                            <p class="text-center text-muted mb-0">
+                                No Form13 files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="shipModal" tabindex="-1" role="dialog" aria-labelledby="shipModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="shipModalLabel">
+                            Shipping Bill Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="shippingBillFiles.length > 0; else noshipFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of shippingBillFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="shippingviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteshippingFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #noshipFiles>
+                            <p class="text-center text-muted mb-0">
+                                No Form13 files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="eirModal" tabindex="-1" role="dialog" aria-labelledby="eirModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="eirModalLabel">
+                            EIR Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="eirFiles.length > 0; else noeirFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of eirFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="eirviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteeirFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #noeirFiles>
+                            <p class="text-center text-muted mb-0">
+                                No EIR files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="sealModal" tabindex="-1" role="dialog" aria-labelledby="sealModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="sealModalLabel">
+                            Seal Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="sealFiles.length > 0; else nosealFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of sealFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="sealviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deletesealFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #nosealFiles>
+                            <p class="text-center text-muted mb-0">
+                                No Seal files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="weighmentModal" tabindex="-1" role="dialog" aria-labelledby="weighmentModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="weighmentModalLabel">
+                            Weighment Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="weighmentFiles.length > 0; else noweiFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of weighmentFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="weghmentviewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteweighmentFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #noweiFiles>
+                            <p class="text-center text-muted mb-0">
+                                No Weighment files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="containerModal" tabindex="-1" role="dialog" aria-labelledby="containerModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="containerModalLabel">
+                            Container Files</h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <table class="table table-bordered" *ngIf="containerFiles.length > 0; else nocontaineFiles">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="text-center">
+                                        Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let file of containerFiles; let i = index">
+                                    <td>{{
+                                        getFileName(file.url)
+                                        }}</td>
+                                    <td class="text-center">
+                                        <!-- 👁 View Button -->
+                                        <button type="button" class="btn btn-sm btn-info mr-2"
+                                            (click)="viewFile(file.url)" title="View File">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- 🗑 Delete Button -->
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteContainerFile(file.id)" title="Delete File">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- When no files -->
+                        <ng-template #nocontaineFiles>
+                            <p class="text-center text-muted mb-0">
+                                No container files found.
+                            </p>
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade"
+     id="OcrModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="OcrModalLabel"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+
+      <!-- HEADER -->
+      <div class="modal-header">
+        <h5 class="modal-title">
+          OCR Document Preview
+        </h5>
+
+        <button type="button"
+                class="close"
+                data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+
+        <!-- TABS HEADER -->
+        <ul class="nav nav-tabs nav-fill">
+
+          <!-- PDF TAB -->
+          <li class="nav-item">
+            <a class="nav-link active"
+               data-bs-toggle="tab"
+               href="#pdfTab">
+               PDF Document
+            </a>
+          </li>
+
+          <!-- JSON TAB -->
+          <li class="nav-item">
+            <a class="nav-link"
+               data-bs-toggle="tab"
+               href="#jsonTab">
+               JSON Data
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- TABS CONTENT -->
+        <div class="tab-content mt-3">
+
+          <!-- PDF CONTENT -->
+          <div class="tab-pane fade show active"
+               id="pdfTab">
+
+            <div class="preview-panel">
+
+              <div class="empty-state"
+                   *ngIf="!safePreviewUrl">
+                No PDF selected. Please choose a PDF to preview.
+              </div>
+
+              <iframe
+                *ngIf="safePreviewUrl"
+                class="pdf-frame"
+                [src]="safePreviewUrl">
+              </iframe>
+
+            </div>
+
+          </div>
+
+          <!-- JSON CONTENT -->
+          <div class="tab-pane fade"
+               id="jsonTab">
+
+            <pre class="json-preview">
+{{ ocrJsonData | json }}
+            </pre>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                (click)="ocrcloseModal()">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+     
+    </div>
+</div>
+<div class="loader-overlay" *ngIf="uploading || loading">
+  <div class="loader"></div>
+  <p>Uploading & Processing OCR...</p>
+</div>

@@ -1,0 +1,363 @@
+.button-90 {
+    color: #fff;
+    padding: 25px 50px;
+    border-radius: 100px;
+    background-color:#232879;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  
+    cursor: pointer;
+  }
+  .blink {
+    color: green;
+    animation: blinker 1s linear infinite;
+}
+
+.blink-container {
+    color: green;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.custom-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 130px;
+}
+ 
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+ 
+.card-blue {
+  background: linear-gradient(135deg, #0e1214, #0d47a1);
+}
+.card-blue .animated-icon {
+  color: #d61111;  /* gold/yellow color example */
+  /* or for SVG fill */
+  fill: #00e1ff;
+}
+ 
+.card-green {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+}
+ 
+.card-purple {
+  background: linear-gradient(135deg, #8e24aa, #4a148c);
+}
+ 
+.card-orange {
+  background: linear-gradient(135deg, #009688, #004d40);
+}
+ 
+.icon-wrapper {
+  background: rgb(231, 229, 229);
+  border-radius: 50%;
+  padding: 10px;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  /* Static Glow + Animation */
+  animation: glow 2.5s ease-in-out infinite;
+}
+ 
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+                0 0 16px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.6),
+                0 0 28px rgba(255, 255, 255, 0.4);
+  }
+}
+ 
+ 
+.animated-icon {
+  width: 50px;    /* increased from 30px */
+  height: 50px;   /* increased from 30px */
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+  animation: pulse 2s infinite ease-in-out;
+}
+ 
+ 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+ 
+ 
+
+
+.progress-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 475px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ 
+.progress-container {
+  position: relative;
+  padding-left: 35px;
+}
+ 
+ 
+.milestone {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+ 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.milestone:nth-child(2) { animation-delay: 0.2s; }
+.milestone:nth-child(3) { animation-delay: 0.4s; }
+.milestone:nth-child(4) { animation-delay: 0.6s; }
+.milestone:nth-child(5) { animation-delay: 0.8s; }
+.milestone:nth-child(6) { animation-delay: 1s; }
+ 
+.circle {
+  width: 36px;
+  height: 36px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+ 
+.milestone.completed .circle {
+  background-color: #28a745;
+}
+ 
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ 
+ 
+.milestone.completed .circle {
+  background: linear-gradient(to bottom right, #28a745, #218838);
+  color: #fff;
+}
+ 
+.milestone-info {
+  background: linear-gradient(62deg, #f2dede, #ffffff);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-left: 15px;
+  flex-grow: 1;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+ 
+.milestone-info:hover {
+  transform: scale(1.02);
+}
+ 
+.percentage-indicator {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #444;
+}
+ 
+ 
+@media (max-width: 600px) {
+  .progress-container {
+    padding-left: 30px;
+  }
+ 
+  .milestone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .milestone-info {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+ 
+  .progress-line {
+    left: 10px;
+  }
+}
+ 
+.stepper-container {
+  position: relative;
+  padding-left: 30px; /* space for the circles */
+  height: 300px; /* fixed container height */
+}
+ 
+.stepper {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* position the vertical line */
+  width: 4px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px; /* full container height */
+  z-index: 0;
+}
+ 
+.step {
+  position: relative;
+  margin-bottom: 135px; /* space between circles */
+  /* z-index: 1; */
+}
+ 
+/* Remove margin-bottom from last step to avoid extra space */
+.step:last-child {
+  margin-bottom: 0;
+}
+ 
+.circles {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 3px solid #ccc;
+  position: relative;
+  top: -14px; /* pull circle up so it overlaps the line */
+  z-index: 2;
+  background-clip: padding-box;
+}
+ 
+
+ 
+/* Active step */
+.step.active .circles {
+  background: #d7e0e9;
+  border-color: #c1dbf7;
+}
+ 
+ 
+
+
+
+
+
+
+.step.completed:not(:last-child)::after {
+  background-color: green;
+}
+
+
+
+.step.completed .circles {
+  background-color: green;
+}
+
+
+
+
+
+.step .line {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 10px; 
+  width: 4px;
+  height: 145px; 
+  background-color: #ccc; 
+  z-index: 0;
+}
+
+
+.step.completed .line {
+  background-color: green;
+} 
+
+.step.completed .line {
+  background-color: green;
+  transition: background-color 0.5s ease;
+}
+
+ .steps {
+  position: relative;
+  margin-bottom: 106px; /* space between circles */
+  /* z-index: 1; */
+}
+ .steps:last-child {
+  margin-bottom: 0;
+}
+.steps.active .circles {
+  background: #d7e0e9;
+  border-color: #c1dbf7;
+}
+ 
+.steps.completed:not(:last-child)::after {
+  background-color: green;
+}
+
+
+
+.steps.completed .circles {
+  background-color: green;
+}
+
+.steps .line {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 10px; 
+  width: 4px;
+  height: 140px; 
+  background-color: #ccc; 
+  z-index: 0;
+}
+
+
+.steps.completed .line {
+  background-color: green;
+} 
+
+.steps.completed .line {
+  background-color: green;
+  transition: background-color 0.5s ease;
+}
+

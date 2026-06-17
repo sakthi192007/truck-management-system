@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LR Copy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        margin: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+      td,
+      th {
+        border: 1px solid #000;
+        padding: 6px;
+        vertical-align: top;
+      }
+      .center {
+        text-align: center;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .no-border {
+        border: none !important;
+      }
+      .section-header {
+        text-align: center;
+        font-weight: bold;
+        border-top: 1px solid #000;
+        padding-top: 4px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    {{#each copies}}
+<div style="page-break-after: always;">
+
+    <!-- Header Section -->
+    <table>
+      <tr>
+        <td style="width: 33%">
+          <div class="center">
+            <img src="data:image/jpeg;base64,{{logoBase64}}" height="30" />
+            <div class="bold" style="font-size: 14px">
+              SKYB TRANS PRIVATE LIMITED
+            </div>
+            <div>
+              <b>Address:</b> No.19A, Bharathiar Street,<br />
+              Meenambakkam, Chennai - 600 027.<br />
+              <b>Regd Office:</b> No.2/480, 11th Street,<br />
+              Engineers Avenue, S.Kolathur,<br />
+              Kovilambakkam, Chennai - 600 117.<br />
+              📞 <b>98409 28505</b><br />
+               <h3>GST NUMBER :33ABNCS2626M1ZZ
+   </h3><br />
+              Mail: info@skybtrans.com
+            </div>
+          </div>
+        </td>
+        <td style="width: 33%">
+          <div class="center bold">AT OWNER'S RISK</div>
+          <div class="section-header" style="border-bottom: 1px solid black">
+            INSURANCE
+          </div>
+          <div>
+            The Consignor has stated that<br />
+            *He has not insured the Consignment or<br />
+            *He has insured the Consignment<br />
+            <br />
+            <b>Company:</b> {{Company}}<br />
+            <br />
+            <b>Policy No:</b> {{PoliceNo}}<br />
+            <br />
+            <b>Amount:</b> ₹{{Amount}}<br />
+            <br />
+            <b>Date:</b> {{Date}}<br />
+            <br />
+            <b>Risk:</b> {{Risk}}
+          </div>
+        </td>
+        <td style="width: 33%">
+          <div class="center bold" style="border-bottom: 1px solid black">
+           {{this.CopyType}}
+          </div>
+
+          <div class="center bold">NOTICE</div>
+          <div style="border-bottom: 1px solid black">
+            The Consignment covered by this set of Special Lorry Receipt shall
+            be stored at the destination under the control of the transport
+            operator and shall be delivered to or on the order of the consignee
+            bank whose name is mentioned on the Lorry Receipt, under no
+            circumstances it will be delivered to any part without the written
+            authority from the consignee Bank or its order, endorsed on the
+            consignee Copy or on a separate letter of Authority.
+          </div>
+          <div class="center bold">CAUTION</div>
+          <div>
+            This consignment will not be detained, diverted, re-routed or
+            re-booked without Consignee Bank written permission, will be
+            delivered at the destination.
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Consignment Details -->
+    <table>
+      <tr>
+        <td><b>CONSIGNMENT NOTE NO:</b> {{Consignmentnoteno}}</td>
+        <td><b>SEAL NO:</b> {{Sealno}}</td>
+      </tr>
+      <tr>
+        <td><b>Consignment Date:</b> {{ConsignmentDate}}</td>
+        <td><b>Shipment Type:</b> {{ShipmentType}}</td>
+      </tr>
+      <tr>
+        <td><b>Transit Mode:</b>Road</td>
+        <td colspan="2">
+          <b>Consignor's Name & Add:</b> M/s. {{ConsignornameAdd}}
+        </td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td colspan="2">
+          <b>Consignee's Name & Add:</b> M/s. {{ConsigneenameAdd}}
+        </td>
+      </tr>
+      <tr>
+        <td><b>FROM:</b> {{FromAdd}}</td>
+        <td><b>TO:</b> {{ToAdd}}</td>
+      </tr>
+      <tr>
+        <td><b>CONTAINER NO:</b> {{Containerno}}</td>
+        <td><b>Driver No:</b> {{Driverno}}</td>
+      </tr>
+    </table>
+
+    <!-- Freight Table -->
+    <table
+      border="1"
+      cellspacing="0"
+      cellpadding="4"
+      style="
+        width: 100%;
+        font-size: 12px;
+        font-family: Arial;
+        border-collapse: collapse;
+        text-align: center;
+      "
+    >
+      <thead>
+        <tr>
+          <th>No. of Pkgs / Pallets</th>
+          <th>Customer Invoice No. & Date</th>
+          <th>
+            NATURE OF GOODS<br /><span style="font-size: 10px"
+              >(Said to Contain)</span
+            >
+          </th>
+          <th>WEIGHT<br />Gross</th>
+          <th>WEIGHT<br />Chargeable</th>
+          <th>RATE</th>
+          <th colspan="2">DUE & PAID</th>
+          <th colspan="2">TO PAY</th>
+          <th>
+            FREIGHT<br /><span style="font-size: 10px">Payment Receipt</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- FREIGHT row -->
+        <tr>
+          <td>{{Noofpkgspallets}}</td>
+          <td>{{CustomerinvoiceNo}}</td>
+          <td>{{Natureofgoods}}</td>
+          <td>{{WeightGross}}</td>
+          <td>{{WeightChargeable}}</td>
+          <td>FREIGHT</td>
+          <td>{{FreightPaid}}</td>
+          <td></td>
+          <td>{{FreightToPay}}</td>
+          <td></td>
+          <td>{{FreightTopayorPaid}}</td>
+        </tr>
+
+        <!-- SURCHARGE -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>SURCHARGE</td>
+          <td>{{SurchargePaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- CP.Ch. -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>CP. Ch.</td>
+          <td>{{CpchPaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- ST.Ch. -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>ST. Ch.</td>
+          <td>{{StchPaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- HAMALI -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>HAMALI Ch.</td>
+          <td>{{HAMALIchPaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- RISK -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>RISK Rs.</td>
+          <td>{{RiskrsPaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- SERVICE CH -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Service Ch.</td>
+          <td>{{ServicechPaid}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- GRAND TOTAL -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Note: Not Responsible For<br />Leakage, Breakage & Damage</td>
+          <td></td>
+          <td></td>
+          <td><strong>G. TOTAL</strong></td>
+          <td><strong>{{GrandTotalPaid}}</strong></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Footer -->
+    <div
+      style="
+        display: table;
+        width: 100%;
+        font-size: 12px;
+        font-family: Arial;
+        margin-top: 8px;
+      "
+    >
+      <div
+        style="
+          display: table-cell;
+          width: 33%;
+          text-align: left;
+          padding-top: 20px;
+        "
+      >
+        Goods accepted to carriage on the terms and conditions overleaf.
+      </div>
+      <div style="display: table-cell; width: 33%; text-align: center">
+        Value Rs. {{Valuers}}
+      </div>
+      <div style="display: table-cell; width: 33%; text-align: right">
+        Signature of Booking Official
+      </div>
+    </div>
+
+    <div style="page-break-before: always">
+      <h3
+        style="
+          text-align: center;
+          text-decoration: underline;
+          padding-top: 20px;
+        "
+      >
+        TERMS & CONDITIONS OF CARRIAGE CARRIER'S RISK OR OWNER'S RISK
+      </h3>
+
+      <table
+        style="width: 100%; font-size: 11px; border: none; table-layout: fixed"
+      >
+        <tr>
+          <!-- Column 1 -->
+          <td style="vertical-align: top; padding-right: 10px">
+            <ol style="margin: 0; padding-left: 16px">
+              <li>
+                Nature, Contents, conditions and value of the consignment are
+                unknown to the SKYB TRANS PVT. LTD. (here in after called the
+                Company). The Company carries goods at Owner's risk. The company
+                books the goods as declared by the consignor/consignee (through
+                document provided), hence the consignor/consignee itself will be
+                responsible for the content and materials in the consignment.
+              </li>
+              <li>
+                The transport Operator that have the right to adjust the goods
+                to any other lorry or service for Transport in the event of the
+                goods being so interested by the Transport Operator to another
+                carrier.
+              </li>
+              <li>
+                The company will send the goods at the earliest opportunity in
+                one lot or In part accordingly to their convenience.
+              </li>
+              <li>
+                The company does not guarantee delivery within any specified
+                time & the company shall not be liable for any delay in
+                transportation delivery not due to any negligence or default of
+                the carrier or his agent or servant.
+              </li>
+              <li>
+                The consignor/consignee shall be primarily liable to pay the
+                transport charges and all other incidental charges if any at the
+                Head Office of the Transport Operator or at any other agreed
+                place.
+              </li>
+            </ol>
+          </td>
+
+          <!-- Column 2 -->
+          <td style="vertical-align: top; padding-right: 10px">
+            <ol start="6" style="margin: 0; padding-left: 16px">
+              <li>
+                The company or their agents shall be exempted from any loss or
+                damage through pilferage, and from the collision or any other
+                road or river hazard or default of the staff/driver/labours or
+                agents of the company.
+              </li>
+              <li>
+                If the Consignor, Consignee or his representative accompanies
+                with goods in vehicle in that case they will be entirely
+                responsible for any loss or damage caused to the said goods in
+                Transit.
+              </li>
+              <li>
+                The company doesn’t book any goods which are duly restricted,
+                banned by the government authorities viz-Highly inflammable,
+                illegal Goods.
+              </li>
+              <li>
+                The transport Operator shall have the right to dispose of goods
+                undelivered after 48 hours of arrival without notice.
+              </li>
+              <li>
+                The Transport Operator shall have the right to dispose of goods
+                after 30 days or arrival and with notice to the consignor, the
+                Consignee Bank and the Interested (including the Bank) at least
+                a minimum of 15 days’ notice of such disposal shall be given.
+              </li>
+            </ol>
+          </td>
+
+          <!-- Column 3 -->
+          <td style="vertical-align: top">
+            <ol start="11" style="margin: 0; padding-left: 16px">
+              <li>
+                Not withstanding any statement made In the Lorry Receipt or any
+                circumstances surrounding the issuance of the Lorry receipt, the
+                Transport Operator disowns & disclaims the obligation to deliver
+                the goods named In the Lorry receipt and Shall be responsible
+                for sale and due delivery, and for loss or damage to the goods
+                or vehicle or goods in air as a result or negligence, default;
+                failure to take responsible precautions, dishonest or fraudulent
+                actions of the Transport Operator or any of its managers,
+                Agents, Employees, Partners, Director or Business associate or
+                Branch.
+              </li>
+              <li>
+                The lorry operator shall have right to entrust the goods to
+                other lorry services or transporter for further transportation
+                or delivery.
+              </li>
+              <li>
+                The consignor/consignee is responsible for all consequences of
+                any incorrect or false declaration.
+              </li>
+              <li>
+                Where the goods have been lost, destroyed, damaged or
+                deteriorated, the compensation payable by the Transport Operator
+                shall not exceed the value declared.
+              </li>
+              <li>
+                The Goods are carried as packed solely at owner’s risk. The
+                company shall not be liable for any loss or damage due to
+                burglary, weather condition, strikes, riots, fire explosion,
+                accident, leakage, breakage, hijacking and road accident,
+                however all the necessary precaution would be taken to avoid
+                such contingency.
+              </li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <h4 style="margin: 0 0 4px 0">DECLARATION BY CONSIGNOR / CONSIGNEE</h4>
+      <p style="font-size: 11px; margin: 0 0 10px 0">
+        I hereby solemnly declare, of the Transport Operator and all concurred
+        that the particulars of the consignment mentioned in the Lorry Receipt
+        are true and correct and correspond to the entries and description as
+        provided in the declaration & as per submission by Consignor/Consignee
+        and other related document in our possession or control.
+      </p>
+
+      <h4 style="margin: 0 0 4px 0">
+        Schedule for Vehicle Demurrage & Detention charges
+      </h4>
+      <ul style="font-size: 11px; margin: 0; padding-left: 16px">
+        <li>
+          <strong>AIR:</strong> Vehicle Halting charges would be applicable
+          after 4 Hrs. as agreed after reporting at Delivery Location
+        </li>
+        <li>
+          <strong>OCEAN:</strong> Vehicle Halting charges would be applicable
+          after 8 Hrs. as agreed after reporting at Delivery Location
+        </li>
+      </ul>
+    </div>
+    </div>
+{{/each}}
+
+  </body>
+</html>

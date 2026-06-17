@@ -1,0 +1,1541 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="alert alert-success alert-styled-right alert-arrow-right alert-dismissible"
+            [ngClass]="{'hidden':Success=='false', 'hidden_true':Success=='True'}">
+            <button type="button" class="close" data-dismiss="alert" (click)="refresh();"><span>×</span></button>
+            <span class="font-weight-semibold">{{successtext}}</span>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs nav-fill" id="pills-tab">
+
+                    <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link active"
+                            id="pills-profile-tab" data-bs-toggle="pill" type="button" data-bs-target="#company">Company
+                            Details</a>
+                    </li>
+                    <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link"
+                            id="pills-contact-tab" data-bs-toggle="pill" type="button" data-bs-target="#Bank">Bank
+                            Details</a>
+                    </li>
+                    <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link"
+                            id="pills-contact-tab" data-bs-toggle="pill" type="button" data-bs-target="#Other">Vehicle
+                            Details</a>
+                    </li>
+                    <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link"
+                            id="pills-contact-tab" data-bs-toggle="pill" type="button" data-bs-target="#driver">Driver
+                            Details</a>
+                    </li>
+                </ul>
+                <br />
+                <div class="tab-content" id="pills-tabContent">
+
+                    <div class="tab-pane fade fade show active" id="company">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <form [formGroup]="companyform" (ngSubmit)="companysubmit()">
+                                                            <h5
+                                                                style="color: #232879; border-bottom: 1px solid #232879;">
+                                                                Basic Information</h5>
+
+
+                                                            <div class="row">
+                                                                <div class="col-lg-12 ms-lg-auto">
+                                                                    <div class="mt-4 mt-lg-0">
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-md-3">
+                                                                                <label>Company Name<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="Company"
+                                                                                    placeholder="Enter Company"
+                                                                                    required>
+                                                                                <div *ngIf="submittedcompany && c['Company'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['Company'].errors['required']">
+                                                                                        <span
+                                                                                            style="color: red;">Company
+                                                                                            Name is required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                         <div class="col-md-3">
+  <label>Company Email<span style="color: red;">*</span></label>
+  <input type="text" class="form-control" formControlName="company_email"
+         placeholder="Enter Email" required>
+
+  <div *ngIf="(submitted || companyform.controls['company_email'].touched) 
+              && companyform.controls['company_email'].errors">
+    <ng-container
+        *ngIf="companyform.controls['company_email'].errors['required']; else invalidOrExists">
+      <span class="validation-error" style="color: red;">Email Id is required</span>
+    </ng-container>
+
+    <ng-template #invalidOrExists>
+      <span *ngIf="companyform.controls['company_email'].errors['invalidEmail']"
+            class="validation-error" style="color: red;">
+        Please enter a correct email id
+      </span>  
+
+      <span *ngIf="companyform.controls['company_email'].errors['emailExists']"
+            class="validation-error" style="color:red;">
+        Email already exists
+      </span> 
+    </ng-template>
+  </div>
+</div>
+                                                                            <div class="col-md-3">
+                                                                                <label>Phone Number<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="company_number"
+                                                                                    placeholder="Enter Phone Number"
+                                                                                    required appNumericOnly>
+                                                                                <div
+                                                                                    *ngIf="(submittedcompany || companyform.controls['company_number'].touched) && companyform.controls['company_number'].errors">
+                                                                                    <ng-container
+                                                                                        *ngIf="companyform.controls['company_number'].errors['required']; else invalidPhoneNumber">
+                                                                                        <span class="validation-error"
+                                                                                            style="color: red;">Phone
+                                                                                            Number is required</span>
+                                                                                    </ng-container>
+                                                                                    <ng-template #invalidPhoneNumber>
+                                                                                        <span
+                                                                                            *ngIf="companyform.controls['company_number'].errors['invalidPhoneNumber']"
+                                                                                            class="validation-error"
+                                                                                            style="color: red;">Please
+                                                                                            enter a correct phone
+                                                                                            number</span>
+                                                                                    </ng-template>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label>Address Line 1<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <textarea class="form-control" rows="1"
+                                                                                    formControlName="off_add"
+                                                                                    required></textarea>
+                                                                                <!-- <input type="text" class="form-control" formControlName="off_add" placeholder="Enter Office Address & Visit " required> -->
+                                                                                <div *ngIf="submittedcompany && c['off_add'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['off_add'].errors['required']">
+                                                                                        <span style="color: red;">Office
+                                                                                            Address is required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-md-3">
+                                                                                <label>Address Line 2</label>
+                                                                                <textarea class="form-control" rows="1"
+                                                                                    formControlName="off_add1"></textarea>
+                                                                                <!-- <input type="text" class="form-control" formControlName="off_add1" placeholder="Enter Office Address & Visit "> -->
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <label>City<span style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="city"
+                                                                                    placeholder="Enter City" required>
+                                                                                <div *ngIf="submittedcompany && c['city'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['city'].errors['required']">
+                                                                                        <span style="color: red;">City
+                                                                                            is required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <label>State<span style="color: red;">
+                                                                                        *</span></label>
+                                                                                <select class="form-control"
+                                                                                    formControlName="state"
+                                                                                    data-live-search="true">
+                                                                                    <option value="" selected disabled>
+                                                                                        --Select--
+                                                                                    </option>
+                                                                                    <option
+                                                                                        *ngFor="let summary of statedata"
+                                                                                        value={{summary.state_id}}
+                                                                                        selected="summary.state_id == summary.state_id">
+                                                                                        {{summary.state_name}}
+                                                                                    </option>
+                                                                                </select>
+
+                                                                                <div *ngIf="submittedcompany && c['state'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['state'].errors['required']">
+                                                                                        <span style="color: red;">State
+                                                                                            is required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <label>Country<span style="color: red;">
+                                                                                        *</span></label>
+                                                                                <select class="form-control"
+                                                                                    formControlName="country"
+                                                                                    data-live-search="true">
+                                                                                    <option value="" selected disabled>
+                                                                                        --Select--
+                                                                                    </option>
+                                                                                    <option
+                                                                                        *ngFor="let summary of countrydata"
+                                                                                        value={{summary.CountryId}}
+                                                                                        selected="summary.CountryId == summary.CountryId">
+                                                                                        {{summary.Country_name}}
+                                                                                    </option>
+                                                                                </select>
+                                                                                <div *ngIf="submittedcompany && c['country'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['country'].errors['required']">
+                                                                                        <span
+                                                                                            style="color: red;">Country
+                                                                                            is required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label>Postal / Zip Code<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="postal"
+                                                                                    placeholder="Enter Postal / Zip Code "
+                                                                                    required>
+                                                                                <div *ngIf="submitted && c['postal'].errors"
+                                                                                    class="validation-invalid-label">
+                                                                                    <div
+                                                                                        *ngIf="c['postal'].errors['required']">
+                                                                                        <span style="color: red;">Postal
+                                                                                            / Zip Code is
+                                                                                            required</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h5
+                                                                            style="color: #232879; border-bottom: 1px solid #232879;">
+                                                                            Document Details</h5>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-md-2">
+                                                                                <label>GST Details<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <div>
+                                                                                    <input type="radio" id="gstYes"
+                                                                                        name="gstOption" value="yes"
+                                                                                        formControlName="gstOption">
+                                                                                    <label for="gstYes"
+                                                                                        class="me-3">Yes</label>
+
+                                                                                    <input type="radio" id="gstNo"
+                                                                                        name="gstOption" value="no"
+                                                                                        formControlName="gstOption">
+                                                                                    <label for="gstNo"
+                                                                                        class="me-3">No</label>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <div class="col-md-3">
+                                                                                <label>GST Number<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="gst_number"
+                                                                                    placeholder="Enter GST Number"
+                                                                                    required appUppercase
+                                                                                    style="text-transform: uppercase;">
+                                                                                <div
+                                                                                    *ngIf="(submitted || companyform.controls['gst_number'].touched) && companyform.controls['gst_number'].errors">
+                                                                                    <ng-container
+                                                                                        *ngIf="companyform.controls['gst_number'].errors['required']; else invalidGst">
+                                                                                        <span class="validation-error"
+                                                                                            style="color: red;">GST
+                                                                                            Number is required</span>
+                                                                                    </ng-container>
+                                                                                    <ng-template #invalidGst>
+                                                                                        <span
+                                                                                            *ngIf="companyform.controls['gst_number'].errors['invalidGst']"
+                                                                                            class="validation-error"
+                                                                                            style="color: red;">Invalid
+                                                                                            GST Number</span>
+                                                                                    </ng-template>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <label>GST Certificate<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <br>
+                                                                                <input type="file" class="form-control"
+                                                                                    formControlName="gst_files"
+                                                                                    (change)="gstFile($event)">
+
+                                                                                <div class="py-2" *ngIf="gst_up!=null">
+                                                                                    <a href="{{gst_up}}" target="_blank"
+                                                                                        class="font-weight-medium">View</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-3">
+                                                                                <label>PAN Number<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="pan_number"
+                                                                                    placeholder="Enter PAN Number"
+                                                                                    required appUppercase
+                                                                                    style="text-transform: uppercase;">
+                                                                                <div
+                                                                                    *ngIf="(submitted || companyform.controls['pan_number'].touched) && companyform.controls['pan_number'].errors">
+                                                                                    <ng-container
+                                                                                        *ngIf="companyform.controls['pan_number'].errors['required']; else invalidPan">
+                                                                                        <span class="validation-error"
+                                                                                            style="color: red;">PAN
+                                                                                            Number is required</span>
+                                                                                    </ng-container>
+                                                                                    <ng-template #invalidPan>
+                                                                                        <span
+                                                                                            *ngIf="companyform.controls['pan_number'].errors['invalidPan']"
+                                                                                            class="validation-error"
+                                                                                            style="color: red;">Invalid
+                                                                                            PAN Number</span>
+                                                                                    </ng-template>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <label>PAN Card<span
+                                                                                        style="color: red;">
+                                                                                        *</span></label>
+                                                                                <input type="file" class="form-control"
+                                                                                    formControlName="pan_files"
+                                                                                    (change)="panFile($event)">
+
+                                                                                <div class="py-2" *ngIf="pan_up!=null">
+                                                                                    <a href="{{pan_up}}" target="_blank"
+                                                                                        class="font-weight-medium">View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+
+                                                                            <div class="col-md-3">
+                                                                                <label>SME/MSME</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="sem_msem"
+                                                                                    placeholder="Enter SEM OR MSME "
+                                                                                    appUppercase
+                                                                                    style="text-transform: uppercase;">
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label>SME/MSME</label>
+                                                                                <br>
+                                                                                <input type="file" class="form-control"
+                                                                                    formControlName="sme_files"
+                                                                                    (change)="smeFile($event)">
+                                                                                <div class="py-2" *ngIf="sme_up!=null">
+                                                                                    <a href="{{sme_up}}" target="_blank"
+                                                                                        class="font-weight-medium">View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label>TIN/TAN</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="tin_number"
+                                                                                    placeholder="Enter TIN OR TAN Number"
+                                                                                    appUppercase
+                                                                                    style="text-transform: uppercase;">
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label>TIN /TAN</label>
+                                                                                <input type="file" class="form-control"
+                                                                                    formControlName="tin_files"
+                                                                                    (change)="tanFile($event)">
+                                                                                <div class="py-2" *ngIf="tin_up!=null">
+                                                                                    <a href="{{tin_up}}" target="_blank"
+                                                                                        class="font-weight-medium">View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-4">
+                                                                        <div class="col-md-3">
+                                                                            <label>ROC</label>
+                                                                            <input type="file" class="form-control"
+                                                                                formControlName="rocs"
+                                                                                (change)="rocFile($event)">
+                                                                            <div class="py-2" *ngIf="roc_up!=null">
+                                                                                <a href="{{roc_up}}" target="_blank"
+                                                                                    class="font-weight-medium">View</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label>Others</label>
+                                                                            <input type="file" class="form-control"
+                                                                                formControlName="others_file"
+                                                                                (change)="otherFile($event)">
+                                                                            <div class="py-2" *ngIf="other_up!=null">
+                                                                                <a href="{{other_up}}" target="_blank"
+                                                                                    class="font-weight-medium">View</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label>Status<span style="color: red;">
+                                                                                    *</span></label>
+                                                                            <br>
+                                                                            <select class="form-control"
+                                                                                formControlName="companystatus"
+                                                                                data-live-search="true">
+                                                                                <option value="" selected disabled>
+                                                                                    --Select--
+                                                                                </option>
+                                                                                <option value="1">Active</option>
+                                                                                <option value="0">Inactive</option>
+                                                                            </select>
+                                                                            <div *ngIf="submitted && c['companystatus'].errors"
+                                                                                class="validation-invalid-label">
+                                                                                <div
+                                                                                    *ngIf="c['companystatus'].errors['required']">
+                                                                                    <span style="color: red;">Status is
+                                                                                        required</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3"
+                                                                            *ngIf="companyform.get('companystatus')?.value === '0'">
+                                                                            <label>Description</label>
+                                                                            <br>
+                                                                            <textarea class="form-control" rows="1"
+                                                                                formControlName="description"></textarea>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row justify-content-end text-end">
+                                                                        <div class="col-sm-9">
+                                                                            <div>
+                                                                                <a id="btncolors"
+                                                                                    routerLink="/VendorDetails"
+                                                                                    class="btn btn-primary w-md"><i
+                                                                                        class=" bx bx-arrow-back"
+                                                                                        aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                                                                <button id="btncolors"
+                                                                                    *ngIf="views != 0 && (companyform.get('companystatus')?.value === '1' || companyform.get('description')?.value)"
+                                                                                    class="btn btn-primary w-md"
+                                                                                    type="submit"><i
+                                                                                        class='bx bxs-navigation'></i>&nbsp;{{buttontext}}</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-arrow">
+                                        <div class="card-arrow-top-left"></div>
+                                        <div class="card-arrow-top-right"></div>
+                                        <div class="card-arrow-bottom-left"></div>
+                                        <div class="card-arrow-bottom-right"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Bank">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10"></div>
+                                        <div class="col-2">
+                                            <a type="button" id="btncolors" data-bs-toggle="modal"
+                                                data-bs-target="#Agency" class="btn btn-primary" (click)="reset();"><i
+                                                    class="fa fa-plus"></i>&nbsp;Create</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-bodys">
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                    <div id="datatable-buttons-pending"
+                                                        class="d-flex align-items-center gap-2">
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="me-1">From</label>
+                                                        <input type="date" class="form-control form-control-sm"
+                                                            [(ngModel)]="fromDatePending" style="width:200px;" />
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="me-1">To</label>
+                                                        <input type="date" class="form-control form-control-sm"
+                                                            [(ngModel)]="toDatePending" style="width:200px;" />
+                                                    </div>
+
+                                                    <div class="left-search" style="margin-top:-5px;"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="m-3 p-3 pending-wrapper">
+                                            <table
+                                                class="table table-striped table-bordered nowrap datatablegrid pending"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                                <thead>
+                                                    <tr>
+                                                        <th id="colors">Bank Code</th>
+                                                        <th id="colors">Name</th>
+                                                        <th id="colors">Account Number</th>
+                                                        <th id="colors">Bank Name</th>
+                                                        <th id="colors">Branch</th>
+                                                        <th id="colors">Status</th>
+                                                        <th id="colors">Comments</th>
+                                                        <th id="colors">View</th>
+                                                        <th *ngIf="views != 0" id="colors">Update</th>
+                                                        <th *ngIf="views != 0" id="colors">Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let bird of bankdata">
+                                                        <td>{{bird.bankcode}}{{bird.BD_key}}</td>
+                                                        <td>{{bird.AccountHolderName}}</td>
+                                                        <td>{{bird.BankAccountNumber}}</td>
+                                                        <td>{{bird.BankName}}</td>
+                                                        <td>{{bird.Branch}}</td>
+                                                        <td><span id="statusdesign"
+                                                                class="{{bird.spancolur1}}">{{bird.statusname1}}</span>
+                                                        </td>
+                                                        <td>{{bird.description}}</td>
+                                                        <td><a type="button" id="statusdesign" class="badge badge-info"
+                                                                data-bs-toggle="modal" data-bs-target="#Agency"
+                                                                (click)="viewsb(bird.BD_key)"><i
+                                                                    class="mdi mdi-eye d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#Agency"
+                                                                (click)="Assignvaluebank(bird.BD_key)"><i
+                                                                    class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#Delete"
+                                                                (click)="Deleterole(bird.BD_key)"><i
+                                                                    class="mdi mdi-trash-can d-block font-size-16"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Primary modal -->
+                                <div id="Agency" class="modal fade" tabindex="-1" aria-labelledby="AgencyLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header " id="colors">
+                                                <h6 class="modal-title" style="color: white;" id="AgencyLabel">Create
+                                                    Bank Details</h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close" style="filter: invert(1);"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-warning alert-dismissible fade"
+                                                    [ngClass]="{'hidden':error=='false', 'hidden_true':error=='True'}">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                    <span class="font-weight-semibold">{{ errortext }}</span>
+                                                </div>
+                                                <form [formGroup]="bankform" (ngSubmit)="banksubmit()">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <!-- <div class="row mb-4"> -->
+                                                            <div class="form-group">
+                                                                <label>Account Holder Name <span
+                                                                        style="color: red;">*</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="holder_name"
+                                                                    placeholder="Enter Account Holder Name">
+                                                                <div *ngIf="submittedbank && bankform.get('holder_name')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('holder_name')?.errors?.['required']">
+                                                                        <span style="color: red;">Account Holder Name is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Name Of The Bank<span
+                                                                        style="color: red;">*</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="bank_name"
+                                                                    placeholder="Enter Bank Name">
+                                                                <div *ngIf="submittedbank && bankform.get('bank_name')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('bank_name')?.errors?.['required']">
+                                                                        <span style="color: red;">Bank Name is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>IFSC Code<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="ifsc_code"
+                                                                    placeholder="Enter IFSC Code"
+                                                                    style="text-transform: uppercase;">
+                                                                <div *ngIf="submittedbank && bankform.get('ifsc_code')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('ifsc_code')?.errors?.['required']">
+                                                                        <span style="color: red;">IFSC Code is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>E-Docs</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="bank_sta"
+                                                                    (change)="bankSta($event)">
+                                                                <div class="py-2" *ngIf="bank_up!=null">
+                                                                    <a href="{{bank_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Account Number<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="bank_account"
+                                                                    placeholder="Enter Bank Account Number"
+                                                                    appNumericOnly>
+                                                                <div *ngIf="submittedbank && bankform.get('bank_account')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('bank_account')?.errors?.['required']">
+                                                                        <span style="color: red;">Bank Account Number is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Branch<span style="color: red;"> *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="branch" placeholder="Enter Branch">
+                                                                <div *ngIf="submittedbank && bankform.get('branch')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('branch')?.errors?.['required']">
+                                                                        <span style="color: red;">Branch is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Bank Address</label>
+                                                                <textarea class="form-control"
+                                                                    formControlName="bank_add" rows="1"></textarea>
+                                                                <!-- <input type="text" class="form-control" formControlName="bank_add" placeholder="Enter Bank Address"> -->
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Status<span style="color: red;"> *</span></label>
+                                                                <br>
+                                                                <select class="form-control" formControlName="status"
+                                                                    data-live-search="true">
+                                                                    <option value="" selected disabled>
+                                                                        --Select--
+                                                                    </option>
+                                                                    <option value="1">Active</option>
+                                                                    <option value="0">Inactive</option>
+                                                                </select>
+                                                                <div *ngIf="submittedbank && bankform.get('status')?.errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="bankform.get('status')?.errors?.['required']">
+                                                                        <span style="color: red;">Status is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group"
+                                                            *ngIf="bankform.get('status')?.value === '0'">
+                                                            <label>Description</label>
+                                                            <br>
+                                                            <textarea class="form-control" rows="1"
+                                                                formControlName="bankdes"></textarea>
+                                                        </div>
+                                                        <div class="row justify-content-end text-end">
+                                                            <div class="col-sm-9">
+                                                                <div>
+
+                                                                    <a id="btncolors" class="btn btn-primary w-md"
+                                                                        (click)="closeback();">
+                                                                        <i class="bx bx-arrow-back"
+                                                                            aria-hidden="true"></i>&nbsp;Back
+                                                                    </a>&nbsp;
+                                                                    <button id="btncolors"
+                                                                        *ngIf="views != 0 && 
+                                                                    (bankform.get('status')?.value === '1' || 
+                                                                    (bankform.get('status')?.value === '0' && bankform.get('bankdes')?.value)) "
+                                                                        class="btn btn-primary w-md" type="submit">
+                                                                        <i
+                                                                            class='bx bxs-navigation'></i>&nbsp;{{buttontext}}
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="Delete" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h6 class="modal-title">Confirm delete</h6>
+                                                <button type="button" class="close"
+                                                    (click)="closebank();">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                    style="display: flex;"></div>
+                                                <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                    delete this item?</p>
+                                            </div>
+                                            <div class="modal-footer d-flex align-content-center">
+                                                <button type="button" class="btn btn-danger" (click)="deletebank()"
+                                                    data-dismiss="modal">Yes Delete it</button>
+                                                <button type="button" class="btn btn-default"
+                                                    (click)="cancelbank();">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Other">
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10"></div>
+                                        <div class="col-2">
+                                            <a type="button" id="btncolors" data-bs-toggle="modal"
+                                                data-bs-target="#vehicleopp" class="btn btn-primary"
+                                                (click)="resetvehicle();"><i class="fa fa-plus"></i>&nbsp;Create</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-bodys">
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                    <div id="datatable-buttons-completed"
+                                                        class="d-flex align-items-center gap-2">
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="me-1">From</label>
+                                                        <input type="date" class="form-control form-control-sm"
+                                                            [(ngModel)]="fromDateCompleted" style="width:200px;" />
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="me-1">To</label>
+                                                        <input type="date" class="form-control form-control-sm"
+                                                            [(ngModel)]="toDateCompleted" style="width:200px;" />
+                                                    </div>
+
+                                                    <div class="left-search-completed" style="margin-top:-5px;">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class=" m-3 p-3 completed-wrapper">
+                                            <table
+                                                class="table table-striped table-bordered nowrap datatablegrid completed"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th id="colors">Vehicle Code</th>
+                                                        <th id="colors">Type of Containers</th>
+                                                        <th id="colors">Vehicle Number</th>
+                                                        <th id="colors">RC Number</th>
+                                                        <th id="colors">Status</th>
+                                                        <th id="colors">Comments</th>
+                                                        <th id="colors">View</th>
+                                                        <th class="noExport" *ngIf="views != 0" id="colors">Update</th>
+                                                        <th class="noExport" *ngIf="views != 0" id="colors">Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let bird of filteredDataCompleted">
+                                                        <td style="text-transform: uppercase;">
+                                                            {{bird.vehiclecode}}{{bird.VD_key}}</td>
+                                                        <td>{{bird.generalType}}</td>
+                                                        <td style="text-transform: uppercase;">{{bird.VehicleNumber}}
+                                                        </td>
+                                                        <td style="text-transform: uppercase;">{{bird.RcNumber}}</td>
+                                                        <td><span id="statusdesign"
+                                                                class="{{bird.spancolur1}}">{{bird.statusname1}}</span>
+                                                        </td>
+                                                        <td>{{bird.vehides}}</td>
+                                                        <td><a type="button" id="statusdesign" class="badge badge-info"
+                                                                data-bs-toggle="modal" data-bs-target="#vehicleopp"
+                                                                (click)="viewsVehicle(bird.VD_key)"><i
+                                                                    class="mdi mdi-eye d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#vehicleopp"
+                                                                (click)="Assignvaluevehicle(bird.VD_key)"><i
+                                                                    class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#vehicleDelete"
+                                                                (click)="Deleterolevehicle(bird.VD_key)"><i
+                                                                    class="mdi mdi-trash-can d-block font-size-16"></i></a>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <h5>Additional Vehicle Information</h5>
+                                <br>
+
+                                <div class="card-bodys">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                                            <div id="datatable-buttons-inprogress"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center">
+                                                <label class="me-1">From</label>
+                                                <input type="date" class="form-control form-control-sm"
+                                                    [(ngModel)]="fromDateInprogress" style="width:200px;" />
+                                            </div>
+
+                                            <div class="d-flex align-items-center">
+                                                <label class="me-1">To</label>
+                                                <input type="date" class="form-control form-control-sm"
+                                                    [(ngModel)]="toDateInprogress" style="width:200px;" />
+                                            </div>
+
+                                            <div class="left-search-inprogress" style="margin-top:-5px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" m-3 p-3 inprogress-wrapper">
+                                        <table class="table table-striped table-bordered nowrap datatablegrid"
+                                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th id="colors">Vehicle Code</th>
+                                                    <th id="colors">Type of Containers</th>
+                                                    <th id="colors">Vehicle Number</th>
+                                                    <th id="colors">RC Number</th>
+                                                    <th id="colors">Status</th>
+                                                    <th id="colors">Comments</th>
+                                                    <th id="colors">View</th>
+                                                    <th *ngIf="views != 0" class="noExport" id="colors">Update</th>
+                                                    <th *ngIf="views != 0" class="noExport" id="colors">Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let bird of exportfilteredData">
+                                                    <td style="text-transform: uppercase;">
+                                                        {{bird.vehiclecode}}{{bird.VD_key}}</td>
+                                                    <td>{{bird.generalType}}</td>
+                                                    <td style="text-transform: uppercase;">{{bird.VehicleNumber}}</td>
+                                                    <td style="text-transform: uppercase;">{{bird.RcNumber}}</td>
+                                                    <td><span id="statusdesign"
+                                                            class="{{bird.spancolur1}}">{{bird.statusname1}}</span></td>
+                                                    <td>{{bird.vehides}}</td>
+                                                    <td><a type="button" id="statusdesign" class="badge badge-info"
+                                                            data-bs-toggle="modal" data-bs-target="#vehicleopp"
+                                                            (click)="viewsVehicle(bird.VD_key)"><i
+                                                                class="mdi mdi-eye d-block font-size-16px"></i></a></td>
+                                                    <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                            class="badge badge-primary" data-bs-toggle="modal"
+                                                            data-bs-target="#vehicleopp"
+                                                            (click)="Assignvaluevehicle(bird.VD_key)"><i
+                                                                class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                    </td>
+                                                    <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                            class="badge badge-danger" data-bs-toggle="modal"
+                                                            data-bs-target="#vehicleDelete"
+                                                            (click)="Deleterolevehicle(bird.VD_key)"><i
+                                                                class="mdi mdi-trash-can d-block font-size-16"></i></a>
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- Primary modal -->
+                                <div id="vehicleopp" class="modal fade" tabindex="-1" aria-labelledby="VehileLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" id="colors">
+                                                <h6 class="modal-title" style="color: white;" id="VehileLabel">Create
+                                                    Vehicle Details</h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close" style="filter: invert(1);"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-warning alert-dismissible fade"
+                                                    [ngClass]="{'hidden':error=='false', 'hidden_true':error=='True'}">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                    <span class="font-weight-semibold">{{ errortext }}</span>
+                                                </div>
+                                                <form [formGroup]="vehicleform" (ngSubmit)="vehiclesubmit()">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Vehicle Type<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <select class="form-control"
+                                                                    formControlName="own_addition"
+                                                                    data-live-search="true">
+                                                                    <option value="" selected disabled>
+                                                                        --Select--
+                                                                    </option>
+                                                                    <option value="0">Own Vehicle</option>
+                                                                    <option value="1">Additional Vehicle</option>
+
+                                                                </select>
+                                                                <div *ngIf="submitted && v['own_addition'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="v['own_addition'].errors['required']">
+                                                                        <span style="color: red;">Own Or Additional
+                                                                            Vehicle is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>RC Number<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="rc_num"
+                                                                    placeholder="Enter RC Number "
+                                                                    style="text-transform: uppercase;">
+                                                                <div *ngIf="submitted && v['rc_num'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="v['rc_num'].errors['required']"><span
+                                                                            style="color: red;">RC Number is
+                                                                            required</span></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Pollution Certificate No<span
+                                                                        style="color: red;"> *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="Poll_certificate"
+                                                                    placeholder="Enter Vehicle Pollution Certificate Number"
+                                                                    style="text-transform: uppercase;">
+                                                                <div *ngIf="submitted && v['Poll_certificate'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="v['Poll_certificate'].errors['required']">
+                                                                        <span style="color: red;">Pollution Certificate
+                                                                            Number is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Insurance Company Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="insurancecompanyname"
+                                                                    placeholder="Enter Insurance Company Name "
+                                                                    style="text-transform: uppercase;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Attached Truck Details</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="truck_file"
+                                                                    (change)="truckFile($event)">
+                                                                <div class="py-2" *ngIf="atr_up!=null">
+                                                                    <a href="{{atr_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Container Type<span style="color: red;">
+                                                                        *</span></label>
+                                                                <ngx-select-dropdown
+                                                                    class="form-control custom-dropdown"
+                                                                    [config]="dropdownConfig"
+                                                                    [options]="containertypedata"
+                                                                    formControlName="type_of">
+                                                                </ngx-select-dropdown>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>RC<span style="color: red;"> *</span></label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="rc_files"
+                                                                    (change)="rcFile($event)">
+                                                                <div class="py-2" *ngIf="rc_up!=null">
+                                                                    <a href="{{rc_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Pollution Expiry Date<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="polluctionexpiry">
+                                                                <div *ngIf="alerts['polluctionexpiry']"
+                                                                    class="alert alert-danger">
+                                                                    {{ alerts['polluctionexpiry'] }}!
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Insurance Number</label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="insurancenumber"
+                                                                    placeholder="Enter Insurance Company Name "
+                                                                    style="text-transform: uppercase;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Status<span style="color: red;"> *</span></label>
+                                                                <br>
+                                                                <select class="form-control" formControlName="vstatus"
+                                                                    data-live-search="true">
+                                                                    <option value="" selected disabled>
+                                                                        --Select--
+                                                                    </option>
+                                                                    <option value="1">Active</option>
+                                                                    <option value="0">Inactive</option>
+                                                                </select>
+                                                                <div *ngIf="submitted && v['vstatus'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="v['vstatus'].errors['required']"><span
+                                                                            style="color: red;">status is
+                                                                            required</span></div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Vehicle Number<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="vehicle_num"
+                                                                    placeholder="Enter Vehicle Number " required
+                                                                    style="text-transform: uppercase;">
+                                                                <div *ngIf="submitted && v['vehicle_num'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="v['vehicle_num'].errors['required']">
+                                                                        <span style="color: red;">Vehicle Number is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Permit Validity</label>
+                                                                <input type="date" formControlName="permit_date"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Pollution</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="poll_file"
+                                                                    (change)="pollFile($event)">
+                                                                <div class="py-2" *ngIf="pol_up!=null">
+                                                                    <a href="{{pol_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Insurance Expiry Date<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="insurance_ex">
+                                                                <div *ngIf="submitted && vehicleform.get('insurance_ex')?.errors?.['required']"
+                                                                    class="validation-invalid-label">
+                                                                    <span style="color: red;">Insurance Expiry Date is
+                                                                        required</span>
+                                                                </div>
+                                                                <div *ngIf="alerts['insurance_ex']"
+                                                                    class="alert alert-danger">
+                                                                    {{ alerts['insurance_ex'] }}!
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group"
+                                                                *ngIf="vehicleform.get('vstatus')?.value === '0'">
+                                                                <label>Description</label>
+                                                                <br>
+                                                                <textarea class="form-control" rows="1"
+                                                                    formControlName="vehides"></textarea>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Road Tax Expiry Date<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="road_tax">
+                                                                <div *ngIf="submitted && vehicleform.get('road_tax')?.errors?.['required']"
+                                                                    class="validation-invalid-label">
+                                                                    <span style="color: red;">Road Tax Expiry Date is
+                                                                        required</span>
+                                                                </div>
+                                                                <div *ngIf="alerts['road_tax']"
+                                                                    class="alert alert-danger">
+                                                                    {{ alerts['road_tax'] }}!
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>FC Expiry Date<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="fcexpirydate">
+                                                                <div *ngIf="submitted && vehicleform.get('fcexpirydate')?.errors?.['required']"
+                                                                    class="validation-invalid-label">
+                                                                    <span style="color: red;">FC Expiry Date is
+                                                                        required</span>
+                                                                </div>
+                                                                <div *ngIf="alerts['fcexpirydate']"
+                                                                    class="alert alert-danger">
+                                                                    {{ alerts['fcexpirydate'] }}
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="form-group">
+                                                                <label>Year of Manufacture<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="year_vehicle">
+                                                                <div *ngIf="submitted && v['year_vehicle'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="v['year_vehicle'].errors['required']">
+                                                                        <span style="color: red;">Year of Manufacture is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Insurance</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="insurance_file"
+                                                                    (change)="insuFile($event)">
+                                                                <div class="py-2" *ngIf="ins_up!=null">
+                                                                    <a href="{{ins_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row justify-content-end text-end">
+                                                            <div class="col-sm-9">
+                                                                <div>
+                                                                    <a id="btncolors" routerLink="/VendorCreation"
+                                                                        class="btn btn-primary w-md"
+                                                                        (click)="vehiclclics()"><i
+                                                                            class=" bx bx-arrow-back"
+                                                                            aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                                                    <button id="btncolors"
+                                                                        *ngIf="views != 0  && 
+                                                                    (vehicleform.get('vstatus')?.value === '1' || 
+                                                                    (vehicleform.get('vstatus')?.value === '0' && vehicleform.get('vehides')?.value))"
+                                                                        class="btn btn-primary w-md" type="submit"><i
+                                                                            class='bx bxs-navigation'></i>&nbsp;{{buttontext}}</button>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="vehicleDelete" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h6 class="modal-title">Confirm delete</h6>
+                                                <button type="button" class="close" (click)="close();">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                    style="display: flex;"></div>
+                                                <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                    delete this item?</p>
+                                            </div>
+                                            <div class="modal-footer d-flex align-content-center">
+                                                <button type="button" class="btn btn-danger" (click)="deletevehicle()"
+                                                    data-dismiss="modal">Yes Delete it</button>
+                                                <button type="button" class="btn btn-default"
+                                                    (click)="cancel();">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="driver">
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10"></div>
+                                        <div class="col-2">
+                                            <a type="button" id="btncolors" data-bs-toggle="modal"
+                                                data-bs-target="#Driverop" class="btn btn-primary"
+                                                (click)="resetdriver();"><i class="fa fa-plus"></i>&nbsp;Create</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-bodys">
+                                        <div class="col-md-12">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <div id="datatable-buttons-cancelled"
+                                                    class="d-flex align-items-center gap-2"></div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <label class="me-1">From</label>
+                                                    <input type="date" class="form-control form-control-sm"
+                                                        [(ngModel)]="fromDateCancelled" style="width:200px;" />
+                                                </div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <label class="me-1">To</label>
+                                                    <input type="date" class="form-control form-control-sm"
+                                                        [(ngModel)]="toDateCancelled" style="width:200px;" />
+                                                </div>
+
+                                                <div class="left-search-cancelled" style="margin-top:-5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" m-3 p-3 cancelled-wrapper">
+                                            <table class="table table-striped table-bordered nowrap datatablegrid"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th id="colors">Driver Code</th>
+                                                        <th id="colors">Driver Name</th>
+                                                        <th id="colors">Driver Phone Number</th>
+                                                        <th id="colors">Driving Licence Number</th>
+                                                        <th id="colors">Licence Expired Date</th>
+                                                        <th id="colors">Status</th>
+                                                        <th id="colors">Comments</th>
+                                                        <th id="colors">View</th>
+                                                        <th *ngIf="views != 0" class="noExport" id="colors">Update</th>
+                                                        <th *ngIf="views != 0" class="noExport" id="colors">Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let bird of exportfilteredDataCompleted">
+                                                        <td style="text-transform: uppercase;">
+                                                            {{bird.Drivercode}}{{bird.DD_key}}</td>
+                                                        <td>{{bird.DriverName}}</td>
+                                                        <td>{{bird.DriverPhoneNumber}}</td>
+                                                        <td style="text-transform: uppercase;">
+                                                            {{bird.DrivingLicenceNumber}}
+                                                        </td>
+                                                        <td>{{bird.DrivingLicenseExpiredDate}}</td>
+                                                        <td><span id="statusdesign"
+                                                                class="{{bird.spancolur1}}">{{bird.statusname1}}</span>
+                                                        </td>
+                                                        <td>{{bird.description}}</td>
+                                                        <td><a type="button" id="statusdesign" class="badge badge-info"
+                                                                data-bs-toggle="modal" data-bs-target="#Driverop"
+                                                                (click)="viewsDri(bird.DD_key)"><i
+                                                                    class="mdi mdi-eye d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#Driverop"
+                                                                (click)="Assignvaluedriver(bird.DD_key)"><i
+                                                                    class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                        </td>
+                                                        <td *ngIf="views != 0"><a type="button" id="statusdesign"
+                                                                class="badge badge-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#Deleterop"
+                                                                (click)="Deleteroledriver(bird.DD_key)"><i
+                                                                    class="mdi mdi-trash-can d-block font-size-16"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="Driverop" class="modal fade" tabindex="-1" aria-labelledby="AgencyLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="colors">
+                                                <h6 class="modal-title" style="color: white;" id="AgencyLabel">Create
+                                                    Driver Details</h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close" style="filter: invert(1);"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-warning alert-dismissible fade"
+                                                    [ngClass]="{'hidden':error=='false', 'hidden_true':error=='True'}">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                    <span class="font-weight-semibold">{{ errortext }}</span>
+                                                </div>
+                                                <form [formGroup]="driverform" (ngSubmit)="driversubmit()">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <!-- <div class="row mb-4"> -->
+                                                            <div class="form-group">
+                                                                <label>Driver Name<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="dri_name"
+                                                                    placeholder="Enter Driver Name" required>
+                                                                <div *ngIf="submitteddriv && d['dri_name'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="d['dri_name'].errors['required']"><span
+                                                                            style="color: red;">Driver Name is
+                                                                            required</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Identification Number</label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="aadhar_num"
+                                                                    placeholder="Enter Identification No"
+                                                                    style="text-transform: uppercase;">
+
+                                                            </div>
+
+
+                                                            <div class="form-group">
+                                                                <label>Driving Licence Expired Date<span
+                                                                        style="color: red;"> *</span></label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="expired_date"
+                                                                    placeholder="Enter Driving Licence Expired Date"
+                                                                    required>
+                                                                <div *ngIf="submitteddriv && d['expired_date'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="d['expired_date'].errors['required']">
+                                                                        <span style="color: red;">Driving Licence
+                                                                            Expired Date is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Status<span style="color: red;"> *</span></label>
+                                                                <br>
+                                                                <select class="form-control" formControlName="status"
+                                                                    data-live-search="true">
+                                                                    <option value="" selected disabled>
+                                                                        --Select--
+                                                                    </option>
+                                                                    <option value="1">Active</option>
+                                                                    <option value="0">Inactive</option>
+                                                                </select>
+                                                                <div *ngIf="submitted && d['status'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="d['status'].errors['required']"><span
+                                                                            style="color: red;">Status is
+                                                                            required</span></div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Driver Phone Number<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="dri_number"
+                                                                    placeholder="Enter Driver Phone No" required
+                                                                    appNumericOnly>
+                                                                <div *ngIf="submitteddriv && d['dri_number'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="d['dri_number'].errors['required']">
+                                                                        <span style="color: red;">Driver Phone No is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Driving Licence Number<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="licencenum"
+                                                                    placeholder="Enter Driving Licence No" required
+                                                                    style="text-transform: uppercase;">
+                                                                <div *ngIf="submitteddriv && d['licencenum'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="d['licencenum'].errors['required']">
+                                                                        <span style="color: red;">Driving Licence Number
+                                                                            is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Driving Licence</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="dr_upload"
+                                                                    (change)="drUpload($event)">
+
+                                                                <div class="py-2" *ngIf="drl_up!=null">
+                                                                    <a href="{{drl_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group"
+                                                                *ngIf="driverform.get('status')?.value === '0'">
+                                                                <label>Description</label>
+                                                                <br>
+                                                                <textarea class="form-control" rows="1"
+                                                                    formControlName="drivdes"></textarea>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="row justify-content-end text-end">
+                                                            <div class="col-sm-9">
+                                                                <div>
+                                                                    <a id="btncolors" class="btn btn-primary w-md"
+                                                                        (click)="drivess()">
+                                                                        <i class="bx bx-arrow-back"
+                                                                            aria-hidden="true"></i>&nbsp;Back
+                                                                    </a>&nbsp;
+                                                                    <button id="btncolors"
+                                                                        *ngIf="views != 0  && 
+                                                                    (driverform.get('status')?.value === '1' || 
+                                                                    (driverform.get('status')?.value === '0' && driverform.get('drivdes')?.value))"
+                                                                        class="btn btn-primary w-md" type="submit">
+                                                                        <i
+                                                                            class='bx bxs-navigation'></i>&nbsp;{{buttontext}}
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="Deleterop" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h6 class="modal-title">Confirm delete</h6>
+                                                <button type="button" class="close"
+                                                    (click)="closedriv();">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                    style="display: flex;"></div>
+                                                <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                    delete this item?</p>
+                                            </div>
+                                            <div class="modal-footer d-flex align-content-center">
+                                                <button type="button" class="btn btn-danger" (click)="deletedriver()"
+                                                    data-dismiss="modal">Yes Delete it</button>
+                                                <button type="button" class="btn btn-default"
+                                                    (click)="canceldriv();">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-arrow">
+                <div class="card-arrow-top-left"></div>
+                <div class="card-arrow-top-right"></div>
+                <div class="card-arrow-bottom-left"></div>
+                <div class="card-arrow-bottom-right"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" id="colors" >
+                    <h6 class="modal-title text-white">Add CFS details</h6>
+                </div>
+
+                <div class="modal-body">
+                    <form [formGroup]="Cfsform">
+                        <div class="row">
+                           
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="cfs">ADD CFS<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" formControlName="cfs" placeholder="Enter Location" >
+                                    <div *ngIf="submitted && f['cfs'].errors" class="validation-invalid-label">
+                                        <div *ngIf="f['cfs'].errors['required']"><span style="color: red;">CFS is required</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <a  id="btncolors" class="btn btn-primary w-md" routerLink="/Dashboard">
+                                <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                            </a>&nbsp;
+                            <button id="btncolors"  class="btn btn-primary w-md" type="submit" (click)="submit()">
+                                        <i class='bx bxs-navigation'></i>&nbsp;{{buttontext}}
+                                    </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

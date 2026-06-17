@@ -1,0 +1,62 @@
+{
+  "invoice_rows": [
+    {
+      "S.No": "1",
+      "DESCRIPTION": "WEIGHMENT CHARGES - ORIGIN",
+      "VEHICLENO": "KA01AE3935",
+      "CNTR NO": "BMOU5419753",
+      "CNTR TYPE": "40 HC",
+      "CUR": "INR",
+      "JSN CODE": "996712",
+      "AMOUNT": "180.00",
+      "GST %": "18 %",
+      "SGST AMT": "16.20",
+      "CGST AMT": "16.20"
+    },
+    {
+      "S.No": "2",
+      "DESCRIPTION": "WEIGHMENT CHARGES - ORIGIN",
+      "VEHICLENO": "NL01L2596",
+      "CNTR NO": "CMAU4331969",
+      "CNTR TYPE": "40 HC",
+      "CUR": "INR",
+      "JSN CODE": "996712",
+      "AMOUNT": "180.00",
+      "GST %": "18 %",
+      "SGST AMT": "16.20",
+      "CGST AMT": "16.20"
+    }
+  ],
+  "invoice_totals": [
+    {
+      "label": "SubTotal",
+      "currency": "INR",
+      "amount": "360.00"
+    },
+    {
+      "label": "SGST",
+      "currency": "INR",
+      "amount": "32.40"
+    },
+    {
+      "label": "CGST",
+      "currency": "INR",
+      "amount": "32.40"
+    },
+    {
+      "label": "Total Amount",
+      "currency": "INR",
+      "amount": "424.80"
+    },
+    {
+      "label": "Less Adv",
+      "currency": "INR",
+      "amount": "0.00"
+    },
+    {
+      "label": "Net Due",
+      "currency": "INR",
+      "amount": "424.80"
+    }
+  ]
+}

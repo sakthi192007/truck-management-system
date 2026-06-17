@@ -1,0 +1,79 @@
+[2/8/2026, 3:15:55 PM] info: GET /ClientImages/null
+[2/8/2026, 3:55:03 PM] info: POST /register/logins
+[2/8/2026, 3:55:04 PM] info: login user/id=9
+[2/8/2026, 3:55:05 PM] info: GET /bookingdetails/gettoecontaine/9/3
+[2/8/2026, 3:55:05 PM] info: GET /bookingdetails/getforcontaine/9/3
+[2/8/2026, 3:55:05 PM] info: GET /VehicleInformation/mapdetails/9/3
+[2/8/2026, 3:55:05 PM] info: Clients
+[2/8/2026, 3:55:05 PM] info: Clients
+[2/8/2026, 3:55:05 PM] info: GET /ClientImages/download.png
+[2/8/2026, 3:55:05 PM] info: map
+[2/8/2026, 3:55:09 PM] info: GET /userdetails/Approval/3/Branchgrid
+[2/8/2026, 3:55:09 PM] info: GET /subadmin/Getall/3/9
+[2/8/2026, 3:55:09 PM] info: Userdetails
+[2/8/2026, 3:55:11 PM] info: GET /userdetails/getcompany/3/9
+[2/8/2026, 3:55:11 PM] info: GET /Companycreation/getcountry
+[2/8/2026, 3:55:11 PM] info: GET /Companycreation/getstate
+[2/8/2026, 3:55:12 PM] info: Userdetails
+[2/8/2026, 3:55:12 PM] info: Country
+[2/8/2026, 3:55:12 PM] info: Country
+[2/8/2026, 3:55:42 PM] info: GET /Companycreation/CheckEmailExists?email=Branch@infologia.in
+[2/8/2026, 3:55:42 PM] info: Email validation check executed successfully
+[2/8/2026, 3:55:43 PM] info: GET /userdetails/getbranch/29
+[2/8/2026, 3:55:44 PM] info: Userdetails
+[2/8/2026, 3:56:11 PM] info: POST /Branch
+[2/8/2026, 3:56:21 PM] info: GET /userdetails/Approval/3/User
+[2/8/2026, 3:56:21 PM] info: GET /userdetails/getrole/3
+[2/8/2026, 3:56:21 PM] info: GET /userdetails/gridvalues/9/3
+[2/8/2026, 3:56:21 PM] info: Userdetails
+[2/8/2026, 3:56:21 PM] info: Userdetails
+[2/8/2026, 3:56:21 PM] info: Userdetails
+[2/8/2026, 3:56:23 PM] info: GET /userdetails/Usergetupdate/10
+[2/8/2026, 3:56:23 PM] info: getUserDetails
+[2/8/2026, 3:56:23 PM] info: GET /userdetails/getroleupdate/7
+[2/8/2026, 3:56:23 PM] info: GET /userdetails/CheckEmailExists?email=Branch@infologia.in
+[2/8/2026, 3:56:23 PM] info: User Role fetched successfully
+[2/8/2026, 3:56:23 PM] info: Email validation check executed successfully
+[2/8/2026, 3:56:31 PM] info: PUT /userdetails/userupdate/10
+[2/8/2026, 3:56:34 PM] info: GET /ClientImages/download.png
+[2/8/2026, 3:56:34 PM] info: GET /userdetails/Approval/3/User
+[2/8/2026, 3:56:34 PM] info: GET /userdetails/getrole/3
+[2/8/2026, 3:56:34 PM] info: GET /userdetails/gridvalues/9/3
+[2/8/2026, 3:56:34 PM] info: Userdetails
+[2/8/2026, 3:56:34 PM] info: Userdetails
+[2/8/2026, 3:56:34 PM] info: Userdetails
+[2/8/2026, 3:56:42 PM] info: GET /ClientImages/null
+[2/8/2026, 3:57:06 PM] info: POST /register/logins
+[2/8/2026, 3:57:07 PM] info: login user/id=10
+[2/8/2026, 3:57:08 PM] info: GET /bookingdetails/gettoecontaine/10/7
+[2/8/2026, 3:57:08 PM] info: GET /bookingdetails/getforcontaine/10/7
+[2/8/2026, 3:57:08 PM] info: GET /VehicleInformation/mapdetails/10/7
+[2/8/2026, 3:57:08 PM] info: Clients
+[2/8/2026, 3:57:08 PM] info: Clients
+[2/8/2026, 3:57:08 PM] info: map
+[2/8/2026, 3:57:08 PM] info: GET /ClientImages/download.png
+[2/8/2026, 3:57:14 PM] info: GET /userdetails/Approval/7/User
+[2/8/2026, 3:57:14 PM] info: GET /userdetails/getrole/7
+[2/8/2026, 3:57:14 PM] info: GET /userdetails/gridvalues/10/7
+[2/8/2026, 3:57:14 PM] info: Userdetails
+[2/8/2026, 3:57:14 PM] info: Userdetails
+[2/8/2026, 3:57:14 PM] info: Userdetails
+[2/8/2026, 3:57:48 PM] info: GET /userdetails/CheckEmailExists?email=info@infologia.in
+[2/8/2026, 3:57:48 PM] info: Email validation check executed successfully
+[2/8/2026, 3:57:58 PM] info: POST /userdetails/user
+[2/8/2026, 3:58:00 PM] info: GET /ClientImages/download.png
+[2/8/2026, 3:58:01 PM] info: GET /userdetails/Approval/7/User
+[2/8/2026, 3:58:01 PM] info: GET /userdetails/getrole/7
+[2/8/2026, 3:58:01 PM] info: GET /userdetails/gridvalues/10/7
+[2/8/2026, 3:58:01 PM] info: Userdetails
+[2/8/2026, 3:58:01 PM] info: Userdetails
+[2/8/2026, 3:58:01 PM] info: Userdetails
+[2/8/2026, 3:58:05 PM] info: GET /ClientImages/null
+[2/8/2026, 3:58:15 PM] info: POST /register/logins
+[2/8/2026, 3:58:16 PM] info: login user/id=11
+[2/8/2026, 3:58:16 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[2/8/2026, 3:58:16 PM] info: GET /bookingdetails/getforcontaine/11/4
+[2/8/2026, 3:58:16 PM] info: GET /VehicleInformation/mapdetails/11/4
+[2/8/2026, 3:58:16 PM] info: Clients
+[2/8/2026, 3:58:16 PM] info: Clients
+[2/8/2026, 3:58:16 PM] info: map

@@ -1,0 +1,361 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-11">
+                    <h5 class="card-title">AP Invoice</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form [formGroup]="invoiceForm">
+                                <div class="row">
+                                    <div class="col-lg-12 ms-lg-auto">
+                                        <div class="mt-4 mt-lg-0">
+                                            <div class="row mb-4">
+                                                <div class="col-md-2">
+                                                    <label>Department<span style="color: red;"> *</span></label>
+                                                    <select class="form-control" formControlName="department"
+                                                        data-live-search="true" (change)="onDepartment($event)">
+                                                        <option value="" selected disabled>--Select--</option>
+                                                        <option value="1">Export</option>
+                                                        <option value="2">Import</option>
+                                                    </select>
+                                                    <div *ngIf="submitted && f['department'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['department'].errors['required']"><span
+                                                                style="color: red;">Department is required</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Vendor Name<span style="color: red;"> *</span></label>
+                                                    <div class="dropdown-wrapper">
+                                                        <ngx-select-dropdown class="form-control custom-dropdown"
+                                                            [config]="vendordropdownConfig" [options]="companydata"
+                                                            (change)="onCompanyName($event)" formControlName="company">
+                                                        </ngx-select-dropdown>
+                                                    </div>
+
+                                                    <div *ngIf="submitted && f['company'].errors"
+                                                        class="validation-invalid-label mt-1">
+                                                        <div *ngIf="f['company'].errors['required']">
+                                                            <span style="color: red;">Vendor Name is required</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                               <div class="col-md-2" #dropdownContainer>
+                                                    <label>Booking No</label>
+                                                    <div class="custom-multiselect" (click)="toggleDropdown()">
+                                                        {{ selectedBookingNumbers.length ?
+                                                        selectedBookingNumbers.join(', ') : '-- Select --' }}
+                                                        <span class="arrow">&#9662;</span>
+                                                    </div>
+
+                                                    <div class="dropdown-options" *ngIf="dropdownOpen">
+                                                        <label *ngFor="let customer of getbookingNumber">
+                                                            <input type="checkbox" [value]="customer.BookingNumber"
+                                                                (change)="onExportBookingChange($event)"
+                                                                [checked]="selectedBookingNumbers.includes(customer.BookingNumber)" />
+                                                            {{ customer.BookingNumber }}
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-2">
+                                                    <label>Invoice Date<span style="color: red;"> *</span></label>
+                                                    <input type="date" class="form-control"
+                                                        formControlName="invoicedate" required>
+                                                    <div *ngIf="submitted && f['invoicedate'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['invoicedate'].errors['required']"><span
+                                                                style="color: red;">Invoice Date is required</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Payment Due Date<span style="color: red;"> *</span></label>
+                                                    <input type="date" class="form-control"
+                                                        formControlName="dueinvoicedate" required>
+                                                    <div *ngIf="submitted && f['dueinvoicedate'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['dueinvoicedate'].errors['required']"><span
+                                                                style="color: red;">Invoice Due Date is required</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Invoice No<span style="color: red;"> *</span></label>
+                                                    <input type="text" class="form-control" formControlName="invoiceref"
+                                                        required>
+                                                    <div *ngIf="submitted && f['invoiceref'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['invoiceref'].errors['required']"><span
+                                                                style="color: red;">InvoiceNo is required</span>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"><b>Item Details</b></h5>
+                                                    <div class="card-header header-elements-inline">
+                                                        <h5 class="card-title"></h5>
+                                                        <div class="header-elements" *ngIf="views !=1">
+                                                            <button id="btncolors" (click)="addItem()"
+                                                                class="btn btn-primary">Add rows <i
+                                                                    class="icon-plus3"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" style="overflow-x: auto; width: 100%;">
+                                                        <div style="width: 200%; overflow-x: scroll;">
+                                                            <table class="table table-bordered w-100 equal-width-table">
+                                                                <thead>
+                                                                    <tr style=" text-align: center;">
+                                                                        <th style="width: 100px;" id="colors">Charge
+                                                                            Code</th>
+                                                                        <th style="width: 100px;" id="colors">
+                                                                            Description</th>
+                                                                        <th style="width: 100px;" id="colors">Container
+                                                                            Type</th>
+                                                                        <th style="width: 100px;" id="colors">Currency
+                                                                        </th>
+                                                                        <th style="width:100px;" id="colors">Container
+                                                                            No</th>
+                                                                        <th style="width:100px;" id="colors">HSN Code
+                                                                        </th>
+                                                                        <th style="width:100px;" id="colors">Amount</th>
+                                                                        <th style="width:100px;" *ngIf="state ==29"
+                                                                            id="colors">Percent %</th>
+                                                                        <th style="width:100px;" *ngIf="state !=29"
+                                                                            id="colors">Percent %</th>
+                                                                        <th style="width: 100px;" id="colors"
+                                                                            *ngIf="state ==29">SGST</th>
+                                                                        <th style="width: 100px;" id="colors"
+                                                                            *ngIf="state ==29">CGST</th>
+                                                                        <th style="width: 100px;" id="colors"
+                                                                            *ngIf="state !=29">IGST</th>
+                                                                        <th style="width: 50px; text-align: center;"
+                                                                            id="colors" *ngIf="views !=1">Remove</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <ng-container formArrayName="rows1">
+                                                                        <tr *ngFor="let row of row1.controls; let i = index"
+                                                                            [formGroupName]="i">
+                                                                            <td>
+                                                                                <ngx-select-dropdown
+                                                                                    class="form-control custom-dropdown"
+                                                                                    [config]="chargedropdownConfig"
+                                                                                    [options]="chargedata"
+                                                                                       (change)="onchargedesChange($event,i)"
+                                                                                    formControlName="chargedes">
+                                                                                </ngx-select-dropdown>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="description"
+                                                                                    id="{{ i }}description">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="container"
+                                                                                    id="{{ i }}container">
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control"
+                                                                                    formControlName="curre"
+                                                                                    id="{{ i }}curre">
+                                                                                    <option value="INR" selected>INR
+                                                                                    </option>
+                                                                                    <option value="USD" selected>USD
+                                                                                    </option>
+
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="containerno"
+                                                                                    id="{{ i }}containerno">
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="hsncode"
+                                                                                    id="{{i}}hsncode">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="Amount"
+                                                                                    id="{{ i }}Amount"
+                                                                                    (change)="sum(i)">
+                                                                            </td>
+                                                                            <td *ngIf="state ==29">
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="sgstper"
+                                                                                    id="{{ i }}sgstper"
+                                                                                    (change)="sum(i)">
+                                                                            </td>
+                                                                            <td *ngIf="state !=29">
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="igstper"
+                                                                                    id="{{ i }}igstper"
+                                                                                    (change)="sum(i)">
+                                                                            </td>
+                                                                            <td *ngIf="state ==29">
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="sgst"
+                                                                                    id="{{ i }}sgst" readonly>
+                                                                            </td>
+                                                                            <td *ngIf="state ==29">
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="cgst"
+                                                                                    id="{{ i }}cgst" readonly>
+                                                                            </td>
+                                                                            <td *ngIf="state !=29">
+                                                                                <input type="text" class="form-control"
+                                                                                    formControlName="igst"
+                                                                                    id="{{ i }}igst" readonly>
+                                                                            </td>
+                                                                            <td class="wrapper" *ngIf="views !=1">
+                                                                                <button (click)="removeItem(i)"
+                                                                                    class="btn-danger">Remove</button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </ng-container>
+                                                                    <tr>
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">Sub
+                                                                                Total</label>
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="btmtotal" id="btmtotal"
+                                                                                readonly>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr *ngIf="state ==29">
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">SGST
+                                                                                Amount</label>
+                                                                        </td>
+
+                                                                        <td>
+
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="btmgst" id="btmgst"
+                                                                                readonly>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr *ngIf="state ==29">
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">CGST
+                                                                                Amount</label>
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="btmcgst" id="btmcgst"
+                                                                                readonly>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr *ngIf="state !=29">
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">IGST
+                                                                                Amount</label>
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="btmigst" id="btmigst"
+                                                                                readonly>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">Total</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="grandtotal"
+                                                                                id="grandtotal" readonly>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">Adv
+                                                                                Payment</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="advpymt" id="advpymt">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="4"></td>
+                                                                        <td>
+                                                                            <label
+                                                                                class="form-control justify-content-end text-end">Balance
+                                                                                Due</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" class="form-control"
+                                                                                formControlName="balancedue"
+                                                                                id="balancedue" readonly>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-end text-end">
+                                            <div class="col-sm-9">
+                                                <div>
+                                                    <a id="btncolors" routerLink="/APInvoices"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+                                                    <button id="btncolors" *ngIf="views !=1"
+                                                        (click)="submit(row1.value)" class="btn btn-primary w-md me-2"
+                                                        type="button">
+                                                        <i class="bx bx-save"></i>&nbsp;{{ buttontext }}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

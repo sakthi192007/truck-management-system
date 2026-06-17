@@ -1,0 +1,133 @@
+[2/24/2026, 9:56:00 AM] info: GET /ClientImages/null
+[2/24/2026, 9:56:07 AM] info: POST /register/logins
+[2/24/2026, 9:56:09 AM] info: login user/id=11
+[2/24/2026, 9:56:09 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[2/24/2026, 9:56:09 AM] info: GET /bookingdetails/getforcontaine/11/4
+[2/24/2026, 9:56:09 AM] info: Clients
+[2/24/2026, 9:56:09 AM] info: Clients
+[2/24/2026, 9:56:09 AM] info: GET /VehicleInformation/mapdetails/11/4
+[2/24/2026, 9:56:09 AM] info: map
+[2/24/2026, 9:56:09 AM] info: GET /ClientImages/download.png
+[2/24/2026, 9:56:11 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 9:56:11 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 9:56:11 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 9:56:11 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 9:56:11 AM] info: Userdetails
+[2/24/2026, 9:56:11 AM] info: Clients
+[2/24/2026, 9:56:11 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 9:56:11 AM] info: Clients
+[2/24/2026, 9:56:11 AM] info: Clients
+[2/24/2026, 9:56:11 AM] info: Clients
+[2/24/2026, 9:56:15 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 9:56:15 AM] info: GET /ClientImages/null
+[2/24/2026, 10:00:17 AM] info: GET /ClientImages/null
+[2/24/2026, 10:00:20 AM] info: POST /register/logins
+[2/24/2026, 10:00:21 AM] info: login user/id=11
+[2/24/2026, 10:00:21 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[2/24/2026, 10:00:21 AM] info: GET /bookingdetails/getforcontaine/11/4
+[2/24/2026, 10:00:21 AM] info: Clients
+[2/24/2026, 10:00:21 AM] info: GET /VehicleInformation/mapdetails/11/4
+[2/24/2026, 10:00:21 AM] info: Clients
+[2/24/2026, 10:00:21 AM] info: map
+[2/24/2026, 10:00:21 AM] info: GET /ClientImages/download.png
+[2/24/2026, 10:00:24 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 10:00:24 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 10:00:24 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:00:24 AM] info: Userdetails
+[2/24/2026, 10:00:24 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 10:00:24 AM] info: Clients
+[2/24/2026, 10:00:24 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 10:00:24 AM] info: Clients
+[2/24/2026, 10:00:24 AM] info: Clients
+[2/24/2026, 10:00:24 AM] info: Clients
+[2/24/2026, 10:04:17 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:04:17 AM] info: GET /favicon.ico
+[2/24/2026, 10:06:12 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:07:08 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:07:32 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:07:35 AM] info: GET /ClientImages/download.png
+[2/24/2026, 10:07:36 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:07:36 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 10:07:37 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 10:07:37 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 10:07:37 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 10:07:37 AM] info: Clients
+[2/24/2026, 10:07:38 AM] info: Clients
+[2/24/2026, 10:07:38 AM] info: Clients
+[2/24/2026, 10:07:38 AM] info: Userdetails
+[2/24/2026, 10:07:38 AM] info: Clients
+[2/24/2026, 10:09:11 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:09:37 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:10:21 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:10:21 AM] info: Clients
+[2/24/2026, 10:10:46 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:13:22 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:16:46 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:16:46 AM] info: GET /ClientImages/null
+[2/24/2026, 10:16:52 AM] info: GET /ClientImages/null
+[2/24/2026, 10:16:55 AM] info: POST /register/logins
+[2/24/2026, 10:16:56 AM] info: login user/id=11
+[2/24/2026, 10:16:56 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[2/24/2026, 10:16:56 AM] info: GET /bookingdetails/getforcontaine/11/4
+[2/24/2026, 10:16:56 AM] info: GET /VehicleInformation/mapdetails/11/4
+[2/24/2026, 10:16:56 AM] info: Clients
+[2/24/2026, 10:16:56 AM] info: Clients
+[2/24/2026, 10:16:56 AM] info: GET /ClientImages/download.png
+[2/24/2026, 10:16:56 AM] info: map
+[2/24/2026, 10:17:00 AM] info: GET /userdetails/Approval/4/LocationGrid
+[2/24/2026, 10:17:00 AM] info: GET /lacation/get/11/4
+[2/24/2026, 10:17:00 AM] info: Userdetails
+[2/24/2026, 10:17:00 AM] info: locationdetails fetched successfully.
+[2/24/2026, 10:17:19 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 10:17:19 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 10:17:19 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:17:19 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 10:17:19 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 10:17:19 AM] info: Userdetails
+[2/24/2026, 10:17:19 AM] info: Clients
+[2/24/2026, 10:17:19 AM] info: Clients
+[2/24/2026, 10:17:19 AM] info: Clients
+[2/24/2026, 10:17:19 AM] info: Clients
+[2/24/2026, 10:17:23 AM] info: GET /bookingExports/16
+[2/24/2026, 10:17:23 AM] info: /getBooking: Success
+[2/24/2026, 10:17:23 AM] info: GET /bookingExports/ExportDocumet/16
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/getcustomer/11/4
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/getvendordata/11
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/getshiperdata/11
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/getgenerel/11
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/pointofclear/11
+[2/24/2026, 10:17:23 AM] info: /getBooking: Success
+[2/24/2026, 10:17:23 AM] info: Clients
+[2/24/2026, 10:17:23 AM] info: generalType
+[2/24/2026, 10:17:23 AM] info: generalType
+[2/24/2026, 10:17:23 AM] info: GET /invoicedetails/getportofloading/11
+[2/24/2026, 10:17:23 AM] info: GET /bookingdetails/getMile
+[2/24/2026, 10:17:23 AM] info: generalType
+[2/24/2026, 10:17:23 AM] info: generalType
+[2/24/2026, 10:17:23 AM] info: Clients
+[2/24/2026, 10:17:23 AM] info: Clients
+[2/24/2026, 10:17:59 AM] info: PUT /bookingExports/update/16
+[2/24/2026, 10:18:00 AM] info: POST /bookingExports/Exportfile
+[2/24/2026, 10:18:00 AM] info: PUT /bookingExports/items/16
+[2/24/2026, 10:18:00 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 10:18:00 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 10:18:00 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:18:00 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 10:18:00 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 10:18:00 AM] info: Userdetails
+[2/24/2026, 10:18:00 AM] info: Clients
+[2/24/2026, 10:18:00 AM] info: Clients
+[2/24/2026, 10:18:00 AM] info: Clients
+[2/24/2026, 10:18:00 AM] info: Clients
+[2/24/2026, 10:18:20 AM] info: GET /bookingExports/bookingApproval/16
+[2/24/2026, 10:19:01 AM] info: GET /ClientImages/download.png
+[2/24/2026, 10:19:01 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/24/2026, 10:19:01 AM] info: GET /bookingExports/getall/11/4
+[2/24/2026, 10:19:01 AM] info: GET /bookingExports/allbooked/11/4
+[2/24/2026, 10:19:01 AM] info: GET /Importbookings/getall/11/4
+[2/24/2026, 10:19:01 AM] info: GET /Importbookings/allbooked/11/4
+[2/24/2026, 10:19:01 AM] info: Userdetails
+[2/24/2026, 10:19:01 AM] info: Clients
+[2/24/2026, 10:19:01 AM] info: Clients
+[2/24/2026, 10:19:01 AM] info: Clients
+[2/24/2026, 10:19:01 AM] info: Clients

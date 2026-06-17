@@ -1,0 +1,92 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server">GST Invoice Report</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a>Report</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row align-items-end justify-content-end">
+                <div class="col-3 text-end">
+                    <button id="colors" class="btn btn-primary" (click)="exportToExcel()">Download Excel</button>
+                </div>
+
+                <div class="col-2">
+                    <label for="fromDate">From Date</label>
+                    <input type="date" class="form-control" placeholder="From Date" [(ngModel)]="fromDate" />
+                </div>
+                
+                <div class="col-2">
+                    <label for="toDate">To Date</label>
+                    <input type="date" class="form-control" placeholder="To Date" [(ngModel)]="toDate" />
+                </div>
+                <div class="col-3">
+                    <input type="text" [(ngModel)]="searchTerm" placeholder="Search by ..." class="form-control" />
+                </div>
+            </div>
+            <br>
+            <div class="card-bodys">
+                <table id="datatablegrid" class="table table-bordered w-100 equal-width-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="sticky-col" style="left: 0; z-index: 1;">Invoice No</th>
+                            <th rowspan="2">Customer Name</th>
+                            <th rowspan="2">GSTIN</th>
+                            <th rowspan="2">Invoice Date</th>
+                            <th rowspan="2">Tax Rate(%)</th>
+                            <th rowspan="2">Taxable value</th>
+                            <th rowspan="2">IGST</th>
+                            <th rowspan="2">Central Tax</th>
+                            <th rowspan="2">State Tax</th>
+                            <th rowspan="2">Invoice Value</th>
+                            <th rowspan="2">Cess</th>
+                            <th rowspan="2">State of Supply</th>
+                            <th rowspan="2">Party State Value </th>
+                            <th rowspan="2">Reverse Charge </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bird of filteredData">
+                            <td class="sticky-col" style="left: 0;">{{ bird.InvoiceNo}}</td>
+                            <td>{{ bird.CustomerName }}</td>
+                            <td>{{ bird.GSTIN}}</td>
+                            <td>{{ bird.InvoiceDate }}</td>
+                            <td>{{ bird.TaxRate }}</td>
+                            <td>{{ bird.Taxablevalue }}</td>
+                            <td>{{ bird.IGST }}</td>
+                            <td>{{ bird.CentralTax }}</td>
+                            <td>{{ bird.StateTax }}</td>
+                            <td>{{ bird.InvoiceValue }}</td>
+                            <td>{{ bird.GSTAmount }}</td>
+                            <td>{{ bird.GSTCODE }}</td>
+                            <td>{{bird.Branch}}</td>
+                            <td>{{ bird.IGSTAmount }}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr *ngFor="let birds of invoicetotal">
+                            <td colspan="5" class="text-end fw-bold">TOTAL</td>
+                            <td>{{ birds.TotalTaxablevalue }}</td>
+                            <td>{{ birds.TotalIGST }}</td>
+                            <td>{{ birds.CentralTax }}</td>
+                            <td>{{ birds.StateTax }}</td>
+                            <td>{{ birds.TotalInvoiceValue }}</td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

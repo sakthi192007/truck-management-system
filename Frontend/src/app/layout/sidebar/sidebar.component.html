@@ -1,0 +1,34 @@
+
+<div class="vertical-menu" [class.closed]="isClosed">
+  <div data-simplebar class="h-100">
+    <div id="sidebar-menu">
+      <ul class="metismenu list-unstyled" id="side-menu">
+        <ng-container *ngFor="let menu of sidebarMenus">
+          <ng-container *ngTemplateOutlet="recursiveMenu; context:{ $implicit: menu }"></ng-container>
+        </ng-container>
+      </ul>
+
+      <!-- Recursive Menu Template -->
+      <ng-template #recursiveMenu let-menu>
+        <li>
+          <!-- No children -->
+          <a *ngIf="!menu.children?.length" [routerLink]="['/', menu.Pagename]" (click)="togglemobile()">
+            <i class="{{ menu.Menuicon }}"></i> <span>{{ menu.Menuname }}</span>
+          </a>
+
+          <!-- Has children -->
+          <a *ngIf="menu.children?.length" href="javascript:void(0);" class="has-arrow" (click)="toggleSubMenu(menu)">
+            <i class="{{ menu.Menuicon }}"></i> <span>{{ menu.Menuname }}</span>
+          </a>
+
+          <!-- Render children recursively -->
+          <ul class="sub-menu" *ngIf="menu.children?.length" [ngClass]="{ show: menu.isOpen }">
+            <ng-container *ngFor="let child of menu.children">
+              <ng-container *ngTemplateOutlet="recursiveMenu; context:{ $implicit: child }"></ng-container>
+            </ng-container>
+          </ul>
+        </li>
+      </ng-template>
+    </div>
+  </div>
+</div>

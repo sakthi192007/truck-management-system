@@ -1,0 +1,915 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">Vendor Price Details</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Vendor Price Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs nav-fill" id="pills-tab">
+                    <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link active"
+                            id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                            data-bs-target="#Export">Export</a>
+                    </li>
+                    <li class="nav-item" style="background-color: #232879;color: white;"><a class="nav-link"
+                            id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                            data-bs-target="#Import">Import</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="Export">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2 ms-auto text-end">
+                                            <a type="button" id="btncolors" [class.disabled]="createstatus === false"
+                                                data-bs-toggle="modal" data-bs-target="#Driverop"
+                                                class="btn btn-primary" (click)="reset();"><i
+                                                    class="fa fa-plus"></i>&nbsp;Create</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div id="Driverop" class="modal fade" tabindex="-1" aria-labelledby="AgencyLabel"
+                                    aria-hidden="true">
+                                    <br>
+                                    <br>
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="colors">
+                                                <h6 class="modal-title" style="color: white;" id="AgencyLabel">
+                                                    {{headertext}}</h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close" style="filter: invert(1);"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form [formGroup]="vendorprice">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Vendor Name<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="vendordropdownConfig"
+                                                                        [options]="getcustomerdata"
+                                                                        formControlName="Vendor">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && f['Vendor'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="f['Vendor'].errors['required']"><span
+                                                                            style="color: red;">Vendor Name is
+                                                                            required</span></div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Container Type<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="containerdropdownConfig"
+                                                                        [options]="containerdata"
+                                                                        formControlName="Container_type">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && f['Container_type'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="f['Container_type'].errors['required']">
+                                                                        <span style="color: red;">Container Type is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Stuffing Location<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="stuffingdropdownConfig"
+                                                                        [options]="pointofclear"
+                                                                        formControlName="Stuffing">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && f['Stuffing'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="f['Stuffing'].errors['required']"><span
+                                                                            style="color: red;">Stuffing Location is
+                                                                            required</span></div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Unloading Location<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="unloadingdropdownConfig"
+                                                                        [options]="locations"
+                                                                        formControlName="Unloading">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && f['Unloading'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="f['Unloading'].errors['required']"><span
+                                                                            style="color: red;">Unloading is
+                                                                            required</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Valid From</label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="validfrom">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges 1 to 2days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="haltingdays">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges above 5days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="halting">
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Empty Container Pickup<span style="color: red;">
+                                                                        *</span></label>
+
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="emptydropdownConfig"
+                                                                        [options]="pointofclear"
+                                                                        formControlName="emptycontainepick">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && f['emptycontainepick'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="f['emptycontainepick'].errors['required']">
+                                                                        <span style="color: red;">Empty Container Pickup
+                                                                            is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Stuffing Location 2</label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="Stuffing2">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Transportation Charges<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="transcharges" required>
+                                                                <div *ngIf="submitted && f['transcharges'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="f['transcharges'].errors['required']">
+                                                                        <span style="color: red;">Transportation Charges
+                                                                            is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Valid To</label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="validto">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges 3 to 5days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="haltingcharges">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Agreement</label>
+                                                                <input type="file" class="form-control"
+                                                                    formControlName="file" (change)="File($event)">
+                                                                <div class="py-2" *ngIf="file_up!=null">
+                                                                    <a href="{{file_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-end text-end"
+                                                        *ngIf="viewsdetails != 0">
+                                                        <button id="btncolors" class="btn btn-primary w-md"
+                                                            type="button" (click)="submit()">
+                                                            <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                        </button>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="card-bodys">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                            <div id="datatable-buttons-pending" class="d-flex align-items-center gap-2">
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModal">
+                                                    Select Date Range
+                                                </button>
+
+                                                <div class="left-search"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModal" tabindex="-1"
+                                        aria-labelledby="dateRangeLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabel">Filter data on date
+                                                        range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDatePending" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDatePending" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-3 p-3 pending-wrapper">
+                                        <table class="table table-striped table-bordered nowrap datatablegrid pending">
+                                            <thead>
+                                                <tr>
+                                                    <th id="colors">Vendor Name</th>
+                                                    <th id="colors">Container Type</th>
+                                                    <th id="colors">Stuffing Location</th>
+                                                    <th id="colors">Unloading Location</th>
+                                                    <th id="colors">Valid From</th>
+                                                    <th id="colors">Valid To</th>
+                                                    <th id="colors">Amount</th>
+                                                    <th id="colors">View</th>
+                                                    <th id="colors">Update</th>
+                                                    <th id="colors">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let bird of filteredData">
+                                                    <td>{{bird.VendorName}}</td>
+                                                    <td>{{bird.ContainerType}}</td>
+                                                    <td>{{bird.StaffingLocation}}</td>
+                                                    <td>{{bird.Unloading}}</td>
+                                                    <td>{{bird.ValidFrom}}</td>
+                                                    <td>{{bird.ValidTo}}</td>
+                                                    <td>{{bird.TotalPrice}}</td>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [disabled]="viewstatus === false" data-bs-toggle="modal"
+                                                            data-bs-target="#Driverop" (click)="views(bird.V_id)"><i
+                                                                class="mdi mdi-eye d-block font-size-16px"></i></button>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [class.disabled]="!statusupdate"
+                                                            [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                            data-bs-toggle="modal" data-bs-target="#Driverop"
+                                                            (click)="Assignvalueuser(bird.V_id)"><i
+                                                                class="mdi mdi-pencil d-block font-size-20px"></i></button>
+                                                    <td><button id="statusdesign" class="{{bird.spancolur1}}"
+                                                            [disabled]="statusapporval === false" data-bs-toggle="modal"
+                                                            data-bs-target="#Pendingrop"
+                                                            (click)="onPendingClick(bird.V_id)">
+                                                            {{bird.pending}}</button>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card-bodys">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                            <div id="datatable-buttons-completed"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button type="button" class="btn btn-primary" id="dateRangeBtn"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModalCompleted">
+                                                    Select Date Range
+                                                </button>
+                                                <div class="left-search-completed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModalCompleted" tabindex="-1"
+                                        aria-labelledby="dateRangeLabelCompleted" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabelCompleted">Filter data on
+                                                        date range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDateCompleted" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDateCompleted" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" m-3 p-3 completed-wrapper">
+                                        <table
+                                            class="table table-striped table-bordered nowrap datatablegrid completed">
+                                            <thead>
+                                                <tr>
+                                                    <th id="colors">Vendor Name</th>
+                                                    <th id="colors">Container Type</th>
+                                                    <th id="colors">Stuffing Location</th>
+                                                    <th id="colors">Unloading Location</th>
+                                                    <th id="colors">Valid From</th>
+                                                    <th id="colors">Valid To</th>
+                                                    <th id="colors">Amount</th>
+                                                    <th id="colors">View</th>
+                                                    <th id="colors">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let bird of filteredDataCompleted">
+                                                    <td>{{bird.VendorName}}</td>
+                                                    <td>{{bird.ContainerType}}</td>
+                                                    <td>{{bird.StaffingLocation}}</td>
+                                                    <td>{{bird.Unloading}}</td>
+                                                    <td>{{bird.ValidFrom}}</td>
+                                                    <td>{{bird.ValidTo}}</td>
+                                                    <td>{{bird.TotalPrice}}</td>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [disabled]="viewstatus === false" data-bs-toggle="modal"
+                                                            data-bs-target="#Driverop" (click)="views(bird.V_id)"><i
+                                                                class="mdi mdi-eye d-block font-size-20px"></i></button>
+                                                    <td><span id="statusdesign"
+                                                            class="{{bird.spancolur1}}">{{bird.approval}}</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="Pendingrop" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header bg-success">
+                                                <h6 class="modal-title">Confirm Pending</h6>
+                                                <button type="button" class="close" (click)="close();"
+                                                    style="filter: invert(1);">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                    style="display: flex;"></div>
+                                                <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                    Confirm this Approval?</p>
+                                            </div>
+                                            <div class="modal-footer d-flex align-content-center">
+                                                <button type="button" class="btn btn-success" (click)="Approval()"
+                                                    data-dismiss="modal">Yes Approve it</button>
+                                                <button type="button" class="btn btn-default"
+                                                    (click)="cancel();">Cancel</button>
+                                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show " id="Import">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2 ms-auto text-end">
+                                            <a type="button" id="btncolors" data-bs-toggle="modal"
+                                                [class.disabled]="createstatus === false" data-bs-target="#impprice"
+                                                class="btn btn-primary" (click)="resetimp();"><i
+                                                    class="fa fa-plus"></i>&nbsp;Create</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div id="impprice" class="modal fade" tabindex="-1" aria-labelledby="AgencyLabel"
+                                    aria-hidden="true">
+                                    <br>
+                                    <br>
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="colors">
+                                                <h6 class="modal-title" style="color: white;" id="AgencyLabel">
+                                                    {{headertext}}</h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close" style="filter: invert(1);"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form [formGroup]="impvendorprice">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Vendor Name<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="impvendordropdownConfig"
+                                                                        [options]="getcustomerdata"
+                                                                        formControlName="impVendor">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && h['impVendor'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="h['impVendor'].errors['required']"><span
+                                                                            style="color: red;">Vendor Name is
+                                                                            required</span></div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Container Type<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="impcontainerdropdownConfig"
+                                                                        [options]="containerdata"
+                                                                        formControlName="impcontainer_type">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && h['impcontainer_type'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="h['impcontainer_type'].errors['required']">
+                                                                        <span style="color: red;">Container Type is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Unloading Location<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="impunloadingdropdownConfig"
+                                                                        [options]="locations"
+                                                                        formControlName="imUnloading">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && h['imUnloading'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="h['imUnloading'].errors['required']">
+                                                                        <span style="color: red;">Unloading is
+                                                                            required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Empty Container Pickup<span style="color: red;">
+                                                                        *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="impemptydropdownConfig"
+                                                                        [options]="pointofclear"
+                                                                        formControlName="imemptycontainepick">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && h['imemptycontainepick'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="h['imemptycontainepick'].errors['required']">
+                                                                        <span style="color: red;">Empty Container Pickup
+                                                                            is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Valid From</label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="imvalidfrom">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges 1 to 2days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="imhaltingdays">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges above 5days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="imhalting">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Full Container Pickup From CFS/Port<span
+                                                                        style="color: red;"> *</span></label>
+
+                                                                <div class="dropdown-wrapper">
+                                                                    <ngx-select-dropdown
+                                                                        class="form-control custom-dropdown"
+                                                                        [config]="impfulldropdownConfig"
+                                                                        [options]="pointofclear"
+                                                                        formControlName="imfullcontainerpickup">
+                                                                    </ngx-select-dropdown>
+                                                                </div>
+
+                                                                <div *ngIf="submitted && h['imfullcontainerpickup'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div
+                                                                        *ngIf="h['imfullcontainerpickup'].errors['required']">
+                                                                        <span style="color: red;">Full Container Pickup
+                                                                            From CFS/Port is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Unloading Location 2</label>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="imUnloading2">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Transportation Charges<span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="imtranscharges" required>
+                                                                <div *ngIf="submitted && h['imtranscharges'].errors"
+                                                                    class="validation-invalid-label">
+                                                                    <div *ngIf="h['imtranscharges'].errors['required']">
+                                                                        <span style="color: red;">Transportation Charges
+                                                                            is required</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Valid To</label>
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="imvalidto">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Halting Charges 3 to 5days <span style="color: red;">
+                                                                        *</span></label>
+                                                                <input type="number" class="form-control"
+                                                                    formControlName="imhaltingcharges">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Agreement</label>
+                                                                <input type="file" class="form-control"
+                                                                     (change)="imFile($event)">
+                                                                <div class="py-2" *ngIf="imfile_up!=null">
+                                                                    <a href="{{imfile_up}}" target="_blank"
+                                                                        class="font-weight-medium">View</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row justify-content-end text-end"
+                                                        *ngIf="viewsdetails != 0">
+                                                        <button id="btncolors" class="btn btn-primary w-md"
+                                                            type="button" (click)="submitimp()">
+                                                            <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                        </button>
+                                                    </div>
+                                                </form>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-bodys">
+
+
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                            <div id="datatable-buttons-inprogress"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModalInprogress">
+                                                    Select Date Range
+                                                </button>
+                                                <div class="left-search-inprogress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModalInprogress" tabindex="-1"
+                                        aria-labelledby="dateRangeLabelInprogress" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabelInprogress">Filter data on
+                                                        date range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDateInprogress" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDateInprogress" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" m-3 p-3 inprogress-wrapper">
+                                        <table class="table table-striped table-bordered nowrap datatablegrid">
+                                            <thead>
+                                                <tr>
+                                                    <th id="colors">Vendor Name</th>
+                                                    <th id="colors">Container Type</th>
+                                                    <th id="colors">Full Container Pickup From</th>
+                                                    <th id="colors">Unloading Location</th>
+                                                    <th id="colors">Valid From</th>
+                                                    <th id="colors">Valid To</th>
+                                                    <th id="colors">Amount</th>
+                                                    <th id="colors">View</th>
+                                                    <th id="colors">Update</th>
+                                                    <th id="colors">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let bird of exportfilteredData">
+                                                    <td>{{bird.VendorName}}</td>
+                                                    <td>{{bird.ContainerType}}</td>
+                                                    <td>{{bird.EmptyContainerPickup}}</td>
+                                                    <td>{{bird.Unloading}}</td>
+                                                    <td>{{bird.ValidFrom}}</td>
+                                                    <td>{{bird.ValidTo}}</td>
+                                                   <td>{{bird.TotalPrice}}</td>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [disabled]="viewstatus === false" data-bs-toggle="modal"
+                                                            data-bs-target="#impprice" (click)="viewsimp(bird.V_id)"><i
+                                                                class="mdi mdi-eye d-block font-size-16px"></i></button>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [class.disabled]="!statusupdate"
+                                                            [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                            data-bs-toggle="modal" data-bs-target="#impprice"
+                                                            (click)="Assignvalueuserimp(bird.V_id)"><i
+                                                                class="mdi mdi-pencil d-block font-size-20px"></i></button>
+                                                    <td><button id="statusdesign" class="{{bird.spancolur1}}"
+                                                            [disabled]="statusapporval === false" data-bs-toggle="modal"
+                                                            data-bs-target="#impoPendingrop"
+                                                            (click)="onPendingClickimp(bird.V_id)">
+                                                            {{bird.pending}}</button>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br>
+                                <br />
+                                <div class="card-bodys">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                            <div id="datatable-buttons-cancelled"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModalCancelled">
+                                                    Select Date Range
+                                                </button>
+                                                <div class="left-search-cancelled"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModalCancelled" tabindex="-1"
+                                        aria-labelledby="dateRangeLabelCancelled" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabelCancelled">Filter data
+                                                        on date range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDateCancelled" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDateCancelled" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" m-3 p-3 cancelled-wrapper">
+                                        <table class="table table-striped table-bordered nowrap datatablegrid">
+                                            <thead>
+                                                <tr>
+                                                    <th id="colors">Vendor Name</th>
+                                                    <th id="colors">Container Type</th>
+                                                    <th id="colors">Full Container Pickup From</th>
+                                                    <th id="colors">Unloading Location</th>
+                                                    <th id="colors">Valid From</th>
+                                                    <th id="colors">Valid To</th>
+                                                    <th id="colors">Amount</th>
+                                                    <th id="colors">View</th>
+                                                    <th id="colors">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let bird of exportfilteredDataCompleted">
+                                                    <td>{{bird.VendorName}}</td>
+                                                    <td>{{bird.ContainerType}}</td>
+                                                    <td>{{bird.EmptyContainerPickup}}</td>
+                                                    <td>{{bird.Unloading}}</td>
+                                                    <td>{{bird.ValidFrom}}</td>
+                                                    <td>{{bird.ValidTo}}</td>
+                                                    <td>*******</td>
+                                                    <td><button id="statusdesign" class="badge badge-primary"
+                                                            [disabled]="viewstatus === false" data-bs-toggle="modal"
+                                                            data-bs-target="#impprice" (click)="viewsimp(bird.V_id)"><i
+                                                                class="mdi mdi-eye d-block font-size-20px"></i></button>
+                                                    <td><span id="statusdesign"
+                                                            class="{{bird.spancolur1}}">{{bird.approval}}</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="impoPendingrop" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header bg-success">
+                                                <h6 class="modal-title">Confirm Pending</h6>
+                                                <button type="button" class="close"
+                                                    (click)="closeimp();">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                    style="display: flex;"></div>
+                                                <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                    Confirm this Approval?</p>
+                                            </div>
+                                            <div class="modal-footer d-flex align-content-center">
+                                                <button type="button" class="btn btn-success" (click)="Approvalimp()"
+                                                    data-dismiss="modal">Yes Approve it</button>
+                                                <button type="button" class="btn btn-default"
+                                                    (click)="cancelimp();">Cancel</button>
+                                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,736 @@
+[11/19/2025, 12:04:32 PM] info: GET /ClientImages/null
+[11/19/2025, 12:04:32 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:04:48 PM] info: POST /register/logins
+[11/19/2025, 12:04:49 PM] info: login user/id=10
+[11/19/2025, 12:04:49 PM] info: GET /bookingdetails/gettoecontaine/10/7
+[11/19/2025, 12:04:49 PM] info: GET /bookingdetails/getforcontaine/10/7
+[11/19/2025, 12:04:49 PM] info: Clients
+[11/19/2025, 12:04:49 PM] info: Clients
+[11/19/2025, 12:04:49 PM] info: GET /VehicleInformation/mapdetails/10/7
+[11/19/2025, 12:04:49 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:04:50 PM] info: map
+[11/19/2025, 12:04:56 PM] info: GET /ClientImages/null
+[11/19/2025, 12:04:56 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:05:01 PM] info: POST /register/logins
+[11/19/2025, 12:05:02 PM] info: login user/id=11
+[11/19/2025, 12:05:02 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/19/2025, 12:05:02 PM] info: GET /bookingdetails/getforcontaine/11/4
+[11/19/2025, 12:05:02 PM] info: Clients
+[11/19/2025, 12:05:02 PM] info: GET /VehicleInformation/mapdetails/11/4
+[11/19/2025, 12:05:02 PM] info: Clients
+[11/19/2025, 12:05:02 PM] info: map
+[11/19/2025, 12:05:02 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:05:05 PM] info: GET /ClientImages/null
+[11/19/2025, 12:05:05 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:05:43 PM] info: POST /register/logins
+[11/19/2025, 12:05:44 PM] info: login user/id=13
+[11/19/2025, 12:05:44 PM] info: GET /bookingdetails/gettoecontaine/13/6
+[11/19/2025, 12:05:44 PM] info: GET /bookingdetails/getforcontaine/13/6
+[11/19/2025, 12:05:44 PM] info: GET /VehicleInformation/mapdetails/13/6
+[11/19/2025, 12:05:44 PM] info: Clients
+[11/19/2025, 12:05:44 PM] info: Clients
+[11/19/2025, 12:05:44 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:05:44 PM] info: map
+[11/19/2025, 12:05:53 PM] info: GET /userdetails/Approval/7/ClientDetails
+[11/19/2025, 12:05:53 PM] info: GET /clientdetails/allget/10/7
+[11/19/2025, 12:05:53 PM] info: Userdetails
+[11/19/2025, 12:05:53 PM] info: Clientdetails
+[11/19/2025, 12:06:53 PM] info: GET /userdetails/Approval/4/ClientDetails
+[11/19/2025, 12:06:53 PM] info: GET /clientdetails/allget/11/4
+[11/19/2025, 12:06:54 PM] info: Userdetails
+[11/19/2025, 12:06:54 PM] info: Clientdetails
+[11/19/2025, 12:06:58 PM] info: GET /userdetails/Approval/6/ClientDetails
+[11/19/2025, 12:06:58 PM] info: GET /clientdetails/allget/13/6
+[11/19/2025, 12:06:58 PM] info: Userdetails
+[11/19/2025, 12:06:59 PM] info: Clientdetails
+[11/19/2025, 12:07:20 PM] info: GET /userdetails/Approval/7/ClientpriceDetails
+[11/19/2025, 12:07:20 PM] info: GET /clientdetails/customers/10/7
+[11/19/2025, 12:07:20 PM] info: GET /clientdetails/importcustomers/10/7
+[11/19/2025, 12:07:20 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:07:20 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:07:20 PM] info: GET /bookingdetails/Staffing/10
+[11/19/2025, 12:07:21 PM] info: Userdetails
+[11/19/2025, 12:07:21 PM] info: Country
+[11/19/2025, 12:07:21 PM] info: Country
+[11/19/2025, 12:07:21 PM] info: generalType
+[11/19/2025, 12:07:21 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:07:21 PM] info: GET /Clientspricedetails/clientpricegrid/10/7
+[11/19/2025, 12:07:21 PM] info: GET /Clientspricedetails/approvaldata/10/7
+[11/19/2025, 12:07:21 PM] info: GET /Clientspricedetails/imclientpricegrid/10/7
+[11/19/2025, 12:07:21 PM] info: generalType
+[11/19/2025, 12:07:21 PM] info: generalType
+[11/19/2025, 12:07:21 PM] info: GET /Clientspricedetails/imapprovaldata/10/7
+[11/19/2025, 12:07:21 PM] info: Clients
+[11/19/2025, 12:07:21 PM] info: Clientspricedetails
+[11/19/2025, 12:07:21 PM] info: Clientspricedetails
+[11/19/2025, 12:07:21 PM] info: Clientspricedetails
+[11/19/2025, 12:07:21 PM] info: Clientspricedetails
+[11/19/2025, 12:08:08 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:08:08 PM] info: GET /userdetails/Approval/7/ClientpriceDetails
+[11/19/2025, 12:08:08 PM] info: GET /clientdetails/customers/10/7
+[11/19/2025, 12:08:08 PM] info: GET /clientdetails/importcustomers/10/7
+[11/19/2025, 12:08:08 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:08:08 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:08:08 PM] info: GET /bookingdetails/Staffing/10
+[11/19/2025, 12:08:08 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:08:08 PM] info: Userdetails
+[11/19/2025, 12:08:08 PM] info: Country
+[11/19/2025, 12:08:08 PM] info: Country
+[11/19/2025, 12:08:08 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:08:08 PM] info: GET /Clientspricedetails/clientpricegrid/10/7
+[11/19/2025, 12:08:08 PM] info: GET /Clientspricedetails/approvaldata/10/7
+[11/19/2025, 12:08:08 PM] info: generalType
+[11/19/2025, 12:08:08 PM] info: generalType
+[11/19/2025, 12:08:08 PM] info: GET /Clientspricedetails/imclientpricegrid/10/7
+[11/19/2025, 12:08:08 PM] info: generalType
+[11/19/2025, 12:08:08 PM] info: GET /Clientspricedetails/imapprovaldata/10/7
+[11/19/2025, 12:08:08 PM] info: Clients
+[11/19/2025, 12:08:08 PM] info: Clientspricedetails
+[11/19/2025, 12:08:08 PM] info: Clientspricedetails
+[11/19/2025, 12:08:08 PM] info: Clientspricedetails
+[11/19/2025, 12:08:08 PM] info: Clientspricedetails
+[11/19/2025, 12:08:18 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[11/19/2025, 12:08:18 PM] info: GET /clientdetails/customers/11/4
+[11/19/2025, 12:08:18 PM] info: GET /clientdetails/importcustomers/11/4
+[11/19/2025, 12:08:18 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:08:18 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:08:18 PM] info: Userdetails
+[11/19/2025, 12:08:18 PM] info: GET /bookingdetails/Staffing/11
+[11/19/2025, 12:08:18 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:08:18 PM] info: Country
+[11/19/2025, 12:08:18 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[11/19/2025, 12:08:18 PM] info: Country
+[11/19/2025, 12:08:18 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[11/19/2025, 12:08:18 PM] info: generalType
+[11/19/2025, 12:08:18 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[11/19/2025, 12:08:18 PM] info: generalType
+[11/19/2025, 12:08:18 PM] info: generalType
+[11/19/2025, 12:08:18 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[11/19/2025, 12:08:18 PM] info: Clients
+[11/19/2025, 12:08:18 PM] info: Clientspricedetails
+[11/19/2025, 12:08:18 PM] info: Clientspricedetails
+[11/19/2025, 12:08:18 PM] info: Clientspricedetails
+[11/19/2025, 12:08:18 PM] info: Clientspricedetails
+[11/19/2025, 12:08:33 PM] info: GET /userdetails/Approval/7/VendorDetails
+[11/19/2025, 12:08:33 PM] info: GET /vendordetails/getvendor/10/7
+[11/19/2025, 12:08:34 PM] info: Userdetails
+[11/19/2025, 12:08:34 PM] info: Companydetails
+[11/19/2025, 12:09:19 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:09:19 PM] info: GET /userdetails/Approval/7/VendorDetails
+[11/19/2025, 12:09:19 PM] info: GET /vendordetails/getvendor/10/7
+[11/19/2025, 12:09:19 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:09:19 PM] info: Userdetails
+[11/19/2025, 12:09:19 PM] info: Companydetails
+[11/19/2025, 12:09:27 PM] info: GET /userdetails/Approval/4/VendorDetails
+[11/19/2025, 12:09:27 PM] info: GET /vendordetails/getvendor/11/4
+[11/19/2025, 12:09:27 PM] info: Userdetails
+[11/19/2025, 12:09:27 PM] info: Companydetails
+[11/19/2025, 12:09:34 PM] info: GET /userdetails/Approval/6/VendorDetails
+[11/19/2025, 12:09:34 PM] info: GET /vendordetails/getvendor/13/6
+[11/19/2025, 12:09:34 PM] info: Userdetails
+[11/19/2025, 12:09:34 PM] info: Companydetails
+[11/19/2025, 12:09:50 PM] info: GET /userdetails/Approval/7/VendorPriceDetails
+[11/19/2025, 12:09:50 PM] info: GET /Vendorpricedetails/getcustomer/10/7
+[11/19/2025, 12:09:50 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:09:50 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:09:50 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:09:50 PM] info: GET /Vendorpricedetails/vendorpricegrid/10/7
+[11/19/2025, 12:09:50 PM] info: Userdetails
+[11/19/2025, 12:09:50 PM] info: Clients
+[11/19/2025, 12:09:50 PM] info: generalType
+[11/19/2025, 12:09:50 PM] info: GET /Vendorpricedetails/approvaldata/10/7
+[11/19/2025, 12:09:50 PM] info: GET /Vendorpricedetails/imvendorpricegrid/10/7
+[11/19/2025, 12:09:50 PM] info: GET /Vendorpricedetails/imapprovaldata/10/7
+[11/19/2025, 12:09:50 PM] info: generalType
+[11/19/2025, 12:09:50 PM] info: Clients
+[11/19/2025, 12:09:50 PM] info: Vendorpricedetails
+[11/19/2025, 12:09:50 PM] info: Vendorpricedetails
+[11/19/2025, 12:09:50 PM] info: Vendorpricedetails
+[11/19/2025, 12:09:50 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:17 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:10:17 PM] info: GET /userdetails/Approval/7/VendorPriceDetails
+[11/19/2025, 12:10:17 PM] info: GET /Vendorpricedetails/getcustomer/10/7
+[11/19/2025, 12:10:17 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:10:17 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:10:17 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:10:17 PM] info: GET /Vendorpricedetails/vendorpricegrid/10/7
+[11/19/2025, 12:10:17 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:10:17 PM] info: Userdetails
+[11/19/2025, 12:10:17 PM] info: Clients
+[11/19/2025, 12:10:17 PM] info: GET /Vendorpricedetails/approvaldata/10/7
+[11/19/2025, 12:10:17 PM] info: generalType
+[11/19/2025, 12:10:17 PM] info: GET /Vendorpricedetails/imvendorpricegrid/10/7
+[11/19/2025, 12:10:17 PM] info: GET /Vendorpricedetails/imapprovaldata/10/7
+[11/19/2025, 12:10:17 PM] info: generalType
+[11/19/2025, 12:10:17 PM] info: Clients
+[11/19/2025, 12:10:17 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:17 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:17 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:17 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:27 PM] info: GET /userdetails/Approval/4/VendorPriceDetails
+[11/19/2025, 12:10:27 PM] info: GET /Vendorpricedetails/getcustomer/11/4
+[11/19/2025, 12:10:27 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:10:27 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:10:27 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:10:27 PM] info: GET /Vendorpricedetails/vendorpricegrid/11/4
+[11/19/2025, 12:10:27 PM] info: Userdetails
+[11/19/2025, 12:10:27 PM] info: GET /Vendorpricedetails/approvaldata/11/4
+[11/19/2025, 12:10:27 PM] info: Clients
+[11/19/2025, 12:10:27 PM] info: generalType
+[11/19/2025, 12:10:27 PM] info: generalType
+[11/19/2025, 12:10:27 PM] info: GET /Vendorpricedetails/imvendorpricegrid/11/4
+[11/19/2025, 12:10:27 PM] info: GET /Vendorpricedetails/imapprovaldata/11/4
+[11/19/2025, 12:10:27 PM] info: Clients
+[11/19/2025, 12:10:27 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:27 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:27 PM] info: Vendorpricedetails
+[11/19/2025, 12:10:27 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:16 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:11:16 PM] info: GET /userdetails/Approval/4/VendorPriceDetails
+[11/19/2025, 12:11:16 PM] info: GET /Vendorpricedetails/getcustomer/11/4
+[11/19/2025, 12:11:16 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:11:16 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:11:16 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:11:16 PM] info: GET /Vendorpricedetails/vendorpricegrid/11/4
+[11/19/2025, 12:11:16 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:11:16 PM] info: Userdetails
+[11/19/2025, 12:11:16 PM] info: Clients
+[11/19/2025, 12:11:16 PM] info: GET /Vendorpricedetails/approvaldata/11/4
+[11/19/2025, 12:11:16 PM] info: GET /Vendorpricedetails/imvendorpricegrid/11/4
+[11/19/2025, 12:11:16 PM] info: generalType
+[11/19/2025, 12:11:16 PM] info: GET /Vendorpricedetails/imapprovaldata/11/4
+[11/19/2025, 12:11:16 PM] info: generalType
+[11/19/2025, 12:11:16 PM] info: Clients
+[11/19/2025, 12:11:16 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:16 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:16 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:16 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:26 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:11:26 PM] info: GET /userdetails/Approval/7/VendorPriceDetails
+[11/19/2025, 12:11:26 PM] info: GET /Vendorpricedetails/getcustomer/10/7
+[11/19/2025, 12:11:26 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:11:26 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:11:26 PM] info: Userdetails
+[11/19/2025, 12:11:26 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:11:26 PM] info: GET /Vendorpricedetails/vendorpricegrid/10/7
+[11/19/2025, 12:11:26 PM] info: Clients
+[11/19/2025, 12:11:26 PM] info: GET /Vendorpricedetails/approvaldata/10/7
+[11/19/2025, 12:11:26 PM] info: GET /Vendorpricedetails/imvendorpricegrid/10/7
+[11/19/2025, 12:11:26 PM] info: generalType
+[11/19/2025, 12:11:26 PM] info: GET /Vendorpricedetails/imapprovaldata/10/7
+[11/19/2025, 12:11:26 PM] info: generalType
+[11/19/2025, 12:11:26 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:11:26 PM] info: Clients
+[11/19/2025, 12:11:26 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:26 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:26 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:26 PM] info: Vendorpricedetails
+[11/19/2025, 12:11:52 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[11/19/2025, 12:11:52 PM] info: GET /clientdetails/customers/11/4
+[11/19/2025, 12:11:52 PM] info: GET /clientdetails/importcustomers/11/4
+[11/19/2025, 12:11:52 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:11:52 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:11:52 PM] info: GET /bookingdetails/Staffing/11
+[11/19/2025, 12:11:52 PM] info: Userdetails
+[11/19/2025, 12:11:52 PM] info: Country
+[11/19/2025, 12:11:52 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:11:52 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[11/19/2025, 12:11:52 PM] info: Country
+[11/19/2025, 12:11:52 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[11/19/2025, 12:11:52 PM] info: generalType
+[11/19/2025, 12:11:52 PM] info: generalType
+[11/19/2025, 12:11:52 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[11/19/2025, 12:11:52 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[11/19/2025, 12:11:52 PM] info: generalType
+[11/19/2025, 12:11:52 PM] info: Clients
+[11/19/2025, 12:11:52 PM] info: Clientspricedetails
+[11/19/2025, 12:11:52 PM] info: Clientspricedetails
+[11/19/2025, 12:11:52 PM] info: Clientspricedetails
+[11/19/2025, 12:11:52 PM] info: Clientspricedetails
+[11/19/2025, 12:11:57 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:11:57 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[11/19/2025, 12:11:57 PM] info: GET /clientdetails/customers/11/4
+[11/19/2025, 12:11:57 PM] info: GET /clientdetails/importcustomers/11/4
+[11/19/2025, 12:11:57 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:11:57 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:11:57 PM] info: Userdetails
+[11/19/2025, 12:11:57 PM] info: GET /bookingdetails/Staffing/11
+[11/19/2025, 12:11:57 PM] info: Country
+[11/19/2025, 12:11:57 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:11:57 PM] info: Country
+[11/19/2025, 12:11:57 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[11/19/2025, 12:11:57 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[11/19/2025, 12:11:57 PM] info: generalType
+[11/19/2025, 12:11:57 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[11/19/2025, 12:11:57 PM] info: generalType
+[11/19/2025, 12:11:57 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[11/19/2025, 12:11:57 PM] info: generalType
+[11/19/2025, 12:11:57 PM] info: Clients
+[11/19/2025, 12:11:57 PM] info: Clientspricedetails
+[11/19/2025, 12:11:57 PM] info: Clientspricedetails
+[11/19/2025, 12:11:57 PM] info: Clientspricedetails
+[11/19/2025, 12:11:57 PM] info: Clientspricedetails
+[11/19/2025, 12:11:57 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:24 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:24 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[11/19/2025, 12:12:24 PM] info: GET /clientdetails/customers/11/4
+[11/19/2025, 12:12:24 PM] info: GET /clientdetails/importcustomers/11/4
+[11/19/2025, 12:12:24 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:12:24 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:12:24 PM] info: GET /bookingdetails/Staffing/11
+[11/19/2025, 12:12:24 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:24 PM] info: Userdetails
+[11/19/2025, 12:12:24 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:12:24 PM] info: Country
+[11/19/2025, 12:12:24 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[11/19/2025, 12:12:24 PM] info: Country
+[11/19/2025, 12:12:24 PM] info: generalType
+[11/19/2025, 12:12:24 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[11/19/2025, 12:12:24 PM] info: generalType
+[11/19/2025, 12:12:24 PM] info: generalType
+[11/19/2025, 12:12:24 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[11/19/2025, 12:12:24 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[11/19/2025, 12:12:24 PM] info: Clients
+[11/19/2025, 12:12:24 PM] info: Clientspricedetails
+[11/19/2025, 12:12:24 PM] info: Clientspricedetails
+[11/19/2025, 12:12:24 PM] info: Clientspricedetails
+[11/19/2025, 12:12:24 PM] info: Clientspricedetails
+[11/19/2025, 12:12:42 PM] info: GET /userdetails/Approval/7/ClientpriceDetails
+[11/19/2025, 12:12:42 PM] info: GET /clientdetails/customers/10/7
+[11/19/2025, 12:12:42 PM] info: GET /clientdetails/importcustomers/10/7
+[11/19/2025, 12:12:42 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:12:42 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:12:42 PM] info: GET /bookingdetails/Staffing/10
+[11/19/2025, 12:12:42 PM] info: Userdetails
+[11/19/2025, 12:12:42 PM] info: Country
+[11/19/2025, 12:12:42 PM] info: Country
+[11/19/2025, 12:12:42 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:12:42 PM] info: GET /Clientspricedetails/clientpricegrid/10/7
+[11/19/2025, 12:12:42 PM] info: generalType
+[11/19/2025, 12:12:42 PM] info: GET /Clientspricedetails/approvaldata/10/7
+[11/19/2025, 12:12:42 PM] info: generalType
+[11/19/2025, 12:12:42 PM] info: generalType
+[11/19/2025, 12:12:42 PM] info: GET /Clientspricedetails/imclientpricegrid/10/7
+[11/19/2025, 12:12:42 PM] info: GET /Clientspricedetails/imapprovaldata/10/7
+[11/19/2025, 12:12:42 PM] info: Clients
+[11/19/2025, 12:12:42 PM] info: Clientspricedetails
+[11/19/2025, 12:12:42 PM] info: Clientspricedetails
+[11/19/2025, 12:12:42 PM] info: Clientspricedetails
+[11/19/2025, 12:12:42 PM] info: Clientspricedetails
+[11/19/2025, 12:12:48 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:48 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:48 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:48 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:48 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:48 PM] info: Userdetails
+[11/19/2025, 12:12:48 PM] info: Clients
+[11/19/2025, 12:12:48 PM] info: Clients
+[11/19/2025, 12:12:48 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:48 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:48 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:48 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:48 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:48 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:48 PM] info: Userdetails
+[11/19/2025, 12:12:48 PM] info: Clients
+[11/19/2025, 12:12:48 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:48 PM] info: Clients
+[11/19/2025, 12:12:49 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:49 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:49 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:49 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:49 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:49 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:49 PM] info: Userdetails
+[11/19/2025, 12:12:49 PM] info: Clients
+[11/19/2025, 12:12:49 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:49 PM] info: Clients
+[11/19/2025, 12:12:49 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:49 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:49 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:49 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:49 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:49 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:49 PM] info: Userdetails
+[11/19/2025, 12:12:49 PM] info: Clients
+[11/19/2025, 12:12:49 PM] info: Clients
+[11/19/2025, 12:12:49 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:50 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:50 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:50 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:50 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:50 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:50 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:50 PM] info: Userdetails
+[11/19/2025, 12:12:50 PM] info: Clients
+[11/19/2025, 12:12:50 PM] info: Clients
+[11/19/2025, 12:12:50 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:51 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:51 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:51 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:51 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:51 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:51 PM] info: Userdetails
+[11/19/2025, 12:12:51 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:51 PM] info: Clients
+[11/19/2025, 12:12:51 PM] info: Clients
+[11/19/2025, 12:12:51 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:51 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:51 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:51 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:51 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:51 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:51 PM] info: Userdetails
+[11/19/2025, 12:12:51 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:52 PM] info: Clients
+[11/19/2025, 12:12:52 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:52 PM] info: Clients
+[11/19/2025, 12:12:52 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:52 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:52 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:52 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:52 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:52 PM] info: Userdetails
+[11/19/2025, 12:12:52 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:52 PM] info: Clients
+[11/19/2025, 12:12:52 PM] info: Clients
+[11/19/2025, 12:12:52 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:53 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:53 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:53 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:53 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:53 PM] info: Userdetails
+[11/19/2025, 12:12:53 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:53 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:53 PM] info: Clients
+[11/19/2025, 12:12:53 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:53 PM] info: Clients
+[11/19/2025, 12:12:53 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:53 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:53 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:53 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:53 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:53 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:53 PM] info: Userdetails
+[11/19/2025, 12:12:53 PM] info: Clients
+[11/19/2025, 12:12:53 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:53 PM] info: Clients
+[11/19/2025, 12:12:54 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:54 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:54 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:54 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:54 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:54 PM] info: Userdetails
+[11/19/2025, 12:12:54 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:54 PM] info: Clients
+[11/19/2025, 12:12:54 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:54 PM] info: Clients
+[11/19/2025, 12:12:54 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:54 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:54 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:54 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:54 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:54 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:54 PM] info: Userdetails
+[11/19/2025, 12:12:54 PM] info: Clients
+[11/19/2025, 12:12:54 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:54 PM] info: Clients
+[11/19/2025, 12:12:55 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:55 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:55 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:55 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:55 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:55 PM] info: Userdetails
+[11/19/2025, 12:12:55 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:55 PM] info: Clients
+[11/19/2025, 12:12:55 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:55 PM] info: Clients
+[11/19/2025, 12:12:56 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:56 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:56 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:56 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:56 PM] info: Userdetails
+[11/19/2025, 12:12:56 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:56 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:56 PM] info: Clients
+[11/19/2025, 12:12:56 PM] info: Clients
+[11/19/2025, 12:12:56 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:56 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:12:57 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:12:57 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:12:57 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:12:57 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:12:57 PM] info: Userdetails
+[11/19/2025, 12:12:57 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:12:57 PM] info: Clients
+[11/19/2025, 12:12:57 PM] info: Clients
+[11/19/2025, 12:12:57 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:12:57 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:14:04 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:14:04 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:14:04 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:14:04 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:14:04 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:14:04 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:14:04 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:14:04 PM] info: Userdetails
+[11/19/2025, 12:14:04 PM] info: Clients
+[11/19/2025, 12:14:05 PM] info: Clients
+[11/19/2025, 12:14:05 PM] info: Clients
+[11/19/2025, 12:14:05 PM] info: Clients
+[11/19/2025, 12:14:46 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:14:46 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:14:46 PM] info: GET /bookingExports/getall/10/7
+[11/19/2025, 12:14:46 PM] info: GET /bookingExports/allbooked/10/7
+[11/19/2025, 12:14:46 PM] info: GET /Importbookings/getall/10/7
+[11/19/2025, 12:14:46 PM] info: GET /Importbookings/allbooked/10/7
+[11/19/2025, 12:14:47 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:14:47 PM] info: Userdetails
+[11/19/2025, 12:14:47 PM] info: Clients
+[11/19/2025, 12:14:47 PM] info: Clients
+[11/19/2025, 12:14:47 PM] info: Clients
+[11/19/2025, 12:14:47 PM] info: Clients
+[11/19/2025, 12:15:03 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:15:03 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[11/19/2025, 12:15:03 PM] info: GET /clientdetails/customers/11/4
+[11/19/2025, 12:15:03 PM] info: GET /clientdetails/importcustomers/11/4
+[11/19/2025, 12:15:03 PM] info: GET /bookingdetails/getgenerel/11
+[11/19/2025, 12:15:03 PM] info: GET /bookingdetails/pointofclear/11
+[11/19/2025, 12:15:03 PM] info: GET /bookingdetails/Staffing/11
+[11/19/2025, 12:15:04 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:15:04 PM] info: Userdetails
+[11/19/2025, 12:15:04 PM] info: Country
+[11/19/2025, 12:15:04 PM] info: Country
+[11/19/2025, 12:15:04 PM] info: GET /invoicedetails/getportofloading/11
+[11/19/2025, 12:15:04 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[11/19/2025, 12:15:04 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[11/19/2025, 12:15:04 PM] info: generalType
+[11/19/2025, 12:15:04 PM] info: generalType
+[11/19/2025, 12:15:04 PM] info: generalType
+[11/19/2025, 12:15:04 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[11/19/2025, 12:15:04 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[11/19/2025, 12:15:04 PM] info: Clients
+[11/19/2025, 12:15:04 PM] info: Clientspricedetails
+[11/19/2025, 12:15:04 PM] info: Clientspricedetails
+[11/19/2025, 12:15:04 PM] info: Clientspricedetails
+[11/19/2025, 12:15:04 PM] info: Clientspricedetails
+[11/19/2025, 12:15:10 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/19/2025, 12:15:10 PM] info: GET /bookingExports/getall/11/4
+[11/19/2025, 12:15:10 PM] info: GET /bookingExports/allbooked/11/4
+[11/19/2025, 12:15:10 PM] info: GET /Importbookings/getall/11/4
+[11/19/2025, 12:15:10 PM] info: GET /Importbookings/allbooked/11/4
+[11/19/2025, 12:15:10 PM] info: Userdetails
+[11/19/2025, 12:15:10 PM] info: Clients
+[11/19/2025, 12:15:10 PM] info: Clients
+[11/19/2025, 12:15:10 PM] info: Clients
+[11/19/2025, 12:15:11 PM] info: Clients
+[11/19/2025, 12:15:18 PM] info: GET /userdetails/Approval/6/BookingDetails
+[11/19/2025, 12:15:18 PM] info: GET /bookingExports/getall/13/6
+[11/19/2025, 12:15:18 PM] info: GET /bookingExports/allbooked/13/6
+[11/19/2025, 12:15:18 PM] info: GET /Importbookings/getall/13/6
+[11/19/2025, 12:15:18 PM] info: GET /Importbookings/allbooked/13/6
+[11/19/2025, 12:15:18 PM] info: Userdetails
+[11/19/2025, 12:15:18 PM] info: Clients
+[11/19/2025, 12:15:18 PM] info: Clients
+[11/19/2025, 12:15:18 PM] info: Clients
+[11/19/2025, 12:15:19 PM] info: Clients
+[11/19/2025, 12:16:05 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:16:05 PM] info: GET /invoicedetails/invoicegrid/10/7
+[11/19/2025, 12:16:05 PM] info: GET /invoicedetails/invoicegridcomplete/10/7
+[11/19/2025, 12:16:06 PM] info: Userdetails
+[11/19/2025, 12:16:06 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:16:06 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:17:49 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:17:49 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:17:49 PM] info: GET /invoicedetails/invoicegrid/10/7
+[11/19/2025, 12:17:49 PM] info: GET /invoicedetails/invoicegridcomplete/10/7
+[11/19/2025, 12:17:49 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:17:49 PM] info: Userdetails
+[11/19/2025, 12:17:49 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:17:49 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:18:06 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/19/2025, 12:18:06 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/19/2025, 12:18:06 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/19/2025, 12:18:06 PM] info: Userdetails
+[11/19/2025, 12:18:06 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:18:06 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:18:15 PM] info: GET /userdetails/Approval/4/Paymententry
+[11/19/2025, 12:18:15 PM] info: GET /invoicetds/paymentgrid/11/4
+[11/19/2025, 12:18:15 PM] info: Userdetails
+[11/19/2025, 12:18:15 PM] info: Invoice Payment details fetched successfully
+[11/19/2025, 12:18:36 PM] info: GET /userdetails/Approval/7/Paymententry
+[11/19/2025, 12:18:36 PM] info: GET /invoicetds/paymentgrid/10/7
+[11/19/2025, 12:18:36 PM] info: Userdetails
+[11/19/2025, 12:18:36 PM] info: Invoice Payment details fetched successfully
+[11/19/2025, 12:18:43 PM] info: GET /userdetails/Approval/7/APInvoices
+[11/19/2025, 12:18:43 PM] info: GET /Apinvoices/invoicegrid/10/7
+[11/19/2025, 12:18:43 PM] info: Userdetails
+[11/19/2025, 12:18:43 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:19:03 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/19/2025, 12:19:03 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/19/2025, 12:19:03 PM] info: Userdetails
+[11/19/2025, 12:19:04 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:19:16 PM] info: GET /userdetails/Approval/7/APPaymentgrid
+[11/19/2025, 12:19:16 PM] info: GET /apinvoicetds/paymentgrid/10/7
+[11/19/2025, 12:19:16 PM] info: Userdetails
+[11/19/2025, 12:19:16 PM] info: Invoice Payment details fetched successfully
+[11/19/2025, 12:19:33 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/19/2025, 12:19:33 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/19/2025, 12:19:33 PM] info: Userdetails
+[11/19/2025, 12:19:33 PM] info: Invoice Payment details fetched successfully
+[11/19/2025, 12:19:52 PM] info: GET /userdetails/Approval/4/LocationGrid
+[11/19/2025, 12:19:52 PM] info: GET /lacation/get/11/4
+[11/19/2025, 12:19:52 PM] info: Userdetails
+[11/19/2025, 12:19:52 PM] info: locationdetails fetched successfully.
+[11/19/2025, 12:19:58 PM] info: GET /lacation/getportdescription
+[11/19/2025, 12:19:58 PM] info: portdescription
+[11/19/2025, 12:20:23 PM] info: POST /lacation/
+[11/19/2025, 12:20:23 PM] info: GET /userdetails/Approval/4/LocationGrid
+[11/19/2025, 12:20:23 PM] info: GET /lacation/get/11/4
+[11/19/2025, 12:20:23 PM] info: Userdetails
+[11/19/2025, 12:20:23 PM] info: locationdetails fetched successfully.
+[11/19/2025, 12:20:29 PM] info: GET /userdetails/Approval/7/LocationGrid
+[11/19/2025, 12:20:29 PM] info: GET /lacation/get/10/7
+[11/19/2025, 12:20:29 PM] info: Userdetails
+[11/19/2025, 12:20:30 PM] info: locationdetails fetched successfully.
+[11/19/2025, 12:20:45 PM] info: GET /userdetails/Approval/7/vehicleinformationgrid
+[11/19/2025, 12:20:45 PM] info: GET /VehicleInformation/getAllVehicle
+[11/19/2025, 12:20:45 PM] info: Userdetails
+[11/19/2025, 12:20:48 PM] info: GET /pod/getall
+[11/19/2025, 12:20:51 PM] info: GET /userdetails/Approval/7/truckmastergrid
+[11/19/2025, 12:20:51 PM] info: GET /VehicleInformation/getAllTruck
+[11/19/2025, 12:20:51 PM] info: Userdetails
+[11/19/2025, 12:20:55 PM] info: GET /AdminDashboard/getclientcount/
+[11/19/2025, 12:20:55 PM] info: GET /AdminDashboard/getclienttotalcount/
+[11/19/2025, 12:20:55 PM] info: GET /AdminDashboard/getactiveclients/
+[11/19/2025, 12:20:55 PM] info: Clients
+[11/19/2025, 12:20:55 PM] info: Clients
+[11/19/2025, 12:21:03 PM] info: GET /userdetails/Approval/7/ClientDetails
+[11/19/2025, 12:21:03 PM] info: GET /clientdetails/allget/10/7
+[11/19/2025, 12:21:03 PM] info: Userdetails
+[11/19/2025, 12:21:03 PM] info: Clientdetails
+[11/19/2025, 12:21:12 PM] info: GET /bookingdetails/gettoecontaine/10/7
+[11/19/2025, 12:21:12 PM] info: GET /bookingdetails/getforcontaine/10/7
+[11/19/2025, 12:21:12 PM] info: GET /VehicleInformation/mapdetails/10/7
+[11/19/2025, 12:21:12 PM] info: Clients
+[11/19/2025, 12:21:12 PM] info: Clients
+[11/19/2025, 12:21:12 PM] info: map
+[11/19/2025, 12:21:14 PM] info: GET /userdetails/Approval/7/User
+[11/19/2025, 12:21:14 PM] info: GET /userdetails/getrole/7
+[11/19/2025, 12:21:14 PM] info: GET /userdetails/gridvalues/10/7
+[11/19/2025, 12:21:14 PM] info: Userdetails
+[11/19/2025, 12:21:14 PM] info: Userdetails
+[11/19/2025, 12:21:14 PM] info: Userdetails
+[11/19/2025, 12:22:36 PM] info: GET /userdetails/Approval/7/VendorPriceDetails
+[11/19/2025, 12:22:36 PM] info: GET /Vendorpricedetails/getcustomer/10/7
+[11/19/2025, 12:22:36 PM] info: GET /bookingdetails/getgenerel/10
+[11/19/2025, 12:22:36 PM] info: GET /bookingdetails/pointofclear/10
+[11/19/2025, 12:22:36 PM] info: GET /invoicedetails/getportofloading/10
+[11/19/2025, 12:22:36 PM] info: GET /Vendorpricedetails/vendorpricegrid/10/7
+[11/19/2025, 12:22:36 PM] info: Userdetails
+[11/19/2025, 12:22:36 PM] info: Clients
+[11/19/2025, 12:22:36 PM] info: generalType
+[11/19/2025, 12:22:36 PM] info: generalType
+[11/19/2025, 12:22:36 PM] info: GET /Vendorpricedetails/approvaldata/10/7
+[11/19/2025, 12:22:36 PM] info: GET /Vendorpricedetails/imvendorpricegrid/10/7
+[11/19/2025, 12:22:36 PM] info: GET /Vendorpricedetails/imapprovaldata/10/7
+[11/19/2025, 12:22:36 PM] info: Clients
+[11/19/2025, 12:22:36 PM] info: Vendorpricedetails
+[11/19/2025, 12:22:36 PM] info: Vendorpricedetails
+[11/19/2025, 12:22:36 PM] info: Vendorpricedetails
+[11/19/2025, 12:22:36 PM] info: Vendorpricedetails
+[11/19/2025, 12:23:10 PM] info: GET /ClientImages/null
+[11/19/2025, 12:23:10 PM] info: GET /ProfileImages/null
+[11/19/2025, 12:23:15 PM] info: POST /register/logins
+[11/19/2025, 12:23:15 PM] info: login user/id=15
+[11/19/2025, 12:23:15 PM] info: GET /bookingdetails/gettoecontaine/15/7
+[11/19/2025, 12:23:15 PM] info: GET /bookingdetails/getforcontaine/15/7
+[11/19/2025, 12:23:15 PM] info: Clients
+[11/19/2025, 12:23:15 PM] info: GET /VehicleInformation/mapdetails/15/7
+[11/19/2025, 12:23:15 PM] info: Clients
+[11/19/2025, 12:23:15 PM] info: map
+[11/19/2025, 12:23:15 PM] info: GET /ClientImages/download.png
+[11/19/2025, 12:23:26 PM] info: GET /userdetails/Approval/7/VendorDetails
+[11/19/2025, 12:23:26 PM] info: GET /vendordetails/getvendor/15/7
+[11/19/2025, 12:23:26 PM] info: Userdetails
+[11/19/2025, 12:23:26 PM] info: Companydetails
+[11/19/2025, 12:23:29 PM] info: GET /userdetails/Approval/7/VendorPriceDetails
+[11/19/2025, 12:23:29 PM] info: GET /Vendorpricedetails/getcustomer/15/7
+[11/19/2025, 12:23:29 PM] info: GET /bookingdetails/getgenerel/15
+[11/19/2025, 12:23:29 PM] info: Userdetails
+[11/19/2025, 12:23:29 PM] info: Clients
+[11/19/2025, 12:23:30 PM] info: GET /bookingdetails/pointofclear/15
+[11/19/2025, 12:23:30 PM] info: GET /invoicedetails/getportofloading/15
+[11/19/2025, 12:23:30 PM] info: GET /Vendorpricedetails/vendorpricegrid/15/7
+[11/19/2025, 12:23:30 PM] info: GET /Vendorpricedetails/approvaldata/15/7
+[11/19/2025, 12:23:30 PM] info: GET /Vendorpricedetails/imvendorpricegrid/15/7
+[11/19/2025, 12:23:30 PM] info: generalType
+[11/19/2025, 12:23:30 PM] info: generalType
+[11/19/2025, 12:23:30 PM] info: GET /Vendorpricedetails/imapprovaldata/15/7
+[11/19/2025, 12:23:30 PM] info: Clients
+[11/19/2025, 12:23:30 PM] info: Vendorpricedetails
+[11/19/2025, 12:23:30 PM] info: Vendorpricedetails
+[11/19/2025, 12:23:30 PM] info: Vendorpricedetails
+[11/19/2025, 12:23:30 PM] info: Vendorpricedetails
+[11/19/2025, 12:23:32 PM] info: GET /userdetails/Approval/7/BookingDetails
+[11/19/2025, 12:23:32 PM] info: GET /bookingExports/getall/15/7
+[11/19/2025, 12:23:32 PM] info: GET /bookingExports/allbooked/15/7
+[11/19/2025, 12:23:32 PM] info: GET /Importbookings/getall/15/7
+[11/19/2025, 12:23:32 PM] info: GET /Importbookings/allbooked/15/7
+[11/19/2025, 12:23:32 PM] info: Userdetails
+[11/19/2025, 12:23:32 PM] info: Clients
+[11/19/2025, 12:23:32 PM] info: Clients
+[11/19/2025, 12:23:32 PM] info: Clients
+[11/19/2025, 12:23:32 PM] info: Clients
+[11/19/2025, 12:23:36 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:23:36 PM] info: GET /invoicedetails/invoicegrid/15/7
+[11/19/2025, 12:23:36 PM] info: GET /invoicedetails/invoicegridcomplete/15/7
+[11/19/2025, 12:23:36 PM] info: Userdetails
+[11/19/2025, 12:23:36 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:23:36 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:23:39 PM] info: GET /userdetails/Approval/7/LocationGrid
+[11/19/2025, 12:23:39 PM] info: GET /lacation/get/15/7
+[11/19/2025, 12:23:39 PM] info: Userdetails
+[11/19/2025, 12:23:39 PM] info: locationdetails fetched successfully.
+[11/19/2025, 12:23:45 PM] info: GET /Report/gstgrid/15
+[11/19/2025, 12:23:45 PM] info: gstinvoicegrid with two queries
+[11/19/2025, 12:23:48 PM] info: GET /Report/tdsgrid/15
+[11/19/2025, 12:23:48 PM] info: tdsreportgrid
+[11/19/2025, 12:23:53 PM] info: GET /Report/invoicegrid/15
+[11/19/2025, 12:23:53 PM] info: invoicegrid with two queries
+[11/19/2025, 12:24:07 PM] info: GET /Report/gstgrid/10
+[11/19/2025, 12:24:07 PM] info: gstinvoicegrid with two queries
+[11/19/2025, 12:24:47 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:24:47 PM] info: GET /invoicedetails/invoicegrid/10/7
+[11/19/2025, 12:24:47 PM] info: GET /invoicedetails/invoicegridcomplete/10/7
+[11/19/2025, 12:24:47 PM] info: Userdetails
+[11/19/2025, 12:24:47 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:24:47 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:24:51 PM] info: GET /invoicedetails/getupdate/1549
+[11/19/2025, 12:24:51 PM] info: Invoicedetails
+[11/19/2025, 12:24:51 PM] info: GET /invoicedetails/getcompany/1/10
+[11/19/2025, 12:24:51 PM] info: GET /invoicedetails/getbookingnumber/12/1/10
+[11/19/2025, 12:24:51 PM] info: GET /invoicedetails/getcharge/
+[11/19/2025, 12:24:51 PM] info: Clients
+[11/19/2025, 12:24:51 PM] info: Clients
+[11/19/2025, 12:24:51 PM] info: Clients
+[11/19/2025, 12:24:57 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:24:57 PM] info: GET /invoicedetails/invoicegrid/10/7
+[11/19/2025, 12:24:57 PM] info: GET /invoicedetails/invoicegridcomplete/10/7
+[11/19/2025, 12:24:57 PM] info: Userdetails
+[11/19/2025, 12:24:57 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:24:57 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:25:02 PM] info: GET /invoicedetails/getupdate/1552
+[11/19/2025, 12:25:02 PM] info: Invoicedetails
+[11/19/2025, 12:25:02 PM] info: GET /invoicedetails/getcompany/1/10
+[11/19/2025, 12:25:02 PM] info: GET /invoicedetails/getbookingnumber/5/1/10
+[11/19/2025, 12:25:02 PM] info: GET /invoicedetails/getcharge/
+[11/19/2025, 12:25:02 PM] info: Clients
+[11/19/2025, 12:25:02 PM] info: Clients
+[11/19/2025, 12:25:02 PM] info: Clients
+[11/19/2025, 12:25:04 PM] info: GET /userdetails/Approval/7/InvoiceDetails
+[11/19/2025, 12:25:04 PM] info: GET /invoicedetails/invoicegrid/10/7
+[11/19/2025, 12:25:04 PM] info: GET /invoicedetails/invoicegridcomplete/10/7
+[11/19/2025, 12:25:04 PM] info: Userdetails
+[11/19/2025, 12:25:04 PM] info: Invoice details fetched successfully
+[11/19/2025, 12:25:04 PM] info: Invoice details fetched successfully

@@ -1,0 +1,808 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server">Booking Details</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a>Booking Details</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-fill" id="pills-tab">
+                        <li class="nav-item" style="background-color: #232879; color: white;"><a class="nav-link active"
+                                id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                data-bs-target="#Export">Export</a>
+                        </li>
+                        <li class="nav-item" style="background-color: #232879;color: white;"><a class="nav-link"
+                                id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                                data-bs-target="#Import">Import</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <div class="tab-pane fade show" id="Import">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+
+                                    <div class="container-fluid">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-9"></div>
+                                                <div class="col-3 text-end">
+                                                    <button id="btncolors" [disabled]="createstatus === false" class="btn waves-effect"
+                                                        (click)="import()"><i
+                                                            class="fa fa-plus"></i>&nbsp;Create</button>
+                                                </div>
+
+                                            </div>
+                                            <br />
+
+                                <div class="card-bodys">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                            <div id="datatable-buttons-pending" class="d-flex align-items-center gap-2">
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModal">
+                                                    Select Date Range
+                                                </button>
+          <!--  -->
+               <div class="date-filter dropdown d-inline-block ">
+                    <button class="btn btn-primary dropdown-toggle filter" type="button" data-bs-toggle="dropdown">
+                          Date Filter
+                    </button>
+                  <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" (click)="setDateRange('today')">Today</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('yesterday')">Yesterday</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last7')">Last 7 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last30')">Last 30 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last60')">Last 60 Days</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+               </div>
+
+
+          <!--  -->
+
+                                                <div class="left-search"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModal" tabindex="-1"
+                                        aria-labelledby="dateRangeLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabel">Filter data on date
+                                                        range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDatePending" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDatePending" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                                <div class="m-3 p-3 pending-wrapper">
+                                                    <table
+                                                        class="table table-striped table-bordered nowrap datatablegrid pending"
+                                                        style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th id="colors">Booking Number</th>
+                                                                <th id="colors">Client Name</th>
+                                                                <th id="colors">Container PickUp Date</th>
+                                                                <th id="colors" style="text-align: center;">Status</th>
+                                                                <th id="colors">Description</th>
+                                                                <th id="colors">View</th>
+                                                                <th id="colors">Update</th>
+                                                                <th id="colors">Delete</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr *ngFor="let bird of filteredData">
+                                                                <td>{{bird.BookingNumber}}</td>
+                                                                <td>{{bird.name}}</td>
+                                                                <td>{{bird.ContainerPickUpDate}}</td>
+
+                                                                <td>
+                                                                    <a type="button" id="statusdesignapproval"  [class.disabled]="!statusapporval"     [style.pointer-events]="!statusapporval ? 'none' : 'auto'"
+                                                                        class="badge badge-primary"
+                                                                        [ngClass]="bird.Exspancolur1"
+                                                                        data-bs-toggle="modal"
+                                                                        [attr.data-bs-target]="bird.status != 2 ? '#Bookingconfirm' : null"
+                                                                      (click)="bird.status != 2 ? importbooking(bird.IB_id) : null">
+                                                                        {{bird.Exstatusname1}}
+                                                                    </a>
+
+                                                                </td>
+                                                                <td>{{bird.description}}</td>
+                                                                <td>
+
+                                                                    <a type="button" id="statusdesign"  [class.disabled]="!viewstatus"     [style.pointer-events]="!viewstatus ? 'none' : 'auto'"
+                                                                        class="badge badge-info" data-bs-toggle="modal"
+                                                                        [attr.data-bs-target]="bird.status != 2 ? '#viewModal' : null"
+                                                                        (click)="bird.status != 2 ? views(bird.IB_id) : null">
+                                                                        <i
+                                                                            class="mdi mdi-eye d-block font-size-16px"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a type="button" id="statusdesign"  [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                                        class="badge badge-primary"
+                                                                        (click)="bird.status != 2 ? importAssignvalue(bird.IB_id) : null">
+                                                                        <i
+                                                                            class="mdi mdi-pencil d-block font-size-16px"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a type="button" id="statusdesign" [class.disabled]="!statusdelete" [style.pointer-events]="!statusdelete ? 'none' : 'auto'"
+                                                                        class="badge badge-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Deleteropimport"
+                                                                        (click)="importDeleterole(bird.IB_id)"><i
+                                                                            class="mdi mdi-trash-can d-block font-size-16"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="container-fluid">
+                                        <!-- <div class="card m-5 p-3"> -->
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-11">
+                                                    <h4 class="mb-sm-0 font-size-18">Import Confirmed Details</h4>
+                                                </div>
+                                            </div>
+                                            <br />
+
+                                <div class="card-bodys">
+                                     <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                            <div id="datatable-buttons-completed"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button type="button" class="btn btn-primary" id="dateRangeBtn"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModalCompleted">
+                                                    Select Date Range
+                                                </button>
+             <!--  -->
+               <div class="date-filter dropdown d-inline-block ">
+                    <button class="btn btn-primary dropdown-toggle filter" type="button" data-bs-toggle="dropdown">
+                          Date Filter
+                    </button>
+                  <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" (click)="setDateRange('today')">Today</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('yesterday')">Yesterday</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last7')">Last 7 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last30')">Last 30 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last60')">Last 60 Days</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+               </div>
+
+
+          <!--  -->
+                                                <div class="left-search-completed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModalCompleted" tabindex="-1"
+                                        aria-labelledby="dateRangeLabelCompleted" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabelCompleted">Filter data on
+                                                        date range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDateCompleted" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDateCompleted" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                                <div class=" m-3 p-3 completed-wrapper">
+                                                    <table
+                                                        class="table table-striped table-bordered nowrap datatablegrid completed"
+                                                        style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th id="colors">Booking Number</th>
+                                                                <th id="colors">Client Name</th>
+                                                                <th id="colors">Container PickUp Date</th>
+                                                                <th id="colors" style="text-align: center;">Status</th>
+                                                                <th id="colors">Milestones</th>
+                                                                <th id="colors">View</th>
+                                                                <th id="colors">Update</th>
+                                                                <th id="colors">Cancellation</th>
+
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr *ngFor="let bird of filteredDataCompleted">
+                                                                <td>{{bird.BookingNumber}}</td>
+                                                                <td>{{bird.name}}</td>
+                                                                <td>{{bird.ContainerPickUpDate}}</td>
+                                                                <td><span id="statusdesignapproval"
+                                                                        class="{{bird.imspancolur1}}"><i
+                                                                            class="font-size-16px">{{bird.imstatusname1}}</i>
+                                                                    </span></td>
+                                                                <td><span id="statusdesignapproval"
+                                                                        class="{{bird.imspancolurevent}}"><i
+                                                                            class="font-size-16px">{{bird.imstatusnameevent}}</i>
+                                                                    </span></td>
+                                                                <td><a type="button" id="statusdesign" [class.disabled]="!viewstatus" [style.pointer-events]="!viewstatus ? 'none' : 'auto'"
+                                                                        class="badge badge-info" data-bs-toggle="modal"
+                                                                        data-bs-target="#viewModal"
+                                                                        (click)="viewsmile(bird.IB_id)"><i
+                                                                            class="mdi mdi-eye d-block font-size-16px"></i></a>
+                                                                </td>
+                                                                <td><a type="button" id="statusdesign" [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                                        class="badge badge-primary"
+                                                                        (click)="importAssignvaluemile(bird.IB_id)"><i
+                                                                            class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                                </td>
+                                                                <td style='text-align: center;'><a type="button" [class.disabled]="!statusdelete" [style.pointer-events]="!statusdelete ? 'none' : 'auto'"
+                                                                        id="statusdesign" class="badge badge-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#cancellationimport"
+                                                                         (click)="importbookingcancellation(bird.IB_id)">Cancel<i
+                                                                            class="fa fa-close"></i></a></td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div id="Bookingconfirm" class="modal fade" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header bg-success">
+                                                    <h6 class="modal-title" style="color: white;">Booking Confirmation
+                                                    </h6>
+                                                    <button type="button" class="close" (click)="ImportBookingclose();"
+                                                        style="filter: invert(1);">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                        style="display: flex;"></div>
+                                                    <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                        Confirm this Approval?</p>
+                                                </div>
+                                                <div class="modal-footer d-flex align-content-center">
+                                                    <button type="button" class="btn btn-success"
+                                                        (click)="ImportApproval()" data-dismiss="modal">Yes Approve
+                                                        it</button>
+                                                    <button type="button" class="btn btn-default"
+                                                        (click)="ImportBookingclose();">Cancel</button>
+                                                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="Deleteropimport" class="modal fade" tabindex="-1">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <form [formGroup]="deleteformim">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header bg-danger">
+                                                        <h6 class="modal-title" style="color: white;">Confirm delete
+                                                        </h6>
+                                                        <button type="button" class="close" (click)="cancelimport();"
+                                                            style="filter: invert(1);">&times;</button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                            style="display: flex;"></div>
+                                                        <textarea class="form-control"
+                                                            formControlName="importdeletename" rows="1"></textarea>
+
+                                                        <div *ngIf="submittedim && M['importdeletename'].errors"
+                                                            class="validation-invalid-label">
+                                                            <div *ngIf="M['importdeletename'].errors['required']"><span
+                                                                    style="color: red;">Description is required</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer d-flex align-content-center">
+                                                        <button type="button" class="btn btn-danger"
+                                                            (click)="deleteimport()" data-dismiss="modal">Yes Delete
+                                                            it</button>
+                                                        <button type="button" class="btn btn-default"
+                                                            (click)="cancelimport();">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="cancellationimport" class="modal fade" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header bg-danger">
+                                                    <h6 class="modal-title" style="color: white;">Confirm Booking
+                                                        Cancellation</h6>
+                                                    <button type="button" class="close" (click)="importbookingcancel();"
+                                                        style="filter: invert(1);">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                        style="display: flex;"></div>
+                                                    <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                        Booking Cancellation?</p>
+                                                </div>
+                                                <div class="modal-footer d-flex align-content-center">
+                                                    <button type="button" class="btn btn-danger"
+                                                        (click)="bookingcanceldetails()" data-dismiss="modal">Yes
+                                                        Confirm it</button>
+                                                    <button type="button" class="btn btn-default"
+                                                        (click)="importbookingcancel();">Cancel</button>
+                                                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="Export">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="container-fluid">
+                                        <!-- <div class="card m-5 p-3"> -->
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-9"></div>
+                                                <div class="col-3 text-end">
+                                                    <button id="btncolors"  [disabled]="createstatus === false" class="btn waves-effect waves-light"
+                                                        (click)="export()"><i
+                                                            class="fa fa-plus"></i>&nbsp;Create</button>
+
+                                                </div>
+
+                                            </div>
+                                            <br />
+                                            
+                                    <div class="card-bodys">
+                                      <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                            <div id="datatable-buttons-inprogress"
+                                                class="d-flex align-items-center gap-2"></div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#dateRangeModalInprogress">
+                                                    Select Date Range
+                                                </button>
+          <!--  -->
+               <div class="date-filter dropdown d-inline-block ">
+                    <button class="btn btn-primary dropdown-toggle filter" type="button" data-bs-toggle="dropdown">
+                          Date Filter
+                    </button>
+                  <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" (click)="setDateRange('today')">Today</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('yesterday')">Yesterday</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last7')">Last 7 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last30')">Last 30 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last60')">Last 60 Days</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+               </div>
+
+
+          <!--  -->
+
+                                                <div class="left-search-inprogress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="dateRangeModalInprogress" tabindex="-1"
+                                        aria-labelledby="dateRangeLabelInprogress" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="dateRangeLabelInprogress">Filter data on
+                                                        date range</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <p>Choose a start and an end date which will filter</p>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Start Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="fromDateInprogress" />
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">End Date</label>
+                                                        <input type="date" class="form-control w-100"
+                                                            [(ngModel)]="toDateInprogress" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="button" class="btn btn-primary w-100"
+                                                        (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                                 <div class=" m-3 p-3 inprogress-wrapper">
+
+                                                <table class="table table-striped table-bordered nowrap datatablegrid"
+                                                    style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="colors">Booking Number</th>
+                                                            <th id="colors">Customer Name</th>
+                                                            <th id="colors">Container Placement Date</th>
+                                                            <th id="colors" style="text-align: center;">Status</th>
+                                                            <th id="colors">Description</th>
+                                                            <th id="colors">View</th>
+                                                            <th id="colors">Update</th>
+                                                            <th id="colors">Delete</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let bird of exportfilteredData">
+
+                                                            <td>{{bird.BookingNumber}}</td>
+                                                            <td>{{bird.name}}</td>
+                                                            <td>{{bird.ContainerPlacementDate}}</td>
+                                                            <td>
+
+                                                                <a type="button" id="statusdesignapproval" [class.disabled]="!statusapporval" [style.pointer-events]="!statusapporval ? 'none' : 'auto'"
+                                                                    class="badge badge-primary"
+                                                                    [ngClass]="bird.Exspancolur1" data-bs-toggle="modal"
+                                                                    [attr.data-bs-target]="bird.status != 2 ? '#BookingExconfirm' : null"
+                                                                 (click)="bird.status != 2 ? booking(bird.EB_id) : null">
+                                                                    {{bird.Exstatusname1}}
+                                                                </a>
+                                                            </td>
+                                                            <td>{{bird.description}}</td>
+                                                            <td>
+
+                                                                <a type="button" id="statusdesign" [class.disabled]="!viewstatus" [style.pointer-events]="!viewstatus ? 'none' : 'auto'"
+                                                                    class="badge badge-info" data-bs-toggle="modal"
+                                                                    [attr.data-bs-target]="bird.status != 2 ? '#viewModal' : null"
+                                                                    (click)="bird.status != 2 ? views1(bird.EB_id) : null">
+                                                                    <i class="mdi mdi-eye d-block font-size-16px"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+
+                                                                <a type="button" id="statusdesign" [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                                    class="badge badge-primary"
+                                                                    (click)="bird.status != 2 ? Assignvalue(bird.EB_id) : null">
+                                                                    <i
+                                                                        class="mdi mdi-pencil d-block font-size-16px"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a type="button" id="statusdesign" [class.disabled]="!statusdelete" [style.pointer-events]="!statusdelete ? 'none' : 'auto'"
+                                                                    class="badge badge-danger" data-bs-toggle="modal"
+                                                                    data-bs-target="#Deleterop"
+                                                                    (click)="Deleterole(bird.EB_id)"><i
+                                                                        class="mdi mdi-trash-can d-block font-size-16"></i>
+                                                                </a>
+
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+
+                                    <div class="container-fluid" >
+                                        <!-- <div class="card m-5 p-3"> -->
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-11">
+                                                    <h4 class="mb-sm-0 font-size-18">Export Confirmed Details</h4>
+                                                </div>
+                                            </div>
+                                            <br />
+
+                                    <div class="card-bodys">
+                                        <div class="col-md-12">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                                                <div id="datatable-buttons-cancelled"
+                                                    class="d-flex align-items-center gap-2"></div>
+
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#dateRangeModalCancelled">
+                                                        Select Date Range
+                                                    </button>
+             <!--  -->
+               <div class="date-filter dropdown d-inline-block ">
+                    <button class="btn btn-primary dropdown-toggle filter" type="button" data-bs-toggle="dropdown">
+                          Date Filter
+                    </button>
+                  <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" (click)="setDateRange('today')">Today</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('yesterday')">Yesterday</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last7')">Last 7 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last30')">Last 30 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last60')">Last 60 Days</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+               </div>
+
+
+          <!--  -->
+                                                    <div class="left-search-cancelled"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal fade" id="dateRangeModalCancelled" tabindex="-1"
+                                            aria-labelledby="dateRangeLabelCancelled" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content p-3">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="dateRangeLabelCancelled">Filter data
+                                                            on date range</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <p>Choose a start and an end date which will filter</p>
+
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Start Date</label>
+                                                            <input type="date" class="form-control w-100"
+                                                                [(ngModel)]="fromDateCancelled" />
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label class="form-label">End Date</label>
+                                                            <input type="date" class="form-control w-100"
+                                                                [(ngModel)]="toDateCancelled" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-footer" style="border-top: none;">
+                                                        <button type="button" class="btn btn-primary w-100"
+                                                            (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                            Apply
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                                <div class=" m-3 p-3 cancelled-wrapper">
+                                                <table class="table table-striped table-bordered nowrap datatablegrid"
+                                                    style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="colors">Booking Number</th>
+                                                            <th id="colors">Customer Name</th>
+                                                            <th id="colors">Container Date</th>
+                                                            <th id="colors" style="text-align: center;">Status</th>
+                                                            <th id="colors">Milestones</th>
+                                                            <th id="colors">View</th>
+                                                            <th id="colors">Update</th>
+                                                            <th id="colors">Cancellation</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let bird of exportfilteredDataCompleted">
+                                                            <td>{{bird.BookingNumber}}</td>
+                                                            <td>{{bird.name}}</td>
+                                                            <td>{{bird.ContainerPlacementDate}}</td>
+                                                            <td><span id="statusdesignapproval"
+                                                                    class="{{bird.Exspancolur1}}">{{bird.Exstatusname1}}
+                                                                </span></td>
+                                                            <td>
+                                                                <span id="statusdesignapproval"
+                                                                    class="{{bird.exspancolurevent}}">
+                                                                    <i
+                                                                        class="font-size-16px">{{bird.exstatusnameevent}}</i>
+                                                                </span>
+                                                            </td>
+                                                            <td><a type="button" id="statusdesign" [class.disabled]="!viewstatus" [style.pointer-events]="!viewstatus ? 'none' : 'auto'"
+                                                                    class="badge badge-info" data-bs-toggle="modal"
+                                                                    data-bs-target="#viewModal"
+                                                                    (click)="views1mile(bird.EB_id)"><i
+                                                                        class="mdi mdi-eye d-block font-size-16px"></i></a>
+                                                            </td>
+                                                            <td><a type="button" id="statusdesign" [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                                                    class="badge badge-primary"
+                                                                    (click)="Assignvaluedata(bird.EB_id)"><i
+                                                                        class="mdi mdi-pencil d-block font-size-16px"></i></a>
+                                                            </td>
+                                                            <td style='text-align: center;'><a type="button" [class.disabled]="!statusdelete" [style.pointer-events]="!statusdelete ? 'none' : 'auto'"
+                                                                    id="statusdesign" class="badge badge-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#cancellationexport"
+                                                                   (click)="bookingcancellation(bird.EB_id)">Cancel</a>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div id="BookingExconfirm" class="modal fade" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header bg-success">
+                                                    <h6 class="modal-title" style="color: white;">Booking Confirmation
+                                                    </h6>
+                                                    <button type="button" class="close" (click)="cancel();"
+                                                        style="filter: invert(1);">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                        style="display: flex;"></div>
+                                                    <p class="text-center" style="font-size: 25px;">Are you sure want to
+                                                        Confirm this Approval?</p>
+                                                </div>
+                                                <div class="modal-footer d-flex align-content-center">
+                                                    <button type="button" class="btn btn-success"
+                                                        (click)="ExportApproval()" data-dismiss="modal">Yes Approve
+                                                        it</button>
+                                                    <button type="button" class="btn btn-default"
+                                                        (click)="cancel();">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Deleterop" class="modal fade" tabindex="-1">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <form [formGroup]="deleteform">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header bg-danger">
+                                                        <h6 class="modal-title" style="color: white;">Confirm delete
+                                                        </h6>
+                                                        <button type="button" class="close" (click)="cancelex();"
+                                                            style="filter: invert(1);">&times;</button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="swal2-icon swal2-warning swal2-animate-warning-icon"
+                                                            style="display: flex;"></div>
+                                                        <textarea class="form-control" formControlName="deletename"
+                                                            rows="1"></textarea>
+
+                                                        <div *ngIf="submitted && f['deletename'].errors"
+                                                            class="validation-invalid-label">
+                                                            <div *ngIf="f['deletename'].errors['required']"><span
+                                                                    style="color: red;">Description is required</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer d-flex align-content-center">
+                                                        <button type="button" class="btn btn-danger"
+                                                            (click)="deleteexport()" data-dismiss="modal">Yes Delete
+                                                            it</button>
+                                                        <button type="button" class="btn btn-default"
+                                                            (click)="cancelex();">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>

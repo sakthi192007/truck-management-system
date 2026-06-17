@@ -1,0 +1,128 @@
+[5/22/2026, 6:13:48 PM] info: GET /ClientImages/null
+[5/22/2026, 6:13:52 PM] info: POST /register/logins
+[5/22/2026, 6:13:54 PM] info: login user/id=11
+[5/22/2026, 6:13:54 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[5/22/2026, 6:13:54 PM] info: GET /bookingdetails/getforcontaine/11/4
+[5/22/2026, 6:13:54 PM] info: GET /VehicleInformation/mapdetails/11/4
+[5/22/2026, 6:13:54 PM] info: Clients
+[5/22/2026, 6:13:54 PM] info: Clients
+[5/22/2026, 6:13:54 PM] info: GET /ClientImages/download.png
+[5/22/2026, 6:13:54 PM] info: map
+[5/22/2026, 6:13:59 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[5/22/2026, 6:13:59 PM] info: GET /invoicedetails/invoicegrid/11/4
+[5/22/2026, 6:13:59 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[5/22/2026, 6:13:59 PM] info: Userdetails
+[5/22/2026, 6:13:59 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:13:59 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:14:00 PM] info: GET /invoicedetails/getcharge/
+[5/22/2026, 6:14:01 PM] info: Clients
+[5/22/2026, 6:15:25 PM] info: GET /userdetails/Approval/4/BookingDetails
+[5/22/2026, 6:15:25 PM] info: GET /bookingExports/getall/11/4
+[5/22/2026, 6:15:25 PM] info: GET /bookingExports/allbooked/11/4
+[5/22/2026, 6:15:25 PM] info: GET /Importbookings/getall/11/4
+[5/22/2026, 6:15:25 PM] info: GET /Importbookings/allbooked/11/4
+[5/22/2026, 6:15:25 PM] info: Userdetails
+[5/22/2026, 6:15:26 PM] info: Clients
+[5/22/2026, 6:15:26 PM] info: Clients
+[5/22/2026, 6:15:26 PM] info: Clients
+[5/22/2026, 6:15:26 PM] info: Clients
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/getcustomer/11/4
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/getvendordata/11
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/getshiperdata/11
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/getgenerel/11
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/pointofclear/11
+[5/22/2026, 6:15:27 PM] info: GET /invoicedetails/getportofloading/11
+[5/22/2026, 6:15:27 PM] info: generalType
+[5/22/2026, 6:15:27 PM] info: Clients
+[5/22/2026, 6:15:27 PM] info: GET /bookingdetails/getMile
+[5/22/2026, 6:15:27 PM] info: generalType
+[5/22/2026, 6:15:27 PM] info: generalType
+[5/22/2026, 6:15:27 PM] info: Clients
+[5/22/2026, 6:15:27 PM] info: Clients
+[5/22/2026, 6:15:27 PM] info: generalType
+[5/22/2026, 6:15:52 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[5/22/2026, 6:15:52 PM] info: GET /invoicedetails/invoicegrid/11/4
+[5/22/2026, 6:15:52 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[5/22/2026, 6:15:53 PM] info: Userdetails
+[5/22/2026, 6:15:53 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:15:53 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:15:56 PM] info: GET /invoicedetails/getcharge/
+[5/22/2026, 6:15:57 PM] info: Clients
+[5/22/2026, 6:15:59 PM] info: GET /invoicedetails/getcompany/1/11
+[5/22/2026, 6:15:59 PM] info: Clients
+[5/22/2026, 6:16:01 PM] info: GET /invoicedetails/getbookingnumber/7/1/11
+[5/22/2026, 6:16:01 PM] info: GET /invoicedetails/getstate/7
+[5/22/2026, 6:16:01 PM] info: Clients
+[5/22/2026, 6:16:01 PM] info: Clients
+[5/22/2026, 6:16:06 PM] info: GET /invoicedetails/getDesc/1
+[5/22/2026, 6:16:06 PM] info: Clients
+[5/22/2026, 6:16:29 PM] info: GET /userdetails/Approval/4/ClientpriceDetails
+[5/22/2026, 6:16:29 PM] info: GET /clientdetails/customers/11/4
+[5/22/2026, 6:16:29 PM] info: GET /clientdetails/importcustomers/11/4
+[5/22/2026, 6:16:29 PM] info: GET /bookingdetails/getgenerel/11
+[5/22/2026, 6:16:29 PM] info: GET /bookingdetails/pointofclear/11
+[5/22/2026, 6:16:29 PM] info: GET /bookingdetails/Staffing/11
+[5/22/2026, 6:16:30 PM] info: Country
+[5/22/2026, 6:16:30 PM] info: Userdetails
+[5/22/2026, 6:16:30 PM] info: Country
+[5/22/2026, 6:16:30 PM] info: GET /invoicedetails/getportofloading/11
+[5/22/2026, 6:16:30 PM] info: GET /Clientspricedetails/clientpricegrid/11/4
+[5/22/2026, 6:16:30 PM] info: GET /Clientspricedetails/approvaldata/11/4
+[5/22/2026, 6:16:30 PM] info: generalType
+[5/22/2026, 6:16:30 PM] info: GET /Clientspricedetails/imclientpricegrid/11/4
+[5/22/2026, 6:16:30 PM] info: generalType
+[5/22/2026, 6:16:30 PM] info: GET /Clientspricedetails/imapprovaldata/11/4
+[5/22/2026, 6:16:30 PM] info: Clients
+[5/22/2026, 6:16:30 PM] info: Clientspricedetails
+[5/22/2026, 6:16:30 PM] info: Clientspricedetails
+[5/22/2026, 6:16:30 PM] info: Clientspricedetails
+[5/22/2026, 6:16:30 PM] info: Clientspricedetails
+[5/22/2026, 6:16:30 PM] info: generalType
+[5/22/2026, 6:16:58 PM] info: GET /userdetails/Approval/4/vehicleinformationgrid
+[5/22/2026, 6:16:58 PM] info: GET /VehicleInformation/getAllVehicle/11
+[5/22/2026, 6:16:58 PM] info: Userdetails
+[5/22/2026, 6:16:58 PM] info: vehicle fetched successfully.
+[5/22/2026, 6:17:02 PM] info: GET /userdetails/Approval/4/VendorPriceDetails
+[5/22/2026, 6:17:02 PM] info: GET /Vendorpricedetails/getcustomer/11/4
+[5/22/2026, 6:17:02 PM] info: GET /bookingdetails/getgenerel/11
+[5/22/2026, 6:17:02 PM] info: GET /bookingdetails/pointofclear/11
+[5/22/2026, 6:17:02 PM] info: GET /invoicedetails/getportofloading/11
+[5/22/2026, 6:17:02 PM] info: GET /Vendorpricedetails/vendorpricegrid/11/4
+[5/22/2026, 6:17:02 PM] info: Userdetails
+[5/22/2026, 6:17:02 PM] info: Clients
+[5/22/2026, 6:17:02 PM] info: GET /Vendorpricedetails/approvaldata/11/4
+[5/22/2026, 6:17:02 PM] info: GET /Vendorpricedetails/imvendorpricegrid/11/4
+[5/22/2026, 6:17:02 PM] info: generalType
+[5/22/2026, 6:17:02 PM] info: GET /Vendorpricedetails/imapprovaldata/11/4
+[5/22/2026, 6:17:02 PM] info: generalType
+[5/22/2026, 6:17:02 PM] info: Clients
+[5/22/2026, 6:17:02 PM] info: Vendorpricedetails
+[5/22/2026, 6:17:03 PM] info: Vendorpricedetails
+[5/22/2026, 6:17:03 PM] info: Vendorpricedetails
+[5/22/2026, 6:17:03 PM] info: Vendorpricedetails
+[5/22/2026, 6:17:10 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[5/22/2026, 6:17:11 PM] info: GET /invoicedetails/invoicegrid/11/4
+[5/22/2026, 6:17:11 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[5/22/2026, 6:17:11 PM] info: Userdetails
+[5/22/2026, 6:17:11 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:17:11 PM] info: Invoice details fetched successfully
+[5/22/2026, 6:18:00 PM] info: GET /pdfdownload/pdfdownload/MAA2526020001
+[5/22/2026, 6:18:00 PM] info: Download Invoice
+[5/22/2026, 6:18:00 PM] info: GET /TaxInvoice/SKYB_1772101321177.pdf
+[5/22/2026, 6:18:09 PM] info: GET /invoicedetails/getcharge/
+[5/22/2026, 6:18:09 PM] info: Clients
+[5/22/2026, 6:18:11 PM] info: GET /invoicedetails/getcompany/1/11
+[5/22/2026, 6:18:11 PM] info: Clients
+[5/22/2026, 6:18:12 PM] info: GET /invoicedetails/getbookingnumber/7/1/11
+[5/22/2026, 6:18:12 PM] info: GET /invoicedetails/getstate/7
+[5/22/2026, 6:18:12 PM] info: Clients
+[5/22/2026, 6:18:12 PM] info: Clients
+[5/22/2026, 6:18:13 PM] info: GET /invoicedetails/invoicegetcontainer/EXPSKYB0014/1
+[5/22/2026, 6:18:13 PM] info: Clients
+[5/22/2026, 6:18:20 PM] info: GET /invoicedetails/getDesc/2
+[5/22/2026, 6:18:20 PM] info: Clients
+[5/22/2026, 6:18:47 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[5/22/2026, 6:19:01 PM] info: GET /invoice/SKYB_1779454128316.pdf
+[5/22/2026, 6:19:01 PM] info: GET /favicon.ico
+[5/22/2026, 6:25:18 PM] info: GET /invoicedetails/getDesc/22
+[5/22/2026, 6:25:18 PM] info: Clients

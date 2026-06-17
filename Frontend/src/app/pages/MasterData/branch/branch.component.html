@@ -1,0 +1,529 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">Basic Information</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Branch Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form [formGroup]="Branchform">
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Basic Information</h5>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+
+                                            <div class="col-md-3">
+                                                <label>Company Name<span style="color: red;"> *</span></label>
+                                                 <input type="text" class="form-control" formControlName="Companyname" required readonly>
+                                              
+                                                <div *ngIf="submitted && f['Companyname'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['Companyname'].errors['required']"><span
+                                                            style="color: red;">Company Name is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Branch Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="Branchname"
+                                                    placeholder="Enter Branch Name" required>
+                                                <div *ngIf="submitted && f['Branchname'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['Branchname'].errors['required']"><span
+                                                            style="color: red;">Branch Name is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Branch Email<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="email"
+                                                    placeholder="Enter Branch Email Id" required>
+
+                                                <div
+                                                    *ngIf="(submitted || Branchform.controls['email'].touched) && Branchform.controls['email'].errors">
+                                                    <ng-container
+                                                        *ngIf="Branchform.controls['email'].errors['required']; else invalidEmail">
+                                                        <span class="validation-error" style="color: red;">Email Id is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidEmail>
+                                                        <span
+                                                            *ngIf="Branchform.controls['email'].errors['invalidEmail']"
+                                                            class="validation-error" style="color: red;">Please enter a
+                                                            correct email id</span>
+                                                                <span *ngIf="Branchform.controls['email'].errors['emailExists']"
+            class="validation-error" style="color:red;">
+        Email already exists
+      </span> 
+                                                    </ng-template>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label>Phone Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="phone_number"
+                                                    placeholder="Enter Phone Number" required appNumericOnly>
+
+                                                <div
+                                                    *ngIf="(submitted || Branchform.controls['phone_number'].touched) && Branchform.controls['phone_number'].errors">
+                                                    <ng-container
+                                                        *ngIf="Branchform.controls['phone_number'].errors['required']; else invalidPhoneNumber">
+                                                        <span class="validation-error" style="color: red;">Phone Number
+                                                            is required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPhoneNumber>
+                                                        <span
+                                                            *ngIf="Branchform.controls['phone_number'].errors['invalidPhoneNumber']"
+                                                            class="validation-error" style="color: red;">Please enter a
+                                                            correct phone number</span>
+                                                    </ng-template>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row mb-4">
+
+                                            <div class="col-md-3">
+                                                <label>Address<span style="color: red;"> *</span></label>
+                                                <textarea class="form-control" rows="1" formControlName="company_add"
+                                                    required></textarea>
+                                                <div *ngIf="submitted && f['company_add'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['company_add'].errors['required']"><span
+                                                            style="color: red;">Company Address is required</span></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label>City<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="city"
+                                                    placeholder="Enter City " required>
+                                                <div *ngIf="submitted && f['city'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['city'].errors['required']"><span
+                                                            style="color: red;">City is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>State / Province<span style="color: red;"> *</span></label>
+                                               <div class="dropdown-wrapper">
+                                                <select class="form-control" formControlName="state"
+                                                    data-live-search="true" (change)="onBranchCode($event)">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let summary of statedata" value={{summary.state_id}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{summary.state_name}}
+                                                    </option>
+                                                </select>
+</div>
+                                                <div *ngIf="submitted && f['state'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['state'].errors['required']"><span
+                                                            style="color: red;">State / Province is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Country<span style="color: red;"> *</span></label>
+    <div class="dropdown-wrapper">
+                                                <select class="form-control" formControlName="country"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let customer of countrydata"
+                                                        value={{customer.CountryId}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{customer.Country_name}}
+                                                    </option>
+                                                </select>
+                                                </div>
+                                                <div *ngIf="submitted && f['country'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['country'].errors['required']"><span
+                                                            style="color: red;">Country is required</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Branch Code<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="Branch"
+                                                    placeholder="Enter Branch Code " required readonly>
+                                                <div *ngIf="submitted && f['Branch'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['Branch'].errors['required']"><span
+                                                            style="color: red;">Branch Code is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Postal / Zip Code<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="postal"
+                                                    placeholder="Enter Postal / Zip Code " required>
+                                                <div *ngIf="submitted && f['postal'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['postal'].errors['required']"><span
+                                                            style="color: red;">Postal / Zip Code is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>GST Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="gst"
+                                                    placeholder="Enter GST Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || Branchform.controls['gst'].touched) && Branchform.controls['gst'].errors">
+                                                    <ng-container
+                                                        *ngIf="Branchform.controls['gst'].errors['required']; else invalidGst">
+                                                        <span class="validation-error" style="color: red;">GST Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidGst>
+                                                        <span *ngIf="Branchform.controls['gst'].errors['invalidGst']"
+                                                            class="validation-error" style="color: red;">Invalid GST
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>PAN Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="pan"
+                                                    placeholder="Enter PAN Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || Branchform.controls['pan'].touched) && Branchform.controls['pan'].errors">
+                                                    <ng-container
+                                                        *ngIf="Branchform.controls['pan'].errors['required']; else invalidPan">
+                                                        <span class="validation-error" style="color: red;">PAN Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPan>
+                                                        <span *ngIf="Branchform.controls['pan'].errors['invalidPan']"
+                                                            class="validation-error" style="color: red;">Invalid PAN
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Status<span style="color: red;"> *</span></label>
+                                                <br>
+                                                  <div class="dropdown-wrapper">
+                                                <select class="form-control" formControlName="status"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>--Select--</option>
+                                                    <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
+                                                </select>
+                                                </div>
+                                                <div *ngIf="submitted && Branchform.get('status')?.errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="Branchform.get('status')?.errors?.['required']"><span
+                                                            style="color: red;">Status is required</span></div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="form-group" *ngIf="Branchform.get('status')?.value === '0'">
+                                                    <label>Description</label>
+                                                    <br>
+                                                    <textarea class="form-control" rows="1"
+                                                        formControlName="description"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row justify-content-end text-end">
+                                            <div class="col-sm-9">
+                                                <div>
+                                                    <a id="btncolors" routerLink="/Branchgrid"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+
+                                                    <button id="btncolors" [disabled]="isSubmitDisabled" class="btn btn-primary w-md" type="button"
+                                                        (click)="submit()">
+                                                        <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="isSubmitted">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body p-4">
+        <form [formGroup]="SubAdminform">
+          <h5 style="color: #232879; border-bottom: 1px solid #232879;">SubAdmin Information</h5>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header header-elements-inline">
+                <h5 class="card-title"></h5>
+                <div class="header-elements">
+                  <button type="button" (click)="SubAdminaddItem()" id="btncolors" class="btn btn-success">
+                    <i class="fa fa-plus"></i>&nbsp;Add Row
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-group" style="overflow-x: auto; width: 100%;">
+                <table class="table table-bordered w-100 equal-width-table text-center align-middle">
+                  <thead>
+                    <tr>
+                      <th id="colors" style="width: 200px;">Branch Name</th>
+                      <th id="colors" style="width: 200px;">Sub Admin Name</th>
+                      <th id="colors" style="width: 200px;">Email</th>
+                      <th id="colors" style="width: 200px;">Phone Number</th>
+                      <th id="colors" style="width: 200px;">Status</th>
+                      <th id="colors" style="width: 150px;">Remove</th>
+                    </tr>
+                  </thead>
+
+                  <tbody formArrayName="rows1">
+                    <tr *ngFor="let row of row1.controls; let i = index" [formGroupName]="i">
+                      <td *ngIf="isnotvisible">
+                        <input type="text" class="form-control"
+                          formControlName="SubAdminId"
+                          [id]="'SubAdminIds_' + i" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control"
+                          formControlName="BranchNameAdmin"
+                          placeholder="Enter Branch Name"
+                          [id]="'BranchName_' + i" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control"
+                          formControlName="SubAdminName"
+                          placeholder="Enter Name"
+                          [id]="'SubAdminName_' + i">
+                      </td>
+                      <td>
+                        <input type="email" class="form-control"
+                          formControlName="SubAdminEmail"
+                          placeholder="Enter Email"
+                          [id]="'SubAdminEmail_' + i">
+                      </td>
+                      <td>
+                        <input type="text" class="form-control"
+                          formControlName="SubAdminPhone"
+                          placeholder="Enter Phone Number"
+                          [id]="'SubAdminPhone_' + i">
+                      </td>
+                      <td>
+                        <select class="form-control"
+                          formControlName="Subadminstatus"
+                          [id]="'Subadminstatus_' + i">
+                          <option value="" disabled selected>--Select--</option>
+                          <option value="1">Active</option>
+                          <option value="0">Inactive</option>
+                        </select>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger btn-sm"
+                          (click)="SubAdminremoveItem(i)">
+                          <i class="fa fa-trash"></i> Remove
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-end text-end mt-4">
+            <div class="col-sm-9">
+               <a id="btncolors" routerLink="/Branchgrid"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+          
+              <button id="btncolors" class="btn btn-primary w-md" type="button" (click)="SubAdminsubmit()">
+                <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="row" *ngIf="isSubAdminSubmitted">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form [formGroup]="Userform">
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">User Information</h5>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-header header-elements-inline">
+                                        <h5 class="card-title"></h5>
+                                        <div class="header-elements">
+                                            <button (click)="UseraddItem()" id="btncolors" class="btn"><i
+                                                    class="fa fa-plus"></i>&nbsp;Add
+                                                rows</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="overflow-x: auto; width: 100%;">
+
+                                        <table class="table table-bordered w-100 equal-width-table">
+                                            <thead>
+                                                <tr style="text-align: center;">
+                                                    <th id="colors" style="width: 200px;">
+                                                        Sub Admin Name</th>
+                                                    <th id="colors" style="width: 200px;">
+                                                        User Name</th>
+                                                    <th id="colors" style="width: 200px;">
+                                                        Email</th>
+                                                    <th id="colors" style="width: 200px;">
+                                                        Phone Number</th>
+                                                    <th id="colors" style="width: 200px;">
+                                                        Status</th>
+                                                    <th id="colors" style="width: 200px;">
+                                                        Remove</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody formArrayName="rows2">
+                                                <tr *ngFor="let row of row2.controls; let i = index"
+                                                    [formGroupName]="i">
+                                                    <td *ngIf="isnotvisible">
+                        <input type="text" class="form-control"
+                          formControlName="UserAdminId"
+                          [id]="'UserAdminIds_' + i" readonly>
+                      </td>
+                                                    <td>
+  <div class="dropdown-wrapper">
+                                                        <select
+                                                                                                    class="form-control"
+                                                                                                    formControlName="SubadminName"
+                                                                                                    data-live-search="true"
+                                                                                                    id="{{ i }}SubadminNames">
+                                                                                                    <option value=""
+                                                                                                        selected
+                                                                                                        disabled>
+                                                                                                        --Select--
+                                                                                                    </option>
+                                                                                                    <option
+                                                                                                        *ngFor="let customer of SubadminNamedata"
+                                                                                                        value={{customer.User_ID}}
+                                                                                                        selected="summary.User_ID == summary.User_ID">
+                                                                                                        {{customer.UserName}}
+                                                                                                    </option>
+                                                                                                </select>
+</div>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control"
+                                                            formControlName="UserName" placeholder="Enter Name"
+                                                            id="{{ i }}UserNames">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control"
+                                                            formControlName="UserEmail" placeholder="Enter Email"
+                                                            id="{{ i }}UserEmails">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control"
+                                                            formControlName="UserPhone" placeholder="Enter PhoneNumber"
+                                                            id="{{ i }}UserPhoneNumber">
+                                                    </td>
+                                                    <td>
+                                                          <div class="dropdown-wrapper">
+                                                        <select class="form-control" formControlName="Userstatus"
+                                                             id="{{ i }}Userstatus">
+                                                            <option value="" disabled>--Select--</option>
+                                                            <option value="1">Active</option>
+                                                            <option value="0">Inactive</option>
+                                                        </select>
+</div>
+                                                    </td>
+                                                    <td class="wrapper">
+                                                        <button (click)="UserremoveItem(i)"
+                                                            class="btn-danger">Remove</button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row justify-content-end text-end">
+                                            <div class="col-sm-9">
+                                                <div>
+                                                    <a id="btncolors" routerLink="/Branchgrid"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+
+                                                    <button id="btncolors" class="btn btn-primary w-md" type="button"
+                                                        (click)="Usersubmit()">
+                                                        <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

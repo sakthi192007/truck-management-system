@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+ <style>
+        td[colspan="4"] {
+            visibility: hidden;
+        }
+
+        td[colspan="12"] {
+            visibility: hidden;
+        }
+
+        .image {
+            height: 0px;
+            width: 0px;
+            margin-top: -100pt;
+        }
+
+        .qrcodes {
+            height: 0px;
+            width: 0px;
+            margin-top: -100pt;
+        }
+
+        .images {
+            height: 0px;
+            width: 0px;
+            margin-top: -400pt;
+        }
+
+        .table-style {
+            width: 50%;
+            border-collapse: separate;
+            margin-top: 30pt;
+            font-size: 14px;
+        }
+
+        .table-style td {
+            /* padding: 1px; */
+            border: none;
+            text-align: flex-start;
+            line-height: 1.1;
+            padding: 2px 4px;
+        }
+
+        .table-style td:first-child {
+            min-width: 110px;
+        }
+
+        .weight-table {
+            position: absolute;
+            top: 180pt;
+            left: 10pt;
+            font-size: 15px;
+        }
+
+        .invoice-table {
+            position: absolute;
+            top: 180pt;
+            left: 300pt;
+            font-size: 15px;
+        }
+       
+        .line,
+        tbody,
+        tr,
+        td {
+            margin-left: 10px;
+            padding: 2px;
+            border: 2px solid #000000;
+            border-collapse: collapse;
+        }
+
+        .line,
+        thead,
+        tr,
+        th {
+            margin-left: 10pt;
+            padding: 2px;
+            border: 2px solid #000000;
+            border-collapse: collapse;
+        }
+
+
+        .to-address {
+            margin-top: 0;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            font-size: 11pt;
+            width: 50%;
+        }
+
+        .from-address {
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            font-size: 11pt;
+            max-width: 40%;
+            text-align: left;
+        }
+
+
+        .qrcode {
+           
+            width: 100px;
+            height: 100px;
+            margin-left:150px;
+
+        }
+
+        #background {
+            background-color: #232879;
+            color: white;
+            width: 25pt;
+            font-size: 13px;
+        }
+
+        .tables {
+            margin-top: 250pt;
+            margin-left: 10pt;
+            font-size: 12px;
+            padding: 2px;
+            border: 3px solid #000000;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tables th,
+        .tables td {
+            padding: 4px 6px;
+            margin: 0;
+            line-height: 1.2;
+            border: 3px solid #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .nextpage {
+            padding-top: 30px;
+            margin-top: 400pt;
+            margin-left: 20pt;
+            page-break-before: always;
+        }
+
+        .condition {
+            font-size: 10PX;
+        }
+
+        .bankdetails {
+            font-size: 19PX;
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+    </style>
+
+<body>
+       <img class="image" src="{{products.qrCode_Bases}}">
+     <img class="qrcodes" src="{{products.qrCodeBase}}" alt="QR Code" />
+   {{!-- Loop chunks of 10 rows --}}
+    {{#each products.productChunks}}
+     <table class="tables">
+        <thead>
+            <tr id="background">
+                <th>S.No</th>
+                <th style="color: white; width: 250pt; text-align: center;">DESCRIPTION</th>
+                <th style="color: white; width: 250pt; text-align: center;">VEHICLENO</th>
+                <th style="color: white; width: 250pt; text-align: center;">CNTR NO</th>
+                <th style="color: white; width: 250pt; text-align: center;">CNTR TYPE</th>
+                <th style="color: white; width: 150pt; text-align: center;">CUR</th>
+                <th style="color: white; width: 250pt; text-align: center;">HSN CODE</th>
+                <th style="color: white; width: 70pt;">AMOUNT</th>
+                <th style="color: white; width: 70pt;">GST %</th>
+                <th style="color: white; width: 70pt;">SGST AMT</th>
+                <th style="color: white; width: 70pt;">CGST AMT</th>
+            </tr>
+        </thead>
+       
+           
+            <tbody>
+                  {{#each this}}
+            <tr>
+                <td style="text-align: center">{{this.Numbers}}</td>
+                <td >{{this.Description}}</td>
+                <td style="text-align: center">{{this.Vehicleno}}</td> 
+                <td style="text-align: center">{{this.containerno}}</td>
+                <td style="text-align: center">{{this.ContainerType}}</td>
+                <td style="text-align: center">{{this.curre}}</td>
+                <td style="text-align: center">{{this.hsncode}}</td>
+                <td style="text-align: right;">{{this.Amount}}</td>
+                <td style="text-align: right;">{{this.sgstper}} %</td>
+                <td style="text-align: right;">{{this.SGST}}</td>
+                <td style="text-align: right;">{{this.CGST}}</td>
+            </tr>
+              {{/each}}
+        </tbody>
+      
+       
+       
+    </table>
+         {{!-- Add page break after every chunk except last --}}
+    {{#unless @last}}
+    <div class="page-break"></div>
+    {{/unless}}
+    {{/each}}
+
+
+   <table class="footer-table"
+        style="width: 40%; border-collapse: collapse; margin-top: 10px; margin-left: auto; margin-right: 3px; font-size: 19px; border: 3px solid black; line-height: 1.1;">
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center;">SubTotal</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right;">{{products.btmtotal}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center;">SGST</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right;">{{products.btmgst}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center;">CGST</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right;">{{products.btmcgst}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center; ">Total Amount</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right; ">
+                {{products.grandtotal}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center;">Less Adv</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right;">{{products.advpymt}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size: 15px; border: 3px solid black; text-align: center;">Net Due</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: center;">
+                {{products.Currencyvalue}}</td>
+            <td colspan="1" style="font-size: 15px; border: 3px solid black; text-align: right;">{{products.balancedue}}
+            </td>
+        </tr>
+    </table>
+
+    <div style="margin-top:20px; margin-left:25pt; font-size:13px;">
+        <p style="margin:0;">Net Payable in Words</p>
+        <br />
+        <p style="margin:0;">{{products.wordsamount}} ONLY</p>
+    </div>
+
+    <div class="nextpage">
+        <div style="margin-top: 250pt; font-size: 14px;">
+            <h3 style="color: black; padding: 5px; font-size: 14px; margin: 0;">Terms & Conditions</h3>
+            <p style="margin: 0;">1. In case of any discrepancy in the invoice, please bring it to our attention within
+                7 days of receipt; else it will be treated as correct.</p>
+            <p>2. Delay in payment beyond the agreed credit period will attract interest @ 18% p.a.</p>
+            <p>3. Government Taxes applied as per prevailing rates.</p>
+            <p>4. All disputes are subject to Chennai Jurisdiction.</p>
+
+            <h3 style="color: black; padding: 5px; font-size: 14px; margin: 0;">Bank Details</h3>
+            <p style="margin: 0;">Account Name: SKYB Trans Pvt Ltd, Bank Name: HDFC BANK, Account No: 50200095732957,
+                IFSC Code: HDFC0000444,<br> SWIFT Code: HDFCINBBCHE</p>
+
+        </div>
+
+        <div class="sign" style="text-align: right; margin-right: 10pt;">
+            <div class="sign" style="text-align: right; margin-right: 10pt; margin-top: 120px; font-size: 17px; ">
+                For SKYB Trans Pvt Ltd <br>
+                <br>
+                Authorised Signatory <br>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+

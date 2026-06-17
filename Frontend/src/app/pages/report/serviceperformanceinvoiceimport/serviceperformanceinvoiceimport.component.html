@@ -1,0 +1,110 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server">Invoice Report-Import</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a>Report</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row align-items-end justify-content-end">
+                <div class="col-3 text-end">
+                    <button id="colors" class="btn btn-primary" (click)="exportToExcel()">Download Excel</button>
+                </div>
+              
+                <div class="col-2">
+                    <label for="fromDate">From Date</label>
+                    <input
+                        type="date"
+                        class="form-control"
+                        placeholder="From Date"
+                        [(ngModel)]="fromDate" 
+                    />
+                </div>
+            
+                <div class="col-2">
+                    <label for="toDate">To Date</label>
+                    <input
+                        type="date"
+                        class="form-control"
+                        placeholder="To Date"
+                        [(ngModel)]="toDate" 
+                    />
+                </div>
+                <div class="col-3">
+                    <input
+                        type="text"
+                        [(ngModel)]="searchTerm"
+                        placeholder="Search by ..."
+                        class="form-control"
+                        
+                    />
+                </div>
+            </div>
+            <br>
+            <div class="card-bodys">
+                <table id="datatablegrid"
+                    class="table table-bordered w-100 equal-width-table">
+                    <thead>
+                       
+                        <tr>
+                            <!-- <th rowspan="2">S.NO</th> -->
+                            <th rowspan="2" class="sticky-col" style="left: 0; z-index: 1;">BOOKING No</th>
+                            <th rowspan="2" class="sticky-col" style="left: 100px; z-index: 1;">CUSTOMER NAME</th>
+                            <th rowspan="2">BOOKING DATE</th>
+                            <th rowspan="2">INVOICE NO</th>
+                            <th rowspan="2">INVOICE DATE</th>
+                            <th rowspan="2">SUBTOTAL</th>
+                            <th rowspan="2">GST</th>
+                            <th rowspan="2">CGST</th>
+                            <th rowspan="2">IGST</th>
+                            <th rowspan="2">GRAND TOTAL</th>
+                            <th rowspan="2">INVOICE DUE DATE</th>
+                            <th rowspan="2">STATUS</th>
+                            
+                        </tr>
+                       
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bird of filteredData">
+                            <td class="sticky-col" style="left: 0;">{{bird.BookingNumber}}</td>
+                            <td class="sticky-col" style="left: 100px;">{{bird.CompanyName}}</td>
+                            <td>{{bird.createdon}}</td>
+                            <td>{{bird.InvoiceNumber}}</td>
+                            <td>{{bird.InvoiceDate}}</td>
+                            <td>{{bird.SubTotal}}</td>
+                            <td>{{bird.GSTAmount}}</td>
+                            <td>{{bird.CGSTAmount}}</td>
+                            <td>{{bird.IGSTAmount}}</td>
+                            <td>{{bird.GrandTotal}}</td>
+                            <td>{{bird.InvoiceDueDate}}</td>
+                            <td>{{bird.Status}}</td>
+                        </tr>
+                    </tbody>
+                     <tfoot>
+        <tr *ngFor="let birds of invoicetotal">
+            <td colspan="5" class="text-end fw-bold">TOTAL</td>
+            <td>{{ birds.SubTotal }}</td>
+            <td>{{ birds.GSTAmount }}</td>
+            <td>{{ birds.CGSTAmount }}</td>
+            <td>{{ birds.IGSTAmount }}</td>
+            <td>{{ birds.GrandTotal }}</td>
+            <td colspan="2"></td>
+        </tr>
+    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

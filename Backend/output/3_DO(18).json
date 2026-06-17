@@ -1,0 +1,51 @@
+{
+  "shipper": {
+    "name": null,
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "consignee": {
+    "name": "SHIFTCO SHIPPING & LOGISTICS INDIA PVT LTD",
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "booking_details": {
+    "booking_number": "BRE00164190",
+    "placement_date": null,
+    "pickup_date": null
+  },
+  "location_details": {
+    "place_of_clearance": null,
+    "place_of_pickup": null
+  },
+  "customs": {
+    "customs_clearance_date": null
+  },
+  "commodity": "STC 11 PALLET(S) WELDING WIRES EDFK 1000 + EDFK 1100",
+  "port_details": {
+    "port_cut_off": null,
+    "etd": null,
+    "eta": null
+  },
+  "shipping_details": {
+    "shipping_line": "YANG MING LINE (INDIA) PVT. LTD.",
+    "vessel_name": "ONE RECOGNITION",
+    "voyage": "004E"
+  },
+  "delivery_order": {
+    "do_issue_date": "10/01/2025",
+    "do_valid_upto": "10/01/2025"
+  },
+  "container_details": {
+    "container_number": "YMLU3540290",
+    "container_type": null,
+    "seal_number": "FMS561828"
+  },
+  "cargo_details": {
+    "number_of_packages": "11",
+    "cargo_weight": {
+      "value": "11696",
+      "weight_type": null
+    }
+  }
+}

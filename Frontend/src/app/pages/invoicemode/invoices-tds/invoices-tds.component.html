@@ -1,0 +1,237 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-11">
+                    <h5 class="card-title">AR Payment Entry</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+
+                        <div class="card-body p-4">
+                            <form [formGroup]="invoicetdsForm">
+                                <div class="row">
+                                    <div class="col-lg-12 ms-lg-auto">
+                                        <div class="mt-4 mt-lg-0">
+
+                                            <div class="row mb-4">
+
+                                                <div class="col-md-3">
+                                                    <label>Client Name<span style="color: red;"> *</span></label>
+
+                                                    <div class="dropdown-wrapper">
+                                                        <ngx-select-dropdown class="form-control custom-dropdown"
+                                                            [config]="clientdropdownConfig" [options]="getvendordata"
+                                                            formControlName="company" (change)="onCompanyName($event)">
+                                                        </ngx-select-dropdown>
+                                                    </div>
+
+                                                    <div *ngIf="submitted && f['company'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['company'].errors['required']"><span
+                                                                style="color: red;">Client Name is required</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Invoice No
+                                                        <span style="color: red;"> *</span>
+                                                    </label>
+
+                                                    <div class="dropdown-wrapper">
+                                                        <ngx-select-dropdown class="form-control custom-dropdown"
+                                                            [config]="invoicedropdownConfig"
+                                                            [options]="getinvoiceNumber" formControlName="invoiceno"
+                                                                (change)="onExportBookingChange($event)">
+                                                        </ngx-select-dropdown>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Invoice Date
+                                                        <span style="color: red;"> *</span></label>
+                                                    <input type="date" class="form-control"
+                                                        formControlName="invoicedate" required>
+                                                    <div *ngIf="submitted && f['invoicedate'].errors"
+                                                        class="validation-invalid-label">
+                                                        <div *ngIf="f['invoicedate'].errors['required']"><span
+                                                                style="color: red;">Invoice Date is required</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-2">
+                                                    <label>SubTotal</label>
+                                                    <input type="text" class="form-control" formControlName="SubTotal"
+                                                        readonly>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>GST</label>
+                                                    <input type="text" class="form-control" formControlName="gst"
+                                                        readonly>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>GrandTotal</label>
+                                                    <input type="text" class="form-control" formControlName="grandtotal"
+                                                        readonly>
+
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <label>Percent %</label>
+                                                    <input type="text" class="form-control" id="Percent"
+                                                        formControlName="Percentnumber"
+                                                        (change)="PercentnumberChange()">
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Amount</label>
+                                                    <input type="text" class="form-control" id="Amountvalue"
+                                                        formControlName="Amounts" readonly>
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Item Details</b></h5>
+                                        <div class="card-header header-elements-inline">
+
+                                            <h5 class="card-title"></h5>
+                                            <div class="header-elements" *ngIf="views !=1">
+                                                <button id="btncolors" (click)="addItem()" class="btn btn-primary">Add
+                                                    rows <i class="icon-plus3"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="overflow-x: auto; width: 100%;">
+                                            <div style="overflow-x: scroll;">
+                                                <table class="table table-bordered w-100 equal-width-table">
+                                                    <thead>
+                                                        <tr style="text-align: center;">
+                                                            <th id="colors">Payment Transaction No
+                                                            </th>
+                                                            <th id="colors">Payment Date
+                                                            </th>
+                                                            <th id="colors">Payment Amount
+                                                            </th>
+
+                                                            <th style="text-align: center;" id="colors"
+                                                                *ngIf="views !=1">Remove</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody formArrayName="rows1">
+                                                        <tr *ngFor="let row of row1.controls; let i = index"
+                                                            [formGroupName]="i">
+                                                            <td>
+
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="refno" id="{{ i }}refno">
+                                                            </td>
+                                                            <td>
+
+                                                                <input type="date" class="form-control"
+                                                                    formControlName="paydate" id="{{ i }}paydate">
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    formControlName="payment" id="{{ i }}payment"
+                                                                    (change)="sum(i)">
+                                                            </td>
+                                                            <td class="wrapper" *ngIf="views !=1">
+                                                                <button (click)="removeItem(i)"
+                                                                    class="btn-danger">Remove</button>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+
+
+                                                </table>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 ms-lg-auto">
+                                        <div class="mt-4 mt-lg-0">
+                                            <div class="row mb-4">
+                                                <div class="col-md-3">
+                                                    <label>Type</label>
+
+                                                    <div class="dropdown-wrapper">
+                                                        <ngx-select-dropdown class="form-control custom-dropdown"
+                                                            [config]="typedropdownConfig" [options]="typedata"
+                                                            formControlName="type">
+                                                        </ngx-select-dropdown>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Net Due</label>
+                                                    <input type="text" class="form-control" id="netdueamount"
+                                                        formControlName="netdue" readonly>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Payment</label>
+                                                    <input type="text" class="form-control" id="paymentamounts"
+                                                        formControlName="payments" readonly>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Balance Amount</label>
+                                                    <input type="text" class="form-control" id="Balancedue"
+                                                        formControlName="balancedueAmount" readonly>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row justify-content-end text-end">
+                                    <div class="col-sm-9">
+                                        <div>
+                                            <a id="btncolors" routerLink="/Paymententry" class="btn btn-primary w-md">
+                                                <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                            </a>&nbsp;
+
+                                            <button id="btncolors" (click)="submit(row1.value)"
+                                                class="btn btn-primary w-md me-2" type="button">
+                                                <i class="bx bx-save"></i>&nbsp;{{ buttontext }}
+                                            </button>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,209 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="container-fluid">
+      <div class="row g-4">
+        <!-- Export 20 ft -->
+        <div class="col-xl-3 col-md-6" *ngFor="let bird of tountydata">
+          <div
+            class="custom-card card-blue d-flex justify-content-between align-items-center p-3"
+          >
+            <div>
+              <h6 class="text-white fw-semibold mb-1">Export</h6>
+              <p class="text-white-50 mb-2 small">Available 20 ft Containers</p>
+              <h3 class="text-white fw-bold mb-0"  >{{ bird.container }}</h3>
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="assets/images/truck/distribution.png"
+                alt="Truck"
+                class="animated-icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Export 40 ft -->
+        <div class="col-xl-3 col-md-6" *ngFor="let bird of tountydata">
+          <div
+            class="custom-card card-purple d-flex justify-content-between align-items-center p-3"
+          >
+            <div>
+              <h6 class="text-white fw-semibold mb-1">Import</h6>
+              <p class="text-white-50 mb-2 small">Available 20 ft Containers</p>
+              <h3 class="text-white fw-bold mb-0">{{ bird.container }}</h3>
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="assets\images\truck\delivery.png"
+                alt="Export"
+                class="animated-icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Import 20 ft -->
+        <div class="col-xl-3 col-md-6" *ngFor="let bird of fortydata">
+          <div
+            class="custom-card card-green d-flex justify-content-between align-items-center p-3"
+          >
+            <div>
+              <h6 class="text-white fw-semibold mb-1">Export</h6>
+              <p class="text-white-50 mb-2 small">Available 40 ft Containers</p>
+              <h3 class="text-white fw-bold mb-0" >{{ bird.container }}</h3>
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="assets/images/truck/distribution.png"
+                alt="Import"
+                class="animated-icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Import 40 ft -->
+        <div class="col-xl-3 col-md-6" *ngFor="let bird of fortydata">
+          <div
+            class="custom-card card-orange d-flex justify-content-between align-items-center p-3"
+          >
+            <div>
+              <h6 class="text-white fw-semibold mb-1">Import</h6>
+              <p class="text-white-50 mb-2 small">Available 40 ft Containers</p>
+              <h3 class="text-white fw-bold mb-0">{{ bird.container }}</h3>
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="assets\images\truck\delivery.png"
+                alt="Import"
+                class="animated-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row" id="mainmap" runat="server">
+        <div class="col-xl-12">
+          <div id="mains">
+            <div
+              id="map"
+              style="
+                margin-top: 36px;
+                height: 430.6px;
+                overflow: hidden;
+                transform: translate3d(0.9px, -35.8px, 0px);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="routemaps" runat="server">
+        <div class="col-lg-12 ms-lg-auto">
+          <div class="mt-4 mt-lg-0">
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                type="button"
+                class="btn btn-primary waves-effect btn-label waves-light"
+                (click)="goBackToDashboard()"
+              >
+                <i class="bx bx-arrow-back label-icon"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back To Dashboard
+              </button>
+              <br />
+            </div>
+            <br />
+            <div class="row">
+              <!-- Left Column: Milestones -->
+
+              <div class="col-md-5" *ngIf="department != 'Export'">
+                <div class="progress-card">
+                  <div class="progress-container">
+                    <div class="stepper">
+                      <div
+                        *ngFor="let mile of milestonesArray; let i = index"
+                        class="step"
+                        [ngClass]="{
+                          completed: mile.status === 'completed',
+                          active: mile.status === 'active'
+                        }"
+                      >
+                        <div class="circles"></div>
+                        <div
+                          class="line"
+                          *ngIf="i < milestonesArray.length - 1"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div *ngFor="let mile of milestonesArray" class="milestone">
+                      <div class="circle">
+                        <img [src]="mile.icon" alt="Milestone" />
+                      </div>
+                      <div class="milestone-info">
+                        <strong>{{ mile.title }}</strong
+                        ><br />
+                        <p>{{ mile.location }}</p>
+                        &nbsp;{{ mile.date }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5" *ngIf="department != 'Import'">
+                <div class="progress-card">
+                  <div class="progress-container">
+                    <div class="stepper">
+                      <div
+                        *ngFor="let mile of milestonesArray; let i = index"
+                        class="steps"
+                        [ngClass]="{
+                          completed: mile.status === 'completed',
+                          active: mile.status === 'active'
+                        }"
+                      >
+                        <div class="circles"></div>
+                        <div
+                          class="line"
+                          *ngIf="i < milestonesArray.length - 1"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div *ngFor="let mile of milestonesArray" class="milestone">
+                      <div class="circle">
+                        <img [src]="mile.icon" alt="Milestone" />
+                      </div>
+                      <div class="milestone-info">
+                        <strong>{{ mile.title }}</strong
+                        ><br />
+                        <p>{{ mile.location }}</p>
+                        &nbsp;{{ mile.date }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div id="mains">
+                  <div
+                    id="maps"
+                    style="
+                      margin-top: 36px;
+                      height: 542.6px;
+                      overflow: hidden;
+                      transform: translate3d(0.9px, -35.8px, 0px);
+                      position: relative;
+                      border-radius: 12px;
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

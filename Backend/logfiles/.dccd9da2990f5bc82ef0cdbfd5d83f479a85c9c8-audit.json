@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\muthu\\Downloads\\Truck Management System\\Backend\\logfiles\\.dccd9da2990f5bc82ef0cdbfd5d83f479a85c9c8-audit.json",
+    "files": [
+        {
+            "date": 1781171461952,
+            "name": "C:\\Users\\muthu\\Downloads\\Truck Management System\\Backend\\logfiles\\application-11-06-2026.log",
+            "hash": "082a34e27f9440901d1726ac79eeba4dd711d8dd9160deb1d1157577e0747dca"
+        },
+        {
+            "date": 1781241566715,
+            "name": "C:\\Users\\muthu\\Downloads\\Truck Management System\\Backend\\logfiles\\application-12-06-2026.log",
+            "hash": "9adc88cbb641222a014c2c19cd472302ef6b0b6d32011258f1c78409ff7bb22c"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,103 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server">Performance Report-Import</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a>Report</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row align-items-end justify-content-end">
+                <div class="col-3 text-end">
+                    <button id="colors" class="btn btn-primary" (click)="exportToExcel()">Download Excel</button>
+                </div>
+              
+                <div class="col-2">
+                    <label for="fromDate">From Date</label>
+                    <input
+                        type="date"
+                        class="form-control"
+                        placeholder="From Date"
+                        [(ngModel)]="fromDate" 
+                    />
+                </div>
+            
+                <div class="col-2">
+                    <label for="toDate">To Date</label>
+                    <input
+                        type="date"
+                        class="form-control"
+                        placeholder="To Date"
+                        [(ngModel)]="toDate" 
+                    />
+                </div>
+                <div class="col-3">
+                    <input
+                        type="text"
+                        [(ngModel)]="searchTerm"
+                        placeholder="Search by ..."
+                        class="form-control"
+                        
+                    />
+                </div>
+            </div>
+           <br>
+            <div class="card-bodys">
+                <table id="datatablegrid" class="table table-bordered w-100 equal-width-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">BOOKING REF</th>
+                            <th rowspan="2">CUSTOMER NAME</th>
+                            <th rowspan="2">BOOKING DATE</th>
+                            <th rowspan="2">CONTAINER NO.</th>
+                            <th rowspan="2">DE-STUFFING POINT</th>
+                            <th rowspan="2">CONSIGNEE NAME</th>
+                            <th colspan="2" class="sub-header">PICK-UP-PORT/CFS</th>
+                            <th colspan="2" class="sub-header">FACTORY GATE IN</th>
+                            <th colspan="2" class="sub-header">FACTORY GATE OUT</th>
+                            <th colspan="2" class="sub-header">RETURN EMPTY YARD</th>
+                        </tr>
+                        <tr>
+                            <th>ESTIMATED</th>
+                            <th>ACTUAL</th>
+                            <th>ESTIMATED</th>
+                            <th>ACTUAL</th>
+                            <th>ESTIMATED</th>
+                            <th>ACTUAL</th>
+                            <th>ESTIMATED</th>
+                            <th>ACTUAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bird of filteredData">
+                            <td>{{ bird.Bookingref }}</td>
+                            <td>{{ bird.CompanyName }}</td>
+                            <td>{{ bird.createdon }}</td>
+                            <td>{{ bird.containernumber }}</td>
+                            <td>{{ bird.De_Stuffing_Location }}</td>
+                            <td>{{ bird.Consignee }}</td>
+                            <td>{{ bird.PICKUPPORT_EDT }}</td>
+                            <td>{{ bird.PICKUPPORT_ADT }}</td>
+                            <td>{{ bird.FACTORYGATEIN_EDT }}</td>
+                            <td>{{ bird.FACTORYGATEIN_ADT }}</td>
+                            <td>{{ bird.FACTORYGATEOUT_EDT }}</td>
+                            <td>{{ bird.FACTORYGATEOUT_ADT }}</td>
+                            <td>{{ bird.RETURNEMPTYYEARD_EDT }}</td>
+                            <td>{{ bird.RETURNEMPTYYEARD_ADT }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</div>

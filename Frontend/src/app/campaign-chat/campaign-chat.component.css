@@ -1,0 +1,85 @@
+/* WhatsApp style colors */
+#colors {
+  background: linear-gradient(45deg, #075E54, #128C7E);
+}
+
+.chat-body {
+  background-color: #e5ddd5;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Chat message common */
+.chat-message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  width: fit-content;
+}
+
+/* Left (incoming) message */
+.chat-message.left {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-top-left-radius: 0;
+}
+
+/* Right (outgoing) message */
+.chat-message.right {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-top-right-radius: 0;
+}
+
+/* Input area */
+.chat-input-area {
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-group .form-control {
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+.input-group .btn-primary {
+  border-radius: 0 20px 20px 0;
+  background-color: #128C7E;
+  border: none;
+}
+
+.input-group .btn-primary:hover {
+  background-color: #075E54;
+}
+ .tick-badge {
+    
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEEB; /* Sky blue background */
+    color: white;              /* White tick */
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;        /* Circle shape */
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+
+  .tick-mark {
+    line-height: 1;
+  }

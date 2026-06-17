@@ -1,0 +1,51 @@
+<header id="page-topbar">
+    <div class="navbar-header">
+        <div class="d-flex">
+       
+
+            <div class="navbar-brand-box">
+                <a routerLink="/Dashboard" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img [src]="ClientImages" alt="logo" height="17" style="margin-left: -15px;">
+                    </span>
+                    <span class="logo-lg">
+                       <img [src]="ClientImages" alt="logo" class="fixed-logo">
+
+                    </span>
+                </a>
+               
+            </div> 
+
+
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn"
+                (click)="toggleSidebar()">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+        </div>
+        <div class="d-flex">
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item bg-light-subtle border-start border-end"
+                    id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img [src]="aadhar" 
+     alt="Aadhar" 
+     style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+
+                    <!-- <img [src]="aadhar" style="width: 50px;height: 50px;" alt=""> -->
+                    <span class="d-none d-xl-inline-block ms-1 fw-medium">{{username}}</span>
+                    <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                </button>&nbsp;
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" routerLink="/Profile"><i
+                            class="mdi mdi mdi-face-man font-size-16 align-middle me-1"></i> Profile</a>
+                    <a class="dropdown-item" routerLink="/ChangePassword"><i
+                            class="mdi mdi-lock font-size-16 align-middle me-1"></i> ChangePassword</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="/Logout"><i
+                            class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                </div>&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+
+</header>

@@ -1,0 +1,100 @@
+[6/11/2026, 3:22:30 PM] info: POST /register/logins
+[6/11/2026, 3:22:32 PM] info: login user/id=11
+[6/11/2026, 3:22:32 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 3:22:32 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 3:22:32 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 3:22:32 PM] info: Clients
+[6/11/2026, 3:22:32 PM] info: Clients
+[6/11/2026, 3:22:32 PM] info: map
+[6/11/2026, 3:22:32 PM] info: GET /ClientImages/download.png
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/Approval/4/User
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/getrole/4
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/gridvalues/11/4
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:43 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 3:22:43 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 3:22:43 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 3:22:43 PM] info: Clients
+[6/11/2026, 3:22:43 PM] info: Clients
+[6/11/2026, 3:22:43 PM] info: map
+[6/11/2026, 7:23:08 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 7:23:08 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 7:23:08 PM] info: GET /ClientImages/download.png
+[6/11/2026, 7:23:08 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 7:23:08 PM] info: Clients
+[6/11/2026, 7:23:08 PM] info: Clients
+[6/11/2026, 7:23:08 PM] info: map
+[6/11/2026, 7:25:12 PM] info: GET /userdetails/Approval/4/vehicleinformationgrid
+[6/11/2026, 7:25:12 PM] info: GET /VehicleInformation/getAllVehicle/11
+[6/11/2026, 7:25:12 PM] info: Userdetails
+[6/11/2026, 7:25:12 PM] info: vehicle fetched successfully.
+[6/11/2026, 7:25:14 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 7:25:14 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 7:25:15 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 7:25:15 PM] info: Clients
+[6/11/2026, 7:25:15 PM] info: Clients
+[6/11/2026, 7:25:15 PM] info: map
+[6/12/2026, 10:50:47 AM] info: GET /ClientImages/null
+[6/12/2026, 10:51:08 AM] info: POST /register/logins
+[6/12/2026, 10:51:09 AM] info: login user/id=11
+[6/12/2026, 10:51:09 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/12/2026, 10:51:09 AM] info: GET /bookingdetails/getforcontaine/11/4
+[6/12/2026, 10:51:09 AM] info: Clients
+[6/12/2026, 10:51:09 AM] info: GET /VehicleInformation/mapdetails/11/4
+[6/12/2026, 10:51:09 AM] info: Clients
+[6/12/2026, 10:51:09 AM] info: GET /ClientImages/download.png
+[6/12/2026, 10:51:09 AM] info: map
+[6/12/2026, 10:51:41 AM] info: GET /userdetails/Approval/4/User
+[6/12/2026, 10:51:41 AM] info: GET /userdetails/getrole/4
+[6/12/2026, 10:51:41 AM] info: GET /userdetails/gridvalues/11/4
+[6/12/2026, 10:51:41 AM] info: Userdetails
+[6/12/2026, 10:51:41 AM] info: Userdetails
+[6/12/2026, 10:51:41 AM] info: Userdetails
+[6/12/2026, 10:51:46 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/12/2026, 10:51:46 AM] info: GET /bookingdetails/getforcontaine/11/4
+[6/12/2026, 10:51:46 AM] info: GET /VehicleInformation/mapdetails/11/4
+[6/12/2026, 10:51:46 AM] info: Clients
+[6/12/2026, 10:51:46 AM] info: Clients
+[6/12/2026, 10:51:46 AM] info: map
+[6/12/2026, 10:51:51 AM] info: GET /userdetails/Approval/4/User
+[6/12/2026, 10:51:51 AM] info: GET /userdetails/getrole/4
+[6/12/2026, 10:51:51 AM] info: GET /userdetails/gridvalues/11/4
+[6/12/2026, 10:51:51 AM] info: Userdetails
+[6/12/2026, 10:51:51 AM] info: Userdetails
+[6/12/2026, 10:51:51 AM] info: Userdetails
+[6/12/2026, 10:52:03 AM] info: GET /userdetails/Approval/4/VendorDetails
+[6/12/2026, 10:52:03 AM] info: GET /vendordetails/getvendor/11/4
+[6/12/2026, 10:52:03 AM] info: Userdetails
+[6/12/2026, 10:52:03 AM] info: Companydetails
+[6/12/2026, 10:52:08 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/12/2026, 10:52:08 AM] info: GET /bookingdetails/getforcontaine/11/4
+[6/12/2026, 10:52:08 AM] info: GET /VehicleInformation/mapdetails/11/4
+[6/12/2026, 10:52:08 AM] info: Clients
+[6/12/2026, 10:52:08 AM] info: Clients
+[6/12/2026, 10:52:08 AM] info: map
+[6/12/2026, 10:52:09 AM] info: GET /userdetails/Approval/4/User
+[6/12/2026, 10:52:09 AM] info: GET /userdetails/getrole/4
+[6/12/2026, 10:52:09 AM] info: GET /userdetails/gridvalues/11/4
+[6/12/2026, 10:52:09 AM] info: Userdetails
+[6/12/2026, 10:52:09 AM] info: Userdetails
+[6/12/2026, 10:52:10 AM] info: Userdetails
+[6/12/2026, 10:54:34 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/12/2026, 10:54:34 AM] info: GET /bookingdetails/getforcontaine/11/4
+[6/12/2026, 10:54:34 AM] info: GET /VehicleInformation/mapdetails/11/4
+[6/12/2026, 10:54:34 AM] info: Clients
+[6/12/2026, 10:54:34 AM] info: Clients
+[6/12/2026, 10:54:34 AM] info: map
+[6/12/2026, 10:54:36 AM] info: GET /userdetails/Approval/4/User
+[6/12/2026, 10:54:36 AM] info: GET /userdetails/getrole/4
+[6/12/2026, 10:54:36 AM] info: GET /userdetails/gridvalues/11/4
+[6/12/2026, 10:54:36 AM] info: Userdetails
+[6/12/2026, 10:54:36 AM] info: Userdetails
+[6/12/2026, 10:54:36 AM] info: Userdetails
+[6/12/2026, 10:54:39 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/12/2026, 10:54:39 AM] info: GET /bookingdetails/getforcontaine/11/4
+[6/12/2026, 10:54:40 AM] info: GET /VehicleInformation/mapdetails/11/4
+[6/12/2026, 10:54:40 AM] info: Clients
+[6/12/2026, 10:54:40 AM] info: Clients
+[6/12/2026, 10:54:40 AM] info: map

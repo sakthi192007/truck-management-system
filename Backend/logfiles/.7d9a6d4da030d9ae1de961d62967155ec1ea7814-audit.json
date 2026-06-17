@@ -1,0 +1,80 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\.7d9a6d4da030d9ae1de961d62967155ec1ea7814-audit.json",
+    "files": [
+        {
+            "date": 1762499929208,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-07-11-2025.log",
+            "hash": "fd4c79a26e8ef1a110de1c8df750a96f64220e850aaaaeea2e3e5a2310d26448"
+        },
+        {
+            "date": 1762585637135,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-08-11-2025.log",
+            "hash": "256141d194db25ba92ceb529836e8df08861052943e8861d181c0a9a2b251852"
+        },
+        {
+            "date": 1762690940866,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-09-11-2025.log",
+            "hash": "13d0aedeccffb1759f2b8818a88412eb85c3fd24494f2e07a5f03fc5b0d66166"
+        },
+        {
+            "date": 1762847628553,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-11-11-2025.log",
+            "hash": "7c2d7867337198ea17d90446e01a7237aedca51945a73f51dc554bcf95bf2fc3"
+        },
+        {
+            "date": 1762921678060,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-12-11-2025.log",
+            "hash": "836d514344ac1bb0af4ef9e83c83b4cfe54b69cb562bb066ae8c42d01c69f978"
+        },
+        {
+            "date": 1763009499718,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-13-11-2025.log",
+            "hash": "088e5d9abb1b22531ceed1009898b0189d066136b886025e31d9f2d769cbe97f"
+        },
+        {
+            "date": 1763094601262,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-14-11-2025.log",
+            "hash": "78fa8597b73ee6e145c6f38df4501aac9c704872cff7928e5874af310765005d"
+        },
+        {
+            "date": 1763369844713,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-17-11-2025.log",
+            "hash": "790ad3d39ba741f6ae1a4a6ffb8f702deb7a82a270e244f1c53ffb20d9aa0886"
+        },
+        {
+            "date": 1763460828287,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-18-11-2025.log",
+            "hash": "8506f350847973f9d6cc3703de05091890fbbdf21029e28e337c9350b9675501"
+        },
+        {
+            "date": 1763533984021,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-19-11-2025.log",
+            "hash": "87ec9727a015c005ffa6332d2939ea2cf056f44c6a20dd5ce81f9f3b45d10f0b"
+        },
+        {
+            "date": 1763617342071,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-20-11-2025.log",
+            "hash": "af8fc9ffbc55d7e8047d53d74ae1c10e2f19ccee397f6d78e70131290d5e0a84"
+        },
+        {
+            "date": 1763663765553,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-21-11-2025.log",
+            "hash": "ef7d08486986cc3152355ea99844045d1149f5ae070f0eeb82023fd16f8ddb21"
+        },
+        {
+            "date": 1763790064019,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-22-11-2025.log",
+            "hash": "e1dc354b79960fcb8b60bbd82802bdee799caaa8ea8e9407f9528da35ef31056"
+        },
+        {
+            "date": 1763882807975,
+            "name": "D:\\SKYBGIT\\SKYBTRANS_NODE\\logfiles\\application-23-11-2025.log",
+            "hash": "7261a2530876e40651781426a5e559ae96328896c61bc031b6c37827d43d8906"
+        }
+    ],
+    "hashType": "sha256"
+}

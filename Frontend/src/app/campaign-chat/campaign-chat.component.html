@@ -1,0 +1,60 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="modal-dialog modal-dialog-centered modal-xxl chat-modal">
+      <div class="modal-content p-4 d-flex flex-column" style="height: 600px;"> <!-- Set full height -->
+
+        <!-- Header -->
+        <div class="modal-header" id="colors">
+          <h4 class="modal-title text-white">Infologia Technologies<span class="tick-badge">
+      <span class="tick-mark">✔</span>
+    </span></h4>
+        </div>
+
+        <!-- Chat Body -->
+        <div class="modal-body chat-body flex-grow-1 overflow-auto" style="display: flex; flex-direction: column;">
+
+          <div class="d-flex mb-4">
+            <div style="
+              background-color: #f0f0f0;
+              color: #000;
+              padding: 10px 15px;
+              border-radius: 10px;
+              max-width: 70%;
+              font-size: 1rem;
+            ">
+              Welcome to Infologia Technologies
+            </div>
+          </div>
+          <div *ngFor="let message of messages" class="d-flex mb-2">
+            <div style="
+      background-color: #d1e7dd;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 10px;
+      max-width: 70%;
+      font-size: 1rem;
+    ">
+              {{Comments}}
+            </div>
+          </div>
+          <!-- Future messages go here -->
+
+        </div>
+
+        <form [formGroup]="Campaignform" class="chat-input-area border-top pt-3">
+          <div class="input-group">
+            <textarea rows="2" class="form-control" formControlName="Comments" placeholder="Type a comment..."
+              style="font-size: 1.1rem; resize: none;"></textarea>
+            <button class="btn btn-primary px-4" type="submit" (click)="submit()">
+              <i class="bx bxs-send" style="font-size: 1.3rem;"></i>
+            </button>
+          </div>
+          <div *ngIf="submitted && f['Comments'].errors" class="validation-invalid-label mt-1">
+            <span style="color: red;" *ngIf="f['Comments'].errors['required']">Comment is required</span>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

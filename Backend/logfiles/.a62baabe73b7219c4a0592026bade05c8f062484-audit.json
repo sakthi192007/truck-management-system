@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\SKYBGIT\\FinalDemo\\Node\\logfiles\\.a62baabe73b7219c4a0592026bade05c8f062484-audit.json",
+    "files": [
+        {
+            "date": 1770183040872,
+            "name": "D:\\SKYBGIT\\FinalDemo\\Node\\logfiles\\application-04-02-2026.log",
+            "hash": "f0506aea73bed75aaba7e049e4856e05ae6810dfd8cc0beb1a6ea911f8e4c603"
+        },
+        {
+            "date": 1770267437389,
+            "name": "D:\\SKYBGIT\\FinalDemo\\Node\\logfiles\\application-05-02-2026.log",
+            "hash": "e9153a7ee72821faf9dbd6739278ccd888d043422bb2aba32ab7ac0185c5c649"
+        },
+        {
+            "date": 1770351508279,
+            "name": "D:\\SKYBGIT\\FinalDemo\\Node\\logfiles\\application-06-02-2026.log",
+            "hash": "ae7e787fd9a3229e5b9c44a9b904b9a20ea8bc714051c9476fa981a273d0068b"
+        }
+    ],
+    "hashType": "sha256"
+}

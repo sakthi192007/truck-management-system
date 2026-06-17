@@ -1,0 +1,146 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18" runat="server">Booking Allocation Details</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a> Booking Allocation Details</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-10"></div>
+                        <div class="col-2">
+                            <a id="btncolors" class="btn btn-primary waves-effect waves-light"
+                                routerLink="/Bookingallocation"><i class="fa fa-plus"></i>&nbsp;Create</a>
+                        </div>
+
+                    </div>
+                    <br />
+                    <div class="card-bodys">
+
+                         <div class="col-md-12">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+ 
+                                    <div id="datatable-buttons" class="d-flex align-items-center gap-2"></div>
+
+ 
+                                    <div class="d-flex align-items-center gap-3">
+                                        <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#dateRangeModal">
+                                            Select Date Range
+                                        </button>
+
+                                                              <!--  -->
+               <div class="date-filter dropdown d-inline-block ">
+                    <button class="btn btn-primary dropdown-toggle filter" type="button" data-bs-toggle="dropdown">
+                          Date Filter
+                    </button>
+                  <ul class="dropdown-menu p-2">
+                  <li><a class="dropdown-item" (click)="setDateRange('today')">Today</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('yesterday')">Yesterday</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last7')">Last 7 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last30')">Last 30 Days</a></li>
+                  <li><a class="dropdown-item" (click)="setDateRange('last60')">Last 60 Days</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+               </div>
+
+
+          <!--  -->
+ 
+                                        <div class="left-search"></div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+
+                            <div class="modal fade" id="dateRangeModal" tabindex="-1" aria-labelledby="dateRangeLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content p-3">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="dateRangeLabel">Filter data on date range</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Choose a start and an end date which will filter</p>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Start Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="fromDate" />
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">End Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="toDate" />
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer" style="border-top: none;">
+                                            <button type="button" class="btn btn-primary w-100"
+                                                (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+       
+                        <table class="table table-striped table-bordered nowrap datatablegrid"
+                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <thead>
+
+                                <tr>
+                                    <th id="colors">Vendor Name</th>
+                                    <th id="colors">Company Name</th>
+                                    <th id="colors">Booking No</th>
+                                    <th id="colors">Status</th>
+                                    <th class="noExport" id="colors">Update</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let bird of filteredData">
+                                    <td>{{ bird.VendorCompanyName }}</td>
+                                    <td>{{ bird.ClientCompanyName }}</td>
+                                    <td>{{ bird.BookingNumber }}</td>
+                                    <td>
+                                        <span *ngIf="bird.Status" class="custom-badge" [ngClass]="{
+    'success': bird.Status === 'Completed',
+    'warning': bird.Status === 'Ongoing'
+  }">
+                                            {{ bird.Status }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a type="button" id="statusdesign" class="badge badge-primary"
+                                            (click)="Assignvalue(bird.ID)">
+                                            <i class="mdi mdi-pencil d-block font-size-16px"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

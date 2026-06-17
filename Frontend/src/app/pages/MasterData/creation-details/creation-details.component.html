@@ -1,0 +1,293 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">Basic Information</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Client Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form [formGroup]="clientform">
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Basic Information</h5>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Company Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="company_name"
+                                                    placeholder="Enter Company Name">
+                                                <div *ngIf="submitted && f['company_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['company_name'].errors['required']"><span
+                                                            style="color: red;">Company Name is required</span></div>
+                                                </div>
+
+                                            </div>
+ <div class="col-md-3">
+                                                <label>User Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="UserName"
+                                                    placeholder="Enter UserName" required>
+
+                                                <div *ngIf="submitted && f['UserName'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['UserName'].errors['required']"><span
+                                                            style="color: red;">User Name is required</span></div>
+                                                </div>
+                                            </div>
+                                                                              <div class="col-md-3">
+  <label>Company Email<span style="color: red;"> *</span></label>
+  <input type="text" class="form-control" formControlName="email"
+         placeholder="Enter Email Id" required>
+
+  <div *ngIf="(submitted || clientform.controls['email'].touched) && clientform.controls['email'].errors">
+    <ng-container *ngIf="clientform.controls['email'].errors['required']; else invalidOrExists">
+      <span class="validation-error" style="color: red;">
+        Email Id is required
+      </span>
+    </ng-container>
+
+    <ng-template #invalidOrExists>
+
+      <span *ngIf="clientform.controls['email'].errors['invalidEmail']"
+            class="validation-error" style="color: red;">
+        Please enter a correct email id
+      </span>  
+
+      <span *ngIf="clientform.controls['email'].errors['emailExists']"
+            class="validation-error" style="color:red;">
+        Email already exists
+      </span> 
+
+    </ng-template>
+    
+  </div>
+</div>
+                                         
+                                            <div class="col-md-3">
+                                                <label>Phone Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="phone_number"
+                                                    placeholder="Enter Phone Number" required appNumericOnly>
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['phone_number'].touched) && clientform.controls['phone_number'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['phone_number'].errors['required']; else invalidPhoneNumber">
+                                                        <span class="validation-error" style="color: red;">Phone Number
+                                                            is required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPhoneNumber>
+                                                        <span
+                                                            *ngIf="clientform.controls['phone_number'].errors['invalidPhoneNumber']"
+                                                            class="validation-error" style="color: red;">Please enter a
+                                                            correct phone number</span>
+                                                    </ng-template>
+                                                </div>
+                                            </div>
+ 
+
+                                        </div>
+                                        <div class="row mb-4">
+                                           
+                                           <div class="col-md-3">
+                                                <label>Address<span style="color: red;"> *</span></label>
+                                                <textarea class="form-control" rows="1" formControlName="company_add"
+                                                    required></textarea>
+                                                <div *ngIf="submitted && f['company_add'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['company_add'].errors['required']"><span
+                                                            style="color: red;">Company Address is required</span></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label>City<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="city"
+                                                    placeholder="Enter City " required>
+                                                <div *ngIf="submitted && f['city'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['city'].errors['required']"><span
+                                                            style="color: red;">City is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>State / Province<span style="color: red;"> *</span></label>
+                                                <select class="form-control" formControlName="state"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let summary of statedata" value={{summary.state_id}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{summary.state_name}}
+                                                    </option>
+                                                </select>
+
+                                                <div *ngIf="submitted && f['state'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['state'].errors['required']"><span
+                                                            style="color: red;">State / Province is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              <div class="col-md-3">
+                                                <label>Postal / Zip Code<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="postal"
+                                                    placeholder="Enter Postal / Zip Code " required>
+                                                <div *ngIf="submitted && f['postal'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['postal'].errors['required']"><span
+                                                            style="color: red;">Postal / Zip Code is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-4">
+                                               <div class="col-md-3">
+                                                <label>Country<span style="color: red;"> *</span></label>
+
+                                                <select class="form-control" formControlName="country"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let customer of countrydata"
+                                                        value={{customer.CountryId}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{customer.Country_name}}
+                                                    </option>
+                                                </select>
+                                                <div *ngIf="submitted && f['country'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['country'].errors['required']"><span
+                                                            style="color: red;">Country is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>GST Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="gst"
+                                                    placeholder="Enter GST Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['gst'].touched) && clientform.controls['gst'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['gst'].errors['required']; else invalidGst">
+                                                        <span class="validation-error" style="color: red;">GST Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidGst>
+                                                        <span *ngIf="clientform.controls['gst'].errors['invalidGst']"
+                                                            class="validation-error" style="color: red;">Invalid GST
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>PAN Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="pan"
+                                                    placeholder="Enter PAN Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['pan'].touched) && clientform.controls['pan'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['pan'].errors['required']; else invalidPan">
+                                                        <span class="validation-error" style="color: red;">PAN Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPan>
+                                                        <span *ngIf="clientform.controls['pan'].errors['invalidPan']"
+                                                            class="validation-error" style="color: red;">Invalid PAN
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+   <div class="col-md-3">
+                                                <label>Company Logo<span style="color: red;"> *</span></label>
+                                                <input type="file" class="form-control" formControlName="logo_file" (change)="companylogo($event)">
+
+                                                 <div class="py-2" *ngIf="imageview!=null">
+                                                    <a href="{{imageview}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                                <label>Status<span style="color: red;"> *</span></label>
+                                                <br>
+                                                <select class="form-control" formControlName="status"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>--Select--</option>
+                                                    <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
+                                                </select>
+                                                <div *ngIf="submitted && clientform.get('status')?.errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="clientform.get('status')?.errors?.['required']"><span
+                                                            style="color: red;">Status is required</span></div>
+                                                </div>
+
+
+                                            </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <div class="form-group" *ngIf="clientform.get('status')?.value === '0'">
+                                                    <label>Description</label>
+                                                    <br>
+                                                    <textarea class="form-control" rows="1"
+                                                        formControlName="description"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row justify-content-end text-end">
+                                            <div class="col-sm-9">
+                                                <div>
+                                                    <a id="btncolors" routerLink="/Creationgrid"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+
+                                                    <button id="btncolors" class="btn btn-primary w-md" type="button"
+                                                        (click)="submit()">
+                                                        <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

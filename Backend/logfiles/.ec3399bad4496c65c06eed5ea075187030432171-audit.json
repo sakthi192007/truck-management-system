@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\INFOLOGIA\\Infologia_Tracking\\Node\\logfiles\\.ec3399bad4496c65c06eed5ea075187030432171-audit.json",
+    "files": [
+        {
+            "date": 1779453776908,
+            "name": "D:\\INFOLOGIA\\Infologia_Tracking\\Node\\logfiles\\application-22-05-2026.log",
+            "hash": "d86e8e0100dcce350a908ef861fbd5a5a2a73c744bd99fbee8079bef17f8bbcd"
+        },
+        {
+            "date": 1781156258382,
+            "name": "D:\\INFOLOGIA\\Infologia_Tracking\\Node\\logfiles\\application-11-06-2026.log",
+            "hash": "e7022a648dd6a8e5205cc430d7c2a6b600d342e85d8810d2c223148c55a14d46"
+        }
+    ],
+    "hashType": "sha256"
+}

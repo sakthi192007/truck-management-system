@@ -1,0 +1,1822 @@
+[2/6/2026, 9:48:28 AM] info: GET /ClientImages/null
+[2/6/2026, 9:48:35 AM] info: POST /register/logins
+[2/6/2026, 9:48:36 AM] info: login user/id=4
+[2/6/2026, 9:48:36 AM] info: GET /bookingdetails/gettoecontaine/4/4
+[2/6/2026, 9:48:36 AM] info: GET /bookingdetails/getforcontaine/4/4
+[2/6/2026, 9:48:36 AM] info: Clients
+[2/6/2026, 9:48:36 AM] info: Clients
+[2/6/2026, 9:48:36 AM] info: GET /VehicleInformation/mapdetails/4/4
+[2/6/2026, 9:48:36 AM] info: map
+[2/6/2026, 9:48:37 AM] info: GET /ClientImages/download.png
+[2/6/2026, 9:48:41 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 9:48:41 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 9:48:41 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 9:48:41 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 9:48:41 AM] info: Userdetails
+[2/6/2026, 9:48:41 AM] info: Clients
+[2/6/2026, 9:48:41 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 9:48:41 AM] info: Clients
+[2/6/2026, 9:48:41 AM] info: Clients
+[2/6/2026, 9:48:41 AM] info: Clients
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 9:48:43 AM] info: Clients
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 9:48:43 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 9:48:43 AM] info: generalType
+[2/6/2026, 9:48:43 AM] info: generalType
+[2/6/2026, 9:48:43 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 9:48:43 AM] info: generalType
+[2/6/2026, 9:48:43 AM] info: generalType
+[2/6/2026, 9:48:43 AM] info: Clients
+[2/6/2026, 9:48:43 AM] info: Clients
+[2/6/2026, 9:48:51 AM] info: POST /OcrDocument/process
+[2/6/2026, 9:53:36 AM] info: GET /ClientImages/null
+[2/6/2026, 9:54:33 AM] info: GET /ClientImages/null
+[2/6/2026, 9:54:33 AM] info: GET /ClientImages/download.png
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 9:54:33 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 9:54:33 AM] info: generalType
+[2/6/2026, 9:54:33 AM] info: Clients
+[2/6/2026, 9:54:33 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 9:54:33 AM] info: generalType
+[2/6/2026, 9:54:33 AM] info: generalType
+[2/6/2026, 9:54:33 AM] info: generalType
+[2/6/2026, 9:54:33 AM] info: Clients
+[2/6/2026, 9:54:33 AM] info: Clients
+[2/6/2026, 9:54:44 AM] info: POST /OcrDocument/process
+[2/6/2026, 9:55:41 AM] info: GET /ClientImages/null
+[2/6/2026, 9:55:41 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 9:55:41 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 9:55:41 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 9:55:41 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 9:55:41 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 9:55:41 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 9:55:42 AM] info: Clients
+[2/6/2026, 9:55:42 AM] info: generalType
+[2/6/2026, 9:55:42 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 9:55:42 AM] info: generalType
+[2/6/2026, 9:55:42 AM] info: generalType
+[2/6/2026, 9:55:42 AM] info: generalType
+[2/6/2026, 9:55:42 AM] info: GET /ClientImages/download.png
+[2/6/2026, 9:55:42 AM] info: Clients
+[2/6/2026, 9:55:42 AM] info: Clients
+[2/6/2026, 9:55:48 AM] info: POST /OcrDocument/process
+[2/6/2026, 9:56:44 AM] info: GET /ClientImages/null
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 9:56:44 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 9:56:44 AM] info: GET /ClientImages/download.png
+[2/6/2026, 9:56:44 AM] info: Clients
+[2/6/2026, 9:56:44 AM] info: generalType
+[2/6/2026, 9:56:44 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 9:56:44 AM] info: generalType
+[2/6/2026, 9:56:44 AM] info: generalType
+[2/6/2026, 9:56:44 AM] info: generalType
+[2/6/2026, 9:56:44 AM] info: Clients
+[2/6/2026, 9:56:44 AM] info: Clients
+[2/6/2026, 9:56:50 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:02:19 AM] info: GET /ClientImages/null
+[2/6/2026, 10:02:19 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:02:19 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:02:19 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:02:19 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:02:19 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:02:19 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:02:20 AM] info: Clients
+[2/6/2026, 10:02:20 AM] info: generalType
+[2/6/2026, 10:02:20 AM] info: generalType
+[2/6/2026, 10:02:20 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:02:20 AM] info: generalType
+[2/6/2026, 10:02:20 AM] info: generalType
+[2/6/2026, 10:02:20 AM] info: Clients
+[2/6/2026, 10:02:20 AM] info: Clients
+[2/6/2026, 10:02:20 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:02:27 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:03:52 AM] info: GET /ClientImages/null
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:03:53 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:03:53 AM] info: generalType
+[2/6/2026, 10:03:53 AM] info: generalType
+[2/6/2026, 10:03:53 AM] info: Clients
+[2/6/2026, 10:03:53 AM] info: generalType
+[2/6/2026, 10:03:53 AM] info: generalType
+[2/6/2026, 10:03:53 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:03:53 AM] info: Clients
+[2/6/2026, 10:03:53 AM] info: Clients
+[2/6/2026, 10:03:56 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:03:57 AM] info: GET /ClientImages/null
+[2/6/2026, 10:03:57 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:03:58 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:03:58 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:03:58 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:03:58 AM] info: Clients
+[2/6/2026, 10:03:58 AM] info: generalType
+[2/6/2026, 10:03:58 AM] info: generalType
+[2/6/2026, 10:03:58 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:03:58 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:03:58 AM] info: generalType
+[2/6/2026, 10:03:58 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:03:58 AM] info: generalType
+[2/6/2026, 10:03:58 AM] info: Clients
+[2/6/2026, 10:03:58 AM] info: Clients
+[2/6/2026, 10:03:58 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:04:05 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:07:59 AM] info: POST /bookingExports
+[2/6/2026, 10:08:00 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:08:00 AM] info: POST /bookingExports/Exportitems
+[2/6/2026, 10:08:00 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:08:00 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:08:00 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:08:00 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:08:00 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:08:00 AM] info: Userdetails
+[2/6/2026, 10:08:00 AM] info: Clients
+[2/6/2026, 10:08:00 AM] info: Clients
+[2/6/2026, 10:08:00 AM] info: Clients
+[2/6/2026, 10:08:00 AM] info: Clients
+[2/6/2026, 10:08:05 AM] info: GET /bookingExports/5
+[2/6/2026, 10:08:05 AM] info: /getBooking: Success
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:08:05 AM] info: Clients
+[2/6/2026, 10:08:05 AM] info: generalType
+[2/6/2026, 10:08:05 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:08:05 AM] info: generalType
+[2/6/2026, 10:08:05 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:08:05 AM] info: generalType
+[2/6/2026, 10:08:05 AM] info: generalType
+[2/6/2026, 10:08:05 AM] info: Clients
+[2/6/2026, 10:08:05 AM] info: Clients
+[2/6/2026, 10:08:13 AM] info: GET /exports/cro_20260206043800_KMTC%20LINE.pdf
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:10:30 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:10:30 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:10:31 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:10:31 AM] info: GET /ClientImages/null
+[2/6/2026, 10:11:58 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:11:59 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:11:59 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:12:00 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:12:00 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:12:00 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:12:00 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:12:00 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:12:00 AM] info: Userdetails
+[2/6/2026, 10:12:00 AM] info: Clients
+[2/6/2026, 10:12:00 AM] info: Clients
+[2/6/2026, 10:12:00 AM] info: Clients
+[2/6/2026, 10:12:00 AM] info: Clients
+[2/6/2026, 10:12:07 AM] info: GET /bookingExports/5
+[2/6/2026, 10:12:07 AM] info: /getBooking: Success
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:12:07 AM] info: Clients
+[2/6/2026, 10:12:07 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:12:07 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:12:07 AM] info: generalType
+[2/6/2026, 10:12:07 AM] info: generalType
+[2/6/2026, 10:12:07 AM] info: generalType
+[2/6/2026, 10:12:07 AM] info: generalType
+[2/6/2026, 10:12:07 AM] info: Clients
+[2/6/2026, 10:12:07 AM] info: Clients
+[2/6/2026, 10:12:11 AM] info: GET /exports/cro_20260206043800_KMTC%20LINE.pdf
+[2/6/2026, 10:14:35 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:15:09 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:15:09 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:15:10 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:15:10 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:15:10 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:15:10 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:15:10 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:15:10 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:15:10 AM] info: Userdetails
+[2/6/2026, 10:15:10 AM] info: Clients
+[2/6/2026, 10:15:10 AM] info: Clients
+[2/6/2026, 10:15:10 AM] info: Clients
+[2/6/2026, 10:15:10 AM] info: Clients
+[2/6/2026, 10:16:13 AM] info: GET /ClientImages/null
+[2/6/2026, 10:16:13 AM] info: GET /ClientImages/null
+[2/6/2026, 10:16:13 AM] info: GET /ClientImages/null
+[2/6/2026, 10:16:14 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:16:14 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:16:14 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:16:14 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:16:14 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:16:14 AM] info: Userdetails
+[2/6/2026, 10:16:14 AM] info: Clients
+[2/6/2026, 10:16:14 AM] info: Clients
+[2/6/2026, 10:16:15 AM] info: Clients
+[2/6/2026, 10:16:15 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:16:15 AM] info: Clients
+[2/6/2026, 10:16:26 AM] info: GET /bookingExports/5
+[2/6/2026, 10:16:26 AM] info: /getBooking: Success
+[2/6/2026, 10:16:26 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:16:26 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:16:26 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:16:27 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:16:27 AM] info: Clients
+[2/6/2026, 10:16:27 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:16:27 AM] info: generalType
+[2/6/2026, 10:16:27 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:16:27 AM] info: generalType
+[2/6/2026, 10:16:27 AM] info: generalType
+[2/6/2026, 10:16:27 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:16:27 AM] info: generalType
+[2/6/2026, 10:16:27 AM] info: Clients
+[2/6/2026, 10:16:27 AM] info: Clients
+[2/6/2026, 10:16:41 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:17:02 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:17:02 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:17:03 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:17:03 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:17:03 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:17:03 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:17:03 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:17:03 AM] info: Userdetails
+[2/6/2026, 10:17:03 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:17:03 AM] info: Clients
+[2/6/2026, 10:17:03 AM] info: Clients
+[2/6/2026, 10:17:03 AM] info: Clients
+[2/6/2026, 10:17:03 AM] info: Clients
+[2/6/2026, 10:22:14 AM] info: GET /bookingExports/5
+[2/6/2026, 10:22:15 AM] info: /getBooking: Success
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:22:15 AM] info: Clients
+[2/6/2026, 10:22:15 AM] info: generalType
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:22:15 AM] info: generalType
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:22:15 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:22:15 AM] info: generalType
+[2/6/2026, 10:22:15 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:22:15 AM] info: generalType
+[2/6/2026, 10:22:15 AM] info: Clients
+[2/6/2026, 10:22:15 AM] info: Clients
+[2/6/2026, 10:22:28 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:22:47 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:22:47 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:22:47 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:22:48 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:22:48 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:22:48 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:22:48 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:22:48 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:22:48 AM] info: Userdetails
+[2/6/2026, 10:22:48 AM] info: Clients
+[2/6/2026, 10:22:48 AM] info: Clients
+[2/6/2026, 10:22:48 AM] info: Clients
+[2/6/2026, 10:22:48 AM] info: Clients
+[2/6/2026, 10:24:20 AM] info: GET /bookingExports/5
+[2/6/2026, 10:24:22 AM] info: /getBooking: Success
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:24:22 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:24:22 AM] info: Clients
+[2/6/2026, 10:24:22 AM] info: generalType
+[2/6/2026, 10:24:22 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:24:22 AM] info: generalType
+[2/6/2026, 10:24:22 AM] info: generalType
+[2/6/2026, 10:24:22 AM] info: generalType
+[2/6/2026, 10:24:22 AM] info: Clients
+[2/6/2026, 10:24:22 AM] info: Clients
+[2/6/2026, 10:24:39 AM] info: POST /OcrDocument/process
+[2/6/2026, 10:24:56 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:24:57 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:24:57 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:24:57 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:24:57 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:24:57 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:24:57 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:24:57 AM] info: Userdetails
+[2/6/2026, 10:24:57 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:24:57 AM] info: Clients
+[2/6/2026, 10:24:57 AM] info: Clients
+[2/6/2026, 10:24:57 AM] info: Clients
+[2/6/2026, 10:24:57 AM] info: Clients
+[2/6/2026, 10:26:20 AM] info: GET /bookingExports/5
+[2/6/2026, 10:26:21 AM] info: /getBooking: Success
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:26:21 AM] info: Clients
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:26:21 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:26:21 AM] info: generalType
+[2/6/2026, 10:26:21 AM] info: generalType
+[2/6/2026, 10:26:21 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:26:21 AM] info: generalType
+[2/6/2026, 10:26:21 AM] info: generalType
+[2/6/2026, 10:26:21 AM] info: Clients
+[2/6/2026, 10:26:21 AM] info: Clients
+[2/6/2026, 10:26:28 AM] info: GET /exports/cro_20260206045457_KMTC%20LINE.pdf
+[2/6/2026, 10:26:28 AM] info: GET /favicon.ico
+[2/6/2026, 10:26:32 AM] info: DELETE /bookingExports/deleteCroFile/30/5
+[2/6/2026, 10:26:38 AM] info: DELETE /bookingExports/deleteCroFile/undefined/5
+[2/6/2026, 10:26:40 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:26:40 AM] info: Clients
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:26:40 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:26:40 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:26:40 AM] info: generalType
+[2/6/2026, 10:26:40 AM] info: generalType
+[2/6/2026, 10:26:40 AM] info: generalType
+[2/6/2026, 10:26:40 AM] info: generalType
+[2/6/2026, 10:26:40 AM] info: Clients
+[2/6/2026, 10:26:40 AM] info: Clients
+[2/6/2026, 10:26:44 AM] info: DELETE /bookingExports/deleteCroFile/27/5
+[2/6/2026, 10:26:50 AM] info: DELETE /bookingExports/deleteCroFile/undefined/5
+[2/6/2026, 10:26:50 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:26:51 AM] info: Clients
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:26:51 AM] info: generalType
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:26:51 AM] info: generalType
+[2/6/2026, 10:26:51 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:26:51 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:26:51 AM] info: generalType
+[2/6/2026, 10:26:51 AM] info: generalType
+[2/6/2026, 10:26:51 AM] info: Clients
+[2/6/2026, 10:26:51 AM] info: Clients
+[2/6/2026, 10:27:06 AM] info: DELETE /bookingExports/deleteCroFile/27/5
+[2/6/2026, 10:27:06 AM] info: GET /ClientImages/null
+[2/6/2026, 10:27:09 AM] info: GET /ClientImages/null
+[2/6/2026, 10:28:51 AM] info: GET /ClientImages/null
+[2/6/2026, 10:28:51 AM] info: GET /ClientImages/null
+[2/6/2026, 10:28:52 AM] info: GET /ClientImages/null
+[2/6/2026, 10:28:52 AM] info: POST /register/logins
+[2/6/2026, 10:28:53 AM] info: GET /ClientImages/null
+[2/6/2026, 10:29:00 AM] info: POST /register/logins
+[2/6/2026, 10:29:01 AM] info: login user/id=4
+[2/6/2026, 10:29:01 AM] info: GET /bookingdetails/gettoecontaine/4/4
+[2/6/2026, 10:29:01 AM] info: GET /bookingdetails/getforcontaine/4/4
+[2/6/2026, 10:29:01 AM] info: Clients
+[2/6/2026, 10:29:01 AM] info: GET /VehicleInformation/mapdetails/4/4
+[2/6/2026, 10:29:01 AM] info: Clients
+[2/6/2026, 10:29:01 AM] info: map
+[2/6/2026, 10:29:01 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:29:04 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:29:04 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:29:04 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:29:04 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:29:04 AM] info: Userdetails
+[2/6/2026, 10:29:05 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:29:05 AM] info: Clients
+[2/6/2026, 10:29:05 AM] info: Clients
+[2/6/2026, 10:29:05 AM] info: Clients
+[2/6/2026, 10:29:05 AM] info: Clients
+[2/6/2026, 10:29:08 AM] info: GET /bookingExports/5
+[2/6/2026, 10:29:08 AM] info: /getBooking: Success
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:29:08 AM] info: Clients
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:29:08 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:29:08 AM] info: generalType
+[2/6/2026, 10:29:08 AM] info: generalType
+[2/6/2026, 10:29:08 AM] info: generalType
+[2/6/2026, 10:29:08 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:29:08 AM] info: generalType
+[2/6/2026, 10:29:08 AM] info: Clients
+[2/6/2026, 10:29:08 AM] info: Clients
+[2/6/2026, 10:29:16 AM] info: GET /exports/cro_20260206045457_KMTC%20LINE.pdf
+[2/6/2026, 10:29:18 AM] info: GET /exports/cro_20260206044702_KMTC%20LINE.pdf
+[2/6/2026, 10:29:21 AM] info: DELETE /bookingExports/deleteCroFile/29/5
+[2/6/2026, 10:29:32 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:29:32 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:29:32 AM] info: Clients
+[2/6/2026, 10:29:32 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:29:32 AM] info: generalType
+[2/6/2026, 10:29:32 AM] info: generalType
+[2/6/2026, 10:29:32 AM] info: generalType
+[2/6/2026, 10:29:33 AM] info: generalType
+[2/6/2026, 10:29:33 AM] info: Clients
+[2/6/2026, 10:29:33 AM] info: Clients
+[2/6/2026, 10:29:37 AM] info: DELETE /bookingExports/deleteCroFile/28/5
+[2/6/2026, 10:29:40 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:29:40 AM] info: Clients
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:29:40 AM] info: generalType
+[2/6/2026, 10:29:40 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:29:40 AM] info: generalType
+[2/6/2026, 10:29:40 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:29:40 AM] info: generalType
+[2/6/2026, 10:29:40 AM] info: generalType
+[2/6/2026, 10:29:40 AM] info: Clients
+[2/6/2026, 10:29:40 AM] info: Clients
+[2/6/2026, 10:30:21 AM] info: DELETE /bookingExports/deleteCroFile/28/5
+[2/6/2026, 10:30:22 AM] info: GET /ClientImages/null
+[2/6/2026, 10:32:19 AM] info: GET /ClientImages/null
+[2/6/2026, 10:32:28 AM] info: POST /register/logins
+[2/6/2026, 10:32:28 AM] info: login user/id=4
+[2/6/2026, 10:32:29 AM] info: GET /bookingdetails/gettoecontaine/4/4
+[2/6/2026, 10:32:29 AM] info: GET /bookingdetails/getforcontaine/4/4
+[2/6/2026, 10:32:29 AM] info: GET /VehicleInformation/mapdetails/4/4
+[2/6/2026, 10:32:29 AM] info: Clients
+[2/6/2026, 10:32:29 AM] info: Clients
+[2/6/2026, 10:32:29 AM] info: map
+[2/6/2026, 10:32:29 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:32:32 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:32:32 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:32:32 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:32:32 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:32:32 AM] info: Userdetails
+[2/6/2026, 10:32:32 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:32:32 AM] info: Clients
+[2/6/2026, 10:32:32 AM] info: Clients
+[2/6/2026, 10:32:32 AM] info: Clients
+[2/6/2026, 10:32:32 AM] info: Clients
+[2/6/2026, 10:32:36 AM] info: GET /bookingExports/5
+[2/6/2026, 10:32:36 AM] info: /getBooking: Success
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:32:36 AM] info: Clients
+[2/6/2026, 10:32:36 AM] info: generalType
+[2/6/2026, 10:32:36 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:32:36 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:32:36 AM] info: generalType
+[2/6/2026, 10:32:36 AM] info: generalType
+[2/6/2026, 10:32:36 AM] info: generalType
+[2/6/2026, 10:32:37 AM] info: Clients
+[2/6/2026, 10:32:37 AM] info: Clients
+[2/6/2026, 10:32:41 AM] info: GET /exports/cro_20260206045457_KMTC%20LINE.pdf
+[2/6/2026, 10:32:41 AM] info: GET /favicon.ico
+[2/6/2026, 10:33:47 AM] info: PUT /bookingExports/update/5
+[2/6/2026, 10:33:48 AM] info: POST /bookingExports/Exportfile
+[2/6/2026, 10:33:48 AM] info: PUT /bookingExports/items/5
+[2/6/2026, 10:33:48 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:33:48 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:33:48 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:33:48 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:33:48 AM] info: Userdetails
+[2/6/2026, 10:33:48 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:33:48 AM] info: Clients
+[2/6/2026, 10:33:49 AM] info: Clients
+[2/6/2026, 10:33:49 AM] info: Clients
+[2/6/2026, 10:33:49 AM] info: Clients
+[2/6/2026, 10:33:52 AM] info: GET /bookingExports/5
+[2/6/2026, 10:33:52 AM] info: /getBooking: Success
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:33:52 AM] info: Clients
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:33:52 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:33:52 AM] info: generalType
+[2/6/2026, 10:33:52 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:33:52 AM] info: generalType
+[2/6/2026, 10:33:52 AM] info: generalType
+[2/6/2026, 10:33:52 AM] info: generalType
+[2/6/2026, 10:33:52 AM] info: Clients
+[2/6/2026, 10:33:52 AM] info: Clients
+[2/6/2026, 10:33:57 AM] info: GET /exports/from13_20260206050348_3%20DO.pdf
+[2/6/2026, 10:34:01 AM] info: DELETE /bookingExports/formFiles/2/5
+[2/6/2026, 10:35:13 AM] info: GET /ClientImages/null
+[2/6/2026, 10:35:13 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:35:14 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:35:14 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:35:14 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:35:14 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:35:14 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:35:14 AM] info: Clients
+[2/6/2026, 10:35:14 AM] info: generalType
+[2/6/2026, 10:35:14 AM] info: generalType
+[2/6/2026, 10:35:14 AM] info: generalType
+[2/6/2026, 10:35:14 AM] info: generalType
+[2/6/2026, 10:35:14 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:35:14 AM] info: Clients
+[2/6/2026, 10:35:14 AM] info: GET /ClientImages/null
+[2/6/2026, 10:35:14 AM] info: Clients
+[2/6/2026, 10:35:15 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:43:29 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:43:29 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:43:29 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:43:29 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:43:29 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:43:29 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:43:30 AM] info: Clients
+[2/6/2026, 10:43:30 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:43:30 AM] info: generalType
+[2/6/2026, 10:43:30 AM] info: generalType
+[2/6/2026, 10:43:30 AM] info: generalType
+[2/6/2026, 10:43:30 AM] info: GET /ClientImages/null
+[2/6/2026, 10:43:30 AM] info: generalType
+[2/6/2026, 10:43:30 AM] info: Clients
+[2/6/2026, 10:43:30 AM] info: Clients
+[2/6/2026, 10:43:30 AM] info: GET /ClientImages/null
+[2/6/2026, 10:43:30 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:43:50 AM] info: GET /ClientImages/null
+[2/6/2026, 10:43:50 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:43:50 AM] info: GET /ClientImages/null
+[2/6/2026, 10:43:50 AM] info: Clients
+[2/6/2026, 10:43:50 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:43:50 AM] info: generalType
+[2/6/2026, 10:43:50 AM] info: generalType
+[2/6/2026, 10:43:50 AM] info: generalType
+[2/6/2026, 10:43:50 AM] info: generalType
+[2/6/2026, 10:43:50 AM] info: Clients
+[2/6/2026, 10:43:51 AM] info: Clients
+[2/6/2026, 10:43:51 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:46:23 AM] info: GET /ClientImages/null
+[2/6/2026, 10:46:23 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:46:23 AM] info: GET /ClientImages/null
+[2/6/2026, 10:46:23 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:46:23 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:46:23 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:46:24 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:46:24 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:46:24 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:46:24 AM] info: Clients
+[2/6/2026, 10:46:24 AM] info: generalType
+[2/6/2026, 10:46:24 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:46:24 AM] info: generalType
+[2/6/2026, 10:46:24 AM] info: generalType
+[2/6/2026, 10:46:24 AM] info: generalType
+[2/6/2026, 10:46:24 AM] info: Clients
+[2/6/2026, 10:46:24 AM] info: Clients
+[2/6/2026, 10:46:38 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:46:38 AM] info: GET /ClientImages/null
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:46:39 AM] info: GET /ClientImages/null
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:46:39 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:46:39 AM] info: Clients
+[2/6/2026, 10:46:39 AM] info: GET /bookingdetails/getMile
+[2/6/2026, 10:46:39 AM] info: generalType
+[2/6/2026, 10:46:39 AM] info: generalType
+[2/6/2026, 10:46:39 AM] info: generalType
+[2/6/2026, 10:46:39 AM] info: generalType
+[2/6/2026, 10:46:39 AM] info: Clients
+[2/6/2026, 10:46:39 AM] info: Clients
+[2/6/2026, 10:46:45 AM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 10:46:45 AM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 10:46:45 AM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 10:46:45 AM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 10:46:45 AM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 10:46:45 AM] info: Userdetails
+[2/6/2026, 10:46:45 AM] info: Clients
+[2/6/2026, 10:46:45 AM] info: Clients
+[2/6/2026, 10:46:45 AM] info: Clients
+[2/6/2026, 10:46:45 AM] info: Clients
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:46:50 AM] info: generalType
+[2/6/2026, 10:46:50 AM] info: generalType
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:46:50 AM] info: Clients
+[2/6/2026, 10:46:50 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:46:50 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 10:46:50 AM] info: generalType
+[2/6/2026, 10:46:50 AM] info: generalType
+[2/6/2026, 10:46:50 AM] info: Clients
+[2/6/2026, 10:46:50 AM] info: Clients
+[2/6/2026, 10:54:12 AM] info: GET /ClientImages/null
+[2/6/2026, 10:54:12 AM] info: GET /ClientImages/null
+[2/6/2026, 10:54:12 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 10:54:12 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 10:54:13 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 10:54:13 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 10:54:13 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 10:54:13 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 10:54:13 AM] info: generalType
+[2/6/2026, 10:54:13 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 10:54:13 AM] info: generalType
+[2/6/2026, 10:54:13 AM] info: Clients
+[2/6/2026, 10:54:13 AM] info: generalType
+[2/6/2026, 10:54:13 AM] info: generalType
+[2/6/2026, 10:54:13 AM] info: Clients
+[2/6/2026, 10:54:13 AM] info: Clients
+[2/6/2026, 10:54:13 AM] info: GET /ClientImages/download.png
+[2/6/2026, 10:54:38 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:08:18 AM] info: GET /ClientImages/null
+[2/6/2026, 11:08:18 AM] info: GET /ClientImages/null
+[2/6/2026, 11:08:18 AM] info: GET /ClientImages/null
+[2/6/2026, 11:08:19 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:08:20 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:08:20 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:08:20 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:08:20 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:08:20 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:08:20 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:08:21 AM] info: generalType
+[2/6/2026, 11:08:21 AM] info: generalType
+[2/6/2026, 11:08:21 AM] info: generalType
+[2/6/2026, 11:08:21 AM] info: Clients
+[2/6/2026, 11:08:21 AM] info: generalType
+[2/6/2026, 11:08:21 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:08:21 AM] info: Clients
+[2/6/2026, 11:08:21 AM] info: Clients
+[2/6/2026, 11:19:56 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:21:58 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:21:59 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:21:59 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:22:00 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:22:00 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:22:00 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:22:00 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:22:00 AM] info: GET /ClientImages/null
+[2/6/2026, 11:22:01 AM] info: GET /ClientImages/null
+[2/6/2026, 11:22:01 AM] info: generalType
+[2/6/2026, 11:22:01 AM] info: generalType
+[2/6/2026, 11:22:01 AM] info: Clients
+[2/6/2026, 11:22:01 AM] info: generalType
+[2/6/2026, 11:22:01 AM] info: generalType
+[2/6/2026, 11:22:01 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:22:01 AM] info: Clients
+[2/6/2026, 11:22:01 AM] info: Clients
+[2/6/2026, 11:22:06 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:23:21 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:21 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:21 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:23:22 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:23:22 AM] info: generalType
+[2/6/2026, 11:23:22 AM] info: generalType
+[2/6/2026, 11:23:22 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:23:22 AM] info: generalType
+[2/6/2026, 11:23:22 AM] info: Clients
+[2/6/2026, 11:23:22 AM] info: Clients
+[2/6/2026, 11:23:22 AM] info: generalType
+[2/6/2026, 11:23:22 AM] info: Clients
+[2/6/2026, 11:23:40 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:40 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:40 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:23:41 AM] info: generalType
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:23:41 AM] info: generalType
+[2/6/2026, 11:23:41 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:23:41 AM] info: Clients
+[2/6/2026, 11:23:41 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:23:41 AM] info: generalType
+[2/6/2026, 11:23:41 AM] info: generalType
+[2/6/2026, 11:23:41 AM] info: Clients
+[2/6/2026, 11:23:41 AM] info: Clients
+[2/6/2026, 11:23:55 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:55 AM] info: GET /ClientImages/null
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:23:56 AM] info: generalType
+[2/6/2026, 11:23:56 AM] info: generalType
+[2/6/2026, 11:23:56 AM] info: Clients
+[2/6/2026, 11:23:56 AM] info: generalType
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:23:56 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:23:56 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:23:56 AM] info: generalType
+[2/6/2026, 11:23:56 AM] info: Clients
+[2/6/2026, 11:23:56 AM] info: Clients
+[2/6/2026, 11:23:57 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:24:05 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:27:47 AM] info: GET /ClientImages/null
+[2/6/2026, 11:27:47 AM] info: GET /ClientImages/null
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:27:48 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:27:48 AM] info: generalType
+[2/6/2026, 11:27:48 AM] info: generalType
+[2/6/2026, 11:27:48 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:27:48 AM] info: Clients
+[2/6/2026, 11:27:49 AM] info: generalType
+[2/6/2026, 11:27:49 AM] info: generalType
+[2/6/2026, 11:27:49 AM] info: Clients
+[2/6/2026, 11:27:49 AM] info: Clients
+[2/6/2026, 11:27:49 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:28:04 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:43:05 AM] info: GET /ClientImages/null
+[2/6/2026, 11:43:07 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:43:07 AM] info: GET /ClientImages/null
+[2/6/2026, 11:43:08 AM] info: GET /ClientImages/null
+[2/6/2026, 11:43:08 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:43:08 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:43:08 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:43:08 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:43:08 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:43:08 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:43:09 AM] info: generalType
+[2/6/2026, 11:43:09 AM] info: generalType
+[2/6/2026, 11:43:09 AM] info: generalType
+[2/6/2026, 11:43:09 AM] info: generalType
+[2/6/2026, 11:43:09 AM] info: Clients
+[2/6/2026, 11:43:09 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:43:09 AM] info: Clients
+[2/6/2026, 11:43:09 AM] info: Clients
+[2/6/2026, 11:43:17 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:46:51 AM] info: GET /ClientImages/null
+[2/6/2026, 11:46:51 AM] info: GET /ClientImages/null
+[2/6/2026, 11:46:51 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:46:51 AM] info: GET /ClientImages/null
+[2/6/2026, 11:46:52 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:46:52 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:46:52 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:46:52 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:46:52 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:46:52 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:46:53 AM] info: generalType
+[2/6/2026, 11:46:53 AM] info: generalType
+[2/6/2026, 11:46:53 AM] info: Clients
+[2/6/2026, 11:46:53 AM] info: generalType
+[2/6/2026, 11:46:53 AM] info: generalType
+[2/6/2026, 11:46:53 AM] info: Clients
+[2/6/2026, 11:46:53 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:46:53 AM] info: Clients
+[2/6/2026, 11:47:01 AM] info: POST /OcrDocument/process
+[2/6/2026, 11:48:56 AM] info: GET /ClientImages/null
+[2/6/2026, 11:48:56 AM] info: GET /ClientImages/null
+[2/6/2026, 11:48:57 AM] info: GET /ClientImages/download.png
+[2/6/2026, 11:48:57 AM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 11:48:57 AM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 11:48:57 AM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 11:48:57 AM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 11:48:58 AM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 11:48:58 AM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 11:48:58 AM] info: generalType
+[2/6/2026, 11:48:58 AM] info: Clients
+[2/6/2026, 11:48:58 AM] info: generalType
+[2/6/2026, 11:48:58 AM] info: generalType
+[2/6/2026, 11:48:58 AM] info: generalType
+[2/6/2026, 11:48:58 AM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 11:48:58 AM] info: Clients
+[2/6/2026, 11:48:58 AM] info: Clients
+[2/6/2026, 11:49:14 AM] info: POST /OcrDocument/process
+[2/6/2026, 12:00:17 PM] info: GET /ClientImages/null
+[2/6/2026, 12:00:17 PM] info: GET /ClientImages/null
+[2/6/2026, 12:00:17 PM] info: GET /ClientImages/null
+[2/6/2026, 12:00:18 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:00:18 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:00:18 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:00:18 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:00:18 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:00:18 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:00:18 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:00:19 PM] info: generalType
+[2/6/2026, 12:00:19 PM] info: generalType
+[2/6/2026, 12:00:19 PM] info: Clients
+[2/6/2026, 12:00:19 PM] info: generalType
+[2/6/2026, 12:00:19 PM] info: generalType
+[2/6/2026, 12:00:19 PM] info: Clients
+[2/6/2026, 12:00:19 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:00:19 PM] info: Clients
+[2/6/2026, 12:01:32 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:05:46 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:05:46 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:05:47 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:05:47 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:05:47 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:05:47 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:05:47 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:05:47 PM] info: generalType
+[2/6/2026, 12:05:47 PM] info: generalType
+[2/6/2026, 12:05:47 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:05:47 PM] info: Clients
+[2/6/2026, 12:05:47 PM] info: generalType
+[2/6/2026, 12:05:47 PM] info: generalType
+[2/6/2026, 12:05:47 PM] info: Clients
+[2/6/2026, 12:05:47 PM] info: Clients
+[2/6/2026, 12:05:56 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:10:33 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:10:33 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:10:33 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:10:34 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:10:34 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:10:34 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:10:34 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:10:34 PM] info: generalType
+[2/6/2026, 12:10:34 PM] info: generalType
+[2/6/2026, 12:10:34 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:10:34 PM] info: generalType
+[2/6/2026, 12:10:34 PM] info: generalType
+[2/6/2026, 12:10:34 PM] info: Clients
+[2/6/2026, 12:10:34 PM] info: Clients
+[2/6/2026, 12:10:34 PM] info: Clients
+[2/6/2026, 12:10:42 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:12:25 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:12:26 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:12:26 PM] info: generalType
+[2/6/2026, 12:12:26 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:12:26 PM] info: generalType
+[2/6/2026, 12:12:26 PM] info: Clients
+[2/6/2026, 12:12:26 PM] info: generalType
+[2/6/2026, 12:12:26 PM] info: generalType
+[2/6/2026, 12:12:26 PM] info: Clients
+[2/6/2026, 12:12:26 PM] info: Clients
+[2/6/2026, 12:12:33 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:13:13 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:13:14 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:13:14 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:13:14 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:13:14 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:13:14 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:13:14 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:13:14 PM] info: generalType
+[2/6/2026, 12:13:14 PM] info: generalType
+[2/6/2026, 12:13:14 PM] info: Clients
+[2/6/2026, 12:13:14 PM] info: generalType
+[2/6/2026, 12:13:15 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:13:15 PM] info: generalType
+[2/6/2026, 12:13:15 PM] info: Clients
+[2/6/2026, 12:13:15 PM] info: Clients
+[2/6/2026, 12:13:20 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:16:49 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:16:49 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:16:49 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:16:49 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:16:49 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:16:49 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:16:49 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:16:50 PM] info: generalType
+[2/6/2026, 12:16:50 PM] info: generalType
+[2/6/2026, 12:16:50 PM] info: generalType
+[2/6/2026, 12:16:50 PM] info: Clients
+[2/6/2026, 12:16:50 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:16:50 PM] info: generalType
+[2/6/2026, 12:16:50 PM] info: Clients
+[2/6/2026, 12:16:50 PM] info: Clients
+[2/6/2026, 12:17:00 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:17:28 PM] info: POST /Importbookings/Import
+[2/6/2026, 12:17:28 PM] info: POST /Importbookings/Importfile
+[2/6/2026, 12:17:28 PM] info: POST /Importbookings/Importitems
+[2/6/2026, 12:17:29 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 12:17:29 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 12:17:29 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 12:17:29 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 12:17:29 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 12:17:29 PM] info: Userdetails
+[2/6/2026, 12:17:29 PM] info: Clients
+[2/6/2026, 12:17:29 PM] info: Clients
+[2/6/2026, 12:17:29 PM] info: Clients
+[2/6/2026, 12:17:29 PM] info: Clients
+[2/6/2026, 12:19:48 PM] info: GET /Importbookings/4
+[2/6/2026, 12:19:49 PM] info: /getBooking: Success
+[2/6/2026, 12:19:49 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:19:50 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:19:50 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:19:50 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:19:50 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:19:50 PM] info: generalType
+[2/6/2026, 12:19:50 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:19:50 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:19:50 PM] info: generalType
+[2/6/2026, 12:19:50 PM] info: generalType
+[2/6/2026, 12:19:50 PM] info: Clients
+[2/6/2026, 12:19:50 PM] info: generalType
+[2/6/2026, 12:19:50 PM] info: Clients
+[2/6/2026, 12:19:50 PM] info: Clients
+[2/6/2026, 12:20:00 PM] info: GET /imports/cro_20260206064728_3%20DO.pdf
+[2/6/2026, 12:20:06 PM] info: DELETE /Importbookings/delivery/4/4
+[2/6/2026, 12:20:18 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:21:16 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:22:02 PM] info: PUT /Importbookings/booking/update/4
+[2/6/2026, 12:22:03 PM] info: POST /Importbookings/Importfile
+[2/6/2026, 12:22:03 PM] info: PUT /Importbookings/items/update/4
+[2/6/2026, 12:22:03 PM] info: Booking updated successfully.
+[2/6/2026, 12:22:03 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 12:22:03 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 12:22:03 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 12:22:03 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 12:22:03 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 12:22:03 PM] info: Userdetails
+[2/6/2026, 12:22:03 PM] info: Clients
+[2/6/2026, 12:22:03 PM] info: Clients
+[2/6/2026, 12:22:03 PM] info: Clients
+[2/6/2026, 12:22:03 PM] info: Clients
+[2/6/2026, 12:23:22 PM] info: GET /Importbookings/4
+[2/6/2026, 12:23:22 PM] info: /getBooking: Success
+[2/6/2026, 12:23:22 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:23:22 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:23:22 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:23:23 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:23:23 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:23:23 PM] info: generalType
+[2/6/2026, 12:23:23 PM] info: generalType
+[2/6/2026, 12:23:23 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:23:23 PM] info: Clients
+[2/6/2026, 12:23:23 PM] info: generalType
+[2/6/2026, 12:23:23 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:23:23 PM] info: generalType
+[2/6/2026, 12:23:23 PM] info: Clients
+[2/6/2026, 12:23:23 PM] info: Clients
+[2/6/2026, 12:24:52 PM] info: POST /OcrDocument/process
+[2/6/2026, 12:25:51 PM] info: PUT /Importbookings/booking/update/4
+[2/6/2026, 12:25:52 PM] info: POST /Importbookings/Importfile
+[2/6/2026, 12:25:52 PM] info: PUT /Importbookings/items/update/4
+[2/6/2026, 12:25:52 PM] info: Booking updated successfully.
+[2/6/2026, 12:25:52 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 12:25:52 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 12:25:52 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 12:25:52 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 12:25:52 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 12:25:52 PM] info: Userdetails
+[2/6/2026, 12:25:52 PM] info: Clients
+[2/6/2026, 12:25:52 PM] info: Clients
+[2/6/2026, 12:25:52 PM] info: Clients
+[2/6/2026, 12:25:52 PM] info: Clients
+[2/6/2026, 12:26:04 PM] info: GET /Importbookings/4
+[2/6/2026, 12:26:05 PM] info: /getBooking: Success
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:26:05 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:26:05 PM] info: generalType
+[2/6/2026, 12:26:05 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:26:05 PM] info: generalType
+[2/6/2026, 12:26:05 PM] info: Clients
+[2/6/2026, 12:26:05 PM] info: generalType
+[2/6/2026, 12:26:05 PM] info: generalType
+[2/6/2026, 12:26:05 PM] info: Clients
+[2/6/2026, 12:26:05 PM] info: Clients
+[2/6/2026, 12:26:10 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 12:26:12 PM] info: GET /imports/cro_20260206065203_3%20DO.pdf
+[2/6/2026, 12:26:16 PM] info: DELETE /Importbookings/delivery/5/4
+[2/6/2026, 12:26:24 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:26:24 PM] info: generalType
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:26:24 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:26:24 PM] info: generalType
+[2/6/2026, 12:26:24 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:26:24 PM] info: Clients
+[2/6/2026, 12:26:24 PM] info: generalType
+[2/6/2026, 12:26:24 PM] info: generalType
+[2/6/2026, 12:26:24 PM] info: Clients
+[2/6/2026, 12:26:24 PM] info: Clients
+[2/6/2026, 12:39:14 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:39:14 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:39:14 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:39:14 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:39:14 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:39:14 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:39:14 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:39:15 PM] info: Clients
+[2/6/2026, 12:39:15 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:39:15 PM] info: generalType
+[2/6/2026, 12:39:15 PM] info: generalType
+[2/6/2026, 12:39:15 PM] info: generalType
+[2/6/2026, 12:39:15 PM] info: generalType
+[2/6/2026, 12:39:15 PM] info: Clients
+[2/6/2026, 12:39:15 PM] info: Clients
+[2/6/2026, 12:39:36 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 12:39:36 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 12:39:36 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 12:39:36 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 12:39:36 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 12:39:37 PM] info: Userdetails
+[2/6/2026, 12:39:37 PM] info: Clients
+[2/6/2026, 12:39:37 PM] info: Clients
+[2/6/2026, 12:39:37 PM] info: Clients
+[2/6/2026, 12:39:37 PM] info: Clients
+[2/6/2026, 12:46:25 PM] info: GET /Importbookings/4
+[2/6/2026, 12:46:26 PM] info: /getBooking: Success
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:46:26 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:46:26 PM] info: generalType
+[2/6/2026, 12:46:26 PM] info: Clients
+[2/6/2026, 12:46:26 PM] info: generalType
+[2/6/2026, 12:46:26 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:46:26 PM] info: generalType
+[2/6/2026, 12:46:26 PM] info: generalType
+[2/6/2026, 12:46:26 PM] info: Clients
+[2/6/2026, 12:46:26 PM] info: Clients
+[2/6/2026, 12:47:19 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 12:47:19 PM] info: GET /favicon.ico
+[2/6/2026, 12:59:28 PM] info: GET /ClientImages/download.png
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 12:59:29 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 12:59:29 PM] info: generalType
+[2/6/2026, 12:59:29 PM] info: generalType
+[2/6/2026, 12:59:29 PM] info: GET /Importbookings/view/4
+[2/6/2026, 12:59:29 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 12:59:29 PM] info: Clients
+[2/6/2026, 12:59:29 PM] info: generalType
+[2/6/2026, 12:59:29 PM] info: generalType
+[2/6/2026, 12:59:29 PM] info: Clients
+[2/6/2026, 12:59:29 PM] info: Clients
+[2/6/2026, 12:59:29 PM] info: GET /ClientImages/null
+[2/6/2026, 1:02:24 PM] info: POST /register/logins
+[2/6/2026, 1:02:25 PM] info: GET /ClientImages/null
+[2/6/2026, 1:02:30 PM] info: POST /register/logins
+[2/6/2026, 1:02:31 PM] info: login user/id=4
+[2/6/2026, 1:02:31 PM] info: GET /bookingdetails/gettoecontaine/4/4
+[2/6/2026, 1:02:31 PM] info: GET /bookingdetails/getforcontaine/4/4
+[2/6/2026, 1:02:31 PM] info: GET /VehicleInformation/mapdetails/4/4
+[2/6/2026, 1:02:31 PM] info: Clients
+[2/6/2026, 1:02:31 PM] info: Clients
+[2/6/2026, 1:02:31 PM] info: map
+[2/6/2026, 1:02:31 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:02:34 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 1:02:34 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 1:02:34 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 1:02:34 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 1:02:34 PM] info: Userdetails
+[2/6/2026, 1:02:34 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 1:02:34 PM] info: Clients
+[2/6/2026, 1:02:34 PM] info: Clients
+[2/6/2026, 1:02:34 PM] info: Clients
+[2/6/2026, 1:02:35 PM] info: Clients
+[2/6/2026, 1:02:38 PM] info: GET /Importbookings/4
+[2/6/2026, 1:02:38 PM] info: /getBooking: Success
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:02:38 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:02:38 PM] info: generalType
+[2/6/2026, 1:02:38 PM] info: generalType
+[2/6/2026, 1:02:38 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:02:38 PM] info: Clients
+[2/6/2026, 1:02:38 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:02:38 PM] info: generalType
+[2/6/2026, 1:02:38 PM] info: generalType
+[2/6/2026, 1:02:38 PM] info: Clients
+[2/6/2026, 1:02:38 PM] info: Clients
+[2/6/2026, 1:02:38 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:06:27 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:06:27 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:06:27 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:06:27 PM] info: generalType
+[2/6/2026, 1:06:27 PM] info: generalType
+[2/6/2026, 1:06:27 PM] info: Clients
+[2/6/2026, 1:06:28 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:06:28 PM] info: generalType
+[2/6/2026, 1:06:49 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 1:06:50 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:06:50 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 1:06:50 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 1:06:50 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 1:06:50 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 1:06:50 PM] info: Clients
+[2/6/2026, 1:06:50 PM] info: Userdetails
+[2/6/2026, 1:06:50 PM] info: Clients
+[2/6/2026, 1:06:50 PM] info: Clients
+[2/6/2026, 1:06:50 PM] info: Clients
+[2/6/2026, 1:06:54 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:06:54 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 1:06:54 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 1:06:54 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 1:06:54 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 1:06:55 PM] info: Userdetails
+[2/6/2026, 1:06:55 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 1:06:55 PM] info: Clients
+[2/6/2026, 1:06:55 PM] info: Clients
+[2/6/2026, 1:06:55 PM] info: Clients
+[2/6/2026, 1:06:55 PM] info: Clients
+[2/6/2026, 1:07:08 PM] info: GET /Importbookings/4
+[2/6/2026, 1:07:08 PM] info: /getBooking: Success
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:07:08 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:07:08 PM] info: generalType
+[2/6/2026, 1:07:08 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:07:08 PM] info: generalType
+[2/6/2026, 1:07:08 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:07:08 PM] info: Clients
+[2/6/2026, 1:07:08 PM] info: generalType
+[2/6/2026, 1:07:08 PM] info: Clients
+[2/6/2026, 1:07:08 PM] info: generalType
+[2/6/2026, 1:07:08 PM] info: Clients
+[2/6/2026, 1:07:08 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:09:32 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:09:32 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:09:32 PM] info: generalType
+[2/6/2026, 1:09:32 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:09:32 PM] info: generalType
+[2/6/2026, 1:09:32 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:09:32 PM] info: generalType
+[2/6/2026, 1:09:32 PM] info: Clients
+[2/6/2026, 1:09:32 PM] info: generalType
+[2/6/2026, 1:09:32 PM] info: Clients
+[2/6/2026, 1:09:32 PM] info: Clients
+[2/6/2026, 1:09:32 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:09:38 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:09:38 PM] info: generalType
+[2/6/2026, 1:09:38 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:09:38 PM] info: generalType
+[2/6/2026, 1:09:38 PM] info: Clients
+[2/6/2026, 1:09:38 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:09:38 PM] info: generalType
+[2/6/2026, 1:09:38 PM] info: generalType
+[2/6/2026, 1:09:38 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:09:38 PM] info: Clients
+[2/6/2026, 1:09:38 PM] info: Clients
+[2/6/2026, 1:09:38 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:09:44 PM] info: POST /OcrDocument/process
+[2/6/2026, 1:10:40 PM] info: PUT /Importbookings/booking/update/4
+[2/6/2026, 1:10:40 PM] info: POST /Importbookings/Importfile
+[2/6/2026, 1:10:40 PM] info: PUT /Importbookings/items/update/4
+[2/6/2026, 1:10:41 PM] info: Booking updated successfully.
+[2/6/2026, 1:10:41 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 1:10:41 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 1:10:41 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 1:10:41 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 1:10:41 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 1:10:41 PM] info: Userdetails
+[2/6/2026, 1:10:41 PM] info: Clients
+[2/6/2026, 1:10:41 PM] info: Clients
+[2/6/2026, 1:10:41 PM] info: Clients
+[2/6/2026, 1:10:41 PM] info: Clients
+[2/6/2026, 1:10:45 PM] info: GET /Importbookings/4
+[2/6/2026, 1:10:45 PM] info: /getBooking: Success
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:10:45 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:10:45 PM] info: generalType
+[2/6/2026, 1:10:45 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:10:45 PM] info: generalType
+[2/6/2026, 1:10:45 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:10:45 PM] info: Clients
+[2/6/2026, 1:10:45 PM] info: generalType
+[2/6/2026, 1:10:45 PM] info: generalType
+[2/6/2026, 1:10:45 PM] info: Clients
+[2/6/2026, 1:10:45 PM] info: Clients
+[2/6/2026, 1:10:45 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:11:20 PM] info: GET /imports/cro_20260206074040_3%20DO.pdf
+[2/6/2026, 1:11:21 PM] info: GET /favicon.ico
+[2/6/2026, 1:11:23 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 1:11:26 PM] info: DELETE /Importbookings/delivery/7/4
+[2/6/2026, 1:11:27 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:11:27 PM] info: generalType
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:11:27 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:11:27 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:11:27 PM] info: generalType
+[2/6/2026, 1:11:27 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:11:27 PM] info: Clients
+[2/6/2026, 1:11:27 PM] info: generalType
+[2/6/2026, 1:11:27 PM] info: generalType
+[2/6/2026, 1:11:27 PM] info: Clients
+[2/6/2026, 1:11:27 PM] info: Clients
+[2/6/2026, 1:11:27 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:12:07 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:12:07 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:12:08 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:12:08 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:12:08 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:12:08 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:12:08 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:12:08 PM] info: generalType
+[2/6/2026, 1:12:08 PM] info: Clients
+[2/6/2026, 1:12:08 PM] info: generalType
+[2/6/2026, 1:12:08 PM] info: generalType
+[2/6/2026, 1:12:08 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:12:08 PM] info: generalType
+[2/6/2026, 1:12:08 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:12:08 PM] info: Clients
+[2/6/2026, 1:12:08 PM] info: Clients
+[2/6/2026, 1:12:08 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:12:38 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:12:39 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:12:39 PM] info: generalType
+[2/6/2026, 1:12:39 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:12:39 PM] info: generalType
+[2/6/2026, 1:12:39 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:12:39 PM] info: Clients
+[2/6/2026, 1:12:39 PM] info: generalType
+[2/6/2026, 1:12:39 PM] info: generalType
+[2/6/2026, 1:12:39 PM] info: Clients
+[2/6/2026, 1:12:39 PM] info: Clients
+[2/6/2026, 1:12:39 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:20:28 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:20:28 PM] info: generalType
+[2/6/2026, 1:20:28 PM] info: Clients
+[2/6/2026, 1:20:28 PM] info: generalType
+[2/6/2026, 1:20:28 PM] info: generalType
+[2/6/2026, 1:20:28 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:20:28 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:20:28 PM] info: generalType
+[2/6/2026, 1:20:28 PM] info: Clients
+[2/6/2026, 1:20:28 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:20:28 PM] info: Clients
+[2/6/2026, 1:20:29 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:20:53 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:20:53 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:20:53 PM] info: generalType
+[2/6/2026, 1:20:53 PM] info: generalType
+[2/6/2026, 1:20:53 PM] info: Clients
+[2/6/2026, 1:20:53 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:20:53 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:20:53 PM] info: generalType
+[2/6/2026, 1:20:53 PM] info: Clients
+[2/6/2026, 1:20:53 PM] info: generalType
+[2/6/2026, 1:20:53 PM] info: Clients
+[2/6/2026, 1:20:53 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:21:47 PM] info: GET /ClientImages/download.png
+[2/6/2026, 1:21:47 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:21:47 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:21:47 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:21:47 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:21:47 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:21:47 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:21:47 PM] info: generalType
+[2/6/2026, 1:21:48 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:21:48 PM] info: generalType
+[2/6/2026, 1:21:48 PM] info: generalType
+[2/6/2026, 1:21:48 PM] info: Clients
+[2/6/2026, 1:21:48 PM] info: generalType
+[2/6/2026, 1:21:48 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:21:48 PM] info: Clients
+[2/6/2026, 1:21:48 PM] info: Clients
+[2/6/2026, 1:21:48 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 1:25:27 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 1:25:27 PM] info: generalType
+[2/6/2026, 1:25:27 PM] info: generalType
+[2/6/2026, 1:25:27 PM] info: Clients
+[2/6/2026, 1:25:27 PM] info: generalType
+[2/6/2026, 1:25:27 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 1:25:27 PM] info: GET /Importbookings/view/4
+[2/6/2026, 1:25:27 PM] info: generalType
+[2/6/2026, 1:25:27 PM] info: Clients
+[2/6/2026, 1:25:27 PM] info: Clients
+[2/6/2026, 1:25:27 PM] info: /getBookingDocuments: Success
+[2/6/2026, 1:25:27 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:29:34 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:29:34 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:29:34 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:29:34 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:29:34 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:29:34 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:29:34 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:29:35 PM] info: generalType
+[2/6/2026, 2:29:35 PM] info: Clients
+[2/6/2026, 2:29:35 PM] info: generalType
+[2/6/2026, 2:29:35 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:29:35 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:29:35 PM] info: generalType
+[2/6/2026, 2:29:35 PM] info: generalType
+[2/6/2026, 2:29:35 PM] info: Clients
+[2/6/2026, 2:29:35 PM] info: Clients
+[2/6/2026, 2:29:35 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:29:35 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:29:49 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:29:49 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:29:49 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:29:49 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:29:49 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:29:49 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:29:49 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:29:50 PM] info: generalType
+[2/6/2026, 2:29:50 PM] info: generalType
+[2/6/2026, 2:29:50 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:29:50 PM] info: generalType
+[2/6/2026, 2:29:50 PM] info: Clients
+[2/6/2026, 2:29:50 PM] info: generalType
+[2/6/2026, 2:29:50 PM] info: Clients
+[2/6/2026, 2:29:50 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:29:50 PM] info: Clients
+[2/6/2026, 2:29:50 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:29:50 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:30:23 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:30:23 PM] info: generalType
+[2/6/2026, 2:30:23 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:30:23 PM] info: generalType
+[2/6/2026, 2:30:23 PM] info: Clients
+[2/6/2026, 2:30:23 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:30:23 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:30:23 PM] info: generalType
+[2/6/2026, 2:30:23 PM] info: generalType
+[2/6/2026, 2:30:23 PM] info: Clients
+[2/6/2026, 2:30:23 PM] info: Clients
+[2/6/2026, 2:30:23 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:30:23 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:34:43 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:34:43 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:34:43 PM] info: generalType
+[2/6/2026, 2:34:43 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:34:43 PM] info: generalType
+[2/6/2026, 2:34:43 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:34:43 PM] info: Clients
+[2/6/2026, 2:34:43 PM] info: generalType
+[2/6/2026, 2:34:43 PM] info: generalType
+[2/6/2026, 2:34:43 PM] info: Clients
+[2/6/2026, 2:34:43 PM] info: Clients
+[2/6/2026, 2:34:43 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:38:09 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:38:10 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:38:10 PM] info: generalType
+[2/6/2026, 2:38:10 PM] info: generalType
+[2/6/2026, 2:38:10 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:38:10 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:38:10 PM] info: generalType
+[2/6/2026, 2:38:10 PM] info: Clients
+[2/6/2026, 2:38:10 PM] info: generalType
+[2/6/2026, 2:38:10 PM] info: Clients
+[2/6/2026, 2:38:10 PM] info: Clients
+[2/6/2026, 2:38:10 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:38:10 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:39:49 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:39:49 PM] info: generalType
+[2/6/2026, 2:39:49 PM] info: generalType
+[2/6/2026, 2:39:49 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:39:49 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:39:50 PM] info: Clients
+[2/6/2026, 2:39:50 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:39:50 PM] info: generalType
+[2/6/2026, 2:39:50 PM] info: generalType
+[2/6/2026, 2:39:50 PM] info: Clients
+[2/6/2026, 2:39:50 PM] info: Clients
+[2/6/2026, 2:39:50 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:39:50 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:41:18 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:41:18 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:41:18 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:41:18 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:41:18 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:41:18 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:41:18 PM] info: generalType
+[2/6/2026, 2:41:19 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:41:19 PM] info: generalType
+[2/6/2026, 2:41:19 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:41:19 PM] info: Clients
+[2/6/2026, 2:41:19 PM] info: generalType
+[2/6/2026, 2:41:19 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:41:19 PM] info: generalType
+[2/6/2026, 2:41:19 PM] info: Clients
+[2/6/2026, 2:41:19 PM] info: Clients
+[2/6/2026, 2:41:19 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:41:19 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:41:44 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:41:44 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:41:44 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:41:44 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:41:44 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:41:44 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:41:44 PM] info: generalType
+[2/6/2026, 2:41:45 PM] info: generalType
+[2/6/2026, 2:41:45 PM] info: Clients
+[2/6/2026, 2:41:45 PM] info: generalType
+[2/6/2026, 2:41:45 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:41:45 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:41:45 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:41:45 PM] info: generalType
+[2/6/2026, 2:41:45 PM] info: Clients
+[2/6/2026, 2:41:45 PM] info: Clients
+[2/6/2026, 2:41:45 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:41:45 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:42:36 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:42:36 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:42:36 PM] info: generalType
+[2/6/2026, 2:42:36 PM] info: Clients
+[2/6/2026, 2:42:36 PM] info: generalType
+[2/6/2026, 2:42:36 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:42:36 PM] info: generalType
+[2/6/2026, 2:42:36 PM] info: generalType
+[2/6/2026, 2:42:36 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:42:36 PM] info: Clients
+[2/6/2026, 2:42:36 PM] info: Clients
+[2/6/2026, 2:42:36 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:42:36 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:59:12 PM] info: GET /ClientImages/download.png
+[2/6/2026, 2:59:12 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 2:59:12 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 2:59:12 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 2:59:12 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 2:59:12 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 2:59:12 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 2:59:13 PM] info: generalType
+[2/6/2026, 2:59:13 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 2:59:13 PM] info: generalType
+[2/6/2026, 2:59:13 PM] info: generalType
+[2/6/2026, 2:59:13 PM] info: GET /Importbookings/view/4
+[2/6/2026, 2:59:13 PM] info: Clients
+[2/6/2026, 2:59:13 PM] info: generalType
+[2/6/2026, 2:59:13 PM] info: Clients
+[2/6/2026, 2:59:13 PM] info: Clients
+[2/6/2026, 2:59:13 PM] info: /getBookingDocuments: Success
+[2/6/2026, 2:59:13 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 2:59:53 PM] info: POST /OcrDocument/process
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 3:02:26 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 3:02:26 PM] info: generalType
+[2/6/2026, 3:02:26 PM] info: generalType
+[2/6/2026, 3:02:26 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 3:02:26 PM] info: GET /Importbookings/view/4
+[2/6/2026, 3:02:26 PM] info: generalType
+[2/6/2026, 3:02:26 PM] info: Clients
+[2/6/2026, 3:02:26 PM] info: generalType
+[2/6/2026, 3:02:26 PM] info: Clients
+[2/6/2026, 3:02:26 PM] info: Clients
+[2/6/2026, 3:02:26 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:02:26 PM] info: /getBookingDocuments: Success
+[2/6/2026, 3:02:27 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 3:02:48 PM] info: POST /OcrDocument/process
+[2/6/2026, 3:05:35 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:05:35 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 3:05:35 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 3:05:35 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 3:05:35 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 3:05:35 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 3:05:35 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 3:05:35 PM] info: generalType
+[2/6/2026, 3:05:35 PM] info: generalType
+[2/6/2026, 3:05:36 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 3:05:36 PM] info: GET /Importbookings/view/4
+[2/6/2026, 3:05:36 PM] info: Clients
+[2/6/2026, 3:05:36 PM] info: generalType
+[2/6/2026, 3:05:36 PM] info: generalType
+[2/6/2026, 3:05:36 PM] info: Clients
+[2/6/2026, 3:05:36 PM] info: Clients
+[2/6/2026, 3:05:36 PM] info: /getBookingDocuments: Success
+[2/6/2026, 3:05:37 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 3:15:31 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 3:15:31 PM] info: Clients
+[2/6/2026, 3:15:31 PM] info: generalType
+[2/6/2026, 3:15:31 PM] info: generalType
+[2/6/2026, 3:15:31 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 3:15:31 PM] info: Clients
+[2/6/2026, 3:15:31 PM] info: GET /Importbookings/view/4
+[2/6/2026, 3:15:31 PM] info: generalType
+[2/6/2026, 3:15:31 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:15:31 PM] info: generalType
+[2/6/2026, 3:15:31 PM] info: Clients
+[2/6/2026, 3:15:31 PM] info: /getBookingDocuments: Success
+[2/6/2026, 3:15:31 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 3:16:00 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 3:16:00 PM] info: generalType
+[2/6/2026, 3:16:00 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 3:16:00 PM] info: generalType
+[2/6/2026, 3:16:00 PM] info: GET /Importbookings/view/4
+[2/6/2026, 3:16:00 PM] info: generalType
+[2/6/2026, 3:16:00 PM] info: Clients
+[2/6/2026, 3:16:00 PM] info: Clients
+[2/6/2026, 3:16:00 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:16:00 PM] info: generalType
+[2/6/2026, 3:16:00 PM] info: Clients
+[2/6/2026, 3:16:00 PM] info: /getBookingDocuments: Success
+[2/6/2026, 3:16:00 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 3:16:58 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 3:16:58 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 3:16:58 PM] info: generalType
+[2/6/2026, 3:16:58 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 3:16:58 PM] info: generalType
+[2/6/2026, 3:16:58 PM] info: Clients
+[2/6/2026, 3:16:58 PM] info: GET /Importbookings/view/4
+[2/6/2026, 3:16:59 PM] info: generalType
+[2/6/2026, 3:16:59 PM] info: generalType
+[2/6/2026, 3:16:59 PM] info: Clients
+[2/6/2026, 3:16:59 PM] info: Clients
+[2/6/2026, 3:16:59 PM] info: /getBookingDocuments: Success
+[2/6/2026, 3:16:59 PM] info: GET /imports/cro_20260206065552_3%20DO.pdf
+[2/6/2026, 3:54:16 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:54:16 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:54:16 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:54:16 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:54:16 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:54:17 PM] info: Clients
+[2/6/2026, 3:54:17 PM] info: Clients
+[2/6/2026, 3:54:17 PM] info: Userdetails
+[2/6/2026, 3:54:17 PM] info: Clients
+[2/6/2026, 3:54:17 PM] info: Clients
+[2/6/2026, 3:57:02 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:57:02 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:57:02 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:57:02 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:57:02 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:57:02 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:57:03 PM] info: Clients
+[2/6/2026, 3:57:03 PM] info: Clients
+[2/6/2026, 3:57:03 PM] info: Userdetails
+[2/6/2026, 3:57:03 PM] info: Clients
+[2/6/2026, 3:57:03 PM] info: Clients
+[2/6/2026, 3:57:15 PM] info: GET /bookingExports/5
+[2/6/2026, 3:57:16 PM] error: /getBooking: ContainerCopyfiles is not defined
+[2/6/2026, 3:57:16 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:57:16 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:57:16 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:57:16 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:57:16 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:57:16 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:57:16 PM] info: Userdetails
+[2/6/2026, 3:57:16 PM] info: Clients
+[2/6/2026, 3:57:16 PM] info: Clients
+[2/6/2026, 3:57:16 PM] info: Clients
+[2/6/2026, 3:57:16 PM] info: Clients
+[2/6/2026, 3:57:20 PM] info: GET /bookingExports/5
+[2/6/2026, 3:57:20 PM] error: /getBooking: ContainerCopyfiles is not defined
+[2/6/2026, 3:57:20 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:57:20 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:57:20 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:57:20 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:57:20 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:57:20 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:57:20 PM] info: Userdetails
+[2/6/2026, 3:57:20 PM] info: Clients
+[2/6/2026, 3:57:20 PM] info: Clients
+[2/6/2026, 3:57:20 PM] info: Clients
+[2/6/2026, 3:57:20 PM] info: Clients
+[2/6/2026, 3:57:54 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:57:54 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:57:54 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:57:54 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:57:54 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:57:54 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:57:55 PM] info: Userdetails
+[2/6/2026, 3:57:55 PM] info: Clients
+[2/6/2026, 3:57:55 PM] info: Clients
+[2/6/2026, 3:57:55 PM] info: Clients
+[2/6/2026, 3:57:55 PM] info: Clients
+[2/6/2026, 3:57:58 PM] info: GET /bookingExports/5
+[2/6/2026, 3:57:58 PM] error: /getBooking: ContainerCopyfiles is not defined
+[2/6/2026, 3:57:58 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:57:58 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:57:58 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:57:58 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:57:58 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:57:58 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:57:58 PM] info: Userdetails
+[2/6/2026, 3:57:58 PM] info: Clients
+[2/6/2026, 3:57:58 PM] info: Clients
+[2/6/2026, 3:57:58 PM] info: Clients
+[2/6/2026, 3:57:58 PM] info: Clients
+[2/6/2026, 3:59:39 PM] info: GET /bookingExports/5
+[2/6/2026, 3:59:39 PM] error: /getBooking: ContainerCopyfiles is not defined
+[2/6/2026, 3:59:42 PM] info: GET /ClientImages/download.png
+[2/6/2026, 3:59:42 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 3:59:42 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 3:59:42 PM] info: Userdetails
+[2/6/2026, 3:59:42 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 3:59:42 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 3:59:42 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 3:59:42 PM] info: Clients
+[2/6/2026, 3:59:42 PM] info: Clients
+[2/6/2026, 3:59:42 PM] info: Clients
+[2/6/2026, 3:59:42 PM] info: Clients
+[2/6/2026, 4:00:41 PM] info: GET /bookingExports/5
+[2/6/2026, 4:00:42 PM] info: /getBooking: Success
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 4:00:42 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 4:00:42 PM] info: Clients
+[2/6/2026, 4:00:42 PM] info: GET /bookingdetails/getMile
+[2/6/2026, 4:00:42 PM] info: generalType
+[2/6/2026, 4:00:42 PM] info: GET /bookingExports/ExportDocumet/5
+[2/6/2026, 4:00:42 PM] info: generalType
+[2/6/2026, 4:00:42 PM] info: generalType
+[2/6/2026, 4:00:42 PM] info: generalType
+[2/6/2026, 4:00:42 PM] info: Clients
+[2/6/2026, 4:00:42 PM] info: Clients
+[2/6/2026, 4:00:42 PM] info: /getBooking: Success
+[2/6/2026, 4:00:51 PM] info: GET /exports/cro_20260206045457_KMTC%20LINE.pdf
+[2/6/2026, 4:01:01 PM] info: POST /OcrDocument/process
+[2/6/2026, 4:01:50 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 4:01:50 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 4:01:50 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 4:01:50 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 4:01:50 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 4:01:51 PM] info: Clients
+[2/6/2026, 4:01:51 PM] info: Userdetails
+[2/6/2026, 4:01:51 PM] info: Clients
+[2/6/2026, 4:01:51 PM] info: Clients
+[2/6/2026, 4:01:51 PM] info: Clients
+[2/6/2026, 4:05:08 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 4:05:08 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 4:05:08 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 4:05:09 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 4:05:09 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 4:05:09 PM] info: GET /ClientImages/download.png
+[2/6/2026, 4:05:09 PM] info: Clients
+[2/6/2026, 4:05:09 PM] info: Userdetails
+[2/6/2026, 4:05:09 PM] info: Clients
+[2/6/2026, 4:05:09 PM] info: Clients
+[2/6/2026, 4:05:09 PM] info: Clients
+[2/6/2026, 4:05:40 PM] info: GET /Importbookings/4
+[2/6/2026, 4:05:41 PM] info: /getBooking: Success
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 4:05:41 PM] info: generalType
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 4:05:41 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 4:05:41 PM] info: GET /bookingdetails/imgetMile
+[2/6/2026, 4:05:41 PM] info: generalType
+[2/6/2026, 4:05:41 PM] info: GET /Importbookings/view/4
+[2/6/2026, 4:05:41 PM] info: Clients
+[2/6/2026, 4:05:41 PM] info: generalType
+[2/6/2026, 4:05:41 PM] info: generalType
+[2/6/2026, 4:05:41 PM] info: Clients
+[2/6/2026, 4:05:41 PM] info: Clients
+[2/6/2026, 4:05:41 PM] info: /getBookingDocuments: Success
+[2/6/2026, 4:05:48 PM] info: GET /userdetails/Approval/4/BookingDetails
+[2/6/2026, 4:05:48 PM] info: GET /bookingExports/getall/4/4
+[2/6/2026, 4:05:48 PM] info: GET /bookingExports/allbooked/4/4
+[2/6/2026, 4:05:48 PM] info: GET /Importbookings/getall/4/4
+[2/6/2026, 4:05:48 PM] info: GET /Importbookings/allbooked/4/4
+[2/6/2026, 4:05:48 PM] info: Userdetails
+[2/6/2026, 4:05:48 PM] info: Clients
+[2/6/2026, 4:05:48 PM] info: Clients
+[2/6/2026, 4:05:48 PM] info: Clients
+[2/6/2026, 4:05:48 PM] info: Clients
+[2/6/2026, 4:05:52 PM] info: GET /bookingExports/5
+[2/6/2026, 4:05:52 PM] info: /getBooking: Success
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 4:05:52 PM] info: Clients
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 4:05:52 PM] info: generalType
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 4:05:52 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 4:05:52 PM] info: generalType
+[2/6/2026, 4:05:52 PM] info: generalType
+[2/6/2026, 4:05:52 PM] info: GET /bookingdetails/getMile
+[2/6/2026, 4:05:53 PM] info: generalType
+[2/6/2026, 4:05:53 PM] info: GET /bookingExports/ExportDocumet/5
+[2/6/2026, 4:05:53 PM] info: Clients
+[2/6/2026, 4:05:53 PM] info: Clients
+[2/6/2026, 4:05:53 PM] info: /getBooking: Success
+[2/6/2026, 4:06:02 PM] info: DELETE /bookingExports/deleteCroFile/31/5
+[2/6/2026, 4:06:03 PM] info: GET /ClientImages/download.png
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/getcustomer/4/4
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/getvendordata/4
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/getshiperdata/4
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/getgenerel/4
+[2/6/2026, 4:06:04 PM] info: Clients
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/pointofclear/4
+[2/6/2026, 4:06:04 PM] info: GET /invoicedetails/getportofloading/4
+[2/6/2026, 4:06:04 PM] info: GET /bookingdetails/getMile
+[2/6/2026, 4:06:04 PM] info: generalType
+[2/6/2026, 4:06:04 PM] info: GET /bookingExports/ExportDocumet/5
+[2/6/2026, 4:06:04 PM] info: generalType
+[2/6/2026, 4:06:04 PM] info: generalType
+[2/6/2026, 4:06:04 PM] info: generalType
+[2/6/2026, 4:06:04 PM] info: Clients
+[2/6/2026, 4:06:04 PM] info: Clients
+[2/6/2026, 4:06:04 PM] info: /getBooking: Success

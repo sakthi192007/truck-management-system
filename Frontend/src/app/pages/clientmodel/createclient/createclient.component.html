@@ -1,0 +1,482 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">Client Information</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Client Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form [formGroup]="clientform">
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Basic Information</h5>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Company Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="company_name"
+                                                    placeholder="Enter Company Name">
+                                                <div *ngIf="submitted && f['company_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['company_name'].errors['required']"><span
+                                                            style="color: red;">Company Name is required</span></div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Contact Person Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="first_name"
+                                                    placeholder="Enter Contact Person Name" required>
+                                                <div *ngIf="submitted && f['first_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['first_name'].errors['required']"><span
+                                                            style="color: red;">Contact Person Name is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                     <div class="col-md-3">
+  <label>Company Email<span style="color: red;"> *</span></label>
+  <input type="text" class="form-control" formControlName="email"
+         placeholder="Enter Email Id" required>
+
+  <div *ngIf="(submitted || clientform.controls['email'].touched) && clientform.controls['email'].errors">
+    <ng-container *ngIf="clientform.controls['email'].errors['required']; else invalidOrExists">
+      <span class="validation-error" style="color: red;">Email Id is required</span>
+    </ng-container>
+
+    <ng-template #invalidOrExists>
+      <span *ngIf="clientform.controls['email'].errors['invalidEmail']" 
+            class="validation-error" style="color: red;">
+        Please enter a correct email id
+      </span>
+      <span *ngIf="clientform.controls['email'].errors['emailExists']" 
+            class="validation-error" style="color:red;">
+        Email already exists
+      </span>
+    </ng-template>
+  </div>
+</div>
+                                            <div class="col-md-3">
+                                                <label>Landline Number</label>
+                                                <input type="text" class="form-control" formControlName="landline"
+                                                    placeholder="Enter Landline  Number">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Phone Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="phone_number"
+                                                    placeholder="Enter Phone Number" required appNumericOnly>
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['phone_number'].touched) && clientform.controls['phone_number'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['phone_number'].errors['required']; else invalidPhoneNumber">
+                                                        <span class="validation-error" style="color: red;">Phone Number
+                                                            is required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPhoneNumber>
+                                                        <span
+                                                            *ngIf="clientform.controls['phone_number'].errors['invalidPhoneNumber']"
+                                                            class="validation-error" style="color: red;">Please enter a
+                                                            correct phone number</span>
+                                                    </ng-template>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Address Line 1<span style="color: red;"> *</span></label>
+                                                <textarea class="form-control" rows="1" formControlName="company_add"
+                                                    required></textarea>
+                                                <!-- <input type="text" class="form-control" formControlName="company_add" placeholder="Enter Company Address" required> -->
+                                                <div *ngIf="submitted && f['company_add'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['company_add'].errors['required']"><span
+                                                            style="color: red;">Company Address is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Address Line 2</label>
+                                                <textarea class="form-control" rows="1"
+                                                    formControlName="company_add1"></textarea>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>City<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="city"
+                                                    placeholder="Enter City " required>
+                                                <div *ngIf="submitted && f['city'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['city'].errors['required']"><span
+                                                            style="color: red;">City is required</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+
+                                            <div class="col-md-3">
+                                                <label>State / Province<span style="color: red;"> *</span></label>
+                                                <select class="form-control" formControlName="state"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let summary of statedata" value={{summary.state_id}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{summary.state_name}}
+                                                    </option>
+                                                </select>
+
+                                                <div *ngIf="submitted && f['state'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['state'].errors['required']"><span
+                                                            style="color: red;">State / Province is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Country<span style="color: red;"> *</span></label>
+
+                                                <select class="form-control" formControlName="country"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option *ngFor="let customer of countrydata"
+                                                        value={{customer.CountryId}}
+                                                        selected="summary.state_id == summary.state_id">
+                                                        {{customer.Country_name}}
+                                                    </option>
+                                                </select>
+                                                <div *ngIf="submitted && f['country'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['country'].errors['required']"><span
+                                                            style="color: red;">Country is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Postal / Zip Code<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="postal"
+                                                    placeholder="Enter Postal / Zip Code " required>
+                                                <div *ngIf="submitted && f['postal'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['postal'].errors['required']"><span
+                                                            style="color: red;">Postal / Zip Code is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Nature of Business <span style="color: red;"> *</span></label>
+                                               <select class="form-control" formControlName="Business"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select Nature of business--
+                                                    </option>
+                                                    <option *ngFor="let summary of businessdata" value={{summary.NB_id}}
+                                                        selected="summary.NB_id == summary.NB_id">
+                                                        {{summary.NatureofBusiness}}
+                                                    </option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Bank Details</h5>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Account Holder Name <span style="color: red;">*</span></label>
+                                                <input type="text" class="form-control" formControlName="holder_name"
+                                                    placeholder="Enter Account Holder Name">
+                                                <div *ngIf="submitted && f['holder_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['holder_name'].errors['required']"><span
+                                                            style="color: red;">Account Holder Name is required</span>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Account Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="bank_account"
+                                                    placeholder="Enter Bank Account Number" appNumericOnly>
+
+                                                <div *ngIf="submitted && f['bank_account'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['bank_account'].errors['required']"><span
+                                                            style="color: red;">Account Number is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Name of the Bank<span style="color: red;">*</span></label>
+                                                <input type="text" class="form-control" formControlName="bank_name"
+                                                    placeholder="Enter Name of the Bank">
+                                                <div *ngIf="submitted && f['bank_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['bank_name'].errors['required']"><span
+                                                            style="color: red;">Bank Name is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>IFSC Code<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="ifsc_code"
+                                                    placeholder="Enter IFSC Code" style="text-transform: uppercase;">
+                                                <div *ngIf="submitted && f['ifsc_code'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['ifsc_code'].errors['required']"><span
+                                                            style="color: red;">IFSC Code is required</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>Branch<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="branch"
+                                                    placeholder="Enter branch" style="text-transform: uppercase;">
+                                                <div *ngIf="submitted && f['branch'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['branch'].errors['required']"><span
+                                                            style="color: red;">Branch is required</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Bank Address</label>
+                                                <textarea class="form-control" formControlName="bank_add"
+                                                    rows="1"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Document Details</h5>
+
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <label>GST Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="gst"
+                                                    placeholder="Enter GST Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['gst'].touched) && clientform.controls['gst'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['gst'].errors['required']; else invalidGst">
+                                                        <span class="validation-error" style="color: red;">GST Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidGst>
+                                                        <span *ngIf="clientform.controls['gst'].errors['invalidGst']"
+                                                            class="validation-error" style="color: red;">Invalid GST
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>GST Certificate<span style="color: red;"> *</span></label>
+                                                <br>
+                                                <input type="file" class="form-control" formControlName="gst_file"
+                                                    (change)="filegst($event)">
+
+                                                <div class="py-2" *ngIf="gst_fileup!=null">
+                                                    <a href="{{gst_fileup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>PAN Number<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="pan"
+                                                    placeholder="Enter PAN Number " required appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                                <div
+                                                    *ngIf="(submitted || clientform.controls['pan'].touched) && clientform.controls['pan'].errors">
+                                                    <ng-container
+                                                        *ngIf="clientform.controls['pan'].errors['required']; else invalidPan">
+                                                        <span class="validation-error" style="color: red;">PAN Number is
+                                                            required</span>
+                                                    </ng-container>
+                                                    <ng-template #invalidPan>
+                                                        <span *ngIf="clientform.controls['pan'].errors['invalidPan']"
+                                                            class="validation-error" style="color: red;">Invalid PAN
+                                                            Number</span>
+                                                    </ng-template>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>PAN Card<span style="color: red;"> *</span></label>
+                                                <br>
+                                                <input type="file" class="form-control" formControlName="pan_file"
+                                                    (change)="filepan($event)">
+
+                                                <div class="py-2" *ngIf="pan_fileup!=null">
+                                                    <a href="{{pan_fileup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+
+
+                                            <div class="col-md-3">
+                                                <label>TIN/TAN</label>
+                                                <input type="text" class="form-control" formControlName="tin_tan"
+                                                    placeholder="Enter TIN/TAN " appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>TIN /TAN</label>
+                                                <input type="file" class="form-control" formControlName="tin_file"
+                                                    (change)="tanFile($event)">
+                                                <div class="py-2" *ngIf="tinfilesup!=null">
+                                                    <a href="{{tinfilesup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>SME/MSME</label>
+                                                <input type="text" class="form-control" formControlName="msme"
+                                                    placeholder="Enter MSME" appUppercase
+                                                    style="text-transform: uppercase;">
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>SME/MSME</label>
+                                                <br>
+                                                <input type="file" class="form-control" formControlName="sme_file"
+                                                    (change)="smeFile($event)" multiple>
+                                                <div class="py-2" *ngIf="smefilesup!=null">
+                                                    <a href="{{smefilesup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-4">
+
+                                            <div class="col-md-3">
+                                                <label>Department<span style="color: red;"> *</span></label>
+
+                                                <select class="form-control" formControlName="department"
+                                                    data-live-search="true">
+                                                    <option value="" selected disabled>--Select--</option>
+                                                    <option value="0">Both</option>
+                                                    <option value="1">Export</option>
+                                                    <option value="2">Import</option>
+                                                </select>
+
+                                                <div *ngIf="submitted && f['department'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['department'].errors['required']"><span
+                                                            style="color: red;">Department is required</span></div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-3">
+                                                <label>ROC</label>
+                                                <br>
+                                                <input type="file" class="form-control" formControlName="roc"
+                                                    (change)="rocFile($event)">
+                                                <div class="py-2" *ngIf="rocfilesup!=null">
+                                                    <a href="{{rocfilesup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label>Others</label>
+                                                <input type="file" class="form-control" formControlName="others"
+                                                    (change)="otherFile($event)">
+                                                <div class="py-2" *ngIf="otherfilesup!=null">
+                                                    <a href="{{otherfilesup}}" target="_blank"
+                                                        class="font-weight-medium">View</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label>Status<span style="color: red;"> *</span></label>
+                                                <br>
+                                                <select class="form-control" formControlName="status" 
+                                                    (change)="onStatusChange($event)" data-live-search="true">
+                                                    <option value="" selected disabled>
+                                                        --Select--
+                                                    </option>
+                                                    <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
+                                                </select>
+
+                                                <div *ngIf="submitted && f['status'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['status'].errors['required']">
+                                                        <span style="color: red;">Status is required</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-6" *ngIf="clientform.get('status')?.value === '0'">
+                                                <label>Description</label>
+                                                <br>
+                                                <textarea class="form-control" rows="1" formControlName="description"
+                                                    (input)="onDescriptionInput($event)">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Submit Button -->
+                                        <div class="row justify-content-end text-end">
+                                            <div class="col-sm-9">
+                                                <div>
+                                                    <a id="btncolors" routerLink="/ClientDetails"
+                                                        class="btn btn-primary w-md">
+                                                        <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                                                    </a>&nbsp;
+
+                                                    <!-- Submit Button Logic -->
+                                                    <button id="btncolors" *ngIf="isUpdateMode || (!isViewMode && shouldShowSubmitButton())"
+                                                        class="btn btn-primary w-md" type="button" (click)="submit()">
+                                                        <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

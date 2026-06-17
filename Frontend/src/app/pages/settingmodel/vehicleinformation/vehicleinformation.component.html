@@ -1,0 +1,248 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+          <h4 class="mb-sm-0 font-size-18">Vehicle Information</h4>
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a>Vehicle Details</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body p-4">
+
+            <form #vehicleForm="ngForm" (ngSubmit)="onSubmit(vehicleForm)" novalidate>
+
+              <!-- Booking Details -->
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">
+                Booking & Vehicle Details
+              </h5>
+
+              <div class="row mb-4">
+                <!-- Booking Number -->
+                <div class="col-md-3">
+                  <label>Booking Number <span style="color: red;">*</span></label>
+                  <select class="form-select"
+                          name="bookingNumber"
+                          required
+                          [(ngModel)]="bookingNumber"
+                          #bookingNumberRef="ngModel">
+                    <option value="">Select Booking</option>
+                    <option *ngFor="let booking of bookings" [value]="booking.BookingNumber">
+                      {{ booking.BookingNumber }}
+                    </option>
+                  </select>
+
+                  <div *ngIf="bookingNumberRef.invalid && vehicleForm.submitted" class="text-danger">
+                    Booking Number is required.
+                  </div>
+                </div>
+
+                <!-- Truck Number -->
+                <div class="col-md-3">
+                  <label>Truck Number</label>
+                 <input
+   type="text"
+   name="TruckNumber"
+   [(ngModel)]="TruckNumber"
+   #TruckNumberRef="ngModel">
+
+               
+                </div>
+
+                <!-- Driver Name -->
+                <div class="col-md-3">
+                  <label>Driver Name <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter Driver Name"
+                         name="driverName" required [(ngModel)]="driverName" #driverNameRef="ngModel">
+
+                  <div *ngIf="driverNameRef.invalid && driverNameRef.touched" class="text-danger">
+                    Driver Name is required.
+                  </div>
+                </div>
+
+                <!-- Driver Mobile -->
+                <div class="col-md-3">
+                  <label>Driver Mobile Number</label>
+                  <input type="number" class="form-control" placeholder="Enter Mobile Number"
+                         name="driverMobile" [(ngModel)]="driverMobile">
+                </div>
+              </div>
+
+              <!-- KM Details -->
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Start Kms</label>
+                  <input type="text" class="form-control" name="startKms"
+                         placeholder="Enter Start Kms" [(ngModel)]="startKms">
+                </div>
+
+                <div class="col-md-3">
+                  <label>End Kms</label>
+                  <input type="text" class="form-control" name="endKms"
+                         placeholder="Enter End Kms" [(ngModel)]="endKms">
+                </div>
+              </div>
+
+              <!-- Diesel -->
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">
+                Diesel / Fuel Information
+              </h5>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Diesel Allowed</label>
+                  <input type="number" class="form-control" name="dieselAllowed"
+                         [(ngModel)]="dieselAllowed">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Diesel Actual</label>
+                  <input type="number" class="form-control" name="dieselActual"
+                         [(ngModel)]="dieselActual">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Diesel Cost</label>
+                  <input type="number" class="form-control" name="dieselCost"
+                         [(ngModel)]="dieselCost">
+                </div>
+              </div>
+
+              <!-- Driver Expenses -->
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">Driver Related Expenses</h5>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Driver Batta (Actual)</label>
+                  <input type="number" class="form-control" [(ngModel)]="driverBattaActual" name="driverBattaActual">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Driver Batta (Paid)</label>
+                  <input type="number" class="form-control" [(ngModel)]="driverBattaPaid" name="driverBattaPaid">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Driver Salary (Actual)</label>
+                  <input type="number" class="form-control" [(ngModel)]="driverSalaryActual" name="driverSalaryActual">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Driver Salary (Paid)</label>
+                  <input type="number" class="form-control" [(ngModel)]="driverSalaryPaid" name="driverSalaryPaid">
+                </div>
+              </div>
+
+              <!-- Expense Categories -->
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">
+                Expense Categories
+              </h5>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Spares</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.spares"
+                         name="spares" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Maintenance</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.maintenance"
+                         name="maintenance" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Insurance</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.insurance"
+                         name="insurance" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Toll Expenses</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.TollExpenses"
+                         name="toll" (input)="calculateBalance()">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Tyre Purchase</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.tyrePurchase"
+                         name="tyrePurchase" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Retread</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.retread"
+                         name="retread" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Tyre Sales</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.tyreSales"
+                         name="tyreSales" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Other Expenses</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.OtherExpenses"
+                         name="otherExpenses" (input)="calculateBalance()">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Oil</label>
+                  <input type="number" class="form-control" [(ngModel)]="expenses.oil"
+                         name="oil" (input)="calculateBalance()">
+                </div>
+              </div>
+
+              <!-- Financials -->
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">Financials</h5>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Income (Excluding GST)</label>
+                  <input type="number" class="form-control" name="income"
+                         [(ngModel)]="income" (input)="calculateBalance()">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Balance (Auto)</label>
+                  <input type="number" class="form-control" [value]="balance" readonly>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+               <div class="row justify-content-end text-end">
+                                    <div class="col-sm-9">
+                                        <div>
+                                            <a [routerLink]="['/vehicleinformationgrid']" id="btncolors" class="btn btn-primary w-md"
+                                               ><i class=" bx bx-arrow-back"
+                                                    aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                            <button id="btncolors" class="btn btn-primary w-md" type="button"
+                                               >
+                                                <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+             
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

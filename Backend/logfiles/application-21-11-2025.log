@@ -1,0 +1,1774 @@
+[11/21/2025, 12:07:21 AM] info: GET /ClientImages/null
+[11/21/2025, 12:07:23 AM] info: POST /register/logins
+[11/21/2025, 12:07:26 AM] info: login user/id=11
+[11/21/2025, 12:07:26 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 12:07:26 AM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 12:07:26 AM] info: Clients
+[11/21/2025, 12:07:26 AM] info: Clients
+[11/21/2025, 12:07:26 AM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 12:07:26 AM] info: map
+[11/21/2025, 12:07:26 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:07:33 AM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 12:07:33 AM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 12:07:33 AM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 12:07:33 AM] info: Userdetails
+[11/21/2025, 12:07:33 AM] info: Invoice details fetched successfully
+[11/21/2025, 12:07:34 AM] info: Invoice details fetched successfully
+[11/21/2025, 12:10:16 AM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 12:10:16 AM] info: Invoicedetails
+[11/21/2025, 12:10:17 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:10:17 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:10:17 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:10:18 AM] info: Clients
+[11/21/2025, 12:10:18 AM] info: Clients
+[11/21/2025, 12:10:18 AM] info: Clients
+[11/21/2025, 12:10:24 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:10:24 AM] info: Clients
+[11/21/2025, 12:10:39 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:10:39 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:10:40 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:10:40 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:10:40 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:10:40 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:10:40 AM] info: Clients
+[11/21/2025, 12:10:41 AM] info: Clients
+[11/21/2025, 12:10:41 AM] info: Clients
+[11/21/2025, 12:16:26 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:16:26 AM] info: Clients
+[11/21/2025, 12:16:36 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:16:36 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:16:37 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:16:37 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:16:37 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:16:37 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:16:37 AM] info: Clients
+[11/21/2025, 12:16:37 AM] info: Clients
+[11/21/2025, 12:16:38 AM] info: Clients
+[11/21/2025, 12:20:12 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:20:14 AM] info: Clients
+[11/21/2025, 12:20:26 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:20:26 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:20:27 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:20:27 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:20:27 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:20:27 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:20:27 AM] info: Clients
+[11/21/2025, 12:20:27 AM] info: Clients
+[11/21/2025, 12:20:27 AM] info: Clients
+[11/21/2025, 12:23:20 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:23:22 AM] info: Clients
+[11/21/2025, 12:25:33 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:25:34 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:25:35 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:25:35 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:25:35 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:25:35 AM] info: Clients
+[11/21/2025, 12:25:35 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:25:35 AM] info: Clients
+[11/21/2025, 12:25:35 AM] info: Clients
+[11/21/2025, 12:34:09 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:34:10 AM] info: Clients
+[11/21/2025, 12:34:19 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:34:19 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:34:20 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:34:20 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:34:20 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:34:20 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:34:20 AM] info: Clients
+[11/21/2025, 12:34:20 AM] info: Clients
+[11/21/2025, 12:34:20 AM] info: Clients
+[11/21/2025, 12:35:54 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:35:56 AM] info: Clients
+[11/21/2025, 12:36:04 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:36:19 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:39:22 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:39:24 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:39:24 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:39:24 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:39:24 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:39:24 AM] info: Clients
+[11/21/2025, 12:39:24 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:39:25 AM] info: Clients
+[11/21/2025, 12:39:25 AM] info: Clients
+[11/21/2025, 12:45:20 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:45:22 AM] info: Clients
+[11/21/2025, 12:45:56 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:45:56 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:45:57 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:45:57 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:45:57 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:45:57 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:45:57 AM] info: Clients
+[11/21/2025, 12:45:58 AM] info: Clients
+[11/21/2025, 12:45:58 AM] info: Clients
+[11/21/2025, 12:46:25 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:46:27 AM] info: Clients
+[11/21/2025, 12:46:32 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:46:32 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:46:33 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:46:33 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:46:33 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:46:33 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:46:33 AM] info: Clients
+[11/21/2025, 12:46:33 AM] info: Clients
+[11/21/2025, 12:46:33 AM] info: Clients
+[11/21/2025, 12:50:54 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:50:55 AM] info: Clients
+[11/21/2025, 12:51:02 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:54:52 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:54:53 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:54:53 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:54:53 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:54:53 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:54:53 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:54:54 AM] info: Clients
+[11/21/2025, 12:54:54 AM] info: Clients
+[11/21/2025, 12:54:54 AM] info: Clients
+[11/21/2025, 12:55:52 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 12:55:53 AM] info: Clients
+[11/21/2025, 12:56:05 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:56:06 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:56:07 AM] info: GET /ClientImages/download.png
+[11/21/2025, 12:56:07 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:56:07 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:56:07 AM] info: Clients
+[11/21/2025, 12:56:07 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:56:07 AM] info: Clients
+[11/21/2025, 12:56:07 AM] info: Clients
+[11/21/2025, 1:00:21 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 1:00:22 AM] info: Clients
+[11/21/2025, 1:00:43 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 1:00:44 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 1:00:44 AM] info: GET /ClientImages/download.png
+[11/21/2025, 1:00:44 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:00:44 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:00:44 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:00:45 AM] info: Clients
+[11/21/2025, 1:00:45 AM] info: Clients
+[11/21/2025, 1:00:45 AM] info: Clients
+[11/21/2025, 1:03:29 AM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 1:03:31 AM] info: Clients
+[11/21/2025, 1:03:47 AM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 1:03:49 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 1:03:50 AM] info: GET /ClientImages/download.png
+[11/21/2025, 1:03:50 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:03:50 AM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:03:50 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:03:50 AM] info: Clients
+[11/21/2025, 1:03:51 AM] info: Clients
+[11/21/2025, 1:03:51 AM] info: Clients
+[11/21/2025, 11:14:44 AM] info: GET /ClientImages/null
+[11/21/2025, 11:14:47 AM] info: POST /register/logins
+[11/21/2025, 11:14:48 AM] info: login user/id=11
+[11/21/2025, 11:14:48 AM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 11:14:48 AM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 11:14:48 AM] info: Clients
+[11/21/2025, 11:14:48 AM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 11:14:48 AM] info: Clients
+[11/21/2025, 11:14:48 AM] info: map
+[11/21/2025, 11:14:48 AM] info: GET /ClientImages/download.png
+[11/21/2025, 11:14:50 AM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 11:14:50 AM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 11:14:50 AM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 11:14:50 AM] info: Userdetails
+[11/21/2025, 11:14:50 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:14:51 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:14:56 AM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 11:14:56 AM] info: Invoicedetails
+[11/21/2025, 11:14:56 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 11:14:56 AM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 11:14:56 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 11:14:56 AM] info: Clients
+[11/21/2025, 11:14:56 AM] info: Clients
+[11/21/2025, 11:14:56 AM] info: Clients
+[11/21/2025, 11:15:13 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:15:14 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:15:14 AM] info: GET /ClientImages/download.png
+[11/21/2025, 11:15:14 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 11:15:14 AM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 11:15:14 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 11:15:14 AM] info: Clients
+[11/21/2025, 11:15:14 AM] info: Clients
+[11/21/2025, 11:15:14 AM] info: Clients
+[11/21/2025, 11:17:27 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:19:33 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:19:57 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:21:31 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:24:52 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:24:53 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:26:44 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:26:45 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:28:25 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:28:25 AM] error: invoiceDate: 2025-11-01 00:00:00.000
+[11/21/2025, 11:28:25 AM] error: dueInvoiceDate: 2025-11-30 00:00:00.000
+[11/21/2025, 11:28:26 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:32:26 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:32:26 AM] error: invoiceDate: Sat Nov 01 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:32:26 AM] error: dueInvoiceDate: Sun Nov 30 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:32:26 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:33:22 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:33:22 AM] error: invoiceDate: Sat Nov 01 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:33:22 AM] error: dueInvoiceDate: Sun Nov 30 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:33:22 AM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 11:33:22 AM] info: Invoice and associated items updated successfully.
+[11/21/2025, 11:33:23 AM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 11:33:23 AM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 11:33:23 AM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 11:33:23 AM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 11:33:28 AM] info: Userdetails
+[11/21/2025, 11:33:28 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:33:28 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:33:32 AM] info: GET /ClientImages/download.png
+[11/21/2025, 11:33:32 AM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 11:33:32 AM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 11:33:32 AM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 11:33:32 AM] info: Userdetails
+[11/21/2025, 11:33:32 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:33:33 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:35:36 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 11:35:36 AM] info: Clients
+[11/21/2025, 11:35:39 AM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 11:35:39 AM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 11:35:39 AM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 11:35:39 AM] info: Userdetails
+[11/21/2025, 11:35:39 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:35:39 AM] info: Invoice details fetched successfully
+[11/21/2025, 11:35:43 AM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 11:35:43 AM] info: Invoicedetails
+[11/21/2025, 11:35:43 AM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 11:35:43 AM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 11:35:43 AM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 11:35:43 AM] info: Clients
+[11/21/2025, 11:35:43 AM] info: Clients
+[11/21/2025, 11:35:43 AM] info: Clients
+[11/21/2025, 11:37:58 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:37:58 AM] error: invoiceDate: 2025-11-01
+[11/21/2025, 11:37:58 AM] error: dueInvoiceDate: 2025-11-23
+[11/21/2025, 11:37:59 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:41:10 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:41:10 AM] error: invoiceDate: 2025-11-01
+[11/21/2025, 11:41:10 AM] error: dueInvoiceDate: 2025-11-23
+[11/21/2025, 11:41:11 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:44:53 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:44:53 AM] info: Converted InvoiceDate: Sat Nov 01 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:44:53 AM] info: Converted DueInvoiceDate: Sun Nov 23 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 11:44:53 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 11:47:27 AM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 11:47:27 AM] info: Converted InvoiceDate: 2025-11-01T00:00:00.000Z
+[11/21/2025, 11:47:27 AM] info: Converted DueInvoiceDate: 2025-11-23T00:00:00.000Z
+[11/21/2025, 11:47:28 AM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:14:21 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 12:16:19 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 12:16:19 PM] info: Converted InvoiceDate: Sat Nov 01 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 12:16:19 PM] info: Converted DueInvoiceDate: Sun Nov 23 2025 05:30:00 GMT+0530 (India Standard Time)
+[11/21/2025, 12:16:20 PM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:19:41 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 12:19:41 PM] info: Converted InvoiceDate: 2025-11-01
+[11/21/2025, 12:19:41 PM] info: Converted DueInvoiceDate: 2025-11-23
+[11/21/2025, 12:19:42 PM] error: putinvoice: SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+[11/21/2025, 12:23:24 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 12:23:24 PM] info: Converted InvoiceDate: 2025-11-23
+[11/21/2025, 12:23:24 PM] info: Converted DueInvoiceDate: 2025-11-23
+[11/21/2025, 12:25:27 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 12:25:27 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 12:25:27 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 12:25:28 PM] info: Userdetails
+[11/21/2025, 12:25:28 PM] info: Invoice details fetched successfully
+[11/21/2025, 12:25:28 PM] info: Invoice details fetched successfully
+[11/21/2025, 12:25:40 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 12:25:41 PM] info: Invoicedetails
+[11/21/2025, 12:25:41 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:25:41 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 12:25:41 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:25:41 PM] info: Clients
+[11/21/2025, 12:25:41 PM] info: Clients
+[11/21/2025, 12:25:41 PM] info: Clients
+[11/21/2025, 12:25:45 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 12:25:45 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 12:25:45 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 12:25:45 PM] info: Userdetails
+[11/21/2025, 12:25:45 PM] info: Invoice details fetched successfully
+[11/21/2025, 12:25:45 PM] info: Invoice details fetched successfully
+[11/21/2025, 12:25:49 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 12:25:49 PM] info: Invoicedetails
+[11/21/2025, 12:25:49 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 12:25:49 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 12:25:49 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 12:25:49 PM] info: Clients
+[11/21/2025, 12:25:49 PM] info: Clients
+[11/21/2025, 12:25:49 PM] info: Clients
+[11/21/2025, 12:25:56 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:25:56 PM] info: Converted InvoiceDate: 2025-11-30
+[11/21/2025, 12:25:56 PM] info: Converted DueInvoiceDate: 2025-11-30
+[11/21/2025, 12:26:16 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:26:16 PM] info: Converted InvoiceDate: 2025-11-30
+[11/21/2025, 12:26:16 PM] info: Converted DueInvoiceDate: 2025-11-30
+[11/21/2025, 12:26:53 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 12:28:09 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 1:09:58 PM] info: GET /ClientImages/download.png
+[11/21/2025, 1:10:00 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:10:00 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:10:00 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:10:00 PM] info: Clients
+[11/21/2025, 1:10:00 PM] info: Clients
+[11/21/2025, 1:10:00 PM] info: Clients
+[11/21/2025, 1:10:01 PM] info: GET /ClientImages/download.png
+[11/21/2025, 1:10:04 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:10:04 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:10:04 PM] info: Clients
+[11/21/2025, 1:10:04 PM] info: Clients
+[11/21/2025, 1:10:04 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:10:04 PM] info: Clients
+[11/21/2025, 1:10:09 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 1:10:09 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 1:10:09 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 1:10:10 PM] info: Userdetails
+[11/21/2025, 1:10:10 PM] info: Invoice details fetched successfully
+[11/21/2025, 1:10:10 PM] info: Invoice details fetched successfully
+[11/21/2025, 1:10:15 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 1:10:15 PM] info: Invoicedetails
+[11/21/2025, 1:10:19 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:10:19 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:10:19 PM] info: Clients
+[11/21/2025, 1:10:19 PM] info: Clients
+[11/21/2025, 1:10:19 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:10:19 PM] info: Clients
+[11/21/2025, 1:10:28 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 1:10:28 PM] info: Clients
+[11/21/2025, 1:11:01 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 1:11:21 PM] info: PUT /pdfdownload/listupdate/1549
+[11/21/2025, 1:11:21 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 1:11:25 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 1:11:25 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 1:11:25 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 1:11:25 PM] info: Userdetails
+[11/21/2025, 1:11:25 PM] info: Invoice details fetched successfully
+[11/21/2025, 1:11:25 PM] info: Invoice details fetched successfully
+[11/21/2025, 1:11:33 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 1:11:33 PM] info: Invoicedetails
+[11/21/2025, 1:11:33 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:11:33 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:11:33 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:11:33 PM] info: Clients
+[11/21/2025, 1:11:33 PM] info: Clients
+[11/21/2025, 1:11:33 PM] info: Clients
+[11/21/2025, 1:11:40 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 1:11:40 PM] error: TypeError: Cannot read properties of undefined (reading 'CompanyName')
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:518:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 1:11:40 PM] info: GET /ClientImages/download.png
+[11/21/2025, 1:11:40 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:11:40 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:11:40 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:11:40 PM] info: Clients
+[11/21/2025, 1:11:40 PM] info: Clients
+[11/21/2025, 1:11:40 PM] info: Clients
+[11/21/2025, 1:35:58 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 1:35:58 PM] error: TypeError: Cannot read properties of undefined (reading 'CompanyName')
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:518:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 1:36:00 PM] info: GET /ClientImages/download.png
+[11/21/2025, 1:36:00 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 1:36:00 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 1:36:00 PM] info: Clients
+[11/21/2025, 1:36:00 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 1:36:00 PM] info: Clients
+[11/21/2025, 1:36:00 PM] info: Clients
+[11/21/2025, 1:36:05 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 1:36:07 PM] info: GET /invoice/SKYB_1763712365598.pdf
+[11/21/2025, 1:36:07 PM] info: GET /favicon.ico
+[11/21/2025, 2:12:10 PM] info: GET /ClientImages/null
+[11/21/2025, 2:12:12 PM] info: POST /register/logins
+[11/21/2025, 2:12:13 PM] info: login user/id=11
+[11/21/2025, 2:12:13 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 2:12:13 PM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 2:12:13 PM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 2:12:13 PM] info: Clients
+[11/21/2025, 2:12:13 PM] info: Clients
+[11/21/2025, 2:12:13 PM] info: GET /ClientImages/download.png
+[11/21/2025, 2:12:13 PM] info: map
+[11/21/2025, 2:12:14 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 2:12:14 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 2:12:14 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 2:12:14 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 2:12:14 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 2:12:14 PM] info: Userdetails
+[11/21/2025, 2:12:14 PM] info: Clients
+[11/21/2025, 2:12:14 PM] info: Clients
+[11/21/2025, 2:12:14 PM] info: Clients
+[11/21/2025, 2:12:15 PM] info: Clients
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 2:12:16 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 2:12:16 PM] info: Clients
+[11/21/2025, 2:12:16 PM] info: generalType
+[11/21/2025, 2:12:16 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 2:12:16 PM] info: generalType
+[11/21/2025, 2:12:16 PM] info: generalType
+[11/21/2025, 2:12:16 PM] info: generalType
+[11/21/2025, 2:12:16 PM] info: Clients
+[11/21/2025, 2:12:16 PM] info: Clients
+[11/21/2025, 2:14:15 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 2:14:15 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 2:14:15 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 2:14:15 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 2:14:15 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 2:14:15 PM] info: Userdetails
+[11/21/2025, 2:14:15 PM] info: Clients
+[11/21/2025, 2:14:15 PM] info: Clients
+[11/21/2025, 2:14:15 PM] info: Clients
+[11/21/2025, 2:14:16 PM] info: Clients
+[11/21/2025, 2:14:22 PM] info: GET /bookingExports/435
+[11/21/2025, 2:14:22 PM] info: /getBooking: Success
+[11/21/2025, 2:14:22 PM] info: GET /ExportMilestone/container/435
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 2:14:22 PM] info: Booking
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 2:14:22 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 2:14:22 PM] info: Clients
+[11/21/2025, 2:14:22 PM] info: generalType
+[11/21/2025, 2:14:22 PM] info: generalType
+[11/21/2025, 2:14:22 PM] info: generalType
+[11/21/2025, 2:14:22 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 2:14:22 PM] info: generalType
+[11/21/2025, 2:14:22 PM] info: Clients
+[11/21/2025, 2:14:22 PM] info: Clients
+[11/21/2025, 2:18:53 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:18:56 PM] info: GET /invoice/SKYB_1763714934426.pdf
+[11/21/2025, 2:27:35 PM] info: GET /ClientImages/download.png
+[11/21/2025, 2:27:35 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:27:35 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 2:27:35 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:27:36 PM] info: Clients
+[11/21/2025, 2:27:36 PM] info: Clients
+[11/21/2025, 2:27:36 PM] info: Clients
+[11/21/2025, 2:27:41 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:27:44 PM] info: GET /invoice/SKYB_1763715462045.pdf
+[11/21/2025, 2:33:56 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:33:58 PM] info: GET /invoice/SKYB_1763715836919.pdf
+[11/21/2025, 2:38:18 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 2:38:18 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 2:38:18 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 2:38:18 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 2:38:18 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 2:38:19 PM] info: Userdetails
+[11/21/2025, 2:38:19 PM] info: Clients
+[11/21/2025, 2:38:19 PM] info: Clients
+[11/21/2025, 2:38:19 PM] info: Clients
+[11/21/2025, 2:38:20 PM] info: Clients
+[11/21/2025, 2:38:26 PM] info: GET /bookingExports/455
+[11/21/2025, 2:38:27 PM] info: /getBooking: Success
+[11/21/2025, 2:38:27 PM] info: GET /ExportMilestone/container/455
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 2:38:27 PM] info: Booking
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 2:38:27 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 2:38:27 PM] info: Clients
+[11/21/2025, 2:38:27 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 2:38:27 PM] info: generalType
+[11/21/2025, 2:38:27 PM] info: generalType
+[11/21/2025, 2:38:27 PM] info: generalType
+[11/21/2025, 2:38:27 PM] info: generalType
+[11/21/2025, 2:38:27 PM] info: Clients
+[11/21/2025, 2:38:27 PM] info: Clients
+[11/21/2025, 2:39:40 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 2:39:40 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 2:39:40 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 2:39:40 PM] info: Userdetails
+[11/21/2025, 2:39:40 PM] info: Invoice details fetched successfully
+[11/21/2025, 2:39:40 PM] info: Invoice details fetched successfully
+[11/21/2025, 2:40:20 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 2:40:21 PM] info: Invoicedetails
+[11/21/2025, 2:40:21 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:40:21 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 2:40:21 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:40:21 PM] info: Clients
+[11/21/2025, 2:40:21 PM] info: Clients
+[11/21/2025, 2:40:21 PM] info: Clients
+[11/21/2025, 2:40:23 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:40:25 PM] info: GET /invoice/SKYB_1763716223737.pdf
+[11/21/2025, 2:43:22 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:43:24 PM] info: GET /invoice/SKYB_1763716402803.pdf
+[11/21/2025, 2:48:40 PM] info: GET /ClientImages/download.png
+[11/21/2025, 2:48:40 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:48:40 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:48:40 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 2:48:41 PM] info: Clients
+[11/21/2025, 2:48:41 PM] info: Clients
+[11/21/2025, 2:48:41 PM] info: Clients
+[11/21/2025, 2:48:55 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:48:57 PM] info: GET /invoice/SKYB_1763716735672.pdf
+[11/21/2025, 2:52:42 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:52:44 PM] info: GET /ClientImages/download.png
+[11/21/2025, 2:52:44 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:52:44 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 2:52:44 PM] info: Clients
+[11/21/2025, 2:52:44 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:52:44 PM] info: Clients
+[11/21/2025, 2:52:44 PM] info: Clients
+[11/21/2025, 2:53:08 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:53:10 PM] info: GET /invoice/SKYB_1763716988980.pdf
+[11/21/2025, 2:53:24 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:53:26 PM] info: GET /invoice/SKYB_1763717004771.pdf
+[11/21/2025, 2:56:27 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:56:29 PM] info: GET /invoice/SKYB_1763717187854.pdf
+[11/21/2025, 2:57:21 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 2:57:23 PM] info: GET /ClientImages/download.png
+[11/21/2025, 2:57:23 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:57:23 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 2:57:23 PM] info: Clients
+[11/21/2025, 2:57:23 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:57:23 PM] info: Clients
+[11/21/2025, 2:57:23 PM] info: Clients
+[11/21/2025, 2:57:39 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 2:57:39 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 2:57:39 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 2:57:39 PM] info: Userdetails
+[11/21/2025, 2:57:39 PM] info: Invoice details fetched successfully
+[11/21/2025, 2:57:39 PM] info: Invoice details fetched successfully
+[11/21/2025, 2:57:44 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 2:57:44 PM] info: Clients
+[11/21/2025, 2:57:47 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 2:57:47 PM] info: Clients
+[11/21/2025, 2:57:48 PM] info: GET /invoicedetails/getbookingnumber/1/1/11
+[11/21/2025, 2:57:48 PM] info: GET /invoicedetails/getstate/1
+[11/21/2025, 2:57:48 PM] info: Clients
+[11/21/2025, 2:57:48 PM] info: Clients
+[11/21/2025, 2:57:49 PM] info: GET /invoicedetails/invoicegetcontainer/EXPSKYB0002/1
+[11/21/2025, 2:57:50 PM] info: Clients
+[11/21/2025, 2:58:01 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 2:58:01 PM] info: Clients
+[11/21/2025, 3:04:56 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:04:57 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:04:57 PM] info: Clients
+[11/21/2025, 3:06:50 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:06:50 PM] info: Clients
+[11/21/2025, 3:06:51 PM] info: GET /invoicedetails/getbookingnumber/1/1/11
+[11/21/2025, 3:06:51 PM] info: GET /invoicedetails/getstate/1
+[11/21/2025, 3:06:51 PM] info: Clients
+[11/21/2025, 3:06:51 PM] info: Clients
+[11/21/2025, 3:06:52 PM] info: GET /invoicedetails/invoicegetcontainer/EXPSKYB0001/1
+[11/21/2025, 3:06:52 PM] info: Clients
+[11/21/2025, 3:07:03 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:07:03 PM] info: Clients
+[11/21/2025, 3:08:44 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 3:08:44 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 3:08:44 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 3:08:44 PM] info: Userdetails
+[11/21/2025, 3:08:44 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:08:44 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:08:50 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 3:08:50 PM] info: Invoicedetails
+[11/21/2025, 3:08:50 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:08:50 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:08:51 PM] info: Clients
+[11/21/2025, 3:08:51 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:08:51 PM] info: Clients
+[11/21/2025, 3:08:51 PM] info: Clients
+[11/21/2025, 3:13:02 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:13:02 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:13:02 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:13:02 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:13:02 PM] info: Clients
+[11/21/2025, 3:13:02 PM] info: Clients
+[11/21/2025, 3:13:02 PM] info: Clients
+[11/21/2025, 3:15:36 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:15:36 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:15:37 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:15:37 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:15:37 PM] info: Clients
+[11/21/2025, 3:15:37 PM] info: Clients
+[11/21/2025, 3:15:37 PM] info: Clients
+[11/21/2025, 3:16:28 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:16:28 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:16:28 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:16:28 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:16:28 PM] info: Clients
+[11/21/2025, 3:16:28 PM] info: Clients
+[11/21/2025, 3:16:28 PM] info: Clients
+[11/21/2025, 3:16:46 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:16:46 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:16:46 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:16:46 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:16:47 PM] info: Clients
+[11/21/2025, 3:16:47 PM] info: Clients
+[11/21/2025, 3:16:47 PM] info: Clients
+[11/21/2025, 3:20:08 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:20:08 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:20:08 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:20:08 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:20:09 PM] info: Clients
+[11/21/2025, 3:20:09 PM] info: Clients
+[11/21/2025, 3:20:09 PM] info: Clients
+[11/21/2025, 3:22:06 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:22:19 PM] info: GET /invoice/SKYB_1763718726761.pdf
+[11/21/2025, 3:23:16 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:23:22 PM] info: GET /invoice/SKYB_1763718796657.pdf
+[11/21/2025, 3:24:15 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:24:22 PM] info: GET /invoice/SKYB_1763718856341.pdf
+[11/21/2025, 3:24:59 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:25:02 PM] info: GET /invoice/SKYB_1763718900218.pdf
+[11/21/2025, 3:26:20 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:26:22 PM] info: GET /invoice/SKYB_1763718980616.pdf
+[11/21/2025, 3:27:03 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:27:06 PM] info: GET /invoice/SKYB_1763719024545.pdf
+[11/21/2025, 3:27:40 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:27:43 PM] info: GET /invoice/SKYB_1763719061188.pdf
+[11/21/2025, 3:29:30 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:29:32 PM] info: GET /invoice/SKYB_1763719171005.pdf
+[11/21/2025, 3:29:55 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:29:55 PM] info: Clients
+[11/21/2025, 3:29:56 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:29:56 PM] info: Clients
+[11/21/2025, 3:29:57 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:29:58 PM] info: Clients
+[11/21/2025, 3:29:59 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:29:59 PM] info: Clients
+[11/21/2025, 3:30:00 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:00 PM] info: Clients
+[11/21/2025, 3:30:02 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:02 PM] info: Clients
+[11/21/2025, 3:30:04 PM] info: GET /invoicedetails/getDesc/2
+[11/21/2025, 3:30:04 PM] info: Clients
+[11/21/2025, 3:30:05 PM] info: GET /invoicedetails/getDesc/2
+[11/21/2025, 3:30:05 PM] info: Clients
+[11/21/2025, 3:30:06 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:06 PM] info: Clients
+[11/21/2025, 3:30:07 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:07 PM] info: Clients
+[11/21/2025, 3:30:09 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:09 PM] info: Clients
+[11/21/2025, 3:30:10 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 3:30:10 PM] info: Clients
+[11/21/2025, 3:33:05 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:33:07 PM] info: GET /invoice/SKYB_1763719385624.pdf
+[11/21/2025, 3:34:35 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:34:50 PM] error: SequelizeConnectionError: Failed to connect to 111.118.179.94:8643 in 15000ms
+    at ConnectionManager.connect (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\mssql\connection-manager.js:119:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\sequelize.js:305:26
+    at async getdatas (D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:1147:26)
+    at async D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:453:29
+[11/21/2025, 3:34:51 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:34:51 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:34:51 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:34:51 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:34:51 PM] info: Clients
+[11/21/2025, 3:34:51 PM] info: Clients
+[11/21/2025, 3:34:51 PM] info: Clients
+[11/21/2025, 3:35:00 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:35:02 PM] info: GET /invoice/SKYB_1763719500994.pdf
+[11/21/2025, 3:36:13 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:36:15 PM] info: GET /invoice/SKYB_1763719573864.pdf
+[11/21/2025, 3:37:24 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:37:26 PM] info: GET /invoice/SKYB_1763719644842.pdf
+[11/21/2025, 3:37:41 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 3:37:41 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 3:37:41 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 3:37:41 PM] info: Userdetails
+[11/21/2025, 3:37:41 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:37:41 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:37:47 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 3:37:47 PM] info: Invoicedetails
+[11/21/2025, 3:37:47 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:37:47 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 3:37:47 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:37:47 PM] info: Clients
+[11/21/2025, 3:37:47 PM] info: Clients
+[11/21/2025, 3:37:47 PM] info: Clients
+[11/21/2025, 3:37:52 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:37:54 PM] info: GET /invoice/SKYB_1763719672763.pdf
+[11/21/2025, 3:48:37 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:48:52 PM] error: SequelizeConnectionError: Failed to connect to 111.118.179.94:8643 in 15000ms
+    at ConnectionManager.connect (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\mssql\connection-manager.js:119:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+[11/21/2025, 3:48:53 PM] info: GET /ClientImages/download.png
+[11/21/2025, 3:48:53 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:48:53 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 3:48:53 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:48:53 PM] info: Clients
+[11/21/2025, 3:48:53 PM] info: Clients
+[11/21/2025, 3:48:53 PM] info: Clients
+[11/21/2025, 3:48:57 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:48:59 PM] info: GET /invoice/SKYB_1763720337736.pdf
+[11/21/2025, 3:49:41 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:49:43 PM] info: GET /invoice/SKYB_1763720382156.pdf
+[11/21/2025, 3:50:24 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:50:26 PM] info: GET /invoice/SKYB_1763720424840.pdf
+[11/21/2025, 3:51:14 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:51:17 PM] info: GET /invoice/SKYB_1763720475341.pdf
+[11/21/2025, 3:56:44 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:56:46 PM] info: GET /invoice/SKYB_1763720804597.pdf
+[11/21/2025, 3:57:57 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 3:57:57 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 3:57:57 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 3:57:57 PM] info: Userdetails
+[11/21/2025, 3:57:57 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:57:57 PM] info: Invoice details fetched successfully
+[11/21/2025, 3:58:02 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 3:58:02 PM] info: Invoicedetails
+[11/21/2025, 3:58:02 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 3:58:02 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 3:58:02 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 3:58:02 PM] info: Clients
+[11/21/2025, 3:58:02 PM] info: Clients
+[11/21/2025, 3:58:02 PM] info: Clients
+[11/21/2025, 3:58:09 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 3:58:11 PM] info: GET /invoice/SKYB_1763720889682.pdf
+[11/21/2025, 4:00:08 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:00:10 PM] info: GET /invoice/SKYB_1763721008738.pdf
+[11/21/2025, 4:00:40 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:00:43 PM] info: GET /invoice/SKYB_1763721041398.pdf
+[11/21/2025, 4:04:58 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:05:00 PM] info: GET /invoice/SKYB_1763721299118.pdf
+[11/21/2025, 4:06:15 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:06:17 PM] info: GET /invoice/SKYB_1763721375365.pdf
+[11/21/2025, 4:06:28 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:06:28 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:06:28 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:06:28 PM] info: Userdetails
+[11/21/2025, 4:06:28 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:06:28 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:06:32 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 4:06:32 PM] info: Invoicedetails
+[11/21/2025, 4:06:32 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:06:32 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 4:06:32 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:06:32 PM] info: Clients
+[11/21/2025, 4:06:32 PM] info: Clients
+[11/21/2025, 4:06:32 PM] info: Clients
+[11/21/2025, 4:06:37 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:06:37 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:06:37 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:06:37 PM] info: Userdetails
+[11/21/2025, 4:06:37 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:06:37 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:06:41 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:06:42 PM] info: Invoicedetails
+[11/21/2025, 4:06:42 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:06:42 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:06:42 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:06:42 PM] info: Clients
+[11/21/2025, 4:06:42 PM] info: Clients
+[11/21/2025, 4:06:42 PM] info: Clients
+[11/21/2025, 4:06:47 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:06:49 PM] info: GET /invoice/SKYB_1763721407776.pdf
+[11/21/2025, 4:08:11 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:08:13 PM] info: GET /invoice/SKYB_1763721492130.pdf
+[11/21/2025, 4:08:22 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:08:24 PM] info: GET /invoice/SKYB_1763721502779.pdf
+[11/21/2025, 4:08:53 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:08:56 PM] info: GET /invoice/SKYB_1763721534386.pdf
+[11/21/2025, 4:09:37 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:09:40 PM] info: GET /invoice/SKYB_1763721578493.pdf
+[11/21/2025, 4:09:46 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:09:48 PM] info: GET /invoice/SKYB_1763721586380.pdf
+[11/21/2025, 4:12:40 PM] info: GET /ClientImages/null
+[11/21/2025, 4:12:42 PM] info: POST /register/logins
+[11/21/2025, 4:12:42 PM] info: login user/id=11
+[11/21/2025, 4:12:42 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 4:12:43 PM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 4:12:43 PM] info: Clients
+[11/21/2025, 4:12:43 PM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 4:12:43 PM] info: Clients
+[11/21/2025, 4:12:43 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:12:43 PM] info: map
+[11/21/2025, 4:12:44 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 4:12:44 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 4:12:44 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 4:12:44 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 4:12:44 PM] info: Userdetails
+[11/21/2025, 4:12:44 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 4:12:44 PM] info: Clients
+[11/21/2025, 4:12:44 PM] info: Clients
+[11/21/2025, 4:12:44 PM] info: Clients
+[11/21/2025, 4:12:45 PM] info: Clients
+[11/21/2025, 4:12:51 PM] info: GET /bookingExports/435
+[11/21/2025, 4:12:51 PM] info: /getBooking: Success
+[11/21/2025, 4:12:51 PM] info: GET /ExportMilestone/container/435
+[11/21/2025, 4:12:51 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 4:12:52 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 4:12:52 PM] info: Booking
+[11/21/2025, 4:12:52 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 4:12:52 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 4:12:52 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 4:12:52 PM] info: Clients
+[11/21/2025, 4:12:52 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 4:12:52 PM] info: generalType
+[11/21/2025, 4:12:52 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 4:12:52 PM] info: generalType
+[11/21/2025, 4:12:52 PM] info: generalType
+[11/21/2025, 4:12:52 PM] info: generalType
+[11/21/2025, 4:12:52 PM] info: Clients
+[11/21/2025, 4:12:52 PM] info: Clients
+[11/21/2025, 4:16:07 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:16:07 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:16:07 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:16:08 PM] info: Userdetails
+[11/21/2025, 4:16:08 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:16:08 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:17:54 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:17:54 PM] info: Invoicedetails
+[11/21/2025, 4:17:54 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:17:54 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:17:54 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:17:54 PM] info: Clients
+[11/21/2025, 4:17:54 PM] info: Clients
+[11/21/2025, 4:17:54 PM] info: Clients
+[11/21/2025, 4:20:13 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:14 PM] info: Clients
+[11/21/2025, 4:20:15 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:15 PM] info: Clients
+[11/21/2025, 4:20:16 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:16 PM] info: Clients
+[11/21/2025, 4:20:18 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:18 PM] info: Clients
+[11/21/2025, 4:20:19 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:19 PM] info: Clients
+[11/21/2025, 4:20:21 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:21 PM] info: Clients
+[11/21/2025, 4:20:22 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:22 PM] info: Clients
+[11/21/2025, 4:20:24 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:24 PM] info: Clients
+[11/21/2025, 4:20:25 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:25 PM] info: Clients
+[11/21/2025, 4:20:26 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:20:26 PM] info: Clients
+[11/21/2025, 4:22:16 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:22:19 PM] info: GET /invoice/SKYB_1763722337242.pdf
+[11/21/2025, 4:24:05 PM] info: GET /ExportMilestone/container/435
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 4:24:06 PM] info: Booking
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 4:24:06 PM] info: Clients
+[11/21/2025, 4:24:06 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 4:24:06 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 4:24:06 PM] info: generalType
+[11/21/2025, 4:24:06 PM] info: generalType
+[11/21/2025, 4:24:06 PM] info: generalType
+[11/21/2025, 4:24:06 PM] info: generalType
+[11/21/2025, 4:24:06 PM] info: Clients
+[11/21/2025, 4:24:06 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:24:07 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:24:07 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:24:07 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:24:07 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:24:07 PM] info: Clients
+[11/21/2025, 4:24:07 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:24:08 PM] info: Clients
+[11/21/2025, 4:24:08 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:24:26 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:26 PM] info: Clients
+[11/21/2025, 4:24:27 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:27 PM] info: Clients
+[11/21/2025, 4:24:28 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:28 PM] info: Clients
+[11/21/2025, 4:24:29 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:29 PM] info: Clients
+[11/21/2025, 4:24:30 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:30 PM] info: Clients
+[11/21/2025, 4:24:32 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:32 PM] info: Clients
+[11/21/2025, 4:24:33 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:33 PM] info: Clients
+[11/21/2025, 4:24:34 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:35 PM] info: Clients
+[11/21/2025, 4:24:36 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:36 PM] info: Clients
+[11/21/2025, 4:24:37 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:37 PM] info: Clients
+[11/21/2025, 4:24:38 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:39 PM] info: Clients
+[11/21/2025, 4:24:40 PM] info: GET /invoicedetails/getDesc/1
+[11/21/2025, 4:24:40 PM] info: Clients
+[11/21/2025, 4:26:28 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:26:30 PM] info: GET /invoice/SKYB_1763722588515.pdf
+[11/21/2025, 4:26:42 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:26:42 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:26:43 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:26:43 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 4:26:43 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:26:43 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:26:43 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:26:43 PM] info: Userdetails
+[11/21/2025, 4:26:43 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:26:44 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:28:11 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:28:11 PM] info: Invoicedetails
+[11/21/2025, 4:28:11 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:28:11 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:28:11 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:28:11 PM] info: Clients
+[11/21/2025, 4:28:11 PM] info: Clients
+[11/21/2025, 4:28:11 PM] info: Clients
+[11/21/2025, 4:35:00 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:36:00 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 4:36:00 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 4:36:00 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 4:36:00 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 4:36:00 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 4:36:00 PM] info: Userdetails
+[11/21/2025, 4:36:00 PM] info: Clients
+[11/21/2025, 4:36:01 PM] info: Clients
+[11/21/2025, 4:36:01 PM] info: Clients
+[11/21/2025, 4:36:01 PM] info: Clients
+[11/21/2025, 4:36:04 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:36:04 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:36:04 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:36:04 PM] info: Userdetails
+[11/21/2025, 4:36:04 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:36:05 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:36:09 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 4:36:09 PM] info: Invoicedetails
+[11/21/2025, 4:36:09 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:36:09 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 4:36:09 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:36:09 PM] info: Clients
+[11/21/2025, 4:36:09 PM] info: Clients
+[11/21/2025, 4:36:09 PM] info: Clients
+[11/21/2025, 4:36:12 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:36:12 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:36:12 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:36:12 PM] info: Userdetails
+[11/21/2025, 4:36:12 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:36:12 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:36:15 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:36:15 PM] info: Invoicedetails
+[11/21/2025, 4:36:15 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:36:15 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:36:15 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:36:15 PM] info: Clients
+[11/21/2025, 4:36:15 PM] info: Clients
+[11/21/2025, 4:36:15 PM] info: Clients
+[11/21/2025, 4:36:35 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:36:35 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:36:36 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:36:36 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 4:36:36 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:36:36 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:36:36 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:36:36 PM] info: Userdetails
+[11/21/2025, 4:36:36 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:36:36 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:38:16 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:38:17 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:38:17 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:38:17 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:38:17 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:38:17 PM] info: Clients
+[11/21/2025, 4:38:17 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:38:17 PM] info: Clients
+[11/21/2025, 4:38:17 PM] info: Clients
+[11/21/2025, 4:39:42 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:39:42 PM] info: Invoicedetails
+[11/21/2025, 4:39:42 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:39:42 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:39:42 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:39:42 PM] info: Clients
+[11/21/2025, 4:39:42 PM] info: Clients
+[11/21/2025, 4:39:42 PM] info: Clients
+[11/21/2025, 4:39:46 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:39:46 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:39:47 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:39:47 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 4:39:47 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:39:47 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:39:47 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:39:47 PM] info: Userdetails
+[11/21/2025, 4:39:47 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:39:47 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:40:44 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:40:45 PM] info: Invoicedetails
+[11/21/2025, 4:40:45 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:40:45 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:40:45 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:40:45 PM] info: Clients
+[11/21/2025, 4:40:45 PM] info: Clients
+[11/21/2025, 4:40:45 PM] info: Clients
+[11/21/2025, 4:41:59 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:42:00 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:42:00 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:42:00 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 4:42:00 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:42:00 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:42:00 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:42:00 PM] info: Userdetails
+[11/21/2025, 4:42:00 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:42:00 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:47:12 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:47:13 PM] info: Invoicedetails
+[11/21/2025, 4:47:13 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:47:13 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:47:13 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:47:13 PM] info: Clients
+[11/21/2025, 4:47:14 PM] info: Clients
+[11/21/2025, 4:47:14 PM] info: Clients
+[11/21/2025, 4:47:23 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:47:23 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:47:23 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:47:23 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:47:23 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:47:23 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:47:23 PM] info: Userdetails
+[11/21/2025, 4:47:23 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:47:23 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:52:17 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:52:17 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:52:17 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:52:17 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:52:17 PM] info: Userdetails
+[11/21/2025, 4:52:17 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:52:18 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:52:18 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:52:18 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:52:18 PM] info: Clients
+[11/21/2025, 4:52:18 PM] info: Clients
+[11/21/2025, 4:52:18 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:52:18 PM] info: Clients
+[11/21/2025, 4:52:19 PM] info: GET /ClientImages/download.png
+[11/21/2025, 4:52:35 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 4:52:36 PM] info: Invoicedetails
+[11/21/2025, 4:52:36 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:52:36 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 4:52:36 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:52:36 PM] info: Clients
+[11/21/2025, 4:52:36 PM] info: Clients
+[11/21/2025, 4:52:36 PM] info: Clients
+[11/21/2025, 4:52:39 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 4:52:39 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 4:52:39 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:52:40 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 4:52:40 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:52:40 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:52:40 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:52:40 PM] info: Userdetails
+[11/21/2025, 4:52:40 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:52:40 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:779:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 4:52:40 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:57:45 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 4:57:46 PM] info: Invoicedetails
+[11/21/2025, 4:57:46 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 4:57:46 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 4:57:46 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 4:57:46 PM] info: Clients
+[11/21/2025, 4:57:46 PM] info: Clients
+[11/21/2025, 4:57:46 PM] info: Clients
+[11/21/2025, 4:57:58 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 4:58:00 PM] info: GET /invoice/SKYB_1763724478754.pdf
+[11/21/2025, 4:58:19 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 4:58:20 PM] info: PUT /pdfdownload/listupdate/1549
+[11/21/2025, 4:58:20 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 4:58:20 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 4:58:20 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 4:58:20 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 4:58:20 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 4:58:20 PM] info: Userdetails
+[11/21/2025, 4:58:20 PM] info: Invoice details fetched successfully
+[11/21/2025, 4:58:20 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:04:44 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 5:04:44 PM] info: Invoicedetails
+[11/21/2025, 5:04:44 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:04:45 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:04:45 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:04:45 PM] info: Clients
+[11/21/2025, 5:04:45 PM] info: Clients
+[11/21/2025, 5:04:45 PM] info: Clients
+[11/21/2025, 5:06:07 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:06:08 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:06:08 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:10:08 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:10:09 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:10:09 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:10:09 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:10:09 PM] info: Clients
+[11/21/2025, 5:10:09 PM] info: Clients
+[11/21/2025, 5:10:09 PM] info: Clients
+[11/21/2025, 5:10:13 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:10:13 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:10:13 PM] info: Userdetails
+[11/21/2025, 5:10:13 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:10:13 PM] error: Error: WHERE parameter "InvoiceNumber" has invalid "undefined" value
+    at MSSQLQueryGenerator.whereItemQuery (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MSSQLQueryGenerator.whereItemsQuery (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MSSQLQueryGenerator.whereQuery (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1714:24)
+    at MSSQLQueryGenerator.updateQuery (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-generator.js:371:116)
+    at MSSQLQueryGenerator.updateQuery (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\mssql\query-generator.js:361:23)
+    at MSSqlQueryInterface.bulkUpdate (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:361:37)
+    at Invoices.update (D:\SKYBGIT\SKYBTRANS_NODE\node_modules\sequelize\lib\model.js:2010:54)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:10:13 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:10:13 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:10:13 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:10:15 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:10:15 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:10:15 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:10:15 PM] info: Userdetails
+[11/21/2025, 5:10:15 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:10:15 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:10:15 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:10:20 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 5:10:20 PM] info: Invoicedetails
+[11/21/2025, 5:10:20 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:10:20 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:10:20 PM] info: Clients
+[11/21/2025, 5:10:20 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:10:20 PM] info: Clients
+[11/21/2025, 5:10:20 PM] info: Clients
+[11/21/2025, 5:10:26 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:10:27 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:10:27 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:10:28 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:10:28 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:10:30 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:10:30 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:10:30 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:10:30 PM] info: Clients
+[11/21/2025, 5:10:30 PM] info: Clients
+[11/21/2025, 5:10:30 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:10:30 PM] info: Clients
+[11/21/2025, 5:11:18 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:11:27 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:11:27 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:11:27 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:11:27 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:11:28 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:11:28 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:11:28 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:11:28 PM] info: Clients
+[11/21/2025, 5:11:28 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:11:28 PM] info: Clients
+[11/21/2025, 5:11:28 PM] info: Clients
+[11/21/2025, 5:14:34 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:14:35 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:14:35 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:14:35 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:14:35 PM] info: putinvoice: [object Object]
+[11/21/2025, 5:14:35 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:14:36 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:14:36 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:14:36 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:14:36 PM] info: Clients
+[11/21/2025, 5:14:36 PM] info: Clients
+[11/21/2025, 5:14:36 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:14:36 PM] info: Clients
+[11/21/2025, 5:15:07 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:15:08 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:15:08 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:15:08 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:15:08 PM] info: putinvoice: [object Object]
+[11/21/2025, 5:15:08 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:15:09 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:15:09 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:15:09 PM] info: Clients
+[11/21/2025, 5:15:09 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:15:09 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:15:09 PM] info: Clients
+[11/21/2025, 5:15:09 PM] info: Clients
+[11/21/2025, 5:15:54 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:15:54 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:15:54 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:15:54 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:15:54 PM] info: putinvoice: [object Object]
+[11/21/2025, 5:15:55 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:15:56 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:15:56 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:15:56 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:15:56 PM] info: Clients
+[11/21/2025, 5:15:56 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:15:56 PM] info: Clients
+[11/21/2025, 5:15:56 PM] info: Clients
+[11/21/2025, 5:16:26 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:16:27 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:16:27 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:18:40 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:18:40 PM] info: putinvoice: EXPSKYB0448
+[11/21/2025, 5:18:41 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:18:42 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:18:42 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:18:42 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:18:42 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:18:42 PM] info: Clients
+[11/21/2025, 5:18:42 PM] info: Clients
+[11/21/2025, 5:18:42 PM] info: Clients
+[11/21/2025, 5:19:04 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:19:04 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:19:04 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:20:07 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:20:07 PM] info: putinvoice: 128800
+[11/21/2025, 5:20:07 PM] error: ReferenceError: balancedue is not defined
+    at D:\SKYBGIT\SKYBTRANS_NODE\Main_controller\controller\Pdfdetails.js:792:119
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[11/21/2025, 5:20:08 PM] info: GET /ClientImages/download.png
+[11/21/2025, 5:20:08 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:20:08 PM] info: Clients
+[11/21/2025, 5:20:08 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:20:08 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:20:09 PM] info: Clients
+[11/21/2025, 5:20:09 PM] info: Clients
+[11/21/2025, 5:22:15 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:22:16 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:22:16 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:22:19 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:22:19 PM] info: putinvoice: 128800
+[11/21/2025, 5:22:28 PM] info: GET /TaxInvoice/SKYB_1763725939334.pdf
+[11/21/2025, 5:28:04 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:28:04 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:28:05 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:28:07 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:28:11 PM] info: GET /TaxInvoice/SKYB_1763726287342.pdf
+[11/21/2025, 5:29:41 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:29:42 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:29:42 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:29:46 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:29:52 PM] info: GET /TaxInvoice/SKYB_1763726386987.pdf
+[11/21/2025, 5:36:28 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:36:28 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:36:28 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:36:28 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:36:30 PM] info: GET /TaxInvoice/SKYB_1763726789012.pdf
+[11/21/2025, 5:42:19 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:42:20 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:42:20 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:42:20 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:42:22 PM] info: GET /TaxInvoice/SKYB_1763727140757.pdf
+[11/21/2025, 5:45:10 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:45:10 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:45:11 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:45:11 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:45:11 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:45:11 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:45:11 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:45:11 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:45:13 PM] info: GET /TaxInvoice/SKYB_1763727311351.pdf
+[11/21/2025, 5:45:13 PM] info: GET /TaxInvoice/SKYB_1763727311386.pdf
+[11/21/2025, 5:46:31 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:46:32 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:46:32 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:46:32 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:46:34 PM] info: GET /TaxInvoice/SKYB_1763727392506.pdf
+[11/21/2025, 5:48:05 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:48:05 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:48:06 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:48:06 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:48:08 PM] info: GET /TaxInvoice/SKYB_1763727486204.pdf
+[11/21/2025, 5:49:23 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:49:24 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:49:24 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:49:24 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:49:26 PM] info: GET /TaxInvoice/SKYB_1763727564635.pdf
+[11/21/2025, 5:50:09 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:50:09 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:50:10 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:50:10 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:50:12 PM] info: GET /TaxInvoice/SKYB_1763727610196.pdf
+[11/21/2025, 5:51:03 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:51:04 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:51:04 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:51:04 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:51:06 PM] info: GET /TaxInvoice/SKYB_1763727664355.pdf
+[11/21/2025, 5:52:05 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:52:05 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:52:05 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:52:06 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:52:07 PM] info: GET /TaxInvoice/SKYB_1763727726122.pdf
+[11/21/2025, 5:52:56 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:52:56 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:52:56 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:52:57 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 5:52:58 PM] info: GET /TaxInvoice/SKYB_1763727777113.pdf
+[11/21/2025, 5:56:29 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 5:56:31 PM] info: GET /invoice/SKYB_1763727989701.pdf
+[11/21/2025, 5:56:38 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:56:38 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:56:38 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:56:38 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 5:56:38 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:56:38 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:56:38 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:56:38 PM] info: Userdetails
+[11/21/2025, 5:56:38 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:56:38 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:56:43 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 5:56:44 PM] info: Invoicedetails
+[11/21/2025, 5:56:44 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:56:44 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 5:56:44 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:56:44 PM] info: Clients
+[11/21/2025, 5:56:44 PM] info: Clients
+[11/21/2025, 5:56:44 PM] info: Clients
+[11/21/2025, 5:58:20 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:58:20 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:58:20 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:58:20 PM] info: Userdetails
+[11/21/2025, 5:58:20 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:58:20 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:58:23 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 5:58:23 PM] info: Invoicedetails
+[11/21/2025, 5:58:23 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:58:23 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:58:23 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:58:23 PM] info: Clients
+[11/21/2025, 5:58:23 PM] info: Clients
+[11/21/2025, 5:58:23 PM] info: Clients
+[11/21/2025, 5:58:26 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:58:26 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:58:26 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:58:26 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 5:58:26 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:58:26 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:58:26 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:58:26 PM] info: Userdetails
+[11/21/2025, 5:58:26 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:58:26 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:59:45 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 5:59:46 PM] info: Invoicedetails
+[11/21/2025, 5:59:46 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 5:59:46 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 5:59:46 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 5:59:46 PM] info: Clients
+[11/21/2025, 5:59:46 PM] info: Clients
+[11/21/2025, 5:59:46 PM] info: Clients
+[11/21/2025, 5:59:49 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 5:59:49 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 5:59:49 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 5:59:49 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 5:59:49 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 5:59:49 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 5:59:49 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 5:59:49 PM] info: Userdetails
+[11/21/2025, 5:59:49 PM] info: Invoice details fetched successfully
+[11/21/2025, 5:59:50 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:00:57 PM] info: GET /invoicedetails/getupdate/1549
+[11/21/2025, 6:00:58 PM] info: Invoicedetails
+[11/21/2025, 6:00:58 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:00:58 PM] info: GET /invoicedetails/getbookingnumber/12/1/11
+[11/21/2025, 6:00:58 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:00:58 PM] info: Clients
+[11/21/2025, 6:00:58 PM] info: Clients
+[11/21/2025, 6:00:58 PM] info: Clients
+[11/21/2025, 6:01:02 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 6:01:03 PM] info: PUT /pdfdownload/listupdate/1549
+[11/21/2025, 6:01:03 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 6:01:03 PM] info: POST /pdfdownload/creditinvoicedownload/
+[11/21/2025, 6:01:05 PM] info: GET /TaxInvoice/SKYB_1763728263357.pdf
+[11/21/2025, 6:01:13 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 6:01:15 PM] info: GET /invoice/SKYB_1763728273646.pdf
+[11/21/2025, 6:01:26 PM] info: PUT /pdfdownload/update/1549/0
+[11/21/2025, 6:01:26 PM] info: PUT /pdfdownload/listupdate/1549
+[11/21/2025, 6:01:26 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 6:01:26 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 6:01:26 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:01:26 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:01:26 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:01:26 PM] info: Userdetails
+[11/21/2025, 6:01:27 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:01:27 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:33:32 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:33:32 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:33:32 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:33:32 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:33:32 PM] info: Userdetails
+[11/21/2025, 6:33:33 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:33:33 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:33:34 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:33:34 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 6:33:34 PM] info: Clients
+[11/21/2025, 6:33:34 PM] info: Clients
+[11/21/2025, 6:33:34 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:33:34 PM] info: Clients
+[11/21/2025, 6:33:35 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:36:11 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:36:11 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:36:11 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:36:11 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:36:11 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:36:11 PM] info: Userdetails
+[11/21/2025, 6:36:11 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:36:11 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:36:11 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:36:11 PM] info: Clients
+[11/21/2025, 6:36:11 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 6:36:11 PM] info: Clients
+[11/21/2025, 6:36:11 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:36:11 PM] info: Clients
+[11/21/2025, 6:36:23 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 6:36:23 PM] info: Invoicedetails
+[11/21/2025, 6:36:23 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:36:23 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 6:36:23 PM] info: Clients
+[11/21/2025, 6:36:23 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:36:23 PM] info: Clients
+[11/21/2025, 6:36:23 PM] info: Clients
+[11/21/2025, 6:36:27 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 6:36:27 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 6:36:27 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 6:36:27 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 6:36:30 PM] info: GET /TaxInvoice/SKYB_1763730387772.pdf
+[11/21/2025, 6:36:30 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:36:30 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:36:30 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:36:30 PM] info: Userdetails
+[11/21/2025, 6:36:30 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:36:30 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:42:35 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:42:35 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:42:35 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:42:35 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:42:35 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:42:36 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:42:36 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 6:42:36 PM] info: Userdetails
+[11/21/2025, 6:42:36 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:42:36 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:42:36 PM] info: Clients
+[11/21/2025, 6:42:37 PM] info: Clients
+[11/21/2025, 6:42:37 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:42:37 PM] info: Clients
+[11/21/2025, 6:43:42 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 6:43:42 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 6:43:42 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 6:43:42 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:43:42 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 6:43:42 PM] info: Userdetails
+[11/21/2025, 6:43:42 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 6:43:42 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:43:42 PM] info: Clients
+[11/21/2025, 6:43:42 PM] info: Clients
+[11/21/2025, 6:43:42 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 6:43:42 PM] info: Invoice details fetched successfully
+[11/21/2025, 6:43:42 PM] info: Clients
+[11/21/2025, 6:43:44 PM] info: GET /ClientImages/download.png
+[11/21/2025, 6:51:21 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 6:51:21 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 6:51:21 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 6:51:21 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 6:51:21 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 6:51:21 PM] info: Userdetails
+[11/21/2025, 6:51:21 PM] info: Clients
+[11/21/2025, 6:51:21 PM] info: Clients
+[11/21/2025, 6:51:21 PM] info: Clients
+[11/21/2025, 6:51:21 PM] info: Clients
+[11/21/2025, 6:53:26 PM] info: GET /bookingExports/459
+[11/21/2025, 6:53:27 PM] info: /getBooking: Success
+[11/21/2025, 6:53:27 PM] info: GET /ExportMilestone/container/459
+[11/21/2025, 6:53:27 PM] info: Booking
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/getcustomer/11/4
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/getvendordata/11
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/getshiperdata/11
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/getgenerel/11
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/pointofclear/11
+[11/21/2025, 6:53:27 PM] info: Clients
+[11/21/2025, 6:53:27 PM] info: generalType
+[11/21/2025, 6:53:27 PM] info: GET /invoicedetails/getportofloading/11
+[11/21/2025, 6:53:27 PM] info: GET /bookingdetails/getMile
+[11/21/2025, 6:53:27 PM] info: generalType
+[11/21/2025, 6:53:27 PM] info: generalType
+[11/21/2025, 6:53:27 PM] info: generalType
+[11/21/2025, 6:53:27 PM] info: Clients
+[11/21/2025, 6:53:27 PM] info: Clients
+[11/21/2025, 6:58:47 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 6:58:47 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 6:58:47 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 6:58:47 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 6:58:47 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 6:58:48 PM] info: Userdetails
+[11/21/2025, 6:58:48 PM] info: Clients
+[11/21/2025, 6:58:48 PM] info: Clients
+[11/21/2025, 6:58:48 PM] info: Clients
+[11/21/2025, 6:58:49 PM] info: Clients
+[11/21/2025, 7:01:13 PM] info: GET /bookingExports/bookingApproval/459
+[11/21/2025, 7:01:41 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:01:41 PM] info: GET /userdetails/Approval/4/BookingDetails
+[11/21/2025, 7:01:41 PM] info: GET /bookingExports/getall/11/4
+[11/21/2025, 7:01:41 PM] info: GET /bookingExports/allbooked/11/4
+[11/21/2025, 7:01:41 PM] info: GET /Importbookings/getall/11/4
+[11/21/2025, 7:01:41 PM] info: GET /Importbookings/allbooked/11/4
+[11/21/2025, 7:01:41 PM] info: Userdetails
+[11/21/2025, 7:01:45 PM] info: Clients
+[11/21/2025, 7:01:45 PM] info: Clients
+[11/21/2025, 7:01:45 PM] info: Clients
+[11/21/2025, 7:01:45 PM] info: Clients
+[11/21/2025, 7:03:03 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 7:03:03 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 7:03:03 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 7:03:03 PM] info: Userdetails
+[11/21/2025, 7:03:03 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:03:05 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:18:31 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:18:32 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:18:36 PM] info: GET /Apinvoices/getcharge/
+[11/21/2025, 7:18:37 PM] info: Userdetails
+[11/21/2025, 7:18:38 PM] info: Clients
+[11/21/2025, 7:18:38 PM] info: GET /Apinvoices/getcompany/1
+[11/21/2025, 7:18:38 PM] info: Clients
+[11/21/2025, 7:18:40 PM] info: GET /Apinvoices/getbookingnumber/1/1
+[11/21/2025, 7:18:40 PM] info: GET /Apinvoices/getstate/1
+[11/21/2025, 7:18:40 PM] info: Clients
+[11/21/2025, 7:18:40 PM] info: Clients
+[11/21/2025, 7:18:42 PM] info: GET /Apinvoices/invoicegetcontainer/EXPSKYB0002/1
+[11/21/2025, 7:18:42 PM] info: Clients
+[11/21/2025, 7:18:46 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:19:03 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:19:03 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:19:10 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:19:10 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:19:10 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:19:11 PM] info: Userdetails
+[11/21/2025, 7:19:12 PM] info: Userdetails
+[11/21/2025, 7:19:13 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:19:15 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:19:48 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:19:48 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:19:48 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:19:49 PM] info: Userdetails
+[11/21/2025, 7:19:52 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:20:05 PM] info: GET /Apinvoices/getupdate/1
+[11/21/2025, 7:20:09 PM] info: Clients
+[11/21/2025, 7:20:10 PM] info: GET /Apinvoices/getcompany/1
+[11/21/2025, 7:20:10 PM] info: GET /Apinvoices/getcharge/
+[11/21/2025, 7:20:10 PM] info: Clients
+[11/21/2025, 7:20:14 PM] info: Clients
+[11/21/2025, 7:20:39 PM] info: PUT /Apinvoices/update/1/0
+[11/21/2025, 7:20:41 PM] info: PUT /Apinvoices/listupdate/1
+[11/21/2025, 7:20:43 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 7:20:43 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:20:43 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:20:44 PM] info: Userdetails
+[11/21/2025, 7:20:54 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:21:40 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:21:40 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:21:40 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:21:41 PM] info: Userdetails
+[11/21/2025, 7:21:42 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:21:51 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:21:51 PM] info: GET /userdetails/Approval/4/APInvoices
+[11/21/2025, 7:21:51 PM] info: GET /Apinvoices/invoicegrid/11/4
+[11/21/2025, 7:21:52 PM] info: Userdetails
+[11/21/2025, 7:21:57 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:22:09 PM] info: GET /Apinvoices/getupdate/1
+[11/21/2025, 7:22:13 PM] info: Clients
+[11/21/2025, 7:22:13 PM] info: GET /Apinvoices/getcompany/1
+[11/21/2025, 7:22:13 PM] info: GET /Apinvoices/getcharge/
+[11/21/2025, 7:22:13 PM] info: Clients
+[11/21/2025, 7:22:14 PM] info: Clients
+[11/21/2025, 7:22:22 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:22:22 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:22:22 PM] info: Userdetails
+[11/21/2025, 7:22:23 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:22:29 PM] info: GET /apinvoicetds/getupdate/351
+[11/21/2025, 7:22:29 PM] info: Invoicedetails
+[11/21/2025, 7:22:29 PM] info: GET /apinvoicetds/getvendordata/11
+[11/21/2025, 7:22:29 PM] info: generalType
+[11/21/2025, 7:22:29 PM] info: GET /apinvoicetds/getbookingnumber/9
+[11/21/2025, 7:22:30 PM] info: Clients
+[11/21/2025, 7:22:34 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:22:34 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:22:34 PM] info: Userdetails
+[11/21/2025, 7:22:35 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:22:49 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:22:49 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:22:49 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:22:50 PM] info: Userdetails
+[11/21/2025, 7:22:51 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:22:56 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:22:56 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:22:56 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:22:56 PM] info: Userdetails
+[11/21/2025, 7:22:56 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:03 PM] info: GET /apinvoicetds/getupdate/321
+[11/21/2025, 7:23:03 PM] info: Invoicedetails
+[11/21/2025, 7:23:03 PM] info: GET /apinvoicetds/getvendordata/11
+[11/21/2025, 7:23:03 PM] info: generalType
+[11/21/2025, 7:23:03 PM] info: GET /apinvoicetds/getbookingnumber/25
+[11/21/2025, 7:23:03 PM] info: Clients
+[11/21/2025, 7:23:08 PM] info: PUT /apinvoicetds/update/321
+[11/21/2025, 7:23:08 PM] info: PUT /apinvoicetds/listupdate/321
+[11/21/2025, 7:23:08 PM] info: Payment entry and associated items updated successfully.
+[11/21/2025, 7:23:08 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:08 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:09 PM] info: Userdetails
+[11/21/2025, 7:23:10 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:14 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:23:14 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:14 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:15 PM] info: Userdetails
+[11/21/2025, 7:23:16 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:20 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:23:20 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:20 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:20 PM] info: Userdetails
+[11/21/2025, 7:23:20 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:25 PM] info: GET /apinvoicetds/getupdate/321
+[11/21/2025, 7:23:26 PM] info: Invoicedetails
+[11/21/2025, 7:23:26 PM] info: GET /apinvoicetds/getvendordata/11
+[11/21/2025, 7:23:26 PM] info: generalType
+[11/21/2025, 7:23:26 PM] info: GET /apinvoicetds/getbookingnumber/25
+[11/21/2025, 7:23:27 PM] info: Clients
+[11/21/2025, 7:23:33 PM] info: PUT /apinvoicetds/update/321
+[11/21/2025, 7:23:34 PM] info: PUT /apinvoicetds/listupdate/321
+[11/21/2025, 7:23:34 PM] info: Payment entry and associated items updated successfully.
+[11/21/2025, 7:23:34 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:34 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:35 PM] info: Userdetails
+[11/21/2025, 7:23:35 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:41 PM] info: GET /apinvoicetds/getupdate/321
+[11/21/2025, 7:23:41 PM] info: Invoicedetails
+[11/21/2025, 7:23:41 PM] info: GET /apinvoicetds/getvendordata/11
+[11/21/2025, 7:23:41 PM] info: generalType
+[11/21/2025, 7:23:41 PM] info: GET /apinvoicetds/getbookingnumber/25
+[11/21/2025, 7:23:41 PM] info: Clients
+[11/21/2025, 7:23:46 PM] info: PUT /apinvoicetds/update/321
+[11/21/2025, 7:23:46 PM] info: PUT /apinvoicetds/listupdate/321
+[11/21/2025, 7:23:46 PM] info: Payment entry and associated items updated successfully.
+[11/21/2025, 7:23:46 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:46 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:47 PM] info: Userdetails
+[11/21/2025, 7:23:51 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:23:51 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:51 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:51 PM] info: Userdetails
+[11/21/2025, 7:23:57 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:23:57 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:23:57 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:23:57 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:23:57 PM] info: Userdetails
+[11/21/2025, 7:23:58 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:24:00 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:24:09 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:24:09 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:24:09 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:24:09 PM] info: Userdetails
+[11/21/2025, 7:24:10 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:24:13 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:24:13 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:24:13 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:24:14 PM] info: Userdetails
+[11/21/2025, 7:24:15 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:24:17 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:24:17 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:24:17 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:24:18 PM] info: Userdetails
+[11/21/2025, 7:24:19 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:24:30 PM] info: GET /userdetails/Approval/4/User
+[11/21/2025, 7:24:30 PM] info: GET /userdetails/getrole/4
+[11/21/2025, 7:24:30 PM] info: GET /userdetails/gridvalues/11/4
+[11/21/2025, 7:24:31 PM] info: Userdetails
+[11/21/2025, 7:24:32 PM] info: Userdetails
+[11/21/2025, 7:24:33 PM] info: Userdetails
+[11/21/2025, 7:24:45 PM] info: GET /ClientImages/null
+[11/21/2025, 7:24:48 PM] info: POST /register/logins
+[11/21/2025, 7:24:50 PM] info: login user/id=11
+[11/21/2025, 7:24:50 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 7:24:50 PM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 7:24:50 PM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 7:24:50 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:24:50 PM] info: Clients
+[11/21/2025, 7:24:50 PM] info: Clients
+[11/21/2025, 7:24:50 PM] info: map
+[11/21/2025, 7:24:52 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:24:53 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:24:53 PM] info: Userdetails
+[11/21/2025, 7:24:58 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:25:03 PM] info: GET /apinvoicetds/getupdate/321
+[11/21/2025, 7:25:04 PM] info: Invoicedetails
+[11/21/2025, 7:25:04 PM] info: GET /apinvoicetds/getvendordata/11
+[11/21/2025, 7:25:04 PM] info: generalType
+[11/21/2025, 7:25:04 PM] info: GET /apinvoicetds/getbookingnumber/25
+[11/21/2025, 7:25:04 PM] info: Clients
+[11/21/2025, 7:25:07 PM] info: GET /userdetails/Approval/4/APPaymentgrid
+[11/21/2025, 7:25:07 PM] info: GET /apinvoicetds/paymentgrid/11/4
+[11/21/2025, 7:25:08 PM] info: Userdetails
+[11/21/2025, 7:25:10 PM] info: Invoice Payment details fetched successfully
+[11/21/2025, 7:57:14 PM] info: GET /ClientImages/null
+[11/21/2025, 7:57:16 PM] info: POST /register/logins
+[11/21/2025, 7:57:18 PM] info: login user/id=11
+[11/21/2025, 7:57:18 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[11/21/2025, 7:57:18 PM] info: GET /bookingdetails/getforcontaine/11/4
+[11/21/2025, 7:57:18 PM] info: Clients
+[11/21/2025, 7:57:18 PM] info: Clients
+[11/21/2025, 7:57:18 PM] info: GET /VehicleInformation/mapdetails/11/4
+[11/21/2025, 7:57:18 PM] info: map
+[11/21/2025, 7:57:18 PM] info: GET /ClientImages/download.png
+[11/21/2025, 7:57:22 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 7:57:22 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 7:57:22 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 7:57:22 PM] info: Userdetails
+[11/21/2025, 7:57:22 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:57:22 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:57:26 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 7:57:26 PM] info: Invoicedetails
+[11/21/2025, 7:57:26 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 7:57:26 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 7:57:26 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 7:57:26 PM] info: Clients
+[11/21/2025, 7:57:26 PM] info: Clients
+[11/21/2025, 7:57:26 PM] info: Clients
+[11/21/2025, 7:57:30 PM] info: POST /pdfdownload/pdfinvoicedownload/
+[11/21/2025, 7:57:43 PM] info: GET /invoice/SKYB_1763735250342.pdf
+[11/21/2025, 7:57:43 PM] info: GET /favicon.ico
+[11/21/2025, 7:57:58 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 7:57:58 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 7:57:58 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 7:57:59 PM] info: Userdetails
+[11/21/2025, 7:57:59 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:57:59 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:58:05 PM] info: GET /invoicedetails/getupdate/1552
+[11/21/2025, 7:58:05 PM] info: Invoicedetails
+[11/21/2025, 7:58:05 PM] info: GET /invoicedetails/getcompany/1/11
+[11/21/2025, 7:58:05 PM] info: GET /invoicedetails/getbookingnumber/5/1/11
+[11/21/2025, 7:58:05 PM] info: Clients
+[11/21/2025, 7:58:05 PM] info: GET /invoicedetails/getcharge/
+[11/21/2025, 7:58:05 PM] info: Clients
+[11/21/2025, 7:58:05 PM] info: Clients
+[11/21/2025, 7:58:09 PM] info: PUT /pdfdownload/update/1552/0
+[11/21/2025, 7:58:09 PM] info: PUT /pdfdownload/listupdate/1552
+[11/21/2025, 7:58:09 PM] info: Invoice and associated items updated successfully.
+[11/21/2025, 7:58:09 PM] info: POST /pdfdownload/sendemail
+[11/21/2025, 7:58:11 PM] info: GET /TaxInvoice/SKYB_1763735289409.pdf
+[11/21/2025, 7:58:11 PM] info: GET /userdetails/Approval/4/InvoiceDetails
+[11/21/2025, 7:58:11 PM] info: GET /invoicedetails/invoicegrid/11/4
+[11/21/2025, 7:58:11 PM] info: GET /invoicedetails/invoicegridcomplete/11/4
+[11/21/2025, 7:58:11 PM] info: Userdetails
+[11/21/2025, 7:58:11 PM] info: Invoice details fetched successfully
+[11/21/2025, 7:58:12 PM] info: Invoice details fetched successfully
+[11/21/2025, 8:02:17 PM] info: GET /ClientImages/null

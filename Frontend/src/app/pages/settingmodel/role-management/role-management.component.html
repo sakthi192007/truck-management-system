@@ -1,0 +1,125 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+          <h4 class="mb-sm-0 font-size-18" runat="server">Group Master </h4>
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+              <li class="breadcrumb-item"><a>Group Master Details</a></li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="notification" *ngIf="notificationMessage">
+        <i class="fas fa-check-circle"></i> {{ notificationMessage }}
+      </div>
+      <form [formGroup]="GroupMasterform">
+        <!-- Role Info -->
+        <div class="form-container">
+          <div class="basic-info">
+            <h2><i class="fas fa-info-circle"></i> Role Information</h2>
+
+           
+            <div class="form-group">
+              <label><i class="fas fa-user-tag"></i> Role Name</label>
+              <select class="form-select" formControlName="GM_Role" (change)="onRoleChange($event)">
+                <option value="">Select a role</option>
+                <option *ngFor="let customer of roles" [value]="customer.RoleCode">{{customer.RoleName}}</option>
+              </select>
+              <div *ngIf="submitted && f['GM_Role'].errors" class="validation-invalid-label">
+                <span style="color: red;">Role name is required</span>
+              </div>
+            </div>
+             
+            <div class="form-group">
+              <label><i class="fas fa-layer-group"></i> Group Name</label>
+               <input type="text" class="form-control" formControlName="GM_GroupName" placeholder="Group Name">
+
+            
+            </div>
+
+            <div class="form-group">
+              <label><i class="fas fa-align-left"></i> Description</label>
+              <textarea formControlName="GM_Description" placeholder="Enter role description"></textarea>
+            </div>
+          </div>
+
+          <!-- Permissions -->
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4 class="card-title mb-0">
+                <i class="bx bx-key"></i>&nbsp; Menu Permissions
+              </h4>
+              <input type="text" class="form-control w-25" placeholder="Search permissions..."
+                (input)="onSearchChange($event)">
+            </div>
+
+            <div class="card-body">
+              <ng-container *ngIf="!isLoading; else loadingTemplate">
+                <div class="table-container">
+                  <table class="table table-bordered text-center">
+                    <thead class="bg-primary text-white sticky-header">
+                      <tr>
+                        <th>MENU LIST</th>
+                        <th *ngFor="let action of actions">{{ action }}</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="permissionsArray">
+                      <tr *ngFor="let perm of permissionsArray.controls; let i = index" [formGroupName]="i">
+                        <td>{{ perm.value.module }}</td>
+                         <td><input type="checkbox" formControlName="CanMenu" /></td>
+                        <td><input type="checkbox" formControlName="CanCreate" /></td>
+                        <td><input type="checkbox" formControlName="CanEdit" /></td>
+                        <td><input type="checkbox" formControlName="CanView" /></td>
+                        <td><input type="checkbox" formControlName="CanDelete" /></td>
+                        <td><input type="checkbox" formControlName="CanReport" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </ng-container>
+
+              <ng-template #loadingTemplate>
+                <div class="text-center p-4">
+                  <div class="spinner-border text-primary" role="status"></div>
+                  <p class="mt-2">Loading menu permissions...</p>
+                </div>
+              </ng-template>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-end gap-2">
+
+            <a id="btncolors" routerLink="/Groupmaster" class="custom-btn">
+              <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+            </a>
+
+            <button id="btncolors" (click)="resetForm()" class="custom-btn" type="button">
+              <i class="fas fa-sync-alt"></i>&nbsp;Reset
+            </button>
+
+            <button id="btncolors" (click)="submit()" class="custom-btn" type="button">
+              <i class="fas fa-save"></i>&nbsp;{{ buttontext }}
+            </button>
+
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

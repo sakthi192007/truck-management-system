@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content, .auth-page, .container-fluid, .row {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.auth-full-page-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.auth-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+

@@ -1,0 +1,194 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+          <h4 class="mb-sm-0 font-size-18">Truck Master</h4>
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a>Truckmaster Details</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body p-4">
+ <form [formGroup]="Truckmasterinform">
+
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">Booking & Asset Information</h5>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Booking Number<span style="color: red;"> *</span></label>
+                 <select class="form-select" formControlName="BookingNumber">
+                                      <option *ngFor="let booking of bookings" [value]="booking.BookingNumber">
+                                        {{ booking.BookingNumber }}
+                                      </option>
+                                    </select>
+  <div *ngIf="submitted && f['BookingNumber'].errors" class="validation-invalid-label">
+                                                <div *ngIf="f['BookingNumber'].errors['required']">
+                                                    <span style="color: red;">Booking No is required</span>
+                                                </div>
+                                            </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label>Asset A/c<span style="color: red;"> *</span></label>
+                  <select class="form-control" formControlName="AssetNumber" required>
+                    <option value="" selected disabled>-- Select Asset A/c --</option>
+                    <option value="AK001">AK001</option>
+                    <option value="AK002">AK002</option>
+                    <option value="AK003">AK003</option>
+                  </select>
+                   <div *ngIf="submitted && f['AssetNumber'].errors" class="validation-invalid-label">
+                                                <div *ngIf="f['AssetNumber'].errors['required']">
+                                                    <span style="color: red;">Booking No is required</span>
+                                                </div>
+                                            </div>
+                </div>
+              </div>
+
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">Expense Accounts</h5>
+
+              <!-- Expense Inputs -->
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Advance</label>
+                  <input type="number" class="form-control" placeholder="Enter Advance" formControlName="Advance" [(ngModel)]="Advance">
+                </div>
+                <div class="col-md-3">
+                  <label>Driver Batta</label>
+                  <input type="number" class="form-control" placeholder="Enter Driver Bata" formControlName="Driverbata" [(ngModel)]="Driverbata">
+                </div>
+                <div class="col-md-3">
+                  <label>Cleaner Bata</label>
+                  <input type="number" class="form-control" placeholder="Enter Cleaner Bata" formControlName="Cleanerbata" [(ngModel)]="Cleanerbata">
+                </div>
+                <div class="col-md-3">
+                  <label>Other Expenses</label>
+                  <input type="number" class="form-control" placeholder="Enter Other Expenses" formControlName="OtherExpenses" [(ngModel)]="OtherExpenses">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Oil</label>
+                  <input type="number" class="form-control" placeholder="Enter Oil" formControlName="Oil" [(ngModel)]="Oil">
+                </div>
+                <div class="col-md-3">
+                  <label>New Tyre Pressure</label>
+                  <input type="number" class="form-control" placeholder="Enter Tyre Pressure" formControlName="Pressure" [(ngModel)]="Pressure">
+                </div>
+                <div class="col-md-3">
+                  <label>Tyre Retread</label>
+                  <input type="number" class="form-control" placeholder="Enter Tyre Retread" formControlName="Retread" [(ngModel)]="Retread">
+                </div>
+                <div class="col-md-3">
+                  <label>Tyre Sales</label>
+                  <input type="number" class="form-control" placeholder="Enter Tyre Sales" formControlName="tyreSales" [(ngModel)]="tyreSales">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Spares</label>
+                  <input type="number" class="form-control" placeholder="Enter Spares" formControlName="Spares" [(ngModel)]="Spares">
+                </div>
+                <div class="col-md-3">
+                  <label>Maintenance</label>
+                  <input type="number" class="form-control" placeholder="Enter Maintenance" formControlName="Maintenance" [(ngModel)]="Maintenance">
+                </div>
+                <div class="col-md-3">
+                  <label>Insurance & Tax</label>
+                  <input type="number" class="form-control" placeholder="Enter Insurance" formControlName="Insurance" [(ngModel)]="Insurance">
+                </div>
+                <div class="col-md-3">
+                  <label>TDS</label>
+                  <input type="number" class="form-control" placeholder="Enter TDS" formControlName="Tds" [(ngModel)]="Tds">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Shortage</label>
+                  <input type="number" class="form-control" placeholder="Enter Shortage" formControlName="Shortage" [(ngModel)]="Shortage">
+                </div>
+                <div class="col-md-3">
+                  <label>HP A/C</label>
+                  <input type="number" class="form-control" placeholder="Enter HP Account" formControlName="HP1" [(ngModel)]="HP1">
+                </div>
+                <div class="col-md-3">
+                  <label>HP A/C 2</label>
+                  <input type="number" class="form-control" placeholder="Enter HP2 Account" formControlName="HP2" [(ngModel)]="HP2">
+                </div>
+                <div class="col-md-3">
+                  <label>HP Interest A/c</label>
+                  <input type="number" class="form-control" placeholder="Enter HP Interest A/c" formControlName="Hpinetest" [(ngModel)]="Hpinetest">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>HP Interest A/c-2</label>
+                  <input type="number" class="form-control" placeholder="Enter HP Interest 2" formControlName="HPInterest2" [(ngModel)]="HPInterest2">
+                </div>
+                <div class="col-md-3">
+                  <label>Commission</label>
+                  <input type="number" class="form-control" placeholder="Enter Commission" formControlName="Commission" [(ngModel)]="Commission">
+                </div>
+                <div class="col-md-3">
+                  <label>Fast Tag</label>
+                  <input type="number" class="form-control" placeholder="Enter Fast Tag" formControlName="Fasttag" [(ngModel)]="Fasttag">
+                </div>
+                <div class="col-md-3">
+                  <label>Business Promotion</label>
+                  <input type="number" class="form-control" placeholder="Enter Business Promotion" formControlName="BussinessPromotion" [(ngModel)]="BussinessPromotion">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Mamool (Loading & Unloading)</label>
+                  <input type="number" class="form-control" placeholder="Mamool" formControlName="Mamool" [(ngModel)]="Mamool">
+                </div>
+                <div class="col-md-3">
+                  <label>Labour Welfare</label>
+                  <input type="number" class="form-control" placeholder="Labour" formControlName="Labour" [(ngModel)]="Labour">
+                </div>
+              </div>
+
+              <h5 style="color: #232879; border-bottom: 1px solid #232879;">Income & Diesel</h5>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <label>Income</label>
+                  <input type="number" class="form-control" placeholder="Enter Income" formControlName="Income" [(ngModel)]="Income">
+                </div>
+                <div class="col-md-3">
+                  <label>Diesel</label>
+                  <input type="number" class="form-control" placeholder="Enter Diesel" formControlName="Diesel" [(ngModel)]="Diesel">
+                </div>
+              </div>
+
+              <div class="row justify-content-end text-end">
+                <div class="col-sm-9">
+                  <a class="btn btn-primary w-md" [routerLink]="['/truckmastergrid']" id="btncolors">
+                    <i class="bx bx-arrow-back" aria-hidden="true"></i>&nbsp;Back
+                  </a>&nbsp;
+                  <button class="btn btn-primary w-md" type="submit" (click)="submit()" id="btncolors">
+                    <i class="bx bxs-navigation"></i>&nbsp;{{buttontext}}
+                  </button>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

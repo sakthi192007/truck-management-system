@@ -1,0 +1,165 @@
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">{{headertext}}</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Create Campaign Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form [formGroup]="campaign">
+
+                            <h5 style="color: #232879; border-bottom: 1px solid #232879;">Campaign Information</h5>
+                            <div class="row">
+                                <div class="col-lg-12 ms-lg-auto">
+                                    <div class="mt-4 mt-lg-0">
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <br>
+                                                <!-- <button id="btncolors" data-bs-toggle="modal"
+                                                data-bs-target="#vehicleopp" class="btn btn-primary w-md" type="button">
+                                                <i class='fas fa-user-tie'></i>&nbsp;Vendor Name
+                                                </button> -->
+                                                <button 
+
+  data-bs-toggle="modal"
+  data-bs-target="#vehicleopp"
+  class="btn w-md" 
+  type="button" (click)="onButtonClick()"
+  [ngStyle]="selectedVendorName ? {
+    'background-color': '#0c9c07',
+    'color': 'white',
+    'border': '1px solid #0c9c07'
+  }:{
+    'background-color': '#E06100',
+    'color': 'white',
+    'border': '1px solid #E06100'
+  }">
+  <i class='fas fa-user-tie'></i>&nbsp;{{ selectedVendorName || 'Select Vendors' }}
+</button>
+
+                                              </div>
+                                            <div class="col-md-3">
+                                                <label>Campaign Name<span style="color: red;"> *</span></label>
+                                                <input type="text" class="form-control" formControlName="campaign_name"
+                                                    placeholder="Enter Campaign Name" required>
+                                                    <div *ngIf="submitted && f['campaign_name'].errors"
+                                                    class="validation-invalid-label">
+                                                    <div *ngIf="f['campaign_name'].errors['required']"><span
+                                                            style="color: red;">Campaign Name is required</span>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <label>Message</label>
+                                                <textarea class="form-control" rows="1"
+                                                    formControlName="message" required></textarea>
+                                                    <div *ngIf="submitted && f['message'].errors" class="validation-invalid-label">
+                                                        <div *ngIf="f['message'].errors['required']"><span style="color: red;">Message
+                                                                Content is required</span></div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                       
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                              <div class="row justify-content-end text-end">
+                                <div class="col-sm-9">
+                                    <div>
+                                        <a id="btncolors" routerLink="/Campaignmaster"
+                                            class="btn btn-primary w-md">
+                                            <i class="bx bx-arrow-back"
+                                                aria-hidden="true"></i>&nbsp;Back
+                                        </a>&nbsp;
+
+                                        <button id="btncolors" 
+                                            (click)="submit()"
+                                            class="btn btn-primary w-md me-2" type="button">
+                                            <i class="bx bx-save"></i>&nbsp;{{ buttontext }}
+                                        </button>
+                                     
+                                     
+
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vehicleopp" class="modal fade" tabindex="-1" aria-labelledby="VehileLabel"
+aria-hidden="true">
+
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  
+    <div class="modal-content" style="height: auto; max-height: 70vh;">
+
+        <div class="modal-header" id="colors">
+            <h6 class="modal-title" style="color: white;" id="VehileLabel">Select a Vendor Name</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close" style="filter: invert(1);" (click)="clearAllVendors()"></button>
+        </div>
+        <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="vendor-container">
+                            <div class="vendor-item" *ngFor="let vendor of getvendordata">
+                               
+                              <input type="checkbox" [value]="vendor.CD_ID" [(ngModel)]="vendor.selected"  [checked]="vendor.selected || false">
+                              <span>{{ vendor.VendorName }}</span>
+                            </div>
+                            
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="row justify-content-center text-center">
+                    <div class="col-sm-6">
+                        <div>
+                            <button id="btncolors"
+                                class="btn btn-primary w-md" type="button" (click)="selectAllVendors()">
+                                <i class="fas fa-check"></i>&nbsp;All
+                            </button>&nbsp;&nbsp;
+
+                            <button id="btncolors" data-bs-dismiss="modal"
+                            aria-label="Close"
+                                class="btn btn-primary w-md" type="submit" (click)="getSelectedVendors()">
+                                <i class="fa fa-thumbs-up"></i>&nbsp;Done
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+</div>
+    </div>
+</div>
+
+
+  

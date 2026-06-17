@@ -1,0 +1,71 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row g-4">
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="client-card total">
+                        <div class="card-content">
+                            <div>
+                                <h6>No of Clients</h6>
+                                <h3>{{ TotalClients }}</h3>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Clients -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="client-card active">
+                        <div class="card-content">
+                            <div>
+                                <h6>Active Clients</h6>
+                                <h3>{{ ActiveClients }}</h3>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa fa-user-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inactive Clients -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="client-card inactive">
+                        <div class="card-content">
+                            <div>
+                                <h6>Inactive Clients</h6>
+                                <h3>{{ InactiveClients }}</h3>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa fa-user-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Clients per Month</h4>
+                </div>
+                <div class="card-body">
+                    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+                        [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions"
+                        [yaxis]="chartOptions.yaxis" [grid]="chartOptions.grid" [legend]="chartOptions.legend"
+                        [colors]="chartOptions.colors" [fill]="chartOptions.fill || {}">
+                    </apx-chart>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+#colors{
+    background-color: #232879;
+    color: white;
+}
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}
+
+#vehicleopp .modal-content {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#vehicleopp .modal-body {
+    max-height: 50vh; 
+    overflow-y: auto;
+}
+.vendor-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .vendor-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  .modal-dialog {
+    max-width: 90%;
+    width: auto;
+    height: 90vh; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .modal-content {
+    height: 90vh; 
+    max-height: 90vh; 
+    overflow-y: auto; 
+  }
+  
+  
+  
+  

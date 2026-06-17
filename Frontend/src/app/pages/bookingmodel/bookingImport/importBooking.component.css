@@ -1,0 +1,239 @@
+#colors {
+  background-color: #232879;
+  color: white;
+}
+
+#btncolors {
+  background-color: #E06100;
+  color: white;
+  border: #E06100;
+}
+
+.equal-width-table th,
+.equal-width-table td {
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  text-align: center;
+  vertical-align: middle;
+}
+
+::ng-deep ngx-select-dropdown.custom-dropdown {
+  width: 100% !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 5px !important;
+  padding: 6px 10px !important;
+  font-size: 14px !important;
+  background-color: #fff !important;
+}
+
+::ng-deep ngx-select-dropdown.custom-dropdown .ngx-dropdown-container {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+::ng-deep ngx-select-dropdown.custom-dropdown .ngx-dropdown-button {
+  background: #fff !important;
+  border: none !important;
+  font-weight: 400 !important;
+  color: #495057 !important;
+  padding: 6px 40px 6px 10px !important;
+  width: 100% !important;
+  text-align: left !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+::ng-deep ngx-select-dropdown.custom-dropdown .ngx-dropdown-list-container {
+  border: 1px solid #ced4da !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  width: 220px !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+::ng-deep ngx-select-dropdown.custom-dropdown .ngx-dropdown-button .nsdicon-angle-down {
+  position: absolute !important;
+  right: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  pointer-events: none !important;
+  font-size: 14px !important;
+  color: #495057 !important;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Make both panels equal height */
+.pdf-layout {
+  align-items: stretch;
+}
+
+/* Preview panel */
+.preview-panel {
+  height: 70vh;              /* change if needed */
+  min-height: 520px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  position: relative;
+}
+
+/* iframe must fill full height/width */
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;            /* removes bottom gap */
+  background: #fff;          /* avoids black background */
+}
+
+/* JSON panel */
+.json-panel {
+  height: 70vh;
+  min-height: 520px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.json-header {
+  padding: 12px 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #f1f3f5;
+  background: #fafafa;
+}
+
+.json-body {
+  margin: 0;
+  padding: 14px;
+  flex: 1;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.5;
+  background: #fff;
+}
+
+/* Empty state */
+.empty-state {
+  padding: 16px;
+  color: #6c757d;
+  font-size: 13px;
+}
+/* Output panel */
+.output-panel {
+  height: 70vh;
+  min-height: 520px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;              /* header fixed */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.output-header {
+  padding: 12px 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #f1f3f5;
+  background: #fafafa;
+}
+
+/* ✅ scroll area */
+.output-body {
+  flex: 1;
+  overflow: auto;                /* ✅ IMPORTANT */
+  padding: 14px;
+}
+
+/* Wrapper to keep same height like panels */
+.tabs-panel{
+  height: 70vh;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs header */
+.custom-tabs{
+  border-bottom: 1px solid #e9ecef;
+}
+
+.custom-tabs .nav-link{
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+}
+
+.custom-tabs .nav-link.active{
+  border-bottom: 2px solid #0d6efd; /* bootstrap primary */
+  background: transparent;
+}
+
+/* Tab body should fill full height */
+.custom-tab-content{
+  flex: 1;
+  overflow: hidden; /* inside panel scroll works */
+  padding-top: 10px;
+}
+
+.tab-pane{
+  height: 100%;
+}
+
+/* Make panel fill tab height */
+.tab-pane .output-panel,
+.tab-pane .json-panel{
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+.pdf-frame {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.json-preview {
+  height: 500px;
+  overflow: auto;
+  background: #111;
+  color: #0f0;
+  padding: 10px;
+}

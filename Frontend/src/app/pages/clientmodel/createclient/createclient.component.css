@@ -1,0 +1,63 @@
+.icon-paperplane {
+    /* Your icon styling */
+    /* For example: */
+    background-image: url('src/assets/paper-plane-svgrepo-com.svg');
+    /* Other icon styling properties */
+}
+
+.ml-2 {
+    margin-left: 2px;
+}
+
+#button {
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+#button.active {
+    background-color: green;
+}
+
+#button:not(.active) {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden_true {
+    display: none;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* So the icon doesn't block clicks on the select */
+}
+
+label {
+    font-weight: 400;
+    font: bold;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    padding: .47rem .75rem;
+    font-size: .875rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}

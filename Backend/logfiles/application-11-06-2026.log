@@ -1,0 +1,38 @@
+[6/11/2026, 3:22:30 PM] info: POST /register/logins
+[6/11/2026, 3:22:32 PM] info: login user/id=11
+[6/11/2026, 3:22:32 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 3:22:32 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 3:22:32 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 3:22:32 PM] info: Clients
+[6/11/2026, 3:22:32 PM] info: Clients
+[6/11/2026, 3:22:32 PM] info: map
+[6/11/2026, 3:22:32 PM] info: GET /ClientImages/download.png
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/Approval/4/User
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/getrole/4
+[6/11/2026, 3:22:41 PM] info: GET /userdetails/gridvalues/11/4
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:41 PM] info: Userdetails
+[6/11/2026, 3:22:43 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 3:22:43 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 3:22:43 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 3:22:43 PM] info: Clients
+[6/11/2026, 3:22:43 PM] info: Clients
+[6/11/2026, 3:22:43 PM] info: map
+[6/11/2026, 7:23:08 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 7:23:08 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 7:23:08 PM] info: GET /ClientImages/download.png
+[6/11/2026, 7:23:08 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 7:23:08 PM] info: Clients
+[6/11/2026, 7:23:08 PM] info: Clients
+[6/11/2026, 7:23:08 PM] info: map
+[6/11/2026, 7:25:12 PM] info: GET /userdetails/Approval/4/vehicleinformationgrid
+[6/11/2026, 7:25:12 PM] info: GET /VehicleInformation/getAllVehicle/11
+[6/11/2026, 7:25:12 PM] info: Userdetails
+[6/11/2026, 7:25:12 PM] info: vehicle fetched successfully.
+[6/11/2026, 7:25:14 PM] info: GET /bookingdetails/gettoecontaine/11/4
+[6/11/2026, 7:25:14 PM] info: GET /bookingdetails/getforcontaine/11/4
+[6/11/2026, 7:25:15 PM] info: GET /VehicleInformation/mapdetails/11/4
+[6/11/2026, 7:25:15 PM] info: Clients
+[6/11/2026, 7:25:15 PM] info: Clients
+[6/11/2026, 7:25:15 PM] info: map

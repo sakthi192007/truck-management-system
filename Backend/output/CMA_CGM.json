@@ -1,0 +1,51 @@
+{
+  "shipper": {
+    "name": "BLUELINE FREIGHT FORWARDERS",
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "consignee": {
+    "name": null,
+    "contact_person_name": null,
+    "phone_number": null
+  },
+  "booking_details": {
+    "booking_number": "AIS0532618",
+    "placement_date": null,
+    "pickup_date": null
+  },
+  "location_details": {
+    "place_of_clearance": null,
+    "place_of_pickup": null
+  },
+  "customs": {
+    "customs_clearance_date": null
+  },
+  "commodity": "Parts and accessories, for tra Container Grade: General Cargo",
+  "port_details": {
+    "port_cut_off": "30/08/2025",
+    "etd": "01/09/2025",
+    "eta": "06/09/2025"
+  },
+  "shipping_details": {
+    "shipping_line": "CMA CGM",
+    "vessel_name": "CMA CGM LOIRE",
+    "voyage": "0NNLEW1MA"
+  },
+  "delivery_order": {
+    "do_issue_date": null,
+    "do_valid_upto": null
+  },
+  "container_details": {
+    "container_number": null,
+    "container_type": null,
+    "seal_number": null
+  },
+  "cargo_details": {
+    "number_of_packages": null,
+    "cargo_weight": {
+      "value": "53800",
+      "weight_type": "KGM"
+    }
+  }
+}

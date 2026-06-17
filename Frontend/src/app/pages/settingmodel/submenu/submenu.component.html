@@ -1,0 +1,229 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18" runat="server">Submenu Details</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/Dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a>Submenu Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <a type="button" id="btncolors" [class.disabled]="createstatus === false" data-bs-toggle="modal" data-bs-target="#Driverop"
+                        class="btn btn-primary" (click)="addnew();"><i class="fa fa-plus"></i>&nbsp;Create</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="card-bodys">
+                                          <div class="col-md-12">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+ 
+                                    <div id="datatable-buttons" class="d-flex align-items-center gap-2"></div>
+ 
+                                    <div class="d-flex align-items-center gap-3">
+                                        <button id="dateRangeBtn" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#dateRangeModal">
+                                            Select Date Range
+                                        </button>
+ 
+                                        <div class="left-search"></div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+
+                            <div class="modal fade" id="dateRangeModal" tabindex="-1" aria-labelledby="dateRangeLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content p-3">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="dateRangeLabel">Filter data on date range</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Choose a start and an end date which will filter</p>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Start Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="fromDate" />
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">End Date</label>
+                                                <input type="date" class="form-control w-100" [(ngModel)]="toDate" />
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer" style="border-top: none;">
+                                            <button type="button" class="btn btn-primary w-100"
+                                                (click)="applyDateFilter()" data-bs-dismiss="modal">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                <table class="table table-striped table-bordered nowrap datatablegrid"
+                    style="border-collapse: collapse; border-spacing: 0; width: 90%; margin: auto;">
+                    <thead>
+                        <tr>
+                            <th id="colors">Menu Name</th>
+                            <th id="colors">Menu List No</th>
+                            <th id="colors">Page Name</th>
+                            <th id="colors">Created Date</th>
+                            <th class="noExport" id="colors">Update</th>
+                            <th class="noExport" id="colors">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let element of filteredData">
+                            <td>{{element.Menuname}}</td>
+                            <td>{{element.Menulist}}</td>
+                            <td>{{element.Pagename}}</td>
+                            <td>{{element.Createdon}}</td>
+                            <td style="text-align: center;"><a type="button" id="statusdesign" [class.disabled]="!statusupdate" [style.pointer-events]="!statusupdate ? 'none' : 'auto'"
+                                    class="badge badge-primary" data-bs-toggle="modal" data-bs-target="#Driverop"
+                                    (click)="Assignvaluemenu(element.Menukey)"><i
+                                        class="mdi mdi-pencil d-block font-size-20"></i></a></td>
+                            <td style="text-align: center;"><a type="button" id="statusdesign" [class.disabled]="!statusdelete" [style.pointer-events]="!statusdelete ? 'none' : 'auto'"
+                                    class="badge badge-danger" data-bs-toggle="modal" data-bs-target="#Deleterop"
+                                    (click)="Deletesubmenu(element.Menukey)"><i
+                                        class="mdi mdi-trash-can d-block font-size-20"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Driverop" class="modal fade" tabindex="-1" aria-labelledby="AgencyLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header" id="colors">
+                        <h6 class="modal-title" style="color: white;" id="AgencyLabel">{{headertext}}</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1);"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form [formGroup]="SubmenuForm" novalidate>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Menu Name<span style="color: red;"> *</span></label>
+                                        <input class="form-control" formControlName="Menuname"
+                                            placeholder="Enter Menu Name" required>
+                                        <div *ngIf="submitted && f['Menuname'].errors" class="validation-invalid-label">
+                                            <div *ngIf="f['Menuname'].errors['required']"><span
+                                                    style="color: red;">MenuMenu is required</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>PageName </label>
+                                        <input class="form-control" formControlName="Pagename"
+                                            placeholder="Enter Page Name">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>ParentName</label>
+                                        <select class="form-select form-select" formControlName="Parentmenuid"
+                                            data-live-search="true">
+                                            <option value="0">--Select--</option>
+                                            <option *ngFor="let type of loadparentmenu" [value]="type.Menukey">
+                                                {{ type.Menuname }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Menu List No<span style="color: red;"> *</span></label>
+                                        <input type="number" class="form-control" formControlName="Menulist"
+                                            placeholder="Enter MenuListNo " required>
+                                        <div *ngIf="submitted && f['Menulist'].errors" class="validation-invalid-label">
+                                            <div *ngIf="f['Menulist'].errors['required']"><span
+                                                    style="color: red;">MenuListNo is required</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Menu Icon link<a (click)="icon()" target="_blank"
+                                                style="margin-left: 5px; color:blue">(View Icons)</a></label>
+                                        <input type="text" class="form-control" formControlName="Menuicon"
+                                            placeholder="Enter Menuicon ">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Menu Description</label>
+                                        <input class="form-control" formControlName="Menudescription"
+                                            placeholder="Enter Menu Description">
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-sm-9">
+                                        <div>
+                                            <a id="btncolors" class="btn btn-primary w-md" (click)="closeback();"><i
+                                                    class=" bx bx-arrow-back"
+                                                    aria-hidden="true"></i>&nbsp;Back</a>&nbsp;
+                                            <button id="btncolors" class="btn btn-primary w-md" type="button"
+                                                *ngIf="shouldShowSubmitButton()" (click)="submit()">
+                                                <i class="bx bxs-navigation"></i>&nbsp;{{ buttontext }}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Deleterop" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger">
+                        <h6 class="modal-title" style="color:white;">Confirm delete</h6>
+                        <button type="button" class="close" (click)="closedriv();">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="swal2-icon swal2-warning swal2-animate-warning-icon" style="display: flex;"></div>
+                        <p class="text-center" style="font-size: 25px;">Are you sure want to delete this item?</p>
+                    </div>
+                    <div class="modal-footer d-flex align-content-center">
+                        <button type="button" class="btn btn-danger" (click)="deletesubmenu()" data-dismiss="modal">Yes
+                            Delete it</button>
+                        <button type="button" class="btn btn-default" (click)="canceldriv();">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

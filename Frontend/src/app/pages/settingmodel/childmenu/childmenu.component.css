@@ -1,0 +1,27 @@
+#btncolors{
+    background-color: #E06100 ;
+    color: white;
+    border: #E06100;
+}
+#colors{
+    background-color: #232879;
+    color: white;
+}
+div.dataTables_wrapper .dataTables_filter {
+    float: none !important;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+div.dataTables_wrapper .dataTables_filter label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+div.dataTables_wrapper .dataTables_filter input {
+    width: 180px;   
+}
+div.dataTables_wrapper .dt-buttons {
+    margin: 0 !important;
+}
